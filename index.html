@@ -1,0 +1,1975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossaire | Certified Commercial Kitchen Hood & Exhaust Cleaning</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Crossaire is your premier certified partner for commercial kitchen exhaust cleaning and NFPA 96 compliance. Available 24/7 nationwide for emergency fire mitigation.">
+    <meta name="keywords" content="kitchen hood cleaning, exhaust fan cleaning, commercial kitchen safety, NFPA 96 compliance, grease trap pumping">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Crossaire | Certified Commercial Kitchen Hood & Exhaust Cleaning">
+    <meta property="og:description" content="Get certified kitchen hood cleaning and exhaust maintenance. NFPA 96 compliant, fully insured, and available 24/7 nationwide.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./media/images/favicon.png">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'accent': '#1C6CCF',
+                        'accent-hover': '#1557A6',
+                        'main-bg': '#E9EEF3',
+                        'primary-text': '#0C1A2B',
+                        'body-text': '#475465',
+                        'border-stroke': '#D8E2EC',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen antialiased text-primary-text bg-main-bg">
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 w-full z-50 nav-scrolled">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center group logo-link">
+                <!-- White Logo (Shown when header is transparent) -->
+                <img id="nav-logo-white" src="./media/images/logowhite.png" alt="Crossaire Logo" class="h-10 w-auto object-contain transition-opacity duration-300">
+                <!-- Dark Logo (Shown when header is scrolled) -->
+                <img id="nav-logo-dark" src="./media/images/logo.png" alt="Crossaire Logo" class="h-10 w-auto object-contain transition-opacity duration-300">
+            </a>
+
+            <!-- Desktop Menu Links -->
+            <nav class="hidden md:flex items-center gap-8 font-semibold text-sm">
+                <a href="#who-we-are" class="nav-link-top transition-colors">About Us</a>
+                
+                <!-- Services Dropdown Menu -->
+                <div class="relative group py-2">
+                    <a href="#services" class="nav-link-top flex items-center gap-1 transition-colors hover:text-accent">
+                        <span>Services</span>
+                        <svg class="w-3 h-3 fill-current transition-transform group-hover:rotate-180" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <div id="desktop-services-dropdown" class="absolute top-full left-0 mt-[20px] w-80 bg-white border border-border-stroke rounded-2xl shadow-2xl opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out py-0 min-h-[320px] h-auto flex z-50">
+                        <!-- Dynamically populated by JS -->
+                    </div>
+                </div>
+
+
+
+                <a href="#gallery" class="nav-link-top transition-colors">Gallery</a>
+            </nav>
+
+            <!-- Call-to-Action & Emergency Call -->
+            <div class="hidden lg:flex items-center gap-6">
+                <a href="tel:8663992885" class="nav-phone-link flex items-center gap-2 font-bold text-sm transition-colors">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97a1.521 1.521 0 0 0-.328 1.96 11.96 11.96 0 0 0 5.758 5.759 1.521 1.521 0 0 0 1.96-.328l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                    </svg>
+                    <span>866-399-2885</span>
+                </a>
+                <a href="#booking-form-section" class="btn-primary">Book Inspection</a>
+            </div>
+
+            <!-- Mobile Menu Trigger -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg transition-colors hover:bg-black/5" aria-label="Toggle navigation menu">
+                <svg id="hamburger-icon" class="w-6 h-6 fill-[#0C1A2B]" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                </svg>
+                <svg id="close-icon" class="w-6 h-6 fill-[#0C1A2B] hidden" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 1 1-1.06-1.06L12 13.06l-5.47 5.47a.75.75 0 1 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden fixed top-20 left-0 w-full h-[calc(100vh-5rem)] bg-white border-b border-border-stroke shadow-lg py-6 px-6 flex flex-col gap-5 font-semibold text-base overflow-y-auto pb-12 animate-fade-in">
+            <a href="#who-we-are" class="mobile-link py-2 text-primary-text border-b border-gray-100">About Us</a>
+            
+            <!-- Mobile Services Dropdown -->
+            <div>
+                <button id="mobile-services-btn" onclick="toggleMobileDropdown('mobile-services-dropdown', 'mobile-services-chevron', 'mobile-services-btn')" class="w-full flex items-center justify-between text-primary-text font-bold text-base text-left py-2 border-b border-gray-100 transition-colors">
+                    <span>Services</span>
+                    <svg id="mobile-services-chevron" class="w-3.5 h-3.5 fill-current text-primary-text/60 transition-transform" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                
+                <div id="mobile-services-dropdown" class="mobile-accordion-content flex flex-col gap-2 pl-4 text-sm font-medium text-body-text mt-1.5">
+                    <!-- Dynamically populated by JS -->
+                </div>
+            </div>
+
+
+
+            <a href="#gallery" class="mobile-link py-2 text-primary-text border-b border-gray-100">Gallery</a>
+            <div class="flex flex-col gap-4 mt-2">
+                <a href="tel:8663992885" class="flex items-center justify-center gap-2 py-3 bg-main-bg text-primary-text rounded-lg">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97a1.521 1.521 0 0 0-.328 1.96 11.96 11.96 0 0 0 5.758 5.759 1.521 1.521 0 0 0 1.96-.328l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                    </svg>
+                    <span>866-399-2885</span>
+                </a>
+                <a href="#booking-form-section" class="btn-primary w-full py-3 text-center">Book Inspection</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: Hero Section (with Background Image & Contact Form) -->
+    <section class="hero-section relative min-h-screen flex items-center pt-80 pb-8 lg:pt-24 lg:pb-16 px-6">
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-12 lg:items-end items-center">
+            
+            <!-- Left Info Block -->
+            <div class="lg:col-span-7 text-white flex flex-col justify-end">
+                <h1 class="display-title text-white mb-1 lg:mb-3 max-w-2xl">
+                    Stress-Free Commercial Kitchen Safety
+                </h1>
+                
+                <p class="text-white/80 text-sm lg:text-lg max-w-xl mb-0 leading-relaxed">
+                    Ensure full NFPA 96 compliance and protect your kitchen with our certified exhaust cleaning.
+                </p>
+            </div>
+
+            <!-- Right Interactive Form Card Block -->
+            <div id="booking-form-section" class="lg:col-span-5 relative">
+                <div class="form-card-wrapper">
+                    <!-- Tab Buttons -->
+                    <div class="tabs-container">
+                        <button id="tab-commercial" class="tab-btn active" onclick="switchTab('commercial')">Commercial</button>
+                        <button id="tab-emergency" class="tab-btn" onclick="switchTab('emergency')">Emergency</button>
+                    </div>
+
+                    <!-- Form -->
+                    <form action="send-mail.php" method="POST" class="p-6 lg:p-8 flex flex-col gap-5" onsubmit="return validateForm()">
+                        <!-- Hidden Source Input -->
+                        <input type="hidden" name="source" id="form-source" value="COMMERCIAL_FORM">
+
+                        <!-- Warning Alert (Hidden by default, shown on Emergency tab) -->
+                        <div id="emergency-alert" class="hidden bg-red-50 border border-red-200 text-red-900 rounded-lg p-4 text-sm flex gap-3">
+                            <div class="text-lg">📢</div>
+                            <div>
+                                <span class="font-bold block">Immediate Dispatch Request</span>
+                                Calls take priority. For dispatch under 90 mins, dial <a href="tel:8663992885" class="underline font-bold text-red-700">866-399-2885</a>.
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-body-text mb-2" for="fullname">Full Name *</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="e.g. John Doe" autocomplete="name" required>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-body-text mb-2" for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-body-text mb-2" for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" autocomplete="tel" required>
+                            </div>
+                        </div>
+
+                        <!-- Custom Select Dropdown -->
+                        <div class="relative">
+                            <label class="block text-xs font-bold uppercase tracking-wider text-body-text mb-2">Service Needed *</label>
+                            <div class="custom-dropdown">
+                                <button type="button" id="dropdown-trigger" class="custom-dropdown-trigger">
+                                    <span id="dropdown-selected-text">Select Service Category</span>
+                                    <svg id="dropdown-chevron" class="w-3.5 h-3.5 fill-[#0C1A2B] transition-transform duration-200" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <div id="dropdown-options" class="custom-dropdown-options hidden">
+                                    <div class="custom-dropdown-option" data-value="Kitchen Hood Cleaning">Kitchen Hood Cleaning</div>
+                                    <div class="custom-dropdown-option" data-value="Exhaust Fan Maintenance">Exhaust Fan Maintenance</div>
+                                    <div class="custom-dropdown-option" data-value="Pollution Control Unit (PCU)">Pollution Control Unit (PCU)</div>
+                                    <div class="custom-dropdown-option" data-value="Grease Trap Pumping">Grease Trap Pumping</div>
+                                    <div class="custom-dropdown-option" data-value="Rooftop Grease Containment">Rooftop Grease Containment</div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="service-type" id="service-type" value="" required>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-body-text mb-2" for="message">Details & Scope</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Tell us about your kitchen setup or emergency issue..."></textarea>
+                        </div>
+
+                        <button type="submit" id="submit-btn" class="btn-primary w-full h-[52px] font-bold text-base mt-2">
+                            Request Professional Quote
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Hours & Phone Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                    <!-- Phone Block -->
+                    <div class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-sm">
+                        <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-accent">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97a1.521 1.521 0 0 0-.328 1.96 11.96 11.96 0 0 0 5.758 5.759 1.521 1.521 0 0 0 1.96-.328l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="block text-xs uppercase tracking-wider text-white/50 font-bold">Call Toll-Free</span>
+                            <a href="tel:8663992885" class="text-base font-extrabold text-white hover:text-accent transition-colors">866-399-2885</a>
+                        </div>
+                    </div>
+
+                    <!-- Work Hours Block -->
+                    <div class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-sm">
+                        <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-accent">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="block text-xs uppercase tracking-wider text-white/50 font-bold">Operational Hours</span>
+                            <span class="text-base font-extrabold text-white">24/7/365 Service</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- SECTION 2: Trust Badges (Row of Icons) -->
+    <section class="bg-white border-y border-border-stroke py-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-start sm:justify-items-center items-center">
+                <!-- Badge 1 -->
+                <div class="flex items-center gap-4 md:gap-3 w-full max-w-sm sm:max-w-none">
+                    <div class="w-12 h-12 md:w-10 md:h-10 bg-accent/10 rounded-full flex items-center justify-center text-accent shrink-0">
+                        <svg class="w-6 h-6 md:w-5 md:h-5 fill-current" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.08a.75.75 0 1 0-1.22-.87l-3.146 4.41-1.299-1.3a.75.75 0 0 0-1.06 1.06l1.875 1.875a.75.75 0 0 0 1.14-.1l3.75-5.25Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="block text-base md:text-sm font-bold text-primary-text leading-tight">NFPA 96 Certified</span>
+                        <span class="block text-xs md:text-[11px] text-body-text font-semibold uppercase tracking-wider">Strict Compliance</span>
+                    </div>
+                </div>
+
+                <!-- Badge 2 -->
+                <div class="flex items-center gap-4 md:gap-3 w-full max-w-sm sm:max-w-none">
+                    <div class="w-12 h-12 md:w-10 md:h-10 bg-accent/10 rounded-full flex items-center justify-center text-accent shrink-0">
+                        <svg class="w-6 h-6 md:w-5 md:h-5 fill-current" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.137-.089l4.026-5.636Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="block text-base md:text-sm font-bold text-primary-text leading-tight">OSHA Compliant</span>
+                        <span class="block text-xs md:text-[11px] text-body-text font-semibold uppercase tracking-wider">Safe Operations</span>
+                    </div>
+                </div>
+
+                <!-- Badge 3 -->
+                <div class="flex items-center gap-4 md:gap-3 w-full max-w-sm sm:max-w-none">
+                    <div class="w-12 h-12 md:w-10 md:h-10 bg-accent/10 rounded-full flex items-center justify-center text-accent shrink-0">
+                        <svg class="w-6 h-6 md:w-5 md:h-5 fill-current" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="block text-base md:text-sm font-bold text-primary-text leading-tight">$5M Liability Insured</span>
+                        <span class="block text-xs md:text-[11px] text-body-text font-semibold uppercase tracking-wider">Fully Insured</span>
+                    </div>
+                </div>
+
+                <!-- Badge 4 -->
+                <div class="flex items-center gap-4 md:gap-3 w-full max-w-sm sm:max-w-none">
+                    <div class="w-12 h-12 md:w-10 md:h-10 bg-accent/10 rounded-full flex items-center justify-center text-accent shrink-0">
+                        <svg class="w-6 h-6 md:w-5 md:h-5 fill-current" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="block text-base md:text-sm font-bold text-primary-text leading-tight">100% Satisfaction</span>
+                        <span class="block text-xs md:text-[11px] text-body-text font-semibold uppercase tracking-wider">Guaranteed Results</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Who We Are (Text-only Section) -->
+    <section id="who-we-are" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto flex flex-col items-end text-right animate-on-scroll">
+            <span class="text-sm uppercase tracking-wider font-extrabold text-accent block mb-6">(WHO WE ARE)</span>
+            
+            <h2 class="text-3xl md:text-[48px] font-extrabold tracking-tight text-primary-text mb-12 leading-[1.15] max-w-4xl">
+                NFPA 96 certified, background-checked pros delivering clean, code-compliant exhaust cleaning across USA, with honest pricing—no surprises.
+            </h2>
+            
+            <p class="text-body-text text-base md:text-lg leading-relaxed max-w-3xl">
+                Crossaire provides reliable service with a commitment to quality. Trusted by customers nationwide, we're proud to set the standard in the commercial kitchen safety industry.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Our Core Services (Cards) -->
+    <section id="services" class="py-24 px-6 bg-white border-b border-border-stroke">
+        <div class="max-w-7xl mx-auto animate-on-scroll">
+            <div class="flex flex-col items-start text-left mb-16">
+                <span class="text-sm uppercase tracking-wider font-extrabold text-accent block mb-3">(EXPERT SOLUTIONS)</span>
+                
+                <h2 class="text-3xl md:text-[48px] font-extrabold tracking-tight text-primary-text mb-1 lg:mb-3 leading-[1.15] max-w-4xl">
+                    Our Core Services
+                </h2>
+                
+                <p class="text-body-text text-base md:text-lg leading-relaxed max-w-3xl">
+                    Professional, code-compliant cleaning and maintenance solutions tailored to your commercial kitchen needs.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="minimal-card flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <path d="M9 2h6v7h5l2 9H2l2-9h5V2z" />
+                                <path fill="white" d="M5 15h6v1.5H5zm8 0h6v1.5h-6z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-text mb-3">Kitchen Hood Cleaning</h3>
+                        <p class="text-body-text text-sm leading-relaxed mb-6">
+                            Thorough degreasing and cleaning of your hoods, filters, plenums, and vertical/horizontal ducts to eliminate hazardous grease deposits.
+                        </p>
+                    </div>
+                    <a href="#booking-form-section" class="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
+                        Get Service <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="minimal-card flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 512 512">
+                                <path d="M352.57 128c-28.09 0-54.09 4.52-77.06 12.86l12.41-123.11C289 7.31 279.81-1.18 269.33.13 189.63 10.13 128 77.64 128 159.43c0 28.09 4.52 54.09 12.86 77.06L17.75 224.08C7.31 223-1.18 232.19.13 242.67c10 79.7 77.51 141.33 159.3 141.33 28.09 0 54.09-4.52 77.06-12.86l-12.41 123.11c-1.05 10.43 8.11 18.93 18.59 17.62 79.7-10 141.33-77.51 141.33-159.3 0-28.09-4.52-54.09-12.86-77.06l123.11 12.41c10.43 1.05 18.93-8.11 17.62-18.59-10-79.7-77.51-141.33-159.3-141.33zM256 320c-35.35 0-64-28.65-64-64s28.65-64 64-64 64 28.65 64 64-28.65 64-64 64z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-text mb-3">Exhaust Fan Maintenance</h3>
+                        <p class="text-body-text text-sm leading-relaxed mb-6">
+                            Rooftop exhaust fan cleanup, bearing lubrication, belt inspection, and electrical validation to guarantee uninterrupted, safe airflow.
+                        </p>
+                    </div>
+                    <a href="#booking-form-section" class="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
+                        Get Service <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="minimal-card flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M3 2.25a.75.75 0 0 1 .75.75v1.257a3.001 3.001 0 0 1 0 5.486V21a.75.75 0 0 1-1.5 0V9.743a3.001 3.001 0 0 1 0-5.486V3a.75.75 0 0 1 .75-.75Zm9 0a.75.75 0 0 1 .75.75v7.257a3.001 3.001 0 0 1 0 5.486V21a.75.75 0 0 1-1.5 0v-5.257a3.001 3.001 0 0 1 0-5.486V3a.75.75 0 0 1 .75-.75Zm9 0a.75.75 0 0 1 .75.75v1.257a3.001 3.001 0 0 1 0 5.486V21a.75.75 0 0 1-1.5 0V9.743a3.001 3.001 0 0 1 0-5.486V3a.75.75 0 0 1 .75-.75ZM3 6.75a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm9 6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm9-6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-text mb-3">Pollution Control Unit (PCU)</h3>
+                        <p class="text-body-text text-sm leading-relaxed mb-6">
+                            Electrostatic precipitator diagnostics, advanced filter changeouts, and deep cleaning to control smoke and odor emissions.
+                        </p>
+                    </div>
+                    <a href="#booking-form-section" class="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
+                        Get Service <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="minimal-card flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <path d="M18,13H14V11H18V13M22,11V13H20V15H18V13H6V15H4V13H2V11H4V9H6V11H18V9H20V11H22Z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-text mb-3">Grease Trap Pumping</h3>
+                        <p class="text-body-text text-sm leading-relaxed mb-6">
+                            Scheduled grease trap waste removal, plumbing line jetting, and compliance manifesting to prevent backups and municipal fines.
+                        </p>
+                    </div>
+                    <a href="#booking-form-section" class="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
+                        Get Service <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="minimal-card flex flex-col justify-between md:col-span-2 lg:col-span-1">
+                    <div>
+                        <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <path d="M2 13L12 4l10 9-1.5 1.5-8.5-7.6-8.5 7.6L2 13z" />
+                                <path d="M12 8c-2.2 3.5-2.2 7 0 9.2 2.2-2.2 2.2-5.7 0-9.2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-text mb-3">Rooftop Grease Containment</h3>
+                        <p class="text-body-text text-sm leading-relaxed mb-6">
+                            Containment system installations and filter change-outs, shielding your roof structure from toxic and corrosive grease buildup.
+                        </p>
+                    </div>
+                    <a href="#booking-form-section" class="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
+                        Get Service <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: Get Started in Five Easy Steps (Grid Layout) -->
+    <section id="steps" class="py-24 px-6 bg-white border-b border-border-stroke">
+        <div class="max-w-7xl mx-auto animate-on-scroll">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+                
+                <!-- Header Block -->
+                <div class="flex flex-col justify-start">
+                    <span class="subtitle-badge">(Simple Onboarding)</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-primary-text leading-tight tracking-tight mt-1">
+                        Get started in five easy steps
+                    </h2>
+                </div>
+
+                <!-- Step 1 -->
+                <div class="group flex flex-col">
+                    <div class="relative flex items-center mb-6">
+                        <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                            <div class="w-full border-t border-border-stroke"></div>
+                        </div>
+                        <div class="relative bg-white pr-4 z-10">
+                            <div class="flex items-center justify-center w-8 h-8 rounded-full border border-border-stroke bg-white text-primary-text font-bold text-xs select-none">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary-text mb-2">Tell us your issue</h3>
+                    <p class="text-body-text text-sm leading-relaxed mb-6">
+                        Submit a request online or call us directly. Sending photos of your hood setup helps us quote faster.
+                    </p>
+                    <div class="relative rounded-xl overflow-hidden aspect-square border border-border-stroke bg-white">
+                        <img src="./media/images/onboarding1.png" alt="Commercial kitchen stainless steel hood" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="group flex flex-col">
+                    <div class="relative flex items-center mb-6">
+                        <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                            <div class="w-full border-t border-border-stroke"></div>
+                        </div>
+                        <div class="relative bg-white pr-4 z-10">
+                            <div class="flex items-center justify-center w-8 h-8 rounded-full border border-border-stroke bg-white text-primary-text font-bold text-xs select-none">
+                                2
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary-text mb-2">Get a clear estimate</h3>
+                    <p class="text-body-text text-sm leading-relaxed mb-6">
+                        Upfront, itemized pricing tailored to your specific kitchen layout. No hidden fees or surprise charges.
+                    </p>
+                    <div class="relative rounded-xl overflow-hidden aspect-square border border-border-stroke bg-white">
+                        <img src="./media/images/onboarding2.png" alt="Kitchen exhaust fan audit inspection" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="group flex flex-col">
+                    <div class="relative flex items-center mb-6">
+                        <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                            <div class="w-full border-t border-border-stroke"></div>
+                        </div>
+                        <div class="relative bg-white pr-4 z-10">
+                            <div class="flex items-center justify-center w-8 h-8 rounded-full border border-border-stroke bg-white text-primary-text font-bold text-xs select-none">
+                                3
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary-text mb-2">Schedule your service time</h3>
+                    <p class="text-body-text text-sm leading-relaxed mb-6">
+                        We set a precise service window during your off-hours to avoid any disruption to kitchen operations.
+                    </p>
+                    <div class="relative rounded-xl overflow-hidden aspect-square border border-border-stroke bg-white">
+                        <img src="./media/images/onboarding3.png" alt="Scheduling grease cleaning service" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="group flex flex-col">
+                    <div class="relative flex items-center mb-6">
+                        <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                            <div class="w-full border-t border-border-stroke"></div>
+                        </div>
+                        <div class="relative bg-white pr-4 z-10">
+                            <div class="flex items-center justify-center w-8 h-8 rounded-full border border-border-stroke bg-white text-primary-text font-bold text-xs select-none">
+                                4
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary-text mb-2">We fix it right</h3>
+                    <p class="text-body-text text-sm leading-relaxed mb-6">
+                        Clean workspace, protected floors, and NFPA 96 certified cleaning down to bare metal.
+                    </p>
+                    <div class="relative rounded-xl overflow-hidden aspect-square border border-border-stroke bg-white">
+                        <img src="./media/images/onboardin4.png" alt="Kitchen hood exhaust system compliance cleaning" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="group flex flex-col">
+                    <div class="relative flex items-center mb-6">
+                        <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                            <div class="w-full border-t border-border-stroke"></div>
+                        </div>
+                        <div class="relative bg-white pr-4 z-10">
+                            <div class="flex items-center justify-center w-8 h-8 rounded-full border border-border-stroke bg-white text-primary-text font-bold text-xs select-none">
+                                5
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary-text mb-2">Pay and relax, guaranteed</h3>
+                    <p class="text-body-text text-sm leading-relaxed mb-6">
+                        Compliance certification sticker placed, digital receipt, and simple online payment.
+                    </p>
+                    <div class="relative rounded-xl overflow-hidden aspect-square border border-border-stroke bg-white">
+                        <img src="./media/images/onboarding5.png" alt="Compliance documentation and verification sticker placement" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: Combined CTA and Trust Badges -->
+    <section class="py-24 px-6 bg-main-bg border-b border-border-stroke">
+        <div class="max-w-7xl mx-auto animate-on-scroll">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left Column: CTA Info -->
+                <div class="lg:col-span-7 flex flex-col items-start text-left">
+                    <span class="subtitle-badge">(Kitchen Compliance)</span>
+                    <h2 class="text-3xl md:text-[40px] lg:text-[44px] font-extrabold tracking-tight text-primary-text leading-[1.2] mb-4">
+                        Ensure Kitchen Compliance and Prevent Fire Hazard
+                    </h2>
+                    <p class="text-body-text text-base md:text-lg leading-relaxed mb-8 max-w-2xl">
+                        Don't wait for code infractions or fire marshals. Standardize your kitchen cleaning schedule today.
+                    </p>
+                    <a href="#booking-form-section" class="btn-primary inline-flex">
+                        Get Your Proposal
+                    </a>
+                </div>
+
+                <!-- Right Column: Compliance Badges List -->
+                <div class="lg:col-span-5 flex flex-col">
+                    <span class="text-[11px] uppercase tracking-widest font-extrabold text-body-text/60 block mb-6 text-left">
+                        Fully Aligned with National Safety Standards
+                    </span>
+                    <div class="flex flex-col gap-4">
+                        <!-- NFPA -->
+                        <div class="flex items-center gap-3 bg-white border border-border-stroke rounded-xl p-4 shadow-sm transition-all hover:scale-[1.02] hover:shadow-md">
+                            <div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent shrink-0 text-sm">🔥</div>
+                            <span class="text-sm font-bold text-primary-text">NFPA 96 Standard Code</span>
+                        </div>
+                        <!-- IKECA -->
+                        <div class="flex items-center gap-3 bg-white border border-border-stroke rounded-xl p-4 shadow-sm transition-all hover:scale-[1.02] hover:shadow-md">
+                            <div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent shrink-0 text-sm">🛡️</div>
+                            <span class="text-sm font-bold text-primary-text">IKECA Equivalent Practice</span>
+                        </div>
+                        <!-- ANSI -->
+                        <div class="flex items-center gap-3 bg-white border border-border-stroke rounded-xl p-4 shadow-sm transition-all hover:scale-[1.02] hover:shadow-md">
+                            <div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent shrink-0 text-sm">📐</div>
+                            <span class="text-sm font-bold text-primary-text">ANSI/ACCA Design Standards</span>
+                        </div>
+                        <!-- local compliance -->
+                        <div class="flex items-center gap-3 bg-white border border-border-stroke rounded-xl p-4 shadow-sm transition-all hover:scale-[1.02] hover:shadow-md">
+                            <div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent shrink-0 text-sm">📋</div>
+                            <span class="text-sm font-bold text-primary-text">Local Health Dept Standards</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: Gallery Section (Visual Showcase) -->
+    <section id="gallery" class="py-24 px-6 bg-white border-b border-border-stroke">
+        <div class="max-w-7xl mx-auto animate-on-scroll">
+            
+            <!-- Centered Header Block -->
+            <div class="text-center flex flex-col items-center mb-16">
+                <span class="subtitle-badge">(Visual Showcase)</span>
+                <h2 class="text-3xl md:text-[40px] lg:text-[44px] font-extrabold tracking-tight text-primary-text leading-[1.2] mb-4">
+                    What we service daily & excel
+                </h2>
+                <p class="text-body-text text-base md:text-lg max-w-xl mx-auto">
+                    Ducts, hoods, fans, grease traps, and more —certified cleaning and compliance for commercial kitchens.
+                </p>
+            </div>
+
+            <!-- Desktop Gallery: 5 expanding panels -->
+            <div class="hidden lg:flex gap-4 h-[480px] w-full">
+                <!-- Panel 1 -->
+                <div class="flex-1 min-w-0 transition-all duration-500 ease-in-out hover:flex-[3] relative rounded-2xl overflow-hidden group cursor-pointer border border-border-stroke shadow-sm bg-white">
+                    <img src="./media/images/kitchen-hood.png" alt="Steam-Cleaned Stainless Hood" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-text/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-accent font-bold text-xs uppercase tracking-wider mb-1">Kitchen Hoods</span>
+                        <h4 class="text-white text-base font-bold">Steam-Cleaned Stainless Hood</h4>
+                    </div>
+                </div>
+
+                <!-- Panel 2 -->
+                <div class="flex-1 min-w-0 transition-all duration-500 ease-in-out hover:flex-[3] relative rounded-2xl overflow-hidden group cursor-pointer border border-border-stroke shadow-sm bg-white">
+                    <img src="./media/images/exhaust-fan.png" alt="Rooftop Exhaust Fan Service" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-text/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-accent font-bold text-xs uppercase tracking-wider mb-1">Exhaust Fans</span>
+                        <h4 class="text-white text-base font-bold">Rooftop Exhaust Fan Service</h4>
+                    </div>
+                </div>
+
+                <!-- Panel 3 -->
+                <div class="flex-1 min-w-0 transition-all duration-500 ease-in-out hover:flex-[3] relative rounded-2xl overflow-hidden group cursor-pointer border border-border-stroke shadow-sm bg-white">
+                    <img src="./media/images/duct-system.png" alt="Internal Duct Degreasing" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-text/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-accent font-bold text-xs uppercase tracking-wider mb-1">Duct Systems</span>
+                        <h4 class="text-white text-base font-bold">Internal Duct Degreasing</h4>
+                    </div>
+                </div>
+
+                <!-- Panel 4 -->
+                <div class="flex-1 min-w-0 transition-all duration-500 ease-in-out hover:flex-[3] relative rounded-2xl overflow-hidden group cursor-pointer border border-border-stroke shadow-sm bg-white">
+                    <img src="./media/images/precision-care.png" alt="Certified Technician Cleanup" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-text/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-accent font-bold text-xs uppercase tracking-wider mb-1">Precision Care</span>
+                        <h4 class="text-white text-base font-bold">Certified Technician Cleanup</h4>
+                    </div>
+                </div>
+
+                <!-- Panel 5 -->
+                <div class="flex-1 min-w-0 transition-all duration-500 ease-in-out hover:flex-[3] relative rounded-2xl overflow-hidden group cursor-pointer border border-border-stroke shadow-sm bg-white">
+                    <img src="./media/images/compliance.png" alt="Polished Filter Channels" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-text/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-accent font-bold text-xs uppercase tracking-wider mb-1">Compliance</span>
+                        <h4 class="text-white text-base font-bold">Polished Filter Channels</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile/Tablet Gallery: Scroll Snapping Carousel -->
+            <style>
+                #gallery-slider::-webkit-scrollbar {
+                    display: none;
+                }
+            </style>
+            <div id="gallery-slider" class="flex lg:hidden gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-6 w-full" style="-ms-overflow-style: none; scrollbar-width: none;">
+                
+                <!-- Card 1 -->
+                <div class="snap-start shrink-0 w-[85%] aspect-[3/4] rounded-2xl overflow-hidden relative border border-border-stroke shadow-sm bg-white">
+                    <img src="./media/images/kitchen-hood.png" alt="Steam-Cleaned Stainless Hood" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-text/80 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-accent font-bold text-xs uppercase tracking-wider mb-1">Kitchen Hoods</span>
+                        <h4 class="text-white text-base font-bold">Steam-Cleaned Stainless Hood</h4>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="snap-start shrink-0 w-[85%] aspect-[3/4] rounded-2xl overflow-hidden relative border border-border-stroke shadow-sm bg-white">
+                    <img src="./media/images/exhaust-fan.png" alt="Rooftop Exhaust Fan Service" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-text/80 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-accent font-bold text-xs uppercase tracking-wider mb-1">Exhaust Fans</span>
+                        <h4 class="text-white text-base font-bold">Rooftop Exhaust Fan Service</h4>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="snap-start shrink-0 w-[85%] aspect-[3/4] rounded-2xl overflow-hidden relative border border-border-stroke shadow-sm bg-white">
+                    <img src="./media/images/duct-system.png" alt="Internal Duct Degreasing" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-text/80 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-accent font-bold text-xs uppercase tracking-wider mb-1">Duct Systems</span>
+                        <h4 class="text-white text-base font-bold">Internal Duct Degreasing</h4>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="snap-start shrink-0 w-[85%] aspect-[3/4] rounded-2xl overflow-hidden relative border border-border-stroke shadow-sm bg-white">
+                    <img src="./media/images/precision-care.png" alt="Certified Technician Cleanup" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-text/80 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-accent font-bold text-xs uppercase tracking-wider mb-1">Precision Care</span>
+                        <h4 class="text-white text-base font-bold">Certified Technician Cleanup</h4>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="snap-start shrink-0 w-[85%] aspect-[3/4] rounded-2xl overflow-hidden relative border border-border-stroke shadow-sm bg-white">
+                    <img src="./media/images/compliance.png" alt="Polished Filter Channels" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-text/80 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-accent font-bold text-xs uppercase tracking-wider mb-1">Compliance</span>
+                        <h4 class="text-white text-base font-bold">Polished Filter Channels</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile pagination dots -->
+            <div class="flex lg:hidden justify-center gap-2 mt-4" id="gallery-dots">
+                <div class="gallery-dot w-2 h-2 rounded-full bg-primary-text transition-colors duration-300"></div>
+                <div class="gallery-dot w-2 h-2 rounded-full bg-gray-300 transition-colors duration-300"></div>
+                <div class="gallery-dot w-2 h-2 rounded-full bg-gray-300 transition-colors duration-300"></div>
+                <div class="gallery-dot w-2 h-2 rounded-full bg-gray-300 transition-colors duration-300"></div>
+                <div class="gallery-dot w-2 h-2 rounded-full bg-gray-300 transition-colors duration-300"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 8: Coverage Map Section -->
+    <section id="coverage" class="py-24 px-6 bg-white border-b border-border-stroke">
+        <div class="max-w-7xl mx-auto animate-on-scroll">
+            
+            <!-- Split Header Block -->
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-16">
+                <div class="max-w-2xl text-left">
+                    <span class="subtitle-badge">(Nationwide Coverage)</span>
+                    <h2 class="text-3xl md:text-[40px] lg:text-[44px] font-extrabold tracking-tight text-primary-text leading-[1.2] mb-4">
+                        Same-Day Service Across the USA
+                    </h2>
+                    <p class="text-body-text text-base md:text-lg leading-relaxed">
+                        We provide certified, NFPA 96-compliant commercial kitchen exhaust and hood cleaning services. Explore our interactive map below to view our active service hubs and key cities served daily.
+                    </p>
+                </div>
+                <div class="shrink-0 flex items-center md:justify-end">
+                    <a href="#booking-form-section" class="btn-primary transition-transform hover:scale-[1.02] shadow-md">
+                        Get a free quote
+                    </a>
+                </div>
+            </div>
+
+            <!-- Map Wrapper Container -->
+            <div class="relative w-full max-w-4xl mx-auto overflow-visible">
+                <!-- SVG Map outline -->
+                <img src="./media/images/map.svg" alt="USA Service Coverage Map" class="w-full h-auto block select-none pointer-events-none">
+                
+                <!-- Dot 1: Seattle, WA -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 12%; top: 10%;" data-city="Seattle, WA" onclick="focusCity('Seattle, WA')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Seattle, WA</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 2: San Francisco, CA -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 8.5%; top: 43.5%;" data-city="San Francisco, CA" onclick="focusCity('San Francisco, CA')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">San Francisco, CA</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 3: Los Angeles, CA -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 13.5%; top: 61.5%;" data-city="Los Angeles, CA" onclick="focusCity('Los Angeles, CA')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Los Angeles, CA</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 4: Denver, CO -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 36.5%; top: 45.5%;" data-city="Denver, CO" onclick="focusCity('Denver, CO')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Denver, CO</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 5: Houston, TX -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 49.5%; top: 79.5%;" data-city="Houston, TX" onclick="focusCity('Houston, TX')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Houston, TX</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 6: Chicago, IL -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 69.5%; top: 32.5%;" data-city="Chicago, IL" onclick="focusCity('Chicago, IL')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Chicago, IL</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 7: Atlanta, GA -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 77.5%; top: 66.5%;" data-city="Atlanta, GA" onclick="focusCity('Atlanta, GA')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Atlanta, GA</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 8: Miami, FL -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 85.5%; top: 86.5%;" data-city="Miami, FL" onclick="focusCity('Miami, FL')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Miami, FL</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 9: Baltimore, MD (Our City) -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 86.2%; top: 37.8%;" data-city="Baltimore, MD" onclick="focusCity('Baltimore, MD')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Baltimore, MD</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 10: Richmond, VA (Our City) -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 85.1%; top: 43.5%;" data-city="Richmond, VA" onclick="focusCity('Richmond, VA')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Richmond, VA</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 11: Washington DC (Our City) -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 85.5%; top: 39.5%;" data-city="Washington DC" onclick="focusCity('Washington DC')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Washington DC</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 12: Alexandria, VA (Our City) -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 85.8%; top: 41.5%;" data-city="Alexandria, VA" onclick="focusCity('Alexandria, VA')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Alexandria, VA</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 13: Annapolis, MD (Our City) -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 86.8%; top: 39.0%;" data-city="Annapolis, MD" onclick="focusCity('Annapolis, MD')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Annapolis, MD</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 14: Arlington, VA (Our City) -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 85.3%; top: 40.0%;" data-city="Arlington, VA" onclick="focusCity('Arlington, VA')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Arlington, VA</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 15: Frederick, MD (Our City) -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 84.5%; top: 36.5%;" data-city="Frederick, MD" onclick="focusCity('Frederick, MD')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Frederick, MD</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 16: Norfolk, VA (Our City) -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 87.0%; top: 46.0%;" data-city="Norfolk, VA" onclick="focusCity('Norfolk, VA')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Norfolk, VA</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 17: Roanoke, VA (Our City) -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 82.0%; top: 44.5%;" data-city="Roanoke, VA" onclick="focusCity('Roanoke, VA')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Roanoke, VA</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 18: Silver Spring, MD (Our City) -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 85.6%; top: 38.8%;" data-city="Silver Spring, MD" onclick="focusCity('Silver Spring, MD')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Silver Spring, MD</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 19: Bethesda, MD (Our City) -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 85.2%; top: 39.0%;" data-city="Bethesda, MD" onclick="focusCity('Bethesda, MD')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Bethesda, MD</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 20: Ocean City, MD (Our City) -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 89.2%; top: 40.5%;" data-city="Ocean City, MD" onclick="focusCity('Ocean City, MD')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Ocean City, MD</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 21: Hagerstown, MD (Our City) -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 83.2%; top: 35.8%;" data-city="Hagerstown, MD" onclick="focusCity('Hagerstown, MD')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Hagerstown, MD</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 22: Leesburg, VA (Our City) -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 84.2%; top: 38.5%;" data-city="Leesburg, VA" onclick="focusCity('Leesburg, VA')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Leesburg, VA</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+                <!-- Dot 23: Woodbridge, VA (Our City) -->
+                <div class="map-location-dot absolute cursor-pointer z-10" style="left: 85.0%; top: 42.2%;" data-city="Woodbridge, VA" onclick="focusCity('Woodbridge, VA')">
+                    <div class="location-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 flex flex-col items-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-20">
+                        <div class="bg-accent text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg whitespace-nowrap">Woodbridge, VA</div>
+                        <div class="w-3 h-3 bg-accent rotate-45 -mt-1.5 shadow-sm"></div>
+                    </div>
+                    <div class="pulse-ring absolute -inset-2 rounded-full bg-accent/30 animate-ping z-0 hidden"></div>
+                    <div class="relative w-3 h-3 bg-accent rounded-full border-2 border-white shadow-md z-10"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 9: Why Choose Us (with Image) -->
+    <section id="why-choose-us" class="py-24 px-6 bg-white border-b border-border-stroke">
+        <div class="max-w-7xl mx-auto animate-on-scroll">
+            
+            <!-- Header Block -->
+            <div class="mb-16 text-left">
+                <h2 class="text-4xl md:text-[56px] font-extrabold tracking-tight leading-tight text-primary-text">
+                    Why people trust <br class="hidden sm:inline">
+                    <span class="text-accent">Crossaire</span>
+                </h2>
+            </div>
+
+            <!-- Two-Column Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                
+                <!-- Left Column: Image Card -->
+                <div class="relative rounded-2xl overflow-hidden aspect-[4/5] border border-border-stroke shadow-md bg-white">
+                    <img src="./media/images/why-people-trust.png" alt="Certified Exhaust Technician" class="absolute inset-0 w-full h-full object-cover">
+                </div>
+
+                <!-- Right Column: Features List -->
+                <div class="flex flex-col">
+                    
+                    <!-- Feature 1 -->
+                    <div class="flex gap-6 items-start pb-8 border-b border-border-stroke/60 mb-8">
+                        <!-- Circular badge icon -->
+                        <div class="w-12 h-12 rounded-full border border-border-stroke bg-white flex items-center justify-center shadow-sm shrink-0 text-accent mt-0.5">
+                            <!-- Rosette Certificate Filled SVG Icon -->
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" id="fi_9316688">
+                                <g id="Layer_6">
+                                    <path d="m24.212 2h-16.424c-1.91 0-3.458 1.548-3.458 3.458v18.25c0 1.91 1.548 3.458 3.458 3.458h7.061v-2.026c-.888-.964-1.436-2.246-1.436-3.657 0-2.981 2.426-5.407 5.407-5.407s5.406 2.425 5.406 5.407c0 1.412-.548 2.695-1.438 3.659v2.024h1.422c1.91 0 3.458-1.548 3.458-3.458v-18.25c.002-1.91-1.546-3.458-3.456-3.458zm-10.387 11.347h-4.155c-.497 0-.9-.403-.9-.9s.403-.9.9-.9h4.155c.497 0 .9.403.9.9s-.403.9-.9.9zm5.088-4.893h-9.243c-.497 0-.9-.403-.9-.9s.403-.9.9-.9h9.243c.497 0 .9.403.9.9s-.403.9-.9.9z"></path>
+                                    <path d="m18.821 26.891c-.891 0-1.73-.22-2.471-.603v3.712l2.47-1.77 2.47 1.77v-3.712c-.741.383-1.579.603-2.469.603z"></path>
+                                    <circle cx="18.821" cy="21.484" r="3.907"></circle>
+                                </g>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-primary-text mb-2">Expert, Certified Technicians</h3>
+                            <p class="text-body-text text-sm leading-relaxed">
+                                Get peace of mind with our fully certified and background-checked technicians—trusted professionals who ensure full NFPA 96 compliance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="flex gap-6 items-start pb-8 border-b border-border-stroke/60 mb-8">
+                        <!-- Circular badge icon -->
+                        <div class="w-12 h-12 rounded-full border border-border-stroke bg-white flex items-center justify-center shadow-sm shrink-0 text-accent mt-0.5">
+                            <!-- Transparent Pricing SVG Icon -->
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" id="fi_4818493">
+                                <path d="m22.93 7.66a11.56 11.56 0 0 1 .84 2.55 10 10 0 1 1 -13.56 13.56 11.56 11.56 0 0 1 -2.55-.84 12 12 0 1 0 15.27-15.27z"></path>
+                                <path d="m19 7a11.87 11.87 0 0 1 3.93.66 11.5 11.5 0 1 0 -15.27 15.27 11.87 11.87 0 0 1 -.66-3.93 12 12 0 0 1 12-12z"></path>
+                                <path d="m9 19a10 10 0 0 0 1.21 4.77 11.5 11.5 0 0 0 13.56-13.56 10 10 0 0 0 -14.77 8.79z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-primary-text mb-2">Upfront, Transparent Pricing</h3>
+                            <p class="text-body-text text-sm leading-relaxed">
+                                No hidden fees or surprises—just clear, honest, itemized pricing you can trust. Know exactly what you'll pay before we start.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="flex gap-6 items-start">
+                        <!-- Circular badge icon -->
+                        <div class="w-12 h-12 rounded-full border border-border-stroke bg-white flex items-center justify-center shadow-sm shrink-0 text-accent mt-0.5">
+                            <!-- Round Clock Filled SVG Icon -->
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="fi_10016844">
+                                <g id="_x32_2_x2C__memories_x2C__time_x2C__emotion_x2C__memory_x2C__efficiency_x2C__clock">
+                                    <g>
+                                        <path d="m256 1c-56.658 0-110.485 18.371-154.71 52.269v-7.269c0-8.284-6.716-15-15-15s-15 6.716-15 15c0 .103.001 40.427.001 40.325.013 13.275 16.158 20.045 25.608 10.589 42.497-42.505 98.999-65.914 159.101-65.914 124.065 0 225 100.935 225 225s-100.935 225-225 225-225-100.935-225-225c0-34.525 7.608-67.642 22.613-98.428 3.63-7.447.535-16.427-6.911-20.056-7.447-3.634-16.427-.536-20.056 6.911-17.017 34.917-25.646 72.455-25.646 111.573 0 140.932 114.049 255 255 255 140.932 0 255-114.049 255-255 0-140.932-114.049-255-255-255z"></path>
+                                        <path d="m256 436c99.252 0 180-80.748 180-180s-80.748-180-180-180-180 80.748-180 180 80.748 180 180 180zm-84.37-131.713 69.37-55.496v-82.791c0-8.284 6.716-15 15-15s15 6.716 15 15v90c0 4.557-2.071 8.866-5.63 11.713l-75 60c-6.449 5.162-15.893 4.146-21.083-2.343-5.175-6.469-4.126-15.908 2.343-21.083z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-primary-text mb-2">24/7 Rapid Response</h3>
+                            <p class="text-body-text text-sm leading-relaxed">
+                                Kitchen exhaust emergencies can happen anytime. That's why our certified team is available around the clock for rapid dispatch.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 10: Testimonials -->
+    <section id="testimonials" class="py-24 px-6 bg-white border-b border-border-stroke animate-on-scroll">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- Header Block -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+                <div class="text-left">
+                    <span class="text-sm uppercase tracking-widest font-extrabold text-accent block mb-3 lg:hidden">
+                        (TESTIMONIALS)
+                    </span>
+                    <h2 class="text-4xl md:text-[56px] font-extrabold tracking-tight leading-tight text-primary-text">
+                        What our neighbours <br class="hidden sm:inline">
+                        says about us
+                    </h2>
+                </div>
+                <div class="shrink-0 hidden lg:block">
+                    <span class="text-sm uppercase tracking-widest font-extrabold text-accent block text-right">
+                        (TESTIMONIALS)
+                    </span>
+                </div>
+            </div>
+
+            <!-- Testimonials Slider Wrapper -->
+            <div class="relative w-full">
+                <!-- Testimonials Grid/Track -->
+                <div id="testimonials-track" class="flex gap-8 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-none pb-4">
+                    
+                    <!-- Testimonial 1 -->
+                    <div class="snap-start shrink-0 w-[88%] md:w-[48%] lg:w-[31.5%] bg-[#F4F6F8] p-8 rounded-3xl flex flex-col justify-between min-h-[320px] border border-border-stroke/20">
+                        <div>
+                            <span class="block text-xs font-semibold text-body-text/60 tracking-wider mb-6">
+                                Washington, May 24, 2025
+                            </span>
+                            <p class="text-lg md:text-xl font-bold text-primary-text leading-snug mb-8">
+                                "Price matched the estimate—no surprises. Friendly tech explained every step before starting."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80" alt="Michael Anderson" class="w-11 h-11 rounded-full object-cover border border-border-stroke/45">
+                            <div>
+                                <span class="block font-bold text-primary-text text-sm leading-tight">Michael Anderson</span>
+                                <span class="block text-xs text-body-text font-medium mt-0.5">Restaurant Owner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="snap-start shrink-0 w-[88%] md:w-[48%] lg:w-[31.5%] bg-[#F4F6F8] p-8 rounded-3xl flex flex-col justify-between min-h-[320px] border border-border-stroke/20">
+                        <div>
+                            <span class="block text-xs font-semibold text-body-text/60 tracking-wider mb-6">
+                                Washington, May 24, 2025
+                            </span>
+                            <p class="text-lg md:text-xl font-bold text-primary-text leading-snug mb-8">
+                                "Price matched the estimate—no surprises. Friendly tech explained every step before starting."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80" alt="David Richardson" class="w-11 h-11 rounded-full object-cover border border-border-stroke/45">
+                            <div>
+                                <span class="block font-bold text-primary-text text-sm leading-tight">David Richardson</span>
+                                <span class="block text-xs text-body-text font-medium mt-0.5">Hotel Manager</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="snap-start shrink-0 w-[88%] md:w-[48%] lg:w-[31.5%] bg-[#F4F6F8] p-8 rounded-3xl flex flex-col justify-between min-h-[320px] border border-border-stroke/20">
+                        <div>
+                            <span class="block text-xs font-semibold text-body-text/60 tracking-wider mb-6">
+                                Washington, May 24, 2025
+                            </span>
+                            <p class="text-lg md:text-xl font-bold text-primary-text leading-snug mb-8">
+                                "Price matched the estimate—no surprises. Friendly tech explained every step before starting."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&h=150&q=80" alt="Robert Williams" class="w-11 h-11 rounded-full object-cover border border-border-stroke/45">
+                            <div>
+                                <span class="block font-bold text-primary-text text-sm leading-tight">Robert Williams</span>
+                                <span class="block text-xs text-body-text font-medium mt-0.5">Shop Owner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="snap-start shrink-0 w-[88%] md:w-[48%] lg:w-[31.5%] bg-[#F4F6F8] p-8 rounded-3xl flex flex-col justify-between min-h-[320px] border border-border-stroke/20">
+                        <div>
+                            <span class="block text-xs font-semibold text-body-text/60 tracking-wider mb-6">
+                                Seattle, April 18, 2025
+                            </span>
+                            <p class="text-lg md:text-xl font-bold text-primary-text leading-snug mb-8">
+                                "Crossaire has handled our exhaust cleaning for three seasons. The before/after photos are outstanding."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&h=150&q=80" alt="Marcus Vance" class="w-11 h-11 rounded-full object-cover border border-border-stroke/45">
+                            <div>
+                                <span class="block font-bold text-primary-text text-sm leading-tight">Marcus Vance</span>
+                                <span class="block text-xs text-body-text font-medium mt-0.5">Head Chef</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="snap-start shrink-0 w-[88%] md:w-[48%] lg:w-[31.5%] bg-[#F4F6F8] p-8 rounded-3xl flex flex-col justify-between min-h-[320px] border border-border-stroke/20">
+                        <div>
+                            <span class="block text-xs font-semibold text-body-text/60 tracking-wider mb-6">
+                                San Francisco, May 10, 2025
+                            </span>
+                            <p class="text-lg md:text-xl font-bold text-primary-text leading-snug mb-8">
+                                "An emergency fan belt seizure at 11 PM was fixed by midnight. Exceptional rapid response!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&h=150&q=80" alt="Elena Rostova" class="w-11 h-11 rounded-full object-cover border border-border-stroke/45">
+                            <div>
+                                <span class="block font-bold text-primary-text text-sm leading-tight">Elena Rostova</span>
+                                <span class="block text-xs text-body-text font-medium mt-0.5">Bistro Manager</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="snap-start shrink-0 w-[88%] md:w-[48%] lg:w-[31.5%] bg-[#F4F6F8] p-8 rounded-3xl flex flex-col justify-between min-h-[320px] border border-border-stroke/20">
+                        <div>
+                            <span class="block text-xs font-semibold text-body-text/60 tracking-wider mb-6">
+                                Richmond, June 5, 2025
+                            </span>
+                            <p class="text-lg md:text-xl font-bold text-primary-text leading-snug mb-8">
+                                "Reliable, code-compliant, and extremely clean. They leave the stainless steel cooking line spotless."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&h=150&q=80" alt="David Chen" class="w-11 h-11 rounded-full object-cover border border-border-stroke/45">
+                            <div>
+                                <span class="block font-bold text-primary-text text-sm leading-tight">David Chen</span>
+                                <span class="block text-xs text-body-text font-medium mt-0.5">Director of F&B</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Navigation Arrows -->
+                <div class="flex justify-center gap-4 mt-10">
+                    <button onclick="slideTestimonials('left')" class="w-10 h-10 rounded-full bg-white border border-border-stroke flex items-center justify-center text-primary-text hover:bg-gray-100 transition-colors shadow-sm focus:outline-none" aria-label="Previous testimonials">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                        </svg>
+                    </button>
+                    <button onclick="slideTestimonials('right')" class="w-10 h-10 rounded-full bg-white border border-border-stroke flex items-center justify-center text-primary-text hover:bg-gray-100 transition-colors shadow-sm focus:outline-none" aria-label="Next testimonials">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 11: Final CTA -->
+    <section class="py-24 px-6 bg-[#0C1A2B] text-white relative overflow-hidden">
+        <!-- Accent Glow background blur -->
+        <div class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-accent/20 blur-[120px]"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="text-xs uppercase tracking-widest font-extrabold text-accent block mb-4">Start Clean. Stay Compliant.</span>
+            
+            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                Secure Your Kitchen Safety Certificate Today
+            </h2>
+            
+            <p class="text-white/75 text-base md:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+                Connect with Crossaire for professional inspections, grease removal, and official certification stickers. Available 24/7/365.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#booking-form-section" class="btn-primary w-full sm:w-auto px-8 py-4 font-bold text-center">
+                    Request An Inspection
+                </a>
+                <a href="tel:8663992885" class="w-full sm:w-auto border border-white/20 bg-white/5 hover:bg-white/10 text-white font-bold px-8 py-4 rounded-lg transition-all text-center flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97a1.521 1.521 0 0 0-.328 1.96 11.96 11.96 0 0 0 5.758 5.759 1.521 1.521 0 0 0 1.96-.328l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                    </svg>
+                    <span>Call 866-399-2885</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#081321] py-12 px-6 border-t border-white/5 text-white/60 text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <img src="./media/images/logowhite.png" alt="Crossaire Logo" class="h-9 w-auto object-contain">
+            </div>
+            <p class="text-center md:text-left text-xs">
+                &copy; 2026 Crossaire. All rights reserved. Strictly conforming to NFPA Standard 96.
+            </p>
+            <div class="flex gap-5 items-center">
+                <a href="#" class="text-white/60 hover:text-white transition-colors" aria-label="Facebook">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3v3h-3v6.8c4.56-.93 8-4.96 8-9.8z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-white/60 hover:text-white transition-colors" aria-label="Twitter">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-white/60 hover:text-white transition-colors" aria-label="Instagram">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-white/60 hover:text-white transition-colors" aria-label="LinkedIn">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Javascript Logic -->
+    <script>
+        // Services & Locations Data for Dropdowns
+        const servicesList = [
+            { id: "kitchen-hood-cleaning", title: "Kitchen Hood Cleaning", desc: "NFPA 96 certified grease removal" },
+            { id: "exhaust-fan-maintenance", title: "Exhaust Fan Maintenance", desc: "Belts, bearings, and motor service" },
+            { id: "pollution-control-unit", title: "Pollution Control Unit (PCU)", desc: "Filter maintenance & electrostatic clean" },
+            { id: "grease-trap-pumping", title: "Grease Trap Pumping", desc: "Waste extraction & plumbing jetting" },
+            { id: "rooftop-grease-containment", title: "Rooftop Grease Containment", desc: "Roof membrane protection & filters" }
+        ];
+
+        const regionsList = [
+            {
+                name: "Maryland (MD)",
+                cities: ["Baltimore", "Annapolis", "Frederick", "Rockville", "Gaithersburg", "Silver Spring", "Bethesda", "Bowie", "Columbia", "Ellicott City", "Waldorf", "Laurel", "Hyattsville", "College Park", "Greenbelt", "Hagerstown", "Salisbury", "Ocean City"]
+            },
+            {
+                name: "Virginia (VA)",
+                cities: ["Arlington", "Alexandria", "Fairfax", "Falls Church", "Vienna", "Reston", "Herndon", "Chantilly", "Leesburg", "Ashburn", "Manassas", "Woodbridge", "Springfield", "Tysons", "McLean", "Richmond", "Norfolk", "Roanoke"]
+            },
+            {
+                name: "Washington DC",
+                cities: ["Washington"]
+            },
+            {
+                name: "Northern Virginia Suburbs",
+                cities: ["Fairfax County", "Loudoun County", "Prince William County", "Arlington County", "Alexandria City"]
+            },
+            {
+                name: "Maryland DC Suburbs",
+                cities: ["Montgomery County", "Prince George’s County", "Anne Arundel County", "Howard County"]
+            }
+        ];
+
+        function populateStatesColumn(service, serviceEl) {
+            const colStates = document.getElementById('col-states');
+            const colCities = document.getElementById('col-cities');
+            const desktopContainer = document.getElementById('desktop-services-dropdown');
+
+            // Manage active classes in Column 1
+            const services = document.querySelectorAll('#col-services .dropdown-item-premium');
+            services.forEach(el => el.classList.remove('active-premium'));
+            serviceEl.classList.add('active-premium');
+
+            // Clear Column 2 and Column 3
+            colStates.innerHTML = '';
+            colCities.innerHTML = '';
+            
+            // Collapse Column 3
+            colCities.style.width = '0px';
+            colCities.style.opacity = '0';
+            colCities.style.pointerEvents = 'none';
+            colCities.style.borderLeftWidth = '0px';
+
+            // Add Header
+            const statesHeader = document.createElement('span');
+            statesHeader.className = "block px-[18px] py-1 text-[10px] uppercase tracking-wider font-extrabold text-accent/80 mb-1 shrink-0";
+            statesHeader.textContent = "Select State";
+            colStates.appendChild(statesHeader);
+
+            // Populate States
+            regionsList.forEach(region => {
+                const regionEl = document.createElement('div');
+                regionEl.className = "group/city dropdown-item-premium flex items-center justify-between w-full shrink-0";
+                regionEl.innerHTML = `
+                    <span class="item-title">${region.name}</span>
+                    <svg class="w-3.5 h-3.5 fill-current text-body-text/60 transition-transform group-hover/city:translate-x-1" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                    </svg>
+                `;
+
+                regionEl.addEventListener('mouseenter', () => {
+                    populateCitiesColumn(region, regionEl);
+                });
+
+                colStates.appendChild(regionEl);
+            });
+
+            // Expand Column 2
+            colStates.style.width = '240px';
+            colStates.style.opacity = '1';
+            colStates.style.pointerEvents = 'auto';
+            colStates.style.borderLeftWidth = '1px';
+            
+            desktopContainer.style.width = '560px';
+        }
+
+        function populateCitiesColumn(region, regionEl) {
+            const colCities = document.getElementById('col-cities');
+            const desktopContainer = document.getElementById('desktop-services-dropdown');
+
+            // Manage active classes in Column 2
+            const regions = document.querySelectorAll('#col-states .dropdown-item-premium');
+            regions.forEach(el => el.classList.remove('active-premium'));
+            regionEl.classList.add('active-premium');
+
+            // Clear Column 3
+            colCities.innerHTML = '';
+
+            // Add Header
+            const citiesHeader = document.createElement('span');
+            citiesHeader.className = "block px-[18px] py-1 text-[10px] uppercase tracking-wider font-extrabold text-accent/80 mb-1 shrink-0";
+            citiesHeader.textContent = "Select City";
+            colCities.appendChild(citiesHeader);
+
+            // Populate Cities
+            region.cities.forEach(city => {
+                const cityLink = document.createElement('a');
+                cityLink.href = "#booking-form-section";
+                cityLink.className = "dropdown-item-premium block w-full shrink-0";
+                cityLink.innerHTML = `<span class="item-title">${city}</span>`;
+                colCities.appendChild(cityLink);
+            });
+
+            // Expand Column 3
+            colCities.style.width = '224px';
+            colCities.style.opacity = '1';
+            colCities.style.pointerEvents = 'auto';
+            colCities.style.borderLeftWidth = '1px';
+            
+            desktopContainer.style.width = '784px';
+        }
+
+        function initServicesDropdowns() {
+            const desktopContainer = document.getElementById('desktop-services-dropdown');
+            const mobileContainer = document.getElementById('mobile-services-dropdown');
+
+            if (desktopContainer) {
+                // Initialize the 3 columns layout
+                desktopContainer.innerHTML = `
+                    <!-- Column 1: Services -->
+                    <div id="col-services" class="w-[320px] shrink-0 py-3 flex flex-col justify-start"></div>
+                    <!-- Column 2: States -->
+                    <div id="col-states" class="w-0 opacity-0 pointer-events-none border-l-0 border-border-stroke shrink-0 py-3 flex flex-col justify-start transition-all duration-300 overflow-hidden"></div>
+                    <!-- Column 3: Cities -->
+                    <div id="col-cities" class="w-0 opacity-0 pointer-events-none border-l-0 border-border-stroke shrink-0 py-3 flex flex-col justify-start transition-all duration-300 overflow-hidden"></div>
+                `;
+
+                const colServices = document.getElementById('col-services');
+                servicesList.forEach(service => {
+                    const serviceEl = document.createElement('div');
+                    serviceEl.className = "group/sub dropdown-item-premium flex items-center justify-between shrink-0";
+                    serviceEl.innerHTML = `
+                        <div class="flex flex-col">
+                            <span class="item-title">${service.title}</span>
+                            <span class="item-desc">${service.desc}</span>
+                        </div>
+                        <svg class="w-3.5 h-3.5 fill-current text-body-text/60 transition-transform group-hover/sub:translate-x-1" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                        </svg>
+                    `;
+
+                    serviceEl.addEventListener('mouseenter', () => {
+                        populateStatesColumn(service, serviceEl);
+                    });
+
+                    colServices.appendChild(serviceEl);
+                });
+
+                // Collapse back to 1 column when mouse leaves the dropdown box
+                desktopContainer.addEventListener('mouseleave', () => {
+                    const colStates = document.getElementById('col-states');
+                    const colCities = document.getElementById('col-cities');
+                    
+                    // Remove active highlights
+                    const services = document.querySelectorAll('#col-services .dropdown-item-premium');
+                    services.forEach(el => el.classList.remove('active-premium'));
+
+                    colStates.innerHTML = '';
+                    colCities.innerHTML = '';
+                    
+                    colStates.style.width = '0px';
+                    colStates.style.opacity = '0';
+                    colStates.style.pointerEvents = 'none';
+                    colStates.style.borderLeftWidth = '0px';
+                    
+                    colCities.style.width = '0px';
+                    colCities.style.opacity = '0';
+                    colCities.style.pointerEvents = 'none';
+                    colCities.style.borderLeftWidth = '0px';
+                    
+                    desktopContainer.style.width = '320px';
+                });
+            }
+
+            if (mobileContainer) {
+                mobileContainer.innerHTML = '';
+                servicesList.forEach(service => {
+                    // Create mobile service trigger (Level 1)
+                    const serviceEl = document.createElement('div');
+                    serviceEl.className = "py-1.5";
+                    
+                    const serviceBtnId = `mobile-service-${service.id}-dropdown`;
+                    const serviceChevronId = `mobile-service-${service.id}-chevron`;
+                    const serviceBtnRealId = `mobile-service-${service.id}-btn`;
+                    
+                    serviceEl.innerHTML = `
+                        <button id="${serviceBtnRealId}" onclick="toggleMobileDropdown('${serviceBtnId}', '${serviceChevronId}', '${serviceBtnRealId}')" class="w-full flex items-start justify-between text-left py-2 px-3 rounded-lg hover:bg-black/[0.02] transition-all duration-200">
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-primary-text transition-colors">${service.title}</span>
+                                <span class="text-[11px] text-body-text font-medium mt-0.5 leading-snug">${service.desc}</span>
+                            </div>
+                            <svg id="${serviceChevronId}" class="w-3.5 h-3.5 fill-current text-body-text/60 transition-transform mt-1 shrink-0" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    `;
+
+                    // Create states accordion container (Level 2)
+                    const statesAcc = document.createElement('div');
+                    statesAcc.id = serviceBtnId;
+                    statesAcc.className = "mobile-accordion-content flex flex-col gap-1 pl-4 ml-3 border-l border-border-stroke/80 text-xs mt-1 mb-2";
+
+                    regionsList.forEach(region => {
+                        const regionEl = document.createElement('div');
+                        regionEl.className = "py-0.5";
+                        
+                        const regionBtnId = `mobile-${service.id}-${region.name.replace(/[^a-z0-9]/gi, '-').toLowerCase()}-dropdown`;
+                        const regionChevronId = `mobile-${service.id}-${region.name.replace(/[^a-z0-9]/gi, '-').toLowerCase()}-chevron`;
+                        const regionBtnRealId = `mobile-${service.id}-${region.name.replace(/[^a-z0-9]/gi, '-').toLowerCase()}-btn`;
+
+                        regionEl.innerHTML = `
+                            <button id="${regionBtnRealId}" onclick="toggleMobileDropdown('${regionBtnId}', '${regionChevronId}', '${regionBtnRealId}')" class="w-full flex items-center justify-between text-xs font-semibold text-body-text hover:text-accent text-left py-1.5 px-3 rounded-md hover:bg-black/[0.01] transition-all">
+                                <span>${region.name}</span>
+                                <svg id="${regionChevronId}" class="w-3 h-3 fill-current text-body-text/60 transition-transform" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        `;
+
+                        // Create cities accordion container (Level 3)
+                        const citiesAcc = document.createElement('div');
+                        citiesAcc.id = regionBtnId;
+                        citiesAcc.className = "mobile-accordion-content flex flex-col gap-0.5 pl-4 ml-3 border-l border-border-stroke/80 mt-1 mb-2";
+
+                        region.cities.forEach(city => {
+                            const cityLink = document.createElement('a');
+                            cityLink.href = "#booking-form-section";
+                            cityLink.className = "mobile-link text-xs text-body-text hover:text-accent py-1.5 px-3 rounded-md hover:bg-black/[0.01] block transition-colors";
+                            cityLink.textContent = city;
+                            citiesAcc.appendChild(cityLink);
+                        });
+
+                        regionEl.appendChild(citiesAcc);
+                        statesAcc.appendChild(regionEl);
+                    });
+
+                    serviceEl.appendChild(statesAcc);
+                    mobileContainer.appendChild(serviceEl);
+                });
+            }
+        }
+
+        // Initialize dropdowns immediately
+        initServicesDropdowns();
+
+
+
+        // Mobile Nav Trigger
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            if (isOpen) {
+                mobileMenu.classList.add('hidden');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+                header.classList.remove('mobile-nav-open');
+                document.body.classList.remove('overflow-hidden');
+                resetMobileAccordions();
+            } else {
+                mobileMenu.classList.remove('hidden');
+                hamburgerIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+                header.classList.add('mobile-nav-open');
+                document.body.classList.add('overflow-hidden');
+            }
+        });
+
+        // Close mobile menu on clicking any link (using event delegation for dynamic links)
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target.closest('.mobile-link')) {
+                mobileMenu.classList.add('hidden');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+                header.classList.remove('mobile-nav-open');
+                document.body.classList.remove('overflow-hidden');
+                resetMobileAccordions();
+            }
+        });
+
+        // Handle window resize to clean up body overflow lock when transitioning to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    hamburgerIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                    header.classList.remove('mobile-nav-open');
+                    resetMobileAccordions();
+                }
+                document.body.classList.remove('overflow-hidden');
+            }
+        });
+
+        // Helper to reset mobile accordion states when navigation drawer closes
+        function resetMobileAccordions() {
+            const accordions = document.querySelectorAll('.mobile-accordion-content');
+            accordions.forEach(acc => {
+                acc.style.maxHeight = '0px';
+                acc.style.opacity = '0';
+                acc.classList.remove('open');
+            });
+            const chevrons = document.querySelectorAll('[id$="-chevron"]');
+            chevrons.forEach(chev => {
+                chev.classList.remove('rotate-180');
+            });
+            const buttons = document.querySelectorAll('[id$="-btn"]');
+            buttons.forEach(btn => {
+                btn.classList.remove('text-accent', 'font-extrabold', 'font-bold');
+            });
+        }
+
+        // Toggle mobile menu dropdown accordions with active highlights and dynamic auto-expanding propagation
+        function toggleMobileDropdown(id, chevronId, btnId) {
+            const dropdown = document.getElementById(id);
+            const chevron = document.getElementById(chevronId);
+            const btn = document.getElementById(btnId);
+            const isOpen = dropdown.classList.contains('open');
+            
+            if (isOpen) {
+                // If currently unlocked, resolve to numeric scrollHeight first to trigger collapse transition
+                if (dropdown.style.maxHeight === 'none') {
+                    dropdown.style.maxHeight = dropdown.scrollHeight + 'px';
+                    dropdown.offsetHeight; // force reflow
+                }
+                
+                dropdown.style.maxHeight = '0px';
+                dropdown.style.opacity = '0';
+                dropdown.classList.remove('open');
+                if (chevron) chevron.classList.remove('rotate-180');
+                if (btn) {
+                    btn.classList.remove('text-accent', 'font-extrabold', 'font-bold');
+                }
+                
+                // Recursively close all nested accordions and clear styles
+                const childAccordions = dropdown.querySelectorAll('.mobile-accordion-content');
+                childAccordions.forEach(child => {
+                    child.style.maxHeight = '0px';
+                    child.style.opacity = '0';
+                    child.classList.remove('open');
+                });
+                const childChevrons = dropdown.querySelectorAll('svg');
+                childChevrons.forEach(chev => {
+                    chev.classList.remove('rotate-180');
+                });
+                const childButtons = dropdown.querySelectorAll('button');
+                childButtons.forEach(b => {
+                    b.classList.remove('text-accent', 'font-extrabold', 'font-bold');
+                });
+            } else {
+                dropdown.classList.add('open');
+                dropdown.style.opacity = '1';
+                dropdown.style.maxHeight = dropdown.scrollHeight + 'px';
+                if (chevron) chevron.classList.add('rotate-180');
+                if (btn) {
+                    btn.classList.add('text-accent');
+                    if (btnId === 'mobile-services-btn') {
+                        btn.classList.add('font-extrabold');
+                    } else {
+                        btn.classList.add('font-bold');
+                    }
+                }
+                
+                // Set max-height to none after the transition finishes so nested menus expand freely
+                const onTransitionEnd = (e) => {
+                    if (e.propertyName === 'max-height' && dropdown.classList.contains('open')) {
+                        dropdown.style.maxHeight = 'none';
+                        dropdown.removeEventListener('transitionend', onTransitionEnd);
+                    }
+                };
+                dropdown.addEventListener('transitionend', onTransitionEnd);
+            }
+            
+            // Traverse up and update all open parent containers' heights
+            let parent = dropdown.parentElement;
+            while (parent) {
+                if (parent.classList.contains('mobile-accordion-content') && parent.classList.contains('open')) {
+                    if (parent.style.maxHeight !== 'none') {
+                        parent.style.maxHeight = parent.scrollHeight + 'px';
+                    }
+                }
+                parent = parent.parentElement;
+            }
+        }
+
+        // Interactive Form Tab Switcher
+        function switchTab(mode) {
+            const commercialBtn = document.getElementById('tab-commercial');
+            const emergencyBtn = document.getElementById('tab-emergency');
+            const formSource = document.getElementById('form-source');
+            const submitBtn = document.getElementById('submit-btn');
+            const emergencyAlert = document.getElementById('emergency-alert');
+            
+            if (mode === 'emergency') {
+                commercialBtn.classList.remove('active');
+                emergencyBtn.classList.add('active');
+                formSource.value = 'EMERGENCY_FORM';
+                submitBtn.textContent = 'Request Immediate Dispatch';
+                submitBtn.classList.remove('bg-accent', 'hover:bg-accent-hover');
+                submitBtn.classList.add('bg-red-600', 'hover:bg-red-700');
+                emergencyAlert.classList.remove('hidden');
+            } else {
+                emergencyBtn.classList.remove('active');
+                commercialBtn.classList.add('active');
+                formSource.value = 'COMMERCIAL_FORM';
+                submitBtn.textContent = 'Request Professional Quote';
+                submitBtn.classList.remove('bg-red-600', 'hover:bg-red-700');
+                submitBtn.classList.add('bg-accent', 'hover:bg-accent-hover');
+                emergencyAlert.classList.add('hidden');
+            }
+        }
+
+        // Custom Select Dropdown Toggle
+        const dropdownTrigger = document.getElementById('dropdown-trigger');
+        const dropdownOptions = document.getElementById('dropdown-options');
+        const dropdownSelectedText = document.getElementById('dropdown-selected-text');
+        const serviceTypeInput = document.getElementById('service-type');
+        const dropdownChevron = document.getElementById('dropdown-chevron');
+
+        dropdownTrigger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = !dropdownOptions.classList.contains('hidden');
+            if (isOpen) {
+                dropdownOptions.classList.add('hidden');
+                dropdownChevron.classList.remove('rotate-180');
+            } else {
+                dropdownOptions.classList.remove('hidden');
+                dropdownChevron.classList.add('rotate-180');
+            }
+        });
+
+        // Select Option
+        const optionsList = document.querySelectorAll('.custom-dropdown-option');
+        optionsList.forEach(option => {
+            option.addEventListener('click', (e) => {
+                const val = option.getAttribute('data-value');
+                dropdownSelectedText.textContent = val;
+                serviceTypeInput.value = val;
+                dropdownOptions.classList.add('hidden');
+                dropdownChevron.classList.remove('rotate-180');
+                // Remove required style error outline if any
+                dropdownTrigger.style.outline = '';
+            });
+        });
+
+        // Click outside dropdown to close
+        document.addEventListener('click', () => {
+            dropdownOptions.classList.add('hidden');
+            dropdownChevron.classList.remove('rotate-180');
+        });
+        // Form validation before submit
+        function validateForm() {
+            if (!serviceTypeInput.value) {
+                dropdownTrigger.style.outline = '2px solid rgb(220, 38, 38)'; // Red outline
+                dropdownTrigger.focus();
+                return false;
+            }
+            return true;
+        }
+
+        // Scroll Reveal Animations
+        const revealElements = document.querySelectorAll('.animate-on-scroll');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(el => observer.observe(el));
+
+        // Mobile Gallery Snap Slider Pagination Dots
+        const gallerySlider = document.getElementById('gallery-slider');
+        const galleryDots = document.querySelectorAll('#gallery-dots .gallery-dot');
+        if (gallerySlider && galleryDots.length > 0) {
+            gallerySlider.addEventListener('scroll', () => {
+                const cardWidth = gallerySlider.firstElementChild.getBoundingClientRect().width;
+                const gap = 16; // gap-4 gap width
+                const index = Math.round(gallerySlider.scrollLeft / (cardWidth + gap));
+                
+                galleryDots.forEach((dot, idx) => {
+                    if (idx === index) {
+                        dot.classList.remove('bg-gray-300');
+                        dot.classList.add('bg-primary-text');
+                    } else {
+                        dot.classList.remove('bg-primary-text');
+                        dot.classList.add('bg-gray-300');
+                    }
+                });
+            });
+        }
+
+        // SECTION 8: Map Tooltips Autoplay and Interaction
+        const mapContainers = document.querySelectorAll('.map-location-dot');
+        let currentMapIndex = -1;
+        let mapAutoplayInterval;
+        let mapTransitionTimeout;
+
+        function showRandomMapTooltip() {
+            if (mapContainers.length === 0) return;
+
+            // Cancel any pending transition timeout
+            if (mapTransitionTimeout) {
+                clearTimeout(mapTransitionTimeout);
+            }
+
+            // Hide current active tooltip
+            if (currentMapIndex !== -1) {
+                const currentContainer = mapContainers[currentMapIndex];
+                const currentTooltip = currentContainer.querySelector('.location-tooltip');
+                const currentPulse = currentContainer.querySelector('.pulse-ring');
+                if (currentTooltip) {
+                    currentTooltip.classList.remove('opacity-100', 'scale-100');
+                    currentTooltip.classList.add('opacity-0', 'scale-95');
+                }
+                if (currentPulse) {
+                    currentPulse.classList.add('hidden');
+                }
+                // Reset stacking context
+                currentContainer.classList.remove('z-30');
+                currentContainer.classList.add('z-10');
+
+                // Wait for the fade-out transition (500ms) before showing the next one
+                mapTransitionTimeout = setTimeout(showNext, 500);
+            } else {
+                // No active tooltip, show immediately
+                showNext();
+            }
+
+            function showNext() {
+                // Pick a random new index different from the current one
+                let nextIndex;
+                do {
+                    nextIndex = Math.floor(Math.random() * mapContainers.length);
+                } while (nextIndex === currentMapIndex && mapContainers.length > 1);
+
+                currentMapIndex = nextIndex;
+
+                // Show next tooltip and trigger pulse ring
+                const nextContainer = mapContainers[currentMapIndex];
+                const nextTooltip = nextContainer.querySelector('.location-tooltip');
+                const nextPulse = nextContainer.querySelector('.pulse-ring');
+                
+                // Raise stacking context of the active dot
+                nextContainer.classList.remove('z-10');
+                nextContainer.classList.add('z-30');
+
+                if (nextTooltip) {
+                    nextTooltip.classList.remove('opacity-0', 'scale-95');
+                    nextTooltip.classList.add('opacity-100', 'scale-100');
+                }
+                if (nextPulse) {
+                    nextPulse.classList.remove('hidden');
+                }
+            }
+        }
+
+        // Manual click focus city handler
+        window.focusCity = function(cityName) {
+            // Cancel any scheduled transitions
+            if (mapTransitionTimeout) {
+                clearTimeout(mapTransitionTimeout);
+            }
+
+            if (currentMapIndex !== -1) {
+                const currentContainer = mapContainers[currentMapIndex];
+                const currentTooltip = currentContainer.querySelector('.location-tooltip');
+                const currentPulse = currentContainer.querySelector('.pulse-ring');
+                if (currentTooltip) {
+                    currentTooltip.classList.remove('opacity-100', 'scale-100');
+                    currentTooltip.classList.add('opacity-0', 'scale-95');
+                }
+                if (currentPulse) {
+                    currentPulse.classList.add('hidden');
+                }
+                // Reset stacking context
+                currentContainer.classList.remove('z-30');
+                currentContainer.classList.add('z-10');
+            }
+
+            const targetIndex = Array.from(mapContainers).findIndex(container => 
+                container.getAttribute('data-city') === cityName
+            );
+
+            if (targetIndex !== -1) {
+                currentMapIndex = targetIndex;
+                const nextContainer = mapContainers[currentMapIndex];
+                const nextTooltip = nextContainer.querySelector('.location-tooltip');
+                const nextPulse = nextContainer.querySelector('.pulse-ring');
+                
+                // Raise stacking context of the active dot
+                nextContainer.classList.remove('z-10');
+                nextContainer.classList.add('z-30');
+
+                if (nextTooltip) {
+                    nextTooltip.classList.remove('opacity-0', 'scale-95');
+                    nextTooltip.classList.add('opacity-100', 'scale-100');
+                }
+                if (nextPulse) {
+                    nextPulse.classList.remove('hidden');
+                }
+            }
+
+            // Reset autoplay timer
+            clearInterval(mapAutoplayInterval);
+            mapAutoplayInterval = setInterval(showRandomMapTooltip, 3500);
+        };
+
+        // Initialize autoplay
+        if (mapContainers.length > 0) {
+            showRandomMapTooltip();
+            mapAutoplayInterval = setInterval(showRandomMapTooltip, 3500);
+        }
+
+        // Testimonials Slider function
+        window.slideTestimonials = function(direction) {
+            const track = document.getElementById('testimonials-track');
+            if (!track) return;
+            const card = track.firstElementChild;
+            if (!card) return;
+            const cardWidth = card.getBoundingClientRect().width;
+            const gap = 32; // gap-8 spacing is 32px
+            const scrollAmount = cardWidth + gap;
+            
+            if (direction === 'left') {
+                track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else {
+                track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        };
+    </script>
+</body>
+</html>
