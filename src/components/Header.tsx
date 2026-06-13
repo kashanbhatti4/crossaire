@@ -246,17 +246,18 @@ export default function Header() {
             </svg>
           </button>
           
-          <div className={`overflow-hidden transition-all duration-300 flex flex-col gap-1.5 pl-4 text-xs font-semibold text-body-text mt-1.5 ${
-            mobileServicesOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+          <div className={`overflow-hidden transition-all duration-300 flex flex-col gap-3 pl-6 border-l border-gray-100 mt-3 ml-2 ${
+            mobileServicesOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
           }`}>
             {servicesList.map((srv) => (
               <a 
                 key={srv.id}
                 href={`/services/${srv.id}`}
                 onClick={handleMobileLinkClick}
-                className="block py-1.5 hover:text-accent transition-colors"
+                className="block py-1.5 hover:text-accent transition-colors group/item"
               >
-                {srv.title}
+                <span className="block font-bold text-sm text-primary-text group-hover/item:text-accent transition-colors">{srv.title}</span>
+                <span className="block text-[11px] text-body-text/60 font-medium mt-0.5">{srv.desc}</span>
               </a>
             ))}
           </div>
@@ -279,43 +280,46 @@ export default function Header() {
             </svg>
           </button>
           
-          <div className={`overflow-hidden transition-all duration-300 flex flex-col gap-2 pl-4 text-sm font-medium text-body-text mt-1.5 ${
-            mobileLocationsOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+          <div className={`overflow-hidden transition-all duration-300 flex flex-col gap-3 pl-6 border-l border-gray-100 mt-3 ml-2 ${
+            mobileLocationsOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
           }`}>
-            {regionsList.map((reg) => (
-              <div key={reg.name} className="py-1">
-                {/* Region Trigger */}
-                <button 
-                  onClick={() => setMobileRegionExpanded(mobileRegionExpanded === reg.name ? null : reg.name)}
-                  className={`w-full flex items-center justify-between text-xs font-semibold hover:text-accent text-left py-1.5 px-3 rounded-md hover:bg-black/[0.01] transition-all ${
-                    mobileRegionExpanded === reg.name ? "text-accent font-extrabold" : "text-body-text"
-                  }`}
-                >
-                  <span>{reg.name}</span>
-                  <svg className={`w-3 h-3 fill-current transition-transform ${mobileRegionExpanded === reg.name ? "rotate-180" : ""}`} viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-                  </svg>
-                </button>
+            {regionsList.map((reg) => {
+              const isExpanded = mobileRegionExpanded === reg.name;
+              return (
+                <div key={reg.name} className="py-1">
+                  {/* Region Trigger */}
+                  <button 
+                    onClick={() => setMobileRegionExpanded(isExpanded ? null : reg.name)}
+                    className={`w-full flex items-center justify-between text-sm font-bold text-left py-2 px-3 rounded-lg transition-all ${
+                      isExpanded 
+                        ? "bg-accent/5 text-accent" 
+                        : "text-primary-text hover:bg-black/[0.01]"
+                    }`}
+                  >
+                    <span>{reg.name}</span>
+                    <svg className={`w-3.5 h-3.5 fill-current transition-transform ${isExpanded ? "rotate-180" : ""}`} viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+                    </svg>
+                  </button>
 
-                {/* Cities List */}
-                <div className={`overflow-hidden transition-all duration-300 flex flex-col gap-1.5 pl-4 ml-3 border-l border-border-stroke/80 mt-1 mb-2 ${
-                  mobileRegionExpanded === reg.name ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
-                }`}>
-                  <div className="flex flex-col gap-1 pl-2">
+                  {/* Cities List */}
+                  <div className={`overflow-hidden transition-all duration-300 flex flex-col gap-2 pl-6 border-l border-gray-100 mt-2 ml-4 ${
+                    isExpanded ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+                  }`}>
                     {reg.cities.map((city) => (
                       <a 
                         key={city} 
                         href={`/locations/${city.toLowerCase().replace(/[^a-z0-9]/g, "-")}`}
                         onClick={handleMobileLinkClick}
-                        className="block px-2 py-1 text-xs text-primary-text hover:text-accent font-medium"
+                        className="block py-1.5 text-xs font-semibold text-body-text hover:text-accent transition-colors"
                       >
                         {city}
                       </a>
                     ))}
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
