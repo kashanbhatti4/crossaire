@@ -202,10 +202,16 @@ export default function BookingForm() {
               <div className="custom-dropdown-options">
                 {[
                   "Kitchen Hood Cleaning",
-                  "Exhaust Fan Maintenance",
-                  "Pollution Control Unit (PCU)",
-                  "Grease Trap Pumping",
-                  "Rooftop Grease Containment"
+                  "Restaurant Kitchen Exhaust System Cleaning",
+                  "Kitchen Exhaust Fan Repairs",
+                  "Kitchen Exhaust Fan Installation",
+                  "Grease Trap Cleaning",
+                  "Pollution Control Systems Maintenance",
+                  "Kitchen Hood Startups and Commissioning",
+                  "Roof Grease Containment Systems Installations",
+                  "Restaurant Hood Filter Cleaning & Exchange",
+                  "Kitchen Exhaust Duct Repair & Access Panel Installation",
+                  "Kitchen Hood Inspections"
                 ].map((item) => (
                   <div 
                     key={item}

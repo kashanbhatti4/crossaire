@@ -7,6 +7,118 @@ import Testimonials from "@/components/Testimonials";
 import Faq from "@/components/Faq";
 import ScrollReveal from "@/components/ScrollReveal";
 
+interface HomeServiceItem {
+  title: string;
+  desc: string;
+  icon: React.ReactNode;
+}
+
+const homeServices: HomeServiceItem[] = [
+  {
+    title: "Kitchen Hood Cleaning",
+    desc: "Thorough NFPA 96 compliant degreasing and cleaning of your hoods, filters, plenums, and vertical/horizontal ducts to eliminate fire hazards.",
+    icon: (
+      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M9 2h6v7h5l2 9H2l2-9h5V2z" />
+        <path fill="white" d="M5 15h6v1.5H5zm8 0h6v1.5h-6z" />
+      </svg>
+    )
+  },
+  {
+    title: "Restaurant Kitchen Exhaust System Cleaning",
+    desc: "Complete, top-to-bottom scrubbing and degreasing of the entire kitchen exhaust duct network, ensuring maximum ventilation efficiency and safety.",
+    icon: (
+      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M4 17h16v2H4zm0-6h16v2H4zm0-6h16v2H4z" opacity=".3" />
+        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM4 6h16v4H4V6zm16 12H4v-4h16v4z" />
+      </svg>
+    )
+  },
+  {
+    title: "Kitchen Exhaust Fan Repairs",
+    desc: "Rapid repair services for exhaust fan motors, belts, pulleys, bearings, and electrical components to resolve noise, vibration, and performance issues.",
+    icon: (
+      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1.78-10.78l-4 4c-.29.29-.77.29-1.06 0l-1-1c-.29-.29-.29-.77 0-1.06l4-4c.29-.29.77-.29 1.06 0l1 1c.29.29.29.77 0 1.06z" />
+        <path d="M14.5 14.5l4-4c.29-.29.77-.29 1.06 0l1 1c.29.29.29.77 0 1.06l-4 4c-.29.29-.77.29-1.06 0l-1-1c-.29-.29-.29-.77 0-1.06z" />
+      </svg>
+    )
+  },
+  {
+    title: "Kitchen Exhaust Fan Installation",
+    desc: "Code-compliant rooftop and wall-mounted exhaust fan installations designed to meet dynamic air volume requirements for high-output kitchens.",
+    icon: (
+      <svg className="w-6 h-6 fill-current" viewBox="0 0 512 512">
+        <path d="M352.57 128c-28.09 0-54.09 4.52-77.06 12.86l12.41-123.11C289 7.31 279.81-1.18 269.33.13 189.63 10.13 128 77.64 128 159.43c0 28.09 4.52 54.09 12.86 77.06L17.75 224.08C7.31 223-1.18 232.19.13 242.67c10 79.7 77.51 141.33 159.3 141.33 28.09 0 54.09-4.52 77.06-12.86l-12.41 123.11c-1.05 10.43 8.11 18.93 18.59 17.62 79.7-10 141.33-77.51 141.33-159.3 0-28.09-4.52-54.09-12.86-77.06l123.11 12.41c10.43 1.05 18.93-8.11 17.62-18.59-10-79.7-77.51-141.33-159.3-141.33zM256 320c-35.35 0-64-28.65-64-64s28.65-64 64-64 64 28.65 64 64-28.65 64-64 64z" />
+      </svg>
+    )
+  },
+  {
+    title: "Grease Trap Cleaning",
+    desc: "Thorough vacuuming and cleaning of under-sink and outdoor in-ground grease traps, including full scraping and legal disposal certification.",
+    icon: (
+      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M18,13H14V11H18V13M22,11V13H20V15H18V13H6V15H4V13H2V11H4V9H6V11H18V9H20V11H22Z" />
+      </svg>
+    )
+  },
+  {
+    title: "Pollution Control Systems Maintenance",
+    desc: "Maintenance, diagnostics, electrostatic precipitator cell cleaning, and charcoal/media filter replacements for heavy-duty pollution control units.",
+    icon: (
+      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path fillRule="evenodd" d="M3 2.25a.75.75 0 0 1 .75.75v1.257a3.001 3.001 0 0 1 0 5.486V21a.75.75 0 0 1-1.5 0V9.743a3.001 3.001 0 0 1 0-5.486V3a.75.75 0 0 1 .75-.75Zm9 0a.75.75 0 0 1 .75.75v7.257a3.001 3.001 0 0 1 0 5.486V21a.75.75 0 0 1-1.5 0v-5.257a3.001 3.001 0 0 1 0-5.486V3a.75.75 0 0 1 .75-.75Zm9 0a.75.75 0 0 1 .75.75v1.257a3.001 3.001 0 0 1 0 5.486V21a.75.75 0 0 1-1.5 0V9.743a3.001 3.001 0 0 1 0-5.486V3a.75.75 0 0 1 .75-.75ZM3 6.75a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm9 6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm9-6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" clipRule="evenodd" />
+      </svg>
+    )
+  },
+  {
+    title: "Kitchen Hood Startups and Commissioning",
+    desc: "Airflow balancing, static pressure measurements, and system integration testing for new commercial kitchen ventilation hoods prior to local inspections.",
+    icon: (
+      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
+      </svg>
+    )
+  },
+  {
+    title: "Roof Grease Containment Systems Installations",
+    desc: "Customized roof containment system designs and installations utilizing multi-layered absorbent filters to prevent structural damage and roof rot.",
+    icon: (
+      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M2 13L12 4l10 9-1.5 1.5-8.5-7.6-8.5 7.6L2 13z" />
+        <path d="M12 8c-2.2 3.5-2.2 7 0 9.2 2.2-2.2 2.2-5.7 0-9.2z" />
+      </svg>
+    )
+  },
+  {
+    title: "Restaurant Hood Filter Cleaning & Exchange",
+    desc: "Regular exchange of clean, commercial-grade stainless steel baffle filters, removing loaded filters for professional off-site sanitizing.",
+    icon: (
+      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M19 8l-4 4h3c0 3.3-2.7 6-6 6-1.7 0-3.1-.7-4.2-1.8L6.4 18.6C7.8 20 9.8 20.8 12 20.8c4.4 0 8-3.6 8-8H23l-4-4.8zM6 16.8c0-3.3 2.7-6 6-6 1.7 0 3.1.7 4.2 1.8l1.4-1.4c-1.4-1.4-3.4-2.2-5.6-2.2-4.4 0-8 3.6-8 8H1l4 4.8 4-4.8H6z" />
+      </svg>
+    )
+  },
+  {
+    title: "Kitchen Exhaust Duct Repair & Access Panel Installation",
+    desc: "Installation of NFPA 96 approved, fire-rated duct access panels in horizontal and vertical ducts to facilitate thorough inspection and cleaning access.",
+    icon: (
+      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.3C.5 6.7.9 9.8 2.9 11.8c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.5z" />
+      </svg>
+    )
+  },
+  {
+    title: "Kitchen Hood Inspections",
+    desc: "Certified, independent NFPA 96 fire safety inspections, comprehensive duct camera imaging, and official compliance reports for fire marshals and insurers.",
+    icon: (
+      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+      </svg>
+    )
+  }
+];
+
 export default function Home() {
   return (
     <>
@@ -210,97 +322,22 @@ export default function Home() {
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service 1 */}
-            <div className="minimal-card flex flex-col justify-between">
-              <div>
-                <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6">
-                  <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                    <path d="M9 2h6v7h5l2 9H2l2-9h5V2z" />
-                    <path fill="white" d="M5 15h6v1.5H5zm8 0h6v1.5h-6z" />
-                  </svg>
+            {homeServices.map((srv) => (
+              <div key={srv.title} className="minimal-card flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6">
+                    {srv.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-primary-text mb-3">{srv.title}</h3>
+                  <p className="text-body-text text-sm leading-relaxed mb-6">
+                    {srv.desc}
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold text-primary-text mb-3">Kitchen Hood Cleaning</h3>
-                <p className="text-body-text text-sm leading-relaxed mb-6">
-                  Thorough degreasing and cleaning of your hoods, filters, plenums, and vertical/horizontal ducts to eliminate hazardous grease deposits.
-                </p>
+                <a href="#booking-form-section" className="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
+                  Get Service <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fillRule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" /></svg>
+                </a>
               </div>
-              <a href="#booking-form-section" className="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
-                Get Service <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
-              </a>
-            </div>
-
-            {/* Service 2 */}
-            <div className="minimal-card flex flex-col justify-between">
-              <div>
-                <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6">
-                  <svg className="w-6 h-6 fill-current" viewBox="0 0 512 512">
-                    <path d="M352.57 128c-28.09 0-54.09 4.52-77.06 12.86l12.41-123.11C289 7.31 279.81-1.18 269.33.13 189.63 10.13 128 77.64 128 159.43c0 28.09 4.52 54.09 12.86 77.06L17.75 224.08C7.31 223-1.18 232.19.13 242.67c10 79.7 77.51 141.33 159.3 141.33 28.09 0 54.09-4.52 77.06-12.86l-12.41 123.11c-1.05 10.43 8.11 18.93 18.59 17.62 79.7-10 141.33-77.51 141.33-159.3 0-28.09-4.52-54.09-12.86-77.06l123.11 12.41c10.43 1.05 18.93-8.11 17.62-18.59-10-79.7-77.51-141.33-159.3-141.33zM256 320c-35.35 0-64-28.65-64-64s28.65-64 64-64 64 28.65 64 64-28.65 64-64 64z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-primary-text mb-3">Exhaust Fan Maintenance</h3>
-                <p className="text-body-text text-sm leading-relaxed mb-6">
-                  Rooftop exhaust fan cleanup, bearing lubrication, belt inspection, and electrical validation to guarantee uninterrupted, safe airflow.
-                </p>
-              </div>
-              <a href="#booking-form-section" className="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
-                Get Service <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
-              </a>
-            </div>
-
-            {/* Service 3 */}
-            <div className="minimal-card flex flex-col justify-between">
-              <div>
-                <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6">
-                  <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                    <path fillRule="evenodd" d="M3 2.25a.75.75 0 0 1 .75.75v1.257a3.001 3.001 0 0 1 0 5.486V21a.75.75 0 0 1-1.5 0V9.743a3.001 3.001 0 0 1 0-5.486V3a.75.75 0 0 1 .75-.75Zm9 0a.75.75 0 0 1 .75.75v7.257a3.001 3.001 0 0 1 0 5.486V21a.75.75 0 0 1-1.5 0v-5.257a3.001 3.001 0 0 1 0-5.486V3a.75.75 0 0 1 .75-.75Zm9 0a.75.75 0 0 1 .75.75v1.257a3.001 3.001 0 0 1 0 5.486V21a.75.75 0 0 1-1.5 0V9.743a3.001 3.001 0 0 1 0-5.486V3a.75.75 0 0 1 .75-.75ZM3 6.75a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm9 6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm9-6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-primary-text mb-3">Pollution Control Unit (PCU)</h3>
-                <p className="text-body-text text-sm leading-relaxed mb-6">
-                  Electrostatic precipitator diagnostics, advanced filter changeouts, and deep cleaning to control smoke and odor emissions.
-                </p>
-              </div>
-              <a href="#booking-form-section" className="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
-                Get Service <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
-              </a>
-            </div>
-
-            {/* Service 4 */}
-            <div className="minimal-card flex flex-col justify-between">
-              <div>
-                <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6">
-                  <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                    <path d="M18,13H14V11H18V13M22,11V13H20V15H18V13H6V15H4V13H2V11H4V9H6V11H18V9H20V11H22Z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-primary-text mb-3">Grease Trap Pumping</h3>
-                <p className="text-body-text text-sm leading-relaxed mb-6">
-                  Scheduled grease trap waste removal, plumbing line jetting, and compliance manifesting to prevent backups and municipal fines.
-                </p>
-              </div>
-              <a href="#booking-form-section" className="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
-                Get Service <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
-              </a>
-            </div>
-
-            {/* Service 5 */}
-            <div className="minimal-card flex flex-col justify-between md:col-span-2 lg:col-span-1">
-              <div>
-                <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6">
-                  <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                    <path d="M2 13L12 4l10 9-1.5 1.5-8.5-7.6-8.5 7.6L2 13z" />
-                    <path d="M12 8c-2.2 3.5-2.2 7 0 9.2 2.2-2.2 2.2-5.7 0-9.2z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-primary-text mb-3">Rooftop Grease Containment</h3>
-                <p className="text-body-text text-sm leading-relaxed mb-6">
-                  Containment system installations and filter change-outs, shielding your roof structure from toxic and corrosive grease buildup.
-                </p>
-              </div>
-              <a href="#booking-form-section" className="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
-                Get Service <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
-              </a>
-            </div>
+            ))}
           </div>
         </div>
       </section>
