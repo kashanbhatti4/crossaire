@@ -2,12 +2,16 @@
 
 import React, { useState, useRef, useEffect } from "react";
 
-export default function BookingForm() {
+interface BookingFormProps {
+  initialService?: string;
+}
+
+export default function BookingForm({ initialService = "" }: BookingFormProps) {
   const [tab, setTab] = useState<"commercial" | "emergency">("commercial");
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [serviceType, setServiceType] = useState("");
+  const [serviceType, setServiceType] = useState(initialService);
   const [message, setMessage] = useState("");
   
   const [dropdownOpen, setDropdownOpen] = useState(false);
