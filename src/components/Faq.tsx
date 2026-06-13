@@ -99,7 +99,7 @@ export default function Faq() {
               <p className="mb-2">We proudly serve commercial kitchens throughout <strong>Virginia</strong>, <strong>Maryland</strong>, and <strong>Washington, DC</strong>. This includes communities such as:</p>
               <ul className="list-disc pl-5 space-y-1">
                 <li>Arlington, Alexandria, Fairfax, Richmond, Norfolk, Roanoke</li>
-                <li>Baltimore, Annapolis, Frederick, Columbia, Silver Spring, Bethesda, Waldorf, Ocean City</li>
+                <li>Baltimore, Annapolis, Frederick, Columbia, Silver Spring, Bethesda, Waldorf, Glen Burnie</li>
                 <li>Washington, DC metro areas</li>
               </ul>
             </FAQItem>

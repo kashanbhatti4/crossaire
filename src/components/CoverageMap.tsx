@@ -20,7 +20,7 @@ const citiesList: CityPin[] = [
   { name: "Roanoke, VA", left: "82.0%", top: "44.5%" },
   { name: "Silver Spring, MD", left: "85.6%", top: "38.8%" },
   { name: "Bethesda, MD", left: "85.2%", top: "39.0%" },
-  { name: "Ocean City, MD", left: "89.2%", top: "40.5%" },
+  { name: "Glen Burnie, MD", left: "86.5%", top: "38.4%" },
   { name: "Hagerstown, MD", left: "83.2%", top: "35.8%" },
   { name: "Leesburg, VA", left: "84.2%", top: "38.5%" },
   { name: "Woodbridge, VA", left: "85.0%", top: "42.2%" },

@@ -30,7 +30,39 @@ const servicesList: Service[] = [
 const regionsList: Region[] = [
   {
     name: "Maryland (MD)",
-    cities: ["Baltimore", "Annapolis", "Frederick", "Rockville", "Gaithersburg", "Silver Spring", "Bethesda", "Bowie", "Columbia", "Ellicott City", "Waldorf", "Laurel", "Hyattsville", "College Park", "Greenbelt", "Hagerstown", "Salisbury", "Ocean City"]
+    cities: [
+      "Aberdeen",
+      "Annapolis",
+      "Baltimore",
+      "Bel Air",
+      "Bethesda",
+      "Bowie",
+      "Catonsville",
+      "College Park",
+      "Columbia",
+      "Crofton",
+      "Dundalk",
+      "Eldersburg",
+      "Ellicott City",
+      "Frederick",
+      "Gaithersburg",
+      "Glen Burnie",
+      "Greenbelt",
+      "Hagerstown",
+      "Havre de Grace",
+      "Hyattsville",
+      "Laurel",
+      "Odenton",
+      "Owings Mills",
+      "Pasadena",
+      "Rockville",
+      "Severn",
+      "Severna Park",
+      "Silver Spring",
+      "Towson",
+      "Waldorf",
+      "Westminster"
+    ]
   },
   {
     name: "Virginia (VA)",
