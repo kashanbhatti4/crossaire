@@ -92,13 +92,8 @@ export default function KitchenHoodCleaningPage() {
           </div>
 
           {/* Hero Right: Booking Form */}
-          <div className="lg:col-span-5 w-full">
-            <div className="bg-white rounded-3xl p-6 shadow-2xl border border-border-stroke">
-              <span className="block text-center text-xs font-extrabold uppercase tracking-widest text-body-text mb-4">
-                Request a Free Quote
-              </span>
-              <BookingForm initialService="Kitchen Hood Cleaning" />
-            </div>
+          <div id="booking-form-section" className="lg:col-span-5 relative w-full">
+            <BookingForm initialService="Kitchen Hood Cleaning" />
           </div>
         </div>
       </section>
