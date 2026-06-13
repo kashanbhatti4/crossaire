@@ -73,19 +73,19 @@ export default function KitchenHoodCleaningPage() {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-white/95 font-semibold">
               <div className="flex items-center gap-3">
-                <span className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center text-accent shrink-0 text-sm">✓</span>
+                <i className="fa-solid fa-circle-check text-accent text-lg shrink-0"></i>
                 <span>NFPA 96 Code Compliance</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center text-accent shrink-0 text-sm">✓</span>
+                <i className="fa-solid fa-circle-check text-accent text-lg shrink-0"></i>
                 <span>$5M General Liability Insured</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center text-accent shrink-0 text-sm">✓</span>
+                <i className="fa-solid fa-circle-check text-accent text-lg shrink-0"></i>
                 <span>Full Before/After Photo Logs</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center text-accent shrink-0 text-sm">✓</span>
+                <i className="fa-solid fa-circle-check text-accent text-lg shrink-0"></i>
                 <span>Flexible 24/7 After-Hours Scheduling</span>
               </div>
             </div>
@@ -197,7 +197,9 @@ export default function KitchenHoodCleaningPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl border border-border-stroke hover:shadow-md transition-all">
-              <div className="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center text-red-600 mb-6 font-extrabold text-xl">🔥</div>
+              <div className="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center text-red-600 mb-6">
+                <i className="fa-solid fa-fire text-2xl"></i>
+              </div>
               <h3 className="text-xl font-bold text-primary-text mb-3">Fire Prevention</h3>
               <p className="text-body-text text-sm leading-relaxed">
                 Over 70% of commercial kitchen fires originate inside the exhaust system. Removing the grease fuel source is the single most effective way to protect your business and employees.
@@ -205,7 +207,9 @@ export default function KitchenHoodCleaningPage() {
             </div>
 
             <div className="bg-white p-8 rounded-2xl border border-border-stroke hover:shadow-md transition-all">
-              <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6 font-extrabold text-xl">📋</div>
+              <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6">
+                <i className="fa-solid fa-clipboard-list text-2xl"></i>
+              </div>
               <h3 className="text-xl font-bold text-primary-text mb-3">Code & Compliance</h3>
               <p className="text-body-text text-sm leading-relaxed">
                 Local fire marshals and NFPA 96 standards mandate periodic certified cleanings. Failing code audits leads to immediate closure, costly violations, and operational setbacks.
@@ -213,7 +217,9 @@ export default function KitchenHoodCleaningPage() {
             </div>
 
             <div className="bg-white p-8 rounded-2xl border border-border-stroke hover:shadow-md transition-all">
-              <div className="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center text-green-600 mb-6 font-extrabold text-xl">🛡️</div>
+              <div className="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center text-green-600 mb-6">
+                <i className="fa-solid fa-shield-halved text-2xl"></i>
+              </div>
               <h3 className="text-xl font-bold text-primary-text mb-3">Insurance Integrity</h3>
               <p className="text-body-text text-sm leading-relaxed">
                 Insurance providers require official compliance stickers and digital reports. If a fire occurs and you cannot prove regular certified cleanings, your policy may be invalidated.
@@ -241,36 +247,38 @@ export default function KitchenHoodCleaningPage() {
               {
                 title: "Grease Dripping from Canopy",
                 desc: "Thick oil or grease residue dripping from the hood seams, filter track, or onto the cooking surfaces below.",
-                icon: "💧"
+                icon: <i className="fa-solid fa-droplet text-3xl text-red-500 shrink-0"></i>
               },
               {
                 title: "Lingering Smoke & Haze",
                 desc: "The kitchen stays hazy or filled with smoke during active cooking sessions, indicating obstructed airflow draw.",
-                icon: "💨"
+                icon: <i className="fa-solid fa-smog text-3xl text-red-500 shrink-0"></i>
               },
               {
                 title: "Loud Screeching Fan Noises",
                 desc: "High-pitched screeching or vibrating noises coming from your rooftop exhaust fan, pointing to grease-heavy blades.",
-                icon: "🔊"
+                icon: <i className="fa-solid fa-volume-high text-3xl text-red-500 shrink-0"></i>
               },
               {
                 title: "Persistent Stale Odors",
                 desc: "Stale, burnt oil odors lingering in the kitchen or leaking into the dining area even when the exhaust is running.",
-                icon: "🤢"
+                icon: <i className="fa-solid fa-face-grimace text-3xl text-red-500 shrink-0"></i>
               },
               {
                 title: "Oily Film on Surfaces",
                 desc: "A greasy, sticky film building up on surrounding kitchen walls, ceilings, and countertops.",
-                icon: "🧼"
+                icon: <i className="fa-solid fa-hands-bubbles text-3xl text-red-500 shrink-0"></i>
               },
               {
                 title: "Expired Certification Label",
                 desc: "The date listed on your hood's fire-compliance sticker indicates that your next cleaning is already overdue.",
-                icon: "📅"
+                icon: <i className="fa-solid fa-calendar-xmark text-3xl text-red-500 shrink-0"></i>
               }
             ].map((item, index) => (
               <div key={index} className="flex gap-4 p-6 rounded-2xl bg-[#F8FAFC] border border-border-stroke/60">
-                <div className="text-3xl shrink-0">{item.icon}</div>
+                <div className="shrink-0 flex items-center justify-center w-12 h-12 bg-red-500/10 rounded-xl">
+                  {item.icon}
+                </div>
                 <div>
                   <h3 className="font-bold text-primary-text mb-1 text-base">{item.title}</h3>
                   <p className="text-body-text text-sm leading-relaxed">{item.desc}</p>
@@ -351,36 +359,36 @@ export default function KitchenHoodCleaningPage() {
               {
                 title: "Minimized Fire Risks",
                 desc: "Drastically lowers the risk of catastrophic kitchen fires by regularly eliminating grease deposits.",
-                emoji: "🛡️"
+                icon: <i className="fa-solid fa-shield-halved text-4xl text-accent mb-6 block"></i>
               },
               {
                 title: "Extended Fan Motor Life",
                 desc: "Removing heavy grease off the fan blades prevents engine drag, vibration, and premature system failure.",
-                emoji: "⚙️"
+                icon: <i className="fa-solid fa-gears text-4xl text-accent mb-6 block"></i>
               },
               {
                 title: "Lower Utility Costs",
                 desc: "Clean systems run with far less friction, reducing draw on electricity and reducing utility bills.",
-                emoji: "💡"
+                icon: <i className="fa-solid fa-lightbulb text-4xl text-accent mb-6 block"></i>
               },
               {
                 title: "Better Working Environment",
                 desc: "Keeps your kitchen cooler and cleaner by maintaining proper smoke, vapor, and heat extraction.",
-                emoji: "🍃"
+                icon: <i className="fa-solid fa-leaf text-4xl text-accent mb-6 block"></i>
               },
               {
                 title: "Flawless Auditing",
                 desc: "Always be fully prepared for surprise inspections by fire marshals, health boards, and insurance agents.",
-                emoji: "✅"
+                icon: <i className="fa-solid fa-square-check text-4xl text-accent mb-6 block"></i>
               },
               {
                 title: "Grease Odor Suppression",
                 desc: "Keeps rancid, stale oil odors out of your dining areas, preserving a pleasant restaurant atmosphere.",
-                emoji: "🌸"
+                icon: <i className="fa-solid fa-spray-can-sparkles text-4xl text-accent mb-6 block"></i>
               }
             ].map((benefit, index) => (
               <div key={index} className="minimal-card flex flex-col justify-start">
-                <span className="text-4xl mb-6 block">{benefit.emoji}</span>
+                {benefit.icon}
                 <h3 className="text-lg font-bold text-primary-text mb-2">{benefit.title}</h3>
                 <p className="text-body-text text-sm leading-relaxed">{benefit.desc}</p>
               </div>

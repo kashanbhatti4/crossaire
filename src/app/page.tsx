@@ -17,105 +17,57 @@ const homeServices: HomeServiceItem[] = [
   {
     title: "Kitchen Hood Cleaning",
     desc: "Thorough NFPA 96 compliant degreasing and cleaning of your hoods, filters, plenums, and vertical/horizontal ducts to eliminate fire hazards.",
-    icon: (
-      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-        <path d="M9 2h6v7h5l2 9H2l2-9h5V2z" />
-        <path fill="white" d="M5 15h6v1.5H5zm8 0h6v1.5h-6z" />
-      </svg>
-    )
+    icon: <i className="fa-solid fa-fire-extinguisher text-2xl"></i>
   },
   {
     title: "Restaurant Kitchen Exhaust System Cleaning",
     desc: "Complete, top-to-bottom scrubbing and degreasing of the entire kitchen exhaust duct network, ensuring maximum ventilation efficiency and safety.",
-    icon: (
-      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-        <path d="M4 17h16v2H4zm0-6h16v2H4zm0-6h16v2H4z" opacity=".3" />
-        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM4 6h16v4H4V6zm16 12H4v-4h16v4z" />
-      </svg>
-    )
+    icon: <i className="fa-solid fa-wind text-2xl"></i>
   },
   {
     title: "Kitchen Exhaust Fan Repairs",
     desc: "Rapid repair services for exhaust fan motors, belts, pulleys, bearings, and electrical components to resolve noise, vibration, and performance issues.",
-    icon: (
-      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1.78-10.78l-4 4c-.29.29-.77.29-1.06 0l-1-1c-.29-.29-.29-.77 0-1.06l4-4c.29-.29.77-.29 1.06 0l1 1c.29.29.29.77 0 1.06z" />
-        <path d="M14.5 14.5l4-4c.29-.29.77-.29 1.06 0l1 1c.29.29.29.77 0 1.06l-4 4c-.29.29-.77.29-1.06 0l-1-1c-.29-.29-.29-.77 0-1.06z" />
-      </svg>
-    )
+    icon: <i className="fa-solid fa-screwdriver-wrench text-2xl"></i>
   },
   {
     title: "Kitchen Exhaust Fan Installation",
     desc: "Code-compliant rooftop and wall-mounted exhaust fan installations designed to meet dynamic air volume requirements for high-output kitchens.",
-    icon: (
-      <svg className="w-6 h-6 fill-current" viewBox="0 0 512 512">
-        <path d="M352.57 128c-28.09 0-54.09 4.52-77.06 12.86l12.41-123.11C289 7.31 279.81-1.18 269.33.13 189.63 10.13 128 77.64 128 159.43c0 28.09 4.52 54.09 12.86 77.06L17.75 224.08C7.31 223-1.18 232.19.13 242.67c10 79.7 77.51 141.33 159.3 141.33 28.09 0 54.09-4.52 77.06-12.86l-12.41 123.11c-1.05 10.43 8.11 18.93 18.59 17.62 79.7-10 141.33-77.51 141.33-159.3 0-28.09-4.52-54.09-12.86-77.06l123.11 12.41c10.43 1.05 18.93-8.11 17.62-18.59-10-79.7-77.51-141.33-159.3-141.33zM256 320c-35.35 0-64-28.65-64-64s28.65-64 64-64 64 28.65 64 64-28.65 64-64 64z" />
-      </svg>
-    )
+    icon: <i className="fa-solid fa-fan text-2xl"></i>
   },
   {
     title: "Grease Trap Cleaning",
     desc: "Thorough vacuuming and cleaning of under-sink and outdoor in-ground grease traps, including full scraping and legal disposal certification.",
-    icon: (
-      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-        <path d="M18,13H14V11H18V13M22,11V13H20V15H18V13H6V15H4V13H2V11H4V9H6V11H18V9H20V11H22Z" />
-      </svg>
-    )
+    icon: <i className="fa-solid fa-fill-drip text-2xl"></i>
   },
   {
     title: "Pollution Control Systems Maintenance",
     desc: "Maintenance, diagnostics, electrostatic precipitator cell cleaning, and charcoal/media filter replacements for heavy-duty pollution control units.",
-    icon: (
-      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-        <path fillRule="evenodd" d="M3 2.25a.75.75 0 0 1 .75.75v1.257a3.001 3.001 0 0 1 0 5.486V21a.75.75 0 0 1-1.5 0V9.743a3.001 3.001 0 0 1 0-5.486V3a.75.75 0 0 1 .75-.75Zm9 0a.75.75 0 0 1 .75.75v7.257a3.001 3.001 0 0 1 0 5.486V21a.75.75 0 0 1-1.5 0v-5.257a3.001 3.001 0 0 1 0-5.486V3a.75.75 0 0 1 .75-.75Zm9 0a.75.75 0 0 1 .75.75v1.257a3.001 3.001 0 0 1 0 5.486V21a.75.75 0 0 1-1.5 0V9.743a3.001 3.001 0 0 1 0-5.486V3a.75.75 0 0 1 .75-.75ZM3 6.75a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm9 6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm9-6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" clipRule="evenodd" />
-      </svg>
-    )
+    icon: <i className="fa-solid fa-filter text-2xl"></i>
   },
   {
     title: "Kitchen Hood Startups and Commissioning",
     desc: "Airflow balancing, static pressure measurements, and system integration testing for new commercial kitchen ventilation hoods prior to local inspections.",
-    icon: (
-      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
-      </svg>
-    )
+    icon: <i className="fa-solid fa-circle-play text-2xl"></i>
   },
   {
     title: "Roof Grease Containment Systems Installations",
     desc: "Customized roof containment system designs and installations utilizing multi-layered absorbent filters to prevent structural damage and roof rot.",
-    icon: (
-      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-        <path d="M2 13L12 4l10 9-1.5 1.5-8.5-7.6-8.5 7.6L2 13z" />
-        <path d="M12 8c-2.2 3.5-2.2 7 0 9.2 2.2-2.2 2.2-5.7 0-9.2z" />
-      </svg>
-    )
+    icon: <i className="fa-solid fa-shield text-2xl"></i>
   },
   {
     title: "Restaurant Hood Filter Cleaning & Exchange",
     desc: "Regular exchange of clean, commercial-grade stainless steel baffle filters, removing loaded filters for professional off-site sanitizing.",
-    icon: (
-      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-        <path d="M19 8l-4 4h3c0 3.3-2.7 6-6 6-1.7 0-3.1-.7-4.2-1.8L6.4 18.6C7.8 20 9.8 20.8 12 20.8c4.4 0 8-3.6 8-8H23l-4-4.8zM6 16.8c0-3.3 2.7-6 6-6 1.7 0 3.1.7 4.2 1.8l1.4-1.4c-1.4-1.4-3.4-2.2-5.6-2.2-4.4 0-8 3.6-8 8H1l4 4.8 4-4.8H6z" />
-      </svg>
-    )
+    icon: <i className="fa-solid fa-arrows-rotate text-2xl"></i>
   },
   {
     title: "Kitchen Exhaust Duct Repair & Access Panel Installation",
     desc: "Installation of NFPA 96 approved, fire-rated duct access panels in horizontal and vertical ducts to facilitate thorough inspection and cleaning access.",
-    icon: (
-      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-        <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.3C.5 6.7.9 9.8 2.9 11.8c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.5z" />
-      </svg>
-    )
+    icon: <i className="fa-solid fa-door-open text-2xl"></i>
   },
   {
     title: "Kitchen Hood Inspections",
     desc: "Certified, independent NFPA 96 fire safety inspections, comprehensive duct camera imaging, and official compliance reports for fire marshals and insurers.",
-    icon: (
-      <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-        <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
-      </svg>
-    )
+    icon: <i className="fa-solid fa-clipboard-check text-2xl"></i>
   }
 ];
 
@@ -146,9 +98,7 @@ export default function Home() {
               {/* Phone Block */}
               <div className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-sm">
                 <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-accent shrink-0">
-                  <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                    <path fillRule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97a1.521 1.521 0 0 0-.328 1.96 11.96 11.96 0 0 0 5.758 5.759 1.521 1.521 0 0 0 1.96-.328l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clipRule="evenodd" />
-                  </svg>
+                  <i className="fa-solid fa-phone text-2xl text-accent"></i>
                 </div>
                 <div>
                   <span className="block text-xs uppercase tracking-wider text-white/50 font-bold">Call Toll-Free</span>
@@ -159,9 +109,7 @@ export default function Home() {
               {/* Work Hours Block */}
               <div className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-sm">
                 <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-accent shrink-0">
-                  <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                    <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clipRule="evenodd" />
-                  </svg>
+                  <i className="fa-solid fa-clock text-2xl text-accent"></i>
                 </div>
                 <div>
                   <span className="block text-xs uppercase tracking-wider text-white/50 font-bold">Operational Hours</span>
@@ -181,9 +129,7 @@ export default function Home() {
             {/* Badge 1 */}
             <div className="flex items-center gap-4 md:gap-3 w-full max-w-sm sm:max-w-none">
               <div className="w-12 h-12 md:w-10 md:h-10 bg-accent/10 rounded-full flex items-center justify-center text-accent shrink-0">
-                <svg className="w-6 h-6 md:w-5 md:h-5 fill-current" viewBox="0 0 24 24">
-                  <path fillRule="evenodd" d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.08a.75.75 0 1 0-1.22-.87l-3.146 4.41-1.299-1.3a.75.75 0 0 0-1.06 1.06l1.875 1.875a.75.75 0 0 0 1.14-.1l3.75-5.25Z" clipRule="evenodd" />
-                </svg>
+                <i className="fa-solid fa-shield-halved text-2xl md:text-xl text-accent"></i>
               </div>
               <div>
                 <span className="block text-base md:text-sm font-bold text-primary-text leading-tight">NFPA 96 Certified</span>
@@ -194,9 +140,7 @@ export default function Home() {
             {/* Badge 2 */}
             <div className="flex items-center gap-4 md:gap-3 w-full max-w-sm sm:max-w-none">
               <div className="w-12 h-12 md:w-10 md:h-10 bg-accent/10 rounded-full flex items-center justify-center text-accent shrink-0">
-                <svg className="w-6 h-6 md:w-5 md:h-5 fill-current" viewBox="0 0 24 24">
-                  <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.137-.089l4.026-5.636Z" clipRule="evenodd" />
-                </svg>
+                <i className="fa-solid fa-square-check text-2xl md:text-xl text-accent"></i>
               </div>
               <div>
                 <span className="block text-base md:text-sm font-bold text-primary-text leading-tight">OSHA Compliant</span>
@@ -207,9 +151,7 @@ export default function Home() {
             {/* Badge 3 */}
             <div className="flex items-center gap-4 md:gap-3 w-full max-w-sm sm:max-w-none">
               <div className="w-12 h-12 md:w-10 md:h-10 bg-accent/10 rounded-full flex items-center justify-center text-accent shrink-0">
-                <svg className="w-6 h-6 md:w-5 md:h-5 fill-current" viewBox="0 0 24 24">
-                  <path fillRule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z" clipRule="evenodd" />
-                </svg>
+                <i className="fa-solid fa-lock text-2xl md:text-xl text-accent"></i>
               </div>
               <div>
                 <span className="block text-base md:text-sm font-bold text-primary-text leading-tight">$5M Liability Insured</span>
@@ -220,9 +162,7 @@ export default function Home() {
             {/* Badge 4 */}
             <div className="flex items-center gap-4 md:gap-3 w-full max-w-sm sm:max-w-none">
               <div className="w-12 h-12 md:w-10 md:h-10 bg-accent/10 rounded-full flex items-center justify-center text-accent shrink-0">
-                <svg className="w-6 h-6 md:w-5 md:h-5 fill-current" viewBox="0 0 24 24">
-                  <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
-                </svg>
+                <i className="fa-solid fa-star text-2xl md:text-xl text-accent"></i>
               </div>
               <div>
                 <span className="block text-base md:text-sm font-bold text-primary-text leading-tight">100% Satisfaction</span>
@@ -334,7 +274,7 @@ export default function Home() {
                   </p>
                 </div>
                 <a href="#booking-form-section" className="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
-                  Get Service <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fillRule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" /></svg>
+                  Get Service <i className="fa-solid fa-arrow-right text-xs"></i>
                 </a>
               </div>
             ))}
