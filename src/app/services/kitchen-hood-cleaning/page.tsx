@@ -453,37 +453,6 @@ export default function KitchenHoodCleaningPage() {
         </div>
       </section>
 
-      {/* 8. INDUSTRIES WE SERVE */}
-      <section className="py-24 px-6 bg-white border-b border-border-stroke">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center flex flex-col items-center mb-16">
-            <span className="subtitle-badge">(SECTORS WE PROTECT)</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-primary-text tracking-tight mb-4">
-              Commercial Kitchens We Serve
-            </h2>
-            <p className="text-body-text text-base md:text-lg max-w-2xl">
-              We service commercial ventilation systems across all hospitality, education, and institutional sectors:
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 justify-center">
-            {[
-              { label: "Restaurants & Diners", icon: "🍳" },
-              { label: "Hotels & Banquets", icon: "🏢" },
-              { label: "Schools & Colleges", icon: "🏫" },
-              { label: "Hospitals & Care", icon: "🏥" },
-              { label: "Corporate Cafeterias", icon: "💼" },
-              { label: "Food Trucks & Ghost Kitchens", icon: "🚚" }
-            ].map((industry, index) => (
-              <div key={index} className="border border-border-stroke rounded-2xl p-6 text-center hover:shadow-md transition-all flex flex-col items-center justify-center bg-[#F8FAFC]">
-                <span className="text-4xl mb-4">{industry.icon}</span>
-                <span className="font-extrabold text-xs text-primary-text leading-tight uppercase tracking-wider block">{industry.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* 9. WHY CHOOSE US */}
       <section className="py-24 px-6 bg-[#0C1A2B] text-white border-b border-border-stroke">
         <div className="max-w-7xl mx-auto">
