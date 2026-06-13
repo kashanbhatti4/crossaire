@@ -476,13 +476,7 @@ export default function Home() {
               {/* Feature 1 */}
               <div className="flex gap-6 items-start pb-8 border-b border-border-stroke/60 mb-8">
                 <div className="w-12 h-12 rounded-full border border-border-stroke bg-white flex items-center justify-center shadow-sm shrink-0 text-accent mt-0.5">
-                  <svg className="w-5 h-5 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <g id="Layer_6">
-                      <path d="m24.212 2h-16.424c-1.91 0-3.458 1.548-3.458 3.458v18.25c0 1.91 1.548 3.458 3.458 3.458h7.061v-2.026c-.888-.964-1.436-2.246-1.436-3.657 0-2.981 2.426-5.407 5.407-5.407s5.406 2.425 5.406 5.407c0 1.412-.548 2.695-1.438 3.659v2.024h1.422c1.91 0 3.458-1.548 3.458-3.458v-18.25c.002-1.91-1.546-3.458-3.456-3.458zm-10.387 11.347h-4.155c-.497 0-.9-.403-.9-.9s.403-.9.9-.9h4.155c.497 0 .9.403.9.9s-.403.9-.9.9zm5.088-4.893h-9.243c-.497 0-.9-.403-.9-.9s.403-.9.9-.9h9.243c.497 0 .9.403.9.9s-.403.9-.9.9z"></path>
-                      <path d="m18.821 26.891c-.891 0-1.73-.22-2.471-.603v3.712l2.47-1.77 2.47 1.77v-3.712c-.741.383-1.579.603-2.469.603z"></path>
-                      <circle cx="18.821" cy="21.484" r="3.907"></circle>
-                    </g>
-                  </svg>
+                  <i className="fa-solid fa-user-shield text-xl"></i>
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-primary-text mb-2">Expert, Certified Technicians</h3>
@@ -495,11 +489,7 @@ export default function Home() {
               {/* Feature 2 */}
               <div className="flex gap-6 items-start pb-8 border-b border-border-stroke/60 mb-8">
                 <div className="w-12 h-12 rounded-full border border-border-stroke bg-white flex items-center justify-center shadow-sm shrink-0 text-accent mt-0.5">
-                  <svg className="w-5 h-5 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m22.93 7.66a11.56 11.56 0 0 1 .84 2.55 10 10 0 1 1 -13.56 13.56 11.56 11.56 0 0 1 -2.55-.84 12 12 0 1 0 15.27-15.27z"></path>
-                    <path d="m19 7a11.87 11.87 0 0 1 3.93.66 11.5 11.5 0 1 0 -15.27 15.27 11.87 11.87 0 0 1 -.66-3.93 12 12 0 0 1 12-12z"></path>
-                    <path d="m9 19a10 10 0 0 0 1.21 4.77 11.5 11.5 0 0 0 13.56-13.56 10 10 0 0 0 -14.77 8.79z"></path>
-                  </svg>
+                  <i className="fa-solid fa-file-invoice-dollar text-xl"></i>
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-primary-text mb-2">Upfront, Transparent Pricing</h3>
@@ -512,14 +502,7 @@ export default function Home() {
               {/* Feature 3 */}
               <div className="flex gap-6 items-start">
                 <div className="w-12 h-12 rounded-full border border-border-stroke bg-white flex items-center justify-center shadow-sm shrink-0 text-accent mt-0.5">
-                  <svg className="w-5 h-5 fill-current" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                    <g id="_x32_2_x2C__memories_x2C__time_x2C__emotion_x2C__memory_x2C__efficiency_x2C__clock">
-                      <g>
-                        <path d="m256 1c-56.658 0-110.485 18.371-154.71 52.269v-7.269c0-8.284-6.716-15-15-15s-15 6.716-15 15c0 .103.001 40.427.001 40.325.013 13.275 16.158 20.045 25.608 10.589 42.497-42.505 98.999-65.914 159.101-65.914 124.065 0 225 100.935 225 225s-100.935 225-225 225-225-100.935-225-225c0-34.525 7.608-67.642 22.613-98.428 3.63-7.447.535-16.427-6.911-20.056-7.447-3.634-16.427-.536-20.056 6.911-17.017 34.917-25.646 72.455-25.646 111.573 0 140.932 114.049 255 255 255 140.932 0 255-114.049 255-255 0-140.932-114.049-255-255-255z"></path>
-                        <path d="m256 436c99.252 0 180-80.748 180-180s-80.748-180-180-180-180 80.748-180 180 80.748 180 180 180zm-84.37-131.713 69.37-55.496v-82.791c0-8.284 6.716-15 15-15s15 6.716 15 15v90c0 4.557-2.071 8.866-5.63 11.713l-75 60c-6.449 5.162-15.893 4.146-21.083-2.343-5.175-6.469-4.126-15.908 2.343-21.083z"></path>
-                      </g>
-                    </g>
-                  </svg>
+                  <i className="fa-solid fa-headset text-xl"></i>
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-primary-text mb-2">24/7 Rapid Response</h3>
@@ -560,9 +543,7 @@ export default function Home() {
               Request An Inspection
             </a>
             <a href="tel:8663992885" className="w-full sm:w-auto border border-white/20 bg-white/5 hover:bg-white/10 text-white font-bold px-8 py-4 rounded-lg transition-all text-center flex items-center justify-center gap-2">
-              <svg className="w-5 h-5 fill-white" viewBox="0 0 24 24">
-                <path fillRule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97a1.521 1.521 0 0 0-.328 1.96 11.96 11.96 0 0 0 5.758 5.759 1.521 1.521 0 0 0 1.96-.328l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
-              </svg>
+              <i className="fa-solid fa-phone text-sm"></i>
               <span>Call 866-399-2885</span>
             </a>
           </div>
