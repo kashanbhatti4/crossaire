@@ -428,19 +428,27 @@ export default function Home() {
               </span>
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-3 bg-white border border-border-stroke rounded-xl p-4 shadow-sm transition-all hover:scale-[1.02] hover:shadow-md">
-                  <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent shrink-0 text-sm">🔥</div>
+                  <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent shrink-0 text-sm">
+                    <i className="fa-solid fa-fire text-xs"></i>
+                  </div>
                   <span className="text-sm font-bold text-primary-text">NFPA 96 Standard Code</span>
                 </div>
                 <div className="flex items-center gap-3 bg-white border border-border-stroke rounded-xl p-4 shadow-sm transition-all hover:scale-[1.02] hover:shadow-md">
-                  <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent shrink-0 text-sm">🛡️</div>
+                  <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent shrink-0 text-sm">
+                    <i className="fa-solid fa-shield-halved text-xs"></i>
+                  </div>
                   <span className="text-sm font-bold text-primary-text">IKECA Equivalent Practice</span>
                 </div>
                 <div className="flex items-center gap-3 bg-white border border-border-stroke rounded-xl p-4 shadow-sm transition-all hover:scale-[1.02] hover:shadow-md">
-                  <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent shrink-0 text-sm">📐</div>
+                  <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent shrink-0 text-sm">
+                    <i className="fa-solid fa-ruler-combined text-xs"></i>
+                  </div>
                   <span className="text-sm font-bold text-primary-text">ANSI/ACCA Design Standards</span>
                 </div>
                 <div className="flex items-center gap-3 bg-white border border-border-stroke rounded-xl p-4 shadow-sm transition-all hover:scale-[1.02] hover:shadow-md">
-                  <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent shrink-0 text-sm">📋</div>
+                  <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent shrink-0 text-sm">
+                    <i className="fa-solid fa-clipboard-check text-xs"></i>
+                  </div>
                   <span className="text-sm font-bold text-primary-text">Local Health Dept Standards</span>
                 </div>
               </div>

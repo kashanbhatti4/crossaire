@@ -83,7 +83,10 @@ export default function BookingForm({ initialService = "" }: BookingFormProps) {
         </p>
         {tab === "emergency" && (
           <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-left mb-6 text-red-900">
-            <span className="font-bold block mb-1">🚨 Emergency Dispatch Active</span>
+            <span className="font-bold block mb-1">
+              <i className="fa-solid fa-circle-exclamation mr-2 text-red-600"></i>
+              Emergency Dispatch Active
+            </span>
             <span className="text-sm">For immediate support, please call our hotline directly at <a href="tel:8663992885" className="underline font-bold text-red-700">866-399-2885</a>.</span>
           </div>
         )}
@@ -139,7 +142,9 @@ export default function BookingForm({ initialService = "" }: BookingFormProps) {
         {/* Warning Alert (Shown on Emergency tab) */}
         {tab === "emergency" && (
           <div className="bg-red-50 border border-red-200 text-red-900 rounded-lg p-4 text-sm flex gap-3">
-            <div className="text-lg">📢</div>
+            <div className="text-lg text-red-600 shrink-0">
+              <i className="fa-solid fa-bullhorn"></i>
+            </div>
             <div>
               <span className="font-bold block">Immediate Dispatch Request</span>
               Calls take priority. For dispatch under 90 mins, dial <a href="tel:8663992885" className="underline font-bold text-red-700">866-399-2885</a>.
