@@ -98,29 +98,7 @@ export default function KitchenHoodCleaningPage() {
         </div>
       </section>
 
-      {/* 2. OVERVIEW OF THE SERVICE */}
-      <section className="py-24 px-6 bg-white border-b border-border-stroke">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-            <div className="lg:col-span-4">
-              <span className="subtitle-badge">(SERVICE OVERVIEW)</span>
-              <h2 className="text-3xl md:text-4xl font-extrabold text-primary-text leading-tight tracking-tight">
-                What is Commercial Kitchen Hood Cleaning?
-              </h2>
-            </div>
-            <div className="lg:col-span-8 space-y-6 text-body-text text-base md:text-lg leading-relaxed">
-              <p>
-                During daily cooking operations, commercial kitchen ventilation systems draw in vaporized grease, smoke, heat, and steam. Over time, these grease vapors condense and settle on the inner surfaces of your hood canopy, grease filters, ductwork, and rooftop exhaust fan.
-              </p>
-              <p>
-                Without professional cleaning, this highly flammable grease build-up becomes a severe fire hazard. Professional kitchen hood cleaning is the process of removing this grease down to the bare metal using specialized chemicals, scraping tools, and high-pressure steam washers. At Crossaire, our service covers the entire exhaust flow from the canopy to the fan, ensuring absolute fire safety and complete compliance.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* EMBLEMS & PARTNERS SECTION */}
+      {/* 2. EMBLEMS & PARTNERS SECTION */}
       <section className="bg-main-bg border-b border-border-stroke py-16 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Industry Certifications & Affiliations Row */}
@@ -177,6 +155,28 @@ export default function KitchenHoodCleaningPage() {
               <div className="flex items-center justify-center">
                 <img src="/media/images/partners/bowie.png" alt="Bowie" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. OVERVIEW OF THE SERVICE */}
+      <section className="py-24 px-6 bg-white border-b border-border-stroke">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <div className="lg:col-span-4">
+              <span className="subtitle-badge">(SERVICE OVERVIEW)</span>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-primary-text leading-tight tracking-tight">
+                What is Commercial Kitchen Hood Cleaning?
+              </h2>
+            </div>
+            <div className="lg:col-span-8 space-y-6 text-body-text text-base md:text-lg leading-relaxed">
+              <p>
+                During daily cooking operations, commercial kitchen ventilation systems draw in vaporized grease, smoke, heat, and steam. Over time, these grease vapors condense and settle on the inner surfaces of your hood canopy, grease filters, ductwork, and rooftop exhaust fan.
+              </p>
+              <p>
+                Without professional cleaning, this highly flammable grease build-up becomes a severe fire hazard. Professional kitchen hood cleaning is the process of removing this grease down to the bare metal using specialized chemicals, scraping tools, and high-pressure steam washers. At Crossaire, our service covers the entire exhaust flow from the canopy to the fan, ensuring absolute fire safety and complete compliance.
+              </p>
             </div>
           </div>
         </div>
