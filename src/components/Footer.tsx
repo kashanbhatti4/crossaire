@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex items-center gap-3">
           <img src="/media/images/logowhite.png" alt="Crossaire Logo" className="h-9 w-auto object-contain" />
         </div>
-        <p className="text-center md:text-left text-xs">
+        <p className="text-center md:text-left text-xs text-white/60">
           &copy; {new Date().getFullYear()} Crossaire. All rights reserved. Strictly conforming to NFPA Standard 96.
         </p>
         <div className="flex gap-5 items-center">
