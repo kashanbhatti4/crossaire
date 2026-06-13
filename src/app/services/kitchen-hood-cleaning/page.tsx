@@ -640,11 +640,11 @@ export default function KitchenHoodCleaningPage() {
                 </div>
                 <h3 className="text-xl font-bold text-primary-text mb-3">Exhaust System Cleaning</h3>
                 <p className="text-body-text text-sm leading-relaxed mb-6">
-                  Deep degreasing of horizontal/vertical duct networks and fans for maximum ventilation safety and performance.
+                  Professional restaurant kitchen exhaust system cleaning removes grease accumulation from the hood, ductwork, and rooftop exhaust fan to maintain proper airflow, improve system efficiency, and reduce fire hazards in commercial kitchens.
                 </p>
               </div>
               <a href="/services/restaurant-kitchen-exhaust-system-cleaning" className="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
-                Learn More <i className="fa-solid fa-arrow-right text-xs"></i>
+                Learn more about restaurant kitchen exhaust system cleaning <i className="fa-solid fa-arrow-right text-xs"></i>
               </a>
             </div>
 
@@ -655,11 +655,11 @@ export default function KitchenHoodCleaningPage() {
                 </div>
                 <h3 className="text-xl font-bold text-primary-text mb-3">Exhaust Fan Repairs</h3>
                 <p className="text-body-text text-sm leading-relaxed mb-6">
-                  Rapid motor, belt, and bearing repairs to resolve exhaust system vibrations, noise issues, or failure.
+                  Restore proper ventilation performance with professional kitchen exhaust fan repair services. Our technicians diagnose and repair exhaust fan issues to help maintain safe airflow, reduce downtime, and keep your kitchen operating efficiently.
                 </p>
               </div>
               <a href="/services/kitchen-exhaust-fan-repairs" className="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
-                Learn More <i className="fa-solid fa-arrow-right text-xs"></i>
+                Learn more about kitchen exhaust fan repairs <i className="fa-solid fa-arrow-right text-xs"></i>
               </a>
             </div>
 
@@ -670,11 +670,11 @@ export default function KitchenHoodCleaningPage() {
                 </div>
                 <h3 className="text-xl font-bold text-primary-text mb-3">Hood Filter Exchange</h3>
                 <p className="text-body-text text-sm leading-relaxed mb-6">
-                  Regular exchange of clean, commercial baffle filters, removing loaded filters for off-site sanitizing.
+                  Improve airflow and reduce grease buildup with professional restaurant hood filter cleaning and exchange services. Regular filter maintenance helps maximize ventilation performance and supports a safer kitchen environment.
                 </p>
               </div>
               <a href="/services/restaurant-hood-filter-cleaning-exchange" className="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
-                Learn More <i className="fa-solid fa-arrow-right text-xs"></i>
+                Learn more about restaurant hood filter cleaning & exchange <i className="fa-solid fa-arrow-right text-xs"></i>
               </a>
             </div>
           </div>

@@ -10,63 +10,87 @@ import ScrollReveal from "@/components/ScrollReveal";
 interface HomeServiceItem {
   title: string;
   desc: string;
+  linkText: string;
+  slug: string;
   icon: React.ReactNode;
 }
 
 const homeServices: HomeServiceItem[] = [
   {
     title: "Kitchen Hood Cleaning",
-    desc: "Thorough NFPA 96 compliant degreasing and cleaning of your hoods, filters, plenums, and vertical/horizontal ducts to eliminate fire hazards.",
+    desc: "Keep your kitchen fire-safe and inspection-ready with professional kitchen hood cleaning services. Our technicians remove grease buildup from the hood canopy and surrounding ventilation components to help maintain NFPA 96 compliance and improve kitchen safety.",
+    linkText: "Learn more about kitchen hood cleaning",
+    slug: "kitchen-hood-cleaning",
     icon: <i className="fa-solid fa-fire-extinguisher text-2xl"></i>
   },
   {
     title: "Restaurant Kitchen Exhaust System Cleaning",
-    desc: "Complete, top-to-bottom scrubbing and degreasing of the entire kitchen exhaust duct network, ensuring maximum ventilation efficiency and safety.",
+    desc: "Professional restaurant kitchen exhaust system cleaning removes grease accumulation from the hood, ductwork, and rooftop exhaust fan to maintain proper airflow, improve system efficiency, and reduce fire hazards in commercial kitchens.",
+    linkText: "Learn more about restaurant kitchen exhaust system cleaning",
+    slug: "restaurant-kitchen-exhaust-system-cleaning",
     icon: <i className="fa-solid fa-wind text-2xl"></i>
   },
   {
     title: "Kitchen Exhaust Fan Repairs",
-    desc: "Rapid repair services for exhaust fan motors, belts, pulleys, bearings, and electrical components to resolve noise, vibration, and performance issues.",
+    desc: "Restore proper ventilation performance with professional kitchen exhaust fan repair services. Our technicians diagnose and repair exhaust fan issues to help maintain safe airflow, reduce downtime, and keep your kitchen operating efficiently.",
+    linkText: "Learn more about kitchen exhaust fan repairs",
+    slug: "kitchen-exhaust-fan-repairs",
     icon: <i className="fa-solid fa-screwdriver-wrench text-2xl"></i>
   },
   {
     title: "Kitchen Exhaust Fan Installation",
-    desc: "Code-compliant rooftop and wall-mounted exhaust fan installations designed to meet dynamic air volume requirements for high-output kitchens.",
+    desc: "Ensure reliable ventilation with professional kitchen exhaust fan installation services designed to support proper airflow, improve system performance, and meet commercial kitchen ventilation requirements.",
+    linkText: "Learn more about kitchen exhaust fan installation",
+    slug: "kitchen-exhaust-fan-installation",
     icon: <i className="fa-solid fa-fan text-2xl"></i>
   },
   {
     title: "Grease Trap Cleaning",
-    desc: "Thorough vacuuming and cleaning of under-sink and outdoor in-ground grease traps, including full scraping and legal disposal certification.",
+    desc: "Prevent plumbing blockages and maintain proper drainage with professional grease trap cleaning services for restaurants and commercial kitchens. Regular cleaning helps reduce odors, improve efficiency, and maintain compliance with local regulations.",
+    linkText: "Learn more about grease trap cleaning",
+    slug: "grease-trap-cleaning",
     icon: <i className="fa-solid fa-fill-drip text-2xl"></i>
   },
   {
     title: "Pollution Control Systems Maintenance",
-    desc: "Maintenance, diagnostics, electrostatic precipitator cell cleaning, and charcoal/media filter replacements for heavy-duty pollution control units.",
+    desc: "Maintain effective smoke, grease, and odor control with professional pollution control systems maintenance services. Regular inspections and servicing help ensure your equipment operates efficiently and continues to meet environmental requirements.",
+    linkText: "Learn more about pollution control systems maintenance",
+    slug: "pollution-control-systems-maintenance",
     icon: <i className="fa-solid fa-filter text-2xl"></i>
   },
   {
     title: "Kitchen Hood Startups and Commissioning",
-    desc: "Airflow balancing, static pressure measurements, and system integration testing for new commercial kitchen ventilation hoods prior to local inspections.",
+    desc: "Ensure new or modified ventilation systems operate safely and efficiently with professional kitchen hood startups and commissioning services. Our technicians verify proper system operation, airflow performance, and overall readiness before use.",
+    linkText: "Learn more about kitchen hood startups and commissioning",
+    slug: "kitchen-hood-startups-and-commissioning",
     icon: <i className="fa-solid fa-circle-play text-2xl"></i>
   },
   {
     title: "Roof Grease Containment Systems Installations",
-    desc: "Customized roof grease containment system designs and installations utilizing multi-layered absorbent filters to prevent structural damage and roof rot.",
+    desc: "Protect your roof and prevent grease runoff with professionally installed roof grease containment systems. These systems are designed to capture grease discharged from rooftop exhaust fans and help prevent costly roof damage.",
+    linkText: "Learn more about roof grease containment systems installations",
+    slug: "roof-grease-containment-systems-installations",
     icon: <i className="fa-solid fa-shield text-2xl"></i>
   },
   {
     title: "Restaurant Hood Filter Cleaning & Exchange",
-    desc: "Regular exchange of clean, commercial-grade stainless steel baffle filters, removing loaded filters for professional off-site sanitizing.",
+    desc: "Improve airflow and reduce grease buildup with professional restaurant hood filter cleaning and exchange services. Regular filter maintenance helps maximize ventilation performance and supports a safer kitchen environment.",
+    linkText: "Learn more about restaurant hood filter cleaning & exchange",
+    slug: "restaurant-hood-filter-cleaning-exchange",
     icon: <i className="fa-solid fa-arrows-rotate text-2xl"></i>
   },
   {
     title: "Kitchen Exhaust Duct Repair & Access Panel Installation",
-    desc: "Installation of NFPA 96 approved, fire-rated duct access panels in horizontal and vertical ducts to facilitate thorough inspection and cleaning access.",
+    desc: "Improve ventilation system accessibility and maintain compliance with professional kitchen exhaust duct repair and access panel installation services. Proper access points allow for easier inspections, maintenance, and cleaning.",
+    linkText: "Learn more about kitchen exhaust duct repair & access panel installation",
+    slug: "kitchen-exhaust-duct-repair-access-panel-installation",
     icon: <i className="fa-solid fa-door-open text-2xl"></i>
   },
   {
     title: "Kitchen Hood Inspections",
-    desc: "Certified, independent NFPA 96 fire safety inspections, comprehensive duct camera imaging, and official compliance reports for fire marshals and insurers.",
+    desc: "Comprehensive kitchen hood inspections evaluate the condition of the hood, ductwork, exhaust fan, filters, and grease containment components. Detailed findings and corrective recommendations help restaurants maintain safe, compliant, and efficient ventilation systems.",
+    linkText: "Learn more about kitchen hood inspections",
+    slug: "kitchen-hood-inspections",
     icon: <i className="fa-solid fa-clipboard-check text-2xl"></i>
   }
 ];
@@ -394,8 +418,8 @@ export default function Home() {
                     {srv.desc}
                   </p>
                 </div>
-                <a href="#booking-form-section" className="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
-                  Get Service <i className="fa-solid fa-arrow-right text-xs"></i>
+                <a href={`/services/${srv.slug}`} className="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
+                  {srv.linkText} <i className="fa-solid fa-arrow-right text-xs"></i>
                 </a>
               </div>
             ))}
