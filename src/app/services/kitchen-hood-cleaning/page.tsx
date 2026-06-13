@@ -64,7 +64,7 @@ export default function KitchenHoodCleaningPage() {
           style={{ backgroundImage: "url('/media/images/services/commercial-kitchen-hood-cleaning.jpeg')" }}
         />
         {/* Dark Overlay of #0c1a2b */}
-        <div className="absolute inset-0 bg-[#0C1A2B]/85" />
+        <div className="absolute inset-0 bg-[#0C1A2B]/92" />
         
         <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Hero Left */}
