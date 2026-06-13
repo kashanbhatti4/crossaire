@@ -15,10 +15,16 @@ interface Region {
 
 const servicesList: Service[] = [
   { id: "kitchen-hood-cleaning", title: "Kitchen Hood Cleaning", desc: "NFPA 96 certified grease removal" },
-  { id: "exhaust-fan-maintenance", title: "Exhaust Fan Maintenance", desc: "Belts, bearings, and motor service" },
-  { id: "pollution-control-unit", title: "Pollution Control Unit (PCU)", desc: "Filter maintenance & electrostatic clean" },
-  { id: "grease-trap-pumping", title: "Grease Trap Pumping", desc: "Waste extraction & plumbing jetting" },
-  { id: "rooftop-grease-containment", title: "Rooftop Grease Containment", desc: "Roof membrane protection & filters" }
+  { id: "restaurant-kitchen-exhaust-system-cleaning", title: "Restaurant Kitchen Exhaust System Cleaning", desc: "Complete exhaust system scrubbing" },
+  { id: "kitchen-exhaust-fan-repairs", title: "Kitchen Exhaust Fan Repairs", desc: "Motor, belt, and bearing repairs" },
+  { id: "kitchen-exhaust-fan-installation", title: "Kitchen Exhaust Fan Installation", desc: "Certified rooftop fan installations" },
+  { id: "grease-trap-cleaning", title: "Grease Trap Cleaning", desc: "Waste extraction & line jetting" },
+  { id: "pollution-control-systems-maintenance", title: "Pollution Control Systems Maintenance", desc: "Filter cleaning & electrostatic maintenance" },
+  { id: "kitchen-hood-startups-and-commissioning", title: "Kitchen Hood Startups and Commissioning", desc: "Airflow balance & system startups" },
+  { id: "roof-grease-containment-systems-installations", title: "Roof Grease Containment Systems Installations", desc: "Roof membrane shielding & grease filters" },
+  { id: "restaurant-hood-filter-cleaning-exchange", title: "Restaurant Hood Filter Cleaning & Exchange", desc: "Convenient filter exchange programs" },
+  { id: "kitchen-exhaust-duct-repair-access-panel-installation", title: "Kitchen Exhaust Duct Repair & Access Panel Installation", desc: "Certified access panel installations" },
+  { id: "kitchen-hood-inspections", title: "Kitchen Hood Inspections", desc: "NFPA 96 compliance audits" }
 ];
 
 const regionsList: Region[] = [
@@ -46,10 +52,10 @@ const regionsList: Region[] = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeService, setActiveService] = useState<Service | null>(null);
   const [activeRegion, setActiveRegion] = useState<Region | null>(null);
-  const [mobileExpandedService, setMobileExpandedService] = useState<string | null>(null);
-  const [mobileExpandedRegion, setMobileExpandedRegion] = useState<string | null>(null);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [mobileLocationsOpen, setMobileLocationsOpen] = useState(false);
+  const [mobileRegionExpanded, setMobileRegionExpanded] = useState<string | null>(null);
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
@@ -62,8 +68,9 @@ export default function Header() {
 
   const handleMobileLinkClick = () => {
     setMobileMenuOpen(false);
-    setMobileExpandedService(null);
-    setMobileExpandedRegion(null);
+    setMobileServicesOpen(false);
+    setMobileLocationsOpen(false);
+    setMobileRegionExpanded(null);
   };
 
   return (
@@ -87,14 +94,8 @@ export default function Header() {
             About Us
           </a>
           
-          {/* Services Cascade Dropdown */}
-          <div 
-            className="relative group py-2"
-            onMouseLeave={() => {
-              setActiveService(null);
-              setActiveRegion(null);
-            }}
-          >
+          {/* Services Megamenu Dropdown */}
+          <div className="relative group py-2">
             <a 
               href="#services" 
               className="flex items-center gap-1 transition-colors text-primary-text hover:text-accent"
@@ -105,33 +106,44 @@ export default function Header() {
               </svg>
             </a>
 
-            {/* Level 1 Services list container */}
-            <div className="absolute top-full left-0 mt-[20px] bg-white border border-border-stroke rounded-2xl shadow-2xl opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out flex z-50"
-                 style={{ width: activeService ? (activeRegion ? "720px" : "480px") : "240px" }}
-            >
-              {/* Col 1: Services */}
-              <div className="w-[240px] py-4 border-r border-border-stroke/40 shrink-0">
-                {servicesList.map((srv) => (
-                  <div 
-                    key={srv.id}
-                    className={`dropdown-item-premium ${activeService?.id === srv.id ? "active-premium" : ""}`}
-                    onMouseEnter={() => {
-                      setActiveService(srv);
-                      setActiveRegion(null);
-                    }}
-                  >
-                    <span className="item-title">{srv.title}</span>
-                    <span className="item-desc">{srv.desc}</span>
-                  </div>
-                ))}
-              </div>
+            {/* Megamenu list container */}
+            <div className="absolute top-full left-0 mt-[20px] bg-white border border-border-stroke rounded-2xl shadow-2xl opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out z-50 p-4 w-[600px] grid grid-flow-col grid-rows-6 gap-x-4 gap-y-1">
+              {servicesList.map((srv) => (
+                <a 
+                  key={srv.id}
+                  href={`/services/${srv.id}`}
+                  className="dropdown-item-premium block w-[280px]"
+                >
+                  <span className="item-title">{srv.title}</span>
+                  <span className="item-desc">{srv.desc}</span>
+                </a>
+              ))}
+            </div>
+          </div>
 
-              {/* Col 2: Regions (shown if a service is hovered) */}
-              <div 
-                className={`w-[240px] py-4 border-r border-border-stroke/40 shrink-0 transition-opacity duration-300 ${
-                  activeService ? "opacity-100 block" : "opacity-0 hidden"
-                }`}
-              >
+          {/* Locations Cascade Dropdown */}
+          <div 
+            className="relative group py-2"
+            onMouseLeave={() => {
+              setActiveRegion(null);
+            }}
+          >
+            <a 
+              href="#locations" 
+              className="flex items-center gap-1 transition-colors text-primary-text hover:text-accent"
+            >
+              <span>Locations</span>
+              <svg className="w-3.5 h-3.5 fill-current transition-transform group-hover:rotate-180" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+              </svg>
+            </a>
+
+            {/* Regions to Cities cascading container */}
+            <div className="absolute top-full left-0 mt-[20px] bg-white border border-border-stroke rounded-2xl shadow-2xl opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out flex z-50"
+                 style={{ width: activeRegion ? "480px" : "240px" }}
+            >
+              {/* Col 1: Regions */}
+              <div className="w-[240px] py-4 border-r border-border-stroke/40 shrink-0">
                 {regionsList.map((reg) => (
                   <div 
                     key={reg.name}
@@ -148,7 +160,7 @@ export default function Header() {
                 ))}
               </div>
 
-              {/* Col 3: Cities (shown if a region is hovered) */}
+              {/* Col 2: Cities (shown if a region is hovered) */}
               <div 
                 className={`w-[240px] py-4 shrink-0 transition-opacity duration-300 max-h-[320px] overflow-y-auto ${
                   activeRegion ? "opacity-100 block" : "opacity-0 hidden"
@@ -217,62 +229,90 @@ export default function Header() {
       }`}>
         <a href="#who-we-are" onClick={handleMobileLinkClick} className="mobile-link py-2 text-primary-text border-b border-gray-100">About Us</a>
         
-        {/* Mobile Services Accordion (L1) */}
+        {/* Mobile Services Accordion */}
         <div>
           <button 
             onClick={() => {
-              setMobileExpandedService(mobileExpandedService ? null : "services");
-              setMobileExpandedRegion(null);
+              setMobileServicesOpen(!mobileServicesOpen);
+              setMobileLocationsOpen(false);
             }} 
             className={`w-full flex items-center justify-between font-bold text-base text-left py-2 border-b border-gray-100 transition-colors ${
-              mobileExpandedService ? "text-accent" : "text-primary-text"
+              mobileServicesOpen ? "text-accent" : "text-primary-text"
             }`}
           >
             <span>Services</span>
-            <svg className={`w-3.5 h-3.5 fill-current text-primary-text/60 transition-transform ${mobileExpandedService ? "rotate-180 text-accent" : ""}`} viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+            <svg className={`w-3.5 h-3.5 fill-current text-primary-text/60 transition-transform ${mobileServicesOpen ? "rotate-180 text-accent" : ""}`} viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+            </svg>
+          </button>
+          
+          <div className={`overflow-hidden transition-all duration-300 flex flex-col gap-1.5 pl-4 text-xs font-semibold text-body-text mt-1.5 ${
+            mobileServicesOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+          }`}>
+            {servicesList.map((srv) => (
+              <a 
+                key={srv.id}
+                href={`/services/${srv.id}`}
+                onClick={handleMobileLinkClick}
+                className="block py-1.5 hover:text-accent transition-colors"
+              >
+                {srv.title}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Mobile Locations Accordion */}
+        <div>
+          <button 
+            onClick={() => {
+              setMobileLocationsOpen(!mobileLocationsOpen);
+              setMobileServicesOpen(false);
+            }} 
+            className={`w-full flex items-center justify-between font-bold text-base text-left py-2 border-b border-gray-100 transition-colors ${
+              mobileLocationsOpen ? "text-accent" : "text-primary-text"
+            }`}
+          >
+            <span>Locations</span>
+            <svg className={`w-3.5 h-3.5 fill-current text-primary-text/60 transition-transform ${mobileLocationsOpen ? "rotate-180 text-accent" : ""}`} viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
             </svg>
           </button>
           
           <div className={`overflow-hidden transition-all duration-300 flex flex-col gap-2 pl-4 text-sm font-medium text-body-text mt-1.5 ${
-            mobileExpandedService ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+            mobileLocationsOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
           }`}>
-            {servicesList.map((srv) => (
-              <div key={srv.id} className="py-1">
-                {/* Region Trigger (L2) */}
+            {regionsList.map((reg) => (
+              <div key={reg.name} className="py-1">
+                {/* Region Trigger */}
                 <button 
-                  onClick={() => setMobileExpandedRegion(mobileExpandedRegion === srv.id ? null : srv.id)}
+                  onClick={() => setMobileRegionExpanded(mobileRegionExpanded === reg.name ? null : reg.name)}
                   className={`w-full flex items-center justify-between text-xs font-semibold hover:text-accent text-left py-1.5 px-3 rounded-md hover:bg-black/[0.01] transition-all ${
-                    mobileExpandedRegion === srv.id ? "text-accent font-extrabold" : "text-body-text"
+                    mobileRegionExpanded === reg.name ? "text-accent font-extrabold" : "text-body-text"
                   }`}
                 >
-                  <span>{srv.title}</span>
-                  <svg className={`w-3 h-3 fill-current transition-transform ${mobileExpandedRegion === srv.id ? "rotate-180" : ""}`} viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                  <span>{reg.name}</span>
+                  <svg className={`w-3 h-3 fill-current transition-transform ${mobileRegionExpanded === reg.name ? "rotate-180" : ""}`} viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
                   </svg>
                 </button>
 
-                {/* Cities List (L3) */}
+                {/* Cities List */}
                 <div className={`overflow-hidden transition-all duration-300 flex flex-col gap-1.5 pl-4 ml-3 border-l border-border-stroke/80 mt-1 mb-2 ${
-                  mobileExpandedRegion === srv.id ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+                  mobileRegionExpanded === reg.name ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
                 }`}>
-                  {regionsList.map((reg) => (
-                    <div key={reg.name} className="py-0.5">
-                      <div className="text-[10px] font-extrabold uppercase tracking-wider text-body-text/40 px-2 py-1">{reg.name}</div>
-                      <div className="flex flex-col gap-1 pl-2">
-                        {reg.cities.map((city) => (
-                          <a 
-                            key={city} 
-                            href={`/locations/${city.toLowerCase().replace(/[^a-z0-9]/g, "-")}`}
-                            onClick={handleMobileLinkClick}
-                            className="block px-2 py-1 text-xs text-primary-text hover:text-accent font-medium"
-                          >
-                            {city}
-                          </a>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
+                  <div className="flex flex-col gap-1 pl-2">
+                    {reg.cities.map((city) => (
+                      <a 
+                        key={city} 
+                        href={`/locations/${city.toLowerCase().replace(/[^a-z0-9]/g, "-")}`}
+                        onClick={handleMobileLinkClick}
+                        className="block px-2 py-1 text-xs text-primary-text hover:text-accent font-medium"
+                      >
+                        {city}
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
