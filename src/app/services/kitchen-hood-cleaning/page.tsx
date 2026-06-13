@@ -120,6 +120,68 @@ export default function KitchenHoodCleaningPage() {
         </div>
       </section>
 
+      {/* EMBLEMS & PARTNERS SECTION */}
+      <section className="bg-main-bg border-b border-border-stroke py-16 px-6">
+        <div className="max-w-7xl mx-auto">
+          {/* Industry Certifications & Affiliations Row */}
+          <div className="flex flex-col items-center justify-center text-center pb-12 border-b border-border-stroke/60">
+            <span className="text-[11px] uppercase tracking-widest font-extrabold text-body-text/60 mb-6 block">
+              Our Industry Certifications & Affiliations
+            </span>
+            <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
+              <div className="relative group">
+                <img src="/media/images/emblem1.png" alt="Certification Emblem 1" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="relative group">
+                <img src="/media/images/emblem2.png" alt="Certification Emblem 2" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="relative group">
+                <img src="/media/images/emblem3.png" alt="Certification Emblem 3" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+            </div>
+          </div>
+
+          {/* Partners Row */}
+          <div className="pt-12 text-center">
+            <span className="text-[11px] uppercase tracking-widest font-extrabold text-body-text/60 mb-8 block">
+              Trusted by Leading Brands in MD, DC & VA
+            </span>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 md:gap-12 items-center justify-items-center">
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/amazon.png" alt="Amazon" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/burger-king.png" alt="Burger King" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/hilton.png" alt="Hilton" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/ihg-hotels.png" alt="IHG Hotels" className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/subway.png" alt="Subway" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/wing-stop.png" alt="Wing Stop" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/ruth-chris.png" alt="Ruth's Chris" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/the-halal-guys.png" alt="The Halal Guys" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/omni.png" alt="Omni Hotels" className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/bowie.png" alt="Bowie" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 3. WHY THIS SERVICE MATTERS */}
       <section className="py-24 px-6 bg-main-bg border-b border-border-stroke">
         <div className="max-w-7xl mx-auto">
