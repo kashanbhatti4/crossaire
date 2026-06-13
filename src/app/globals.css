@@ -21,30 +21,32 @@
   --border-stroke: #D8E2EC;
 }
 
-body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  color: var(--primary-text);
-  background-color: var(--main-bg);
-  line-height: 1.6;
-  font-size: 16px;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--primary-text);
+    background-color: var(--main-bg);
+    line-height: 1.6;
+    font-size: 16px;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-/* Typography Scales */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-text);
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-}
+  /* Typography Scales */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-text);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
 
-p {
-  color: var(--body-text);
+  p {
+    color: var(--body-text);
+  }
 }
 
 /* Custom Typography Helpers */
