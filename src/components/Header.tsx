@@ -109,7 +109,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full z-50 bg-white border-b border-border-stroke shadow-[0_4px_20px_rgba(12,26,43,0.01)] transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Brand Logo */}
-        <a href="#" className="flex items-center group logo-link" onClick={handleMobileLinkClick}>
+        <a href="/" className="flex items-center group logo-link" onClick={handleMobileLinkClick}>
           <img 
             src="/media/images/logo.png" 
             alt="Crossaire Logo" 

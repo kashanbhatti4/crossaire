@@ -5,7 +5,9 @@ export default function Footer() {
     <footer className="bg-[#081321] py-12 px-6 border-t border-white/5 text-white/60 text-sm">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="flex items-center gap-3">
-          <img src="/media/images/logowhite.png" alt="Crossaire Logo" className="h-9 w-auto object-contain" />
+          <a href="/" className="hover:opacity-85 transition-opacity">
+            <img src="/media/images/logowhite.png" alt="Crossaire Logo" className="h-9 w-auto object-contain" />
+          </a>
         </div>
         <p className="text-center md:text-left text-xs text-white/60">
           &copy; {new Date().getFullYear()} Crossaire. All rights reserved. Strictly conforming to NFPA Standard 96.
