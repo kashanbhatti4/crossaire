@@ -5,10 +5,12 @@ import Gallery from "@/components/Gallery";
 import CoverageMap from "@/components/CoverageMap";
 import Testimonials from "@/components/Testimonials";
 import Faq from "@/components/Faq";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
   return (
     <>
+      <ScrollReveal />
       {/* SECTION 1: Hero Section */}
       <section className="hero-section relative min-h-screen flex items-center pt-80 pb-8 lg:pt-24 lg:pb-16 px-6">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-12 lg:items-end items-center">
