@@ -57,8 +57,16 @@ export default function KitchenHoodCleaningPage() {
     <div className="bg-white min-h-screen">
       
       {/* 1. HERO SECTION */}
-      <section className="relative bg-[#0C1A2B] text-white pt-32 pb-20 px-6">
-        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <section className="relative text-white pt-32 pb-20 px-6 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/media/images/services/commercial-kitchen-hood-cleaning.jpeg')" }}
+        />
+        {/* Dark Overlay of #0c1a2b */}
+        <div className="absolute inset-0 bg-[#0C1A2B]/85" />
+        
+        <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Hero Left */}
           <div className="lg:col-span-7 flex flex-col justify-center">
             <span className="text-sm uppercase tracking-wider font-extrabold text-accent block mb-3">
