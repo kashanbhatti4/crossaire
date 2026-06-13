@@ -343,53 +343,67 @@ export default function KitchenHoodCleaningPage() {
       </section>
 
       {/* 5. WHAT'S INCLUDED */}
-      <section className="py-24 px-6 bg-white border-b border-border-stroke">
+      <section className="py-24 px-6 bg-white border-b border-border-stroke animate-on-scroll">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center flex flex-col items-center mb-16">
-            <span className="subtitle-badge">(SERVICE SCOPE)</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-primary-text tracking-tight mb-4">
-              What Is Included in Our Service?
+          <div className="mb-16 text-left">
+            <span className="subtitle-badge block mb-3">(SERVICE SCOPE)</span>
+            <h2 className="text-4xl md:text-[56px] font-extrabold tracking-tight leading-tight text-primary-text">
+              What Is Included <br className="hidden sm:inline" />
+              in Our <span className="text-accent">Service?</span>
             </h2>
-            <p className="text-body-text text-base md:text-lg max-w-2xl">
-              We provide a complete, deep clean of the entire exhaust system from top to bottom. Our standard package includes:
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {[
-              {
-                title: "Hood Canopy & Plenum Cleaning",
-                desc: "Deep degreasing, washing, and hand-polishing of both the interior and exterior stainless steel hood structures."
-              },
-              {
-                title: "Grease Filter Deep Wash",
-                desc: "Removal, thorough soaking, power washing, and reinstallation of all commercial baffle filters."
-              },
-              {
-                title: "Horizontal & Vertical Ductwork",
-                desc: "Deep scrape and pressure cleaning of the entire duct path, accessing hard-to-reach areas via code-approved access panels."
-              },
-              {
-                title: "Rooftop Exhaust Fan Service",
-                desc: "Scraping and power washing of the fan housing, fan bowl, fan blades, and clearing out grease drain pathways."
-              },
-              {
-                title: "Grease Cup & Containment Audit",
-                desc: "Cleaning and emptying of rooftop grease collection systems and grease collection cups."
-              },
-              {
-                title: "NFPA 96 Compliance Sticker",
-                desc: "Affixing the official, dated certification sticker required by fire marshals, health inspectors, and insurance providers."
-              }
-            ].map((item, index) => (
-              <div key={index} className="flex gap-4 items-start">
-                <div className="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center text-accent shrink-0 font-extrabold text-sm mt-1">✓</div>
-                <div>
-                  <h3 className="font-bold text-primary-text text-base mb-1">{item.title}</h3>
-                  <p className="text-body-text text-sm leading-relaxed">{item.desc}</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            {/* Left Column: Image Card */}
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/5] border border-border-stroke shadow-md bg-white">
+              <img src="/media/images/why-people-trust.png" alt="Certified Commercial Exhaust Safety Technician performing deep degreasing" className="absolute inset-0 w-full h-full object-cover" />
+            </div>
+
+            {/* Right Column: Features List */}
+            <div className="flex flex-col">
+              {[
+                {
+                  title: "Hood Canopy & Plenum Cleaning",
+                  desc: "Deep degreasing, washing, and hand-polishing of both the interior and exterior stainless steel hood structures.",
+                  icon: <i className="fa-solid fa-sparkles text-xl"></i>
+                },
+                {
+                  title: "Grease Filter Deep Wash",
+                  desc: "Removal, thorough soaking, power washing, and reinstallation of all commercial baffle filters.",
+                  icon: <i className="fa-solid fa-filter text-xl"></i>
+                },
+                {
+                  title: "Horizontal & Vertical Ductwork",
+                  desc: "Deep scrape and pressure cleaning of the entire duct path, accessing hard-to-reach areas via code-approved access panels.",
+                  icon: <i className="fa-solid fa-wind text-xl"></i>
+                },
+                {
+                  title: "Rooftop Exhaust Fan Service",
+                  desc: "Scraping and power washing of the fan housing, fan bowl, fan blades, and clearing out grease drain pathways.",
+                  icon: <i className="fa-solid fa-fan text-xl"></i>
+                },
+                {
+                  title: "Grease Cup & Containment Audit",
+                  desc: "Cleaning and emptying of rooftop grease collection systems and grease collection cups.",
+                  icon: <i className="fa-solid fa-fill-drip text-xl"></i>
+                },
+                {
+                  title: "NFPA 96 Compliance Sticker",
+                  desc: "Affixing the official, dated certification sticker required by fire marshals, health inspectors, and insurance providers.",
+                  icon: <i className="fa-solid fa-certificate text-xl"></i>
+                }
+              ].map((item, index, arr) => (
+                <div key={index} className={`flex gap-6 items-start ${index < arr.length - 1 ? "pb-8 border-b border-border-stroke/60 mb-8" : ""}`}>
+                  <div className="w-12 h-12 rounded-full border border-border-stroke bg-white flex items-center justify-center shadow-sm shrink-0 text-accent mt-0.5">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-primary-text mb-2">{item.title}</h3>
+                    <p className="text-body-text text-sm leading-relaxed">{item.desc}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
