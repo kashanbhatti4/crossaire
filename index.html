@@ -1317,6 +1317,328 @@
         </div>
     </section>
 
+    <!-- SECTION 10.5: Frequently Asked Questions (FAQs) -->
+    <section id="faqs" class="py-24 px-6 bg-[#F4F6F8] border-b border-border-stroke animate-on-scroll">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- Section Header -->
+            <div class="text-center flex flex-col items-center mb-16">
+                <span class="subtitle-badge">(GOT QUESTIONS?)</span>
+                <h2 class="text-3xl md:text-[44px] font-extrabold tracking-tight text-primary-text leading-[1.2] mb-4">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-body-text text-base md:text-lg max-w-3xl mx-auto">
+                    Whether you're preparing for an inspection, managing a busy kitchen, or exploring our services, here are the most common answers we provide to restaurant owners, facility managers, and kitchen operators across Virginia, Maryland, and Washington, DC.
+                </p>
+                <p class="text-sm font-bold text-accent mt-3">
+                    Don't see your question? <a href="#booking-form-section" class="underline hover:text-accent-hover transition-colors">Contact us</a> — we're happy to help.
+                </p>
+            </div>
+
+            <!-- FAQ Accordion Layout (Two Columns on Desktop) -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+                
+                <!-- Left Column -->
+                <div class="flex flex-col gap-4">
+                    <!-- FAQ 1 -->
+                    <div class="bg-white border border-border-stroke rounded-2xl p-5 md:p-6 transition-all hover:shadow-md">
+                        <button onclick="toggleFaq('1')" id="faq-btn-1" class="w-full flex items-center justify-between gap-4 font-bold text-base md:text-lg text-primary-text text-left transition-colors focus:outline-none select-none">
+                            <span>What are your core services?</span>
+                            <svg id="faq-icon-1" class="w-5 h-5 shrink-0 transition-transform duration-300 text-body-text/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq-content-1" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+                            <div class="pt-4 text-sm md:text-base text-body-text leading-relaxed border-t border-border-stroke/40 mt-4">
+                                <p class="mb-2">We offer a full suite of compliant commercial kitchen safety and cleaning services:</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Commercial Kitchen Hood Cleaning</li>
+                                    <li>Commercial Kitchen Exhaust Maintenance & Repairs</li>
+                                    <li>Commercial Filters Cleaning & Exchange Service</li>
+                                    <li>Pollution Control Unit (PCU) System Service</li>
+                                    <li>Roof Grease Containment Solutions</li>
+                                    <li>Grease Trap Cleaning & Line Jetting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="bg-white border border-border-stroke rounded-2xl p-5 md:p-6 transition-all hover:shadow-md">
+                        <button onclick="toggleFaq('3')" id="faq-btn-3" class="w-full flex items-center justify-between gap-4 font-bold text-base md:text-lg text-primary-text text-left transition-colors focus:outline-none select-none">
+                            <span>Are your services compliant with NFPA 96 and local fire codes?</span>
+                            <svg id="faq-icon-3" class="w-5 h-5 shrink-0 transition-transform duration-300 text-body-text/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq-content-3" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+                            <div class="pt-4 text-sm md:text-base text-body-text leading-relaxed border-t border-border-stroke/40 mt-4">
+                                Yes. All of our commercial kitchen exhaust cleaning services are fully NFPA 96 compliant. We also provide official certification stickers and digital documentation required for fire marshal inspections, insurance providers, and health departments.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="bg-white border border-border-stroke rounded-2xl p-5 md:p-6 transition-all hover:shadow-md">
+                        <button onclick="toggleFaq('5')" id="faq-btn-5" class="w-full flex items-center justify-between gap-4 font-bold text-base md:text-lg text-primary-text text-left transition-colors focus:outline-none select-none">
+                            <span>Can you service my kitchen after business hours?</span>
+                            <svg id="faq-icon-5" class="w-5 h-5 shrink-0 transition-transform duration-300 text-body-text/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq-content-5" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+                            <div class="pt-4 text-sm md:text-base text-body-text leading-relaxed border-t border-border-stroke/40 mt-4">
+                                Yes. We offer after-hours, overnight, weekend, and emergency services to minimize disruption to your kitchen operations. We coordinate our visits with your closing schedule.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 7 -->
+                    <div class="bg-white border border-border-stroke rounded-2xl p-5 md:p-6 transition-all hover:shadow-md">
+                        <button onclick="toggleFaq('7')" id="faq-btn-7" class="w-full flex items-center justify-between gap-4 font-bold text-base md:text-lg text-primary-text text-left transition-colors focus:outline-none select-none">
+                            <span>What areas do you service?</span>
+                            <svg id="faq-icon-7" class="w-5 h-5 shrink-0 transition-transform duration-300 text-body-text/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq-content-7" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+                            <div class="pt-4 text-sm md:text-base text-body-text leading-relaxed border-t border-border-stroke/40 mt-4">
+                                <p class="mb-2">We proudly serve commercial kitchens throughout <strong>Virginia</strong>, <strong>Maryland</strong>, and <strong>Washington, DC</strong>. This includes communities such as:</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Arlington, Alexandria, Fairfax, Richmond, Norfolk, Roanoke</li>
+                                    <li>Baltimore, Annapolis, Frederick, Columbia, Silver Spring, Bethesda, Waldorf, Ocean City</li>
+                                    <li>Washington, DC metro areas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 9 -->
+                    <div class="bg-white border border-border-stroke rounded-2xl p-5 md:p-6 transition-all hover:shadow-md">
+                        <button onclick="toggleFaq('9')" id="faq-btn-9" class="w-full flex items-center justify-between gap-4 font-bold text-base md:text-lg text-primary-text text-left transition-colors focus:outline-none select-none">
+                            <span>Are you insured and certified?</span>
+                            <svg id="faq-icon-9" class="w-5 h-5 shrink-0 transition-transform duration-300 text-body-text/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq-content-9" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+                            <div class="pt-4 text-sm md:text-base text-body-text leading-relaxed border-t border-border-stroke/40 mt-4">
+                                Yes. We are fully licensed, bonded, and insured with a $5M general liability policy. Our professional technicians are extensively trained and certified in NFPA 96 standards, OSHA compliance, and commercial kitchen exhaust safety.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 11 -->
+                    <div class="bg-white border border-border-stroke rounded-2xl p-5 md:p-6 transition-all hover:shadow-md">
+                        <button onclick="toggleFaq('11')" id="faq-btn-11" class="w-full flex items-center justify-between gap-4 font-bold text-base md:text-lg text-primary-text text-left transition-colors focus:outline-none select-none">
+                            <span>Are you certified to service Gaylord systems?</span>
+                            <svg id="faq-icon-11" class="w-5 h-5 shrink-0 transition-transform duration-300 text-body-text/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq-content-11" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+                            <div class="pt-4 text-sm md:text-base text-body-text leading-relaxed border-t border-border-stroke/40 mt-4">
+                                <p class="mb-2">Yes. We are a <strong>Gaylord Certified Service Agent</strong> authorized to inspect, clean, and maintain Gaylord commercial kitchen ventilation systems. Our team is trained to:</p>
+                                <ul class="list-disc pl-5 space-y-1 mb-3">
+                                    <li>Service Gaylord Hoods & PCUs</li>
+                                    <li>Perform Preventive Maintenance</li>
+                                    <li>Conduct Performance Testing & Ensure Warranty Compliance</li>
+                                </ul>
+                                <p>We use manufacturer-approved methods to keep your system operating safely. In addition to Gaylord, we regularly service CaptiveAire, Accurex, Halton, NAKS, and all other major ventilation brands.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 13 -->
+                    <div class="bg-white border border-border-stroke rounded-2xl p-5 md:p-6 transition-all hover:shadow-md">
+                        <button onclick="toggleFaq('13')" id="faq-btn-13" class="w-full flex items-center justify-between gap-4 font-bold text-base md:text-lg text-primary-text text-left transition-colors focus:outline-none select-none">
+                            <span>Do you repair exhaust fans?</span>
+                            <svg id="faq-icon-13" class="w-5 h-5 shrink-0 transition-transform duration-300 text-body-text/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq-content-13" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+                            <div class="pt-4 text-sm md:text-base text-body-text leading-relaxed border-t border-border-stroke/40 mt-4">
+                                <p class="mb-2">Yes. Our exhaust fan repair services cover:</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Motor installation and repair</li>
+                                    <li>Fan pulley adjustment</li>
+                                    <li>Bearing replacement</li>
+                                    <li>Disconnect switch installation</li>
+                                    <li>VFD and fan control board troubleshooting</li>
+                                    <li>Emergency fan repairs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 15 -->
+                    <div class="bg-white border border-border-stroke rounded-2xl p-5 md:p-6 transition-all hover:shadow-md">
+                        <button onclick="toggleFaq('15')" id="faq-btn-15" class="w-full flex items-center justify-between gap-4 font-bold text-base md:text-lg text-primary-text text-left transition-colors focus:outline-none select-none">
+                            <span>Do you specialize in water wash hoods?</span>
+                            <svg id="faq-icon-15" class="w-5 h-5 shrink-0 transition-transform duration-300 text-body-text/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq-content-15" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+                            <div class="pt-4 text-sm md:text-base text-body-text leading-relaxed border-t border-border-stroke/40 mt-4">
+                                <p class="mb-2">Yes, we specialize in preventive maintenance and service for complex water wash hood systems, including:</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Cleaning spray jets and nozzles</li>
+                                    <li>Inspecting detergent pumps and refilling detergent</li>
+                                    <li>Checking flow switches and solenoid valve operation</li>
+                                    <li>Verifying water temperature and adjusting pressure</li>
+                                    <li>Inspecting interior grease accumulation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column -->
+                <div class="flex flex-col gap-4">
+                    <!-- FAQ 2 -->
+                    <div class="bg-white border border-border-stroke rounded-2xl p-5 md:p-6 transition-all hover:shadow-md">
+                        <button onclick="toggleFaq('2')" id="faq-btn-2" class="w-full flex items-center justify-between gap-4 font-bold text-base md:text-lg text-primary-text text-left transition-colors focus:outline-none select-none">
+                            <span>How often should I have my commercial kitchen hood cleaned?</span>
+                            <svg id="faq-icon-2" class="w-5 h-5 shrink-0 transition-transform duration-300 text-body-text/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq-content-2" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+                            <div class="pt-4 text-sm md:text-base text-body-text leading-relaxed border-t border-border-stroke/40 mt-4">
+                                <p class="mb-2">According to NFPA 96 standards, cleaning frequency is based on the volume and type of cooking:</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li><strong>High-volume kitchens</strong> (solid fuel, heavy frying, 24/7 operations, woks): <strong>Every 1 month</strong></li>
+                                    <li><strong>Moderate-use kitchens</strong> (standard dining, fast food, hotels): <strong>Every 3 months</strong></li>
+                                    <li><strong>Low-volume kitchens</strong> (churches, day camps, seasonal operations): <strong>Every 6–12 months</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="bg-white border border-border-stroke rounded-2xl p-5 md:p-6 transition-all hover:shadow-md">
+                        <button onclick="toggleFaq('4')" id="faq-btn-4" class="w-full flex items-center justify-between gap-4 font-bold text-base md:text-lg text-primary-text text-left transition-colors focus:outline-none select-none">
+                            <span>Do you provide before-and-after photos?</span>
+                            <svg id="faq-icon-4" class="w-5 h-5 shrink-0 transition-transform duration-300 text-body-text/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq-content-4" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+                            <div class="pt-4 text-sm md:text-base text-body-text leading-relaxed border-t border-border-stroke/40 mt-4">
+                                Absolutely. Every service includes complete digital before-and-after photos. These reports serve as proof of compliance for fire marshals, health inspectors, and insurance audits.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="bg-white border border-border-stroke rounded-2xl p-5 md:p-6 transition-all hover:shadow-md">
+                        <button onclick="toggleFaq('6')" id="faq-btn-6" class="w-full flex items-center justify-between gap-4 font-bold text-base md:text-lg text-primary-text text-left transition-colors focus:outline-none select-none">
+                            <span>Do you offer maintenance programs or recurring service plans?</span>
+                            <svg id="faq-icon-6" class="w-5 h-5 shrink-0 transition-transform duration-300 text-body-text/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq-content-6" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+                            <div class="pt-4 text-sm md:text-base text-body-text leading-relaxed border-t border-border-stroke/40 mt-4">
+                                Yes. We offer customized maintenance plans tailored to your specific kitchen volume: Monthly, Quarterly, and Semi-Annual. Regular maintenance helps guarantee fire safety compliance and prevents surprise code violations.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 8 -->
+                    <div class="bg-white border border-border-stroke rounded-2xl p-5 md:p-6 transition-all hover:shadow-md">
+                        <button onclick="toggleFaq('8')" id="faq-btn-8" class="w-full flex items-center justify-between gap-4 font-bold text-base md:text-lg text-primary-text text-left transition-colors focus:outline-none select-none">
+                            <span>What’s included in a typical hood cleaning service?</span>
+                            <svg id="faq-icon-8" class="w-5 h-5 shrink-0 transition-transform duration-300 text-body-text/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq-content-8" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+                            <div class="pt-4 text-sm md:text-base text-body-text leading-relaxed border-t border-border-stroke/40 mt-4">
+                                <p class="mb-2">Our comprehensive <strong>7-Step Service Process</strong> includes:</p>
+                                <ul class="list-decimal pl-5 space-y-1">
+                                    <li><strong>Assessment:</strong> Complete initial inspection.</li>
+                                    <li><strong>Preparation:</strong> Covering and protecting all surrounding equipment.</li>
+                                    <li><strong>Cleaning:</strong> Deep steam degreasing of hoods, ducts, exhaust fans, and filters.</li>
+                                    <li><strong>Maintenance:</strong> Lubricating bearings, checking belt tension, tightening electrical disconnects.</li>
+                                    <li><strong>Final Inspection:</strong> Ensuring everything meets quality safety codes.</li>
+                                    <li><strong>Documentation:</strong> Providing digital compliance stickers and photo evidence.</li>
+                                    <li><strong>Recommendations:</strong> Advising on equipment upgrades and health recommendations.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 10 -->
+                    <div class="bg-white border border-border-stroke rounded-2xl p-5 md:p-6 transition-all hover:shadow-md">
+                        <button onclick="toggleFaq('10')" id="faq-btn-10" class="w-full flex items-center justify-between gap-4 font-bold text-base md:text-lg text-primary-text text-left transition-colors focus:outline-none select-none">
+                            <span>How do I schedule a service or get a quote?</span>
+                            <svg id="faq-icon-10" class="w-5 h-5 shrink-0 transition-transform duration-300 text-body-text/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq-content-10" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+                            <div class="pt-4 text-sm md:text-base text-body-text leading-relaxed border-t border-border-stroke/40 mt-4">
+                                You can call us directly at <a href="tel:8663992885" class="text-accent font-extrabold">866-399-2885</a>, fill out our interactive contact form at the top of this website, or book an inspection date directly.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 12 -->
+                    <div class="bg-white border border-border-stroke rounded-2xl p-5 md:p-6 transition-all hover:shadow-md">
+                        <button onclick="toggleFaq('12')" id="faq-btn-12" class="w-full flex items-center justify-between gap-4 font-bold text-base md:text-lg text-primary-text text-left transition-colors focus:outline-none select-none">
+                            <span>Do you provide emergency or rush services?</span>
+                            <svg id="faq-icon-12" class="w-5 h-5 shrink-0 transition-transform duration-300 text-body-text/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq-content-12" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+                            <div class="pt-4 text-sm md:text-base text-body-text leading-relaxed border-t border-border-stroke/40 mt-4">
+                                Yes. We understand that fan failures or pending health inspector deadlines happen. We offer 24/7/365 emergency response dispatch, including overnight compliance cleaning, weekend service, and rush fan repairs.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 14 -->
+                    <div class="bg-white border border-border-stroke rounded-2xl p-5 md:p-6 transition-all hover:shadow-md">
+                        <button onclick="toggleFaq('14')" id="faq-btn-14" class="w-full flex items-center justify-between gap-4 font-bold text-base md:text-lg text-primary-text text-left transition-colors focus:outline-none select-none">
+                            <span>Do you install exhaust fans?</span>
+                            <svg id="faq-icon-14" class="w-5 h-5 shrink-0 transition-transform duration-300 text-body-text/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq-content-14" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+                            <div class="pt-4 text-sm md:text-base text-body-text leading-relaxed border-t border-border-stroke/40 mt-4">
+                                Yes. We install brand new commercial exhaust fans and motor assemblies. Our technicians verify compliance, sizing, and electrical wiring infrastructure compatibility before installing.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 16 -->
+                    <div class="bg-white border border-border-stroke rounded-2xl p-5 md:p-6 transition-all hover:shadow-md">
+                        <button onclick="toggleFaq('16')" id="faq-btn-16" class="w-full flex items-center justify-between gap-4 font-bold text-base md:text-lg text-primary-text text-left transition-colors focus:outline-none select-none">
+                            <span>Do you perform inspections?</span>
+                            <svg id="faq-icon-16" class="w-5 h-5 shrink-0 transition-transform duration-300 text-body-text/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq-content-16" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0">
+                            <div class="pt-4 text-sm md:text-base text-body-text leading-relaxed border-t border-border-stroke/40 mt-4">
+                                Yes. We perform detailed initial inspections of hood structures, ductwork accessibility, rooftop fans, and grease containment. We issue photo-documented, code-specific compliance audits so you know exactly where your system stands.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
     <!-- SECTION 11: Final CTA -->
     <section class="py-24 px-6 bg-[#0C1A2B] text-white relative overflow-hidden">
         <!-- Accent Glow background blur -->
@@ -2027,6 +2349,29 @@
                 track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
             } else {
                 track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        };
+
+        // FAQ Accordion toggle function
+        window.toggleFaq = function(id) {
+            const content = document.getElementById(`faq-content-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            const btn = document.getElementById(`faq-btn-${id}`);
+            if (!content || !icon || !btn) return;
+            const isOpen = content.classList.contains('open');
+            
+            if (isOpen) {
+                content.style.maxHeight = '0px';
+                content.style.opacity = '0';
+                content.classList.remove('open');
+                icon.classList.remove('rotate-45');
+                btn.classList.remove('text-accent');
+            } else {
+                content.classList.add('open');
+                content.style.opacity = '1';
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.classList.add('rotate-45');
+                btn.classList.add('text-accent');
             }
         };
     </script>
