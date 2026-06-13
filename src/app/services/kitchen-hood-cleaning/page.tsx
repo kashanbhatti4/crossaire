@@ -1,61 +1,106 @@
-"use client";
-
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import BookingForm from "@/components/BookingForm";
+import LocalFAQItem from "@/components/LocalFAQItem";
 
-interface FAQItemProps {
-  question: string;
-  children: React.ReactNode;
-}
-
-function LocalFAQItem({ question, children }: FAQItemProps) {
-  const [isOpen, setIsOpen] = useState(false);
-  const contentRef = useRef<HTMLDivElement>(null);
-  const [maxHeight, setMaxHeight] = useState("0px");
-
-  useEffect(() => {
-    if (isOpen) {
-      setMaxHeight(`${contentRef.current?.scrollHeight || 0}px`);
-    } else {
-      setMaxHeight("0px");
-    }
-  }, [isOpen]);
-
-  return (
-    <div className="bg-white border border-border-stroke rounded-2xl p-5 md:p-6 transition-all hover:shadow-md">
-      <button 
-        type="button"
-        onClick={() => setIsOpen(!isOpen)} 
-        className="w-full flex items-center justify-between gap-4 font-bold text-base md:text-lg text-primary-text text-left transition-colors focus:outline-none select-none"
-      >
-        <span>{question}</span>
-        <svg 
-          className={`w-5 h-5 shrink-0 transition-transform duration-300 text-body-text/60 ${isOpen ? "rotate-45 text-accent" : ""}`} 
-          fill="none" 
-          viewBox="0 0 24 24" 
-          stroke="currentColor" 
-          strokeWidth="2"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
-        </svg>
-      </button>
-      <div 
-        ref={contentRef}
-        className="transition-all duration-300 ease-in-out overflow-hidden"
-        style={{ maxHeight, opacity: isOpen ? 1 : 0 }}
-      >
-        <div className="pt-4 text-sm md:text-base text-body-text leading-relaxed border-t border-border-stroke/40 mt-4">
-          {children}
-        </div>
-      </div>
-    </div>
-  );
-}
+export const metadata = {
+  title: "NFPA 96 Commercial Kitchen Hood Cleaning | Crossaire",
+  description: "NFPA 96 certified commercial kitchen hood cleaning and exhaust system degreasing in MD, DC, and VA. 24/7 emergency dispatch, certified inspections, and safety stickers.",
+  keywords: "commercial kitchen hood cleaning, restaurant exhaust cleaning, grease removal, NFPA 96 compliance, hood cleaning Maryland, hood cleaning DC, hood cleaning Virginia",
+};
 
 export default function KitchenHoodCleaningPage() {
   return (
     <div className="bg-white min-h-screen">
-      
+      {/* Structured Schema Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Commercial Kitchen Hood Cleaning Services",
+            "alternateName": "Commercial Kitchen Exhaust Hood Cleaning",
+            "description": "Certified NFPA 96 compliant commercial kitchen hood cleaning, grease removal, and exhaust duct degreasing services in Maryland, Washington DC, and Virginia.",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Crossaire",
+              "image": "https://crossaire.vercel.app/media/images/logo.png",
+              "telephone": "866-399-2885",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Glen Burnie",
+                "addressRegion": "MD",
+                "addressCountry": "US"
+              }
+            },
+            "areaServed": [
+              { "@type": "AdministrativeArea", "name": "Maryland" },
+              { "@type": "AdministrativeArea", "name": "Virginia" },
+              { "@type": "AdministrativeArea", "name": "Washington DC" }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How often must commercial kitchen hoods be cleaned?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "NFPA 96 mandates cleaning frequencies based on your cooking style and volume: Monthly for solid fuel cooking (wood, charcoal, pit BBQ); Quarterly for high-volume operations (24-hour diners, heavy charbroiling, fast-food fry lines); Semi-Annually for moderate-volume cooking; and Annually for low-volume operations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you clean the rooftop fan, or just the hood inside?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A complete, compliant kitchen exhaust cleaning MUST cover the entire airflow network: this includes the canopy inside, all horizontal/vertical duct runs, and the rooftop exhaust fan blades and housing. Cleaning only the hood is a major code violation and does not solve the fire hazard."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Will your hood cleaning process create a mess in my kitchen?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Our technicians are fully trained to keep your kitchen clean. We cover all equipment, ranges, prep lines, and fryers in thick plastic draping. All runoff water and chemicals are gathered into containment tubs. We scrub and mop the floors afterward, leaving your kitchen pristine."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does a kitchen hood cleaning service take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A standard service takes between 3 to 5 hours, depending on size of hoods, length of vertical/horizontal ductwork runs, and the thickness of grease accumulation. We work overnight or during closed hours to ensure zero impact on your business."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide documentation for fire inspectors?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Once we finish the service, we apply an official NFPA 96 compliance sticker on your hood showing the service date, next cleaning date, and technician details. We also deliver a detailed digital photo log of before-and-after results for your records."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are you certified and insured?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. All of our technicians are fully NFPA 96 certified commercial kitchen exhaust cleaners. We carry $5,000,000 in General Liability insurance, as well as full workers' compensation coverage."
+                }
+              }
+            ]
+          })
+        }}
+      />
+
       {/* 1. HERO SECTION */}
       <section className="relative text-white pt-32 pb-20 px-6 overflow-hidden">
         {/* Background Image */}
@@ -116,13 +161,13 @@ export default function KitchenHoodCleaningPage() {
             </span>
             <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
               <div className="relative group">
-                <img src="/media/images/emblem1.png" alt="Certification Emblem 1" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/emblem1.png" alt="NFPA 96 Certified Commercial Exhaust Cleaning Compliance Logo" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="relative group">
-                <img src="/media/images/emblem2.png" alt="Certification Emblem 2" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/emblem2.png" alt="OSHA Compliant Commercial Kitchen Safety Standard Certification" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="relative group">
-                <img src="/media/images/emblem3.png" alt="Certification Emblem 3" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/emblem3.png" alt="IKECA Equivalent Equivalent Exhaust System Cleaning Standard Logo" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
             </div>
           </div>
@@ -134,34 +179,34 @@ export default function KitchenHoodCleaningPage() {
             </span>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 md:gap-12 items-center justify-items-center">
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/amazon.png" alt="Amazon" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/amazon.png" alt="Amazon Commercial Facility Kitchen Service Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/burger-king.png" alt="Burger King" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/burger-king.png" alt="Burger King Restaurant Exhaust Service Client" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/hilton.png" alt="Hilton" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/hilton.png" alt="Hilton Hotel Kitchen Hood Service Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/ihg-hotels.png" alt="IHG Hotels" className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/ihg-hotels.png" alt="IHG Hotels Ventilation Cleaning Client" className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/subway.png" alt="Subway" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/subway.png" alt="Subway Restaurant Grease Trap Cleaning Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/wing-stop.png" alt="Wing Stop" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/wing-stop.png" alt="Wing Stop Hood Filter Cleaning Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/ruth-chris.png" alt="Ruth's Chris" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/ruth-chris.png" alt="Ruth's Chris Steak House Exhaust Service Client" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/the-halal-guys.png" alt="The Halal Guys" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/the-halal-guys.png" alt="The Halal Guys Commercial Kitchen Service Client" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/omni.png" alt="Omni Hotels" className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/omni.png" alt="Omni Hotels & Resorts Kitchen Exhaust Client" className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/bowie.png" alt="Bowie" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/bowie.png" alt="Bowie State University Dining Facility Service Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
             </div>
           </div>
@@ -283,7 +328,7 @@ export default function KitchenHoodCleaningPage() {
                 icon: <i className="fa-solid fa-calendar-xmark text-3xl text-red-500 shrink-0"></i>
               }
             ].map((item, index) => (
-              <div key={index} className="flex gap-4 p-6 rounded-2xl bg-[#F8FAFC] border border-border-stroke/60">
+              <div key={index} className="flex gap-4 p-6 rounded-2xl bg-white border border-border-stroke/60">
                 <div className="shrink-0 flex items-center justify-center w-12 h-12 bg-red-500/10 rounded-xl">
                   {item.icon}
                 </div>
@@ -395,7 +440,7 @@ export default function KitchenHoodCleaningPage() {
                 icon: <i className="fa-solid fa-spray-can-sparkles text-4xl text-accent mb-6 block"></i>
               }
             ].map((benefit, index) => (
-              <div key={index} className="minimal-card flex flex-col justify-start">
+              <div key={index} className="bg-white p-8 rounded-2xl border border-border-stroke hover:shadow-md transition-all flex flex-col justify-start">
                 {benefit.icon}
                 <h3 className="text-lg font-bold text-primary-text mb-2">{benefit.title}</h3>
                 <p className="text-body-text text-sm leading-relaxed">{benefit.desc}</p>
@@ -513,9 +558,8 @@ export default function KitchenHoodCleaningPage() {
       </section>
 
       {/* 10. FREQUENTLY ASKED QUESTIONS (FAQs) */}
-      <section id="faqs" className="py-24 px-6 bg-[#F4F6F8]">
+      <section id="faqs" className="py-24 px-6 bg-[#F4F6F8] border-b border-border-stroke">
         <div className="max-w-7xl mx-auto">
-          
           {/* Section Header */}
           <div className="text-center flex flex-col items-center mb-16">
             <span className="subtitle-badge">(GOT QUESTIONS?)</span>
@@ -529,7 +573,6 @@ export default function KitchenHoodCleaningPage() {
 
           {/* FAQ Accordion Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start max-w-5xl mx-auto">
-            
             <div className="flex flex-col gap-4">
               <LocalFAQItem question="How often must commercial kitchen hoods be cleaned?">
                 <p className="mb-2">NFPA 96 mandates cleaning frequencies based on your cooking style and volume:</p>
@@ -563,7 +606,6 @@ export default function KitchenHoodCleaningPage() {
                 Yes. All of our technicians are fully NFPA 96 certified commercial kitchen exhaust cleaners. We carry $5,000,000 in General Liability insurance, as well as full workers' compensation coverage.
               </LocalFAQItem>
             </div>
-
           </div>
 
           <div className="text-center mt-16">
@@ -577,6 +619,95 @@ export default function KitchenHoodCleaningPage() {
         </div>
       </section>
 
+      {/* 11. RELATED SERVICES SECTION */}
+      <section className="py-24 px-6 bg-white border-b border-border-stroke">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center flex flex-col items-center mb-16">
+            <span className="subtitle-badge">(COMPLETE KITCHEN PROTECTION)</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-primary-text tracking-tight mb-4">
+              Related Commercial Services
+            </h2>
+            <p className="text-body-text text-base md:text-lg max-w-2xl">
+              Crossaire offers full-suite commercial kitchen safety and ventilation solutions to keep your facility 100% compliant.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-[#F8FAFC] p-8 rounded-2xl border border-border-stroke hover:shadow-md transition-all flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6">
+                  <i className="fa-solid fa-wind text-2xl"></i>
+                </div>
+                <h3 className="text-xl font-bold text-primary-text mb-3">Exhaust System Cleaning</h3>
+                <p className="text-body-text text-sm leading-relaxed mb-6">
+                  Deep degreasing of horizontal/vertical duct networks and fans for maximum ventilation safety and performance.
+                </p>
+              </div>
+              <a href="/services/restaurant-kitchen-exhaust-system-cleaning" className="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
+                Learn More <i className="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+
+            <div className="bg-[#F8FAFC] p-8 rounded-2xl border border-border-stroke hover:shadow-md transition-all flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6">
+                  <i className="fa-solid fa-screwdriver-wrench text-2xl"></i>
+                </div>
+                <h3 className="text-xl font-bold text-primary-text mb-3">Exhaust Fan Repairs</h3>
+                <p className="text-body-text text-sm leading-relaxed mb-6">
+                  Rapid motor, belt, and bearing repairs to resolve exhaust system vibrations, noise issues, or failure.
+                </p>
+              </div>
+              <a href="/services/kitchen-exhaust-fan-repairs" className="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
+                Learn More <i className="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+
+            <div className="bg-[#F8FAFC] p-8 rounded-2xl border border-border-stroke hover:shadow-md transition-all flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6">
+                  <i className="fa-solid fa-arrows-rotate text-2xl"></i>
+                </div>
+                <h3 className="text-xl font-bold text-primary-text mb-3">Hood Filter Exchange</h3>
+                <p className="text-body-text text-sm leading-relaxed mb-6">
+                  Regular exchange of clean, commercial baffle filters, removing loaded filters for off-site sanitizing.
+                </p>
+              </div>
+              <a href="/services/restaurant-hood-filter-cleaning-exchange" className="text-accent font-bold text-sm inline-flex items-center gap-2 hover:underline">
+                Learn More <i className="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 12. FINAL CTA */}
+      <section className="py-24 px-6 bg-[#0C1A2B] text-white relative overflow-hidden">
+        {/* Accent Glow background blur */}
+        <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-accent/20 blur-[120px]"></div>
+        
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-4">NFPA 96 CERTIFIED & INSURED</span>
+          
+          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+            Schedule Your Certified Kitchen Hood Cleaning Today
+          </h2>
+          
+          <p className="text-white/75 text-base md:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+            Get instant peace of mind. We provide complete duct degreasing, camera inspections, and official compliance stickers. Available 24/7 in MD, DC, and VA.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="#booking-form-section" className="btn-primary w-full sm:w-auto px-8 py-4 font-bold text-center">
+              Book Your Cleaning
+            </a>
+            <a href="tel:8663992885" className="w-full sm:w-auto border border-white/20 bg-white/5 hover:bg-white/10 text-white font-bold px-8 py-4 rounded-lg transition-all text-center flex items-center justify-center gap-2">
+              <i className="fa-solid fa-phone text-sm"></i>
+              <span>Call 866-399-2885</span>
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
