@@ -1,6 +1,7 @@
 import React from "react";
 import BookingForm from "@/components/BookingForm";
 import LocalFAQItem from "@/components/LocalFAQItem";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
   title: "NFPA 96 Commercial Kitchen Hood Cleaning | Crossaire",
@@ -722,6 +723,9 @@ export default function KitchenHoodCleaningPage() {
           </div>
         </div>
       </section>
+
+      {/* Scroll Reveal Animation Trigger */}
+      <ScrollReveal />
     </div>
   );
 }
