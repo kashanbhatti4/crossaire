@@ -366,7 +366,7 @@ export default function KitchenHoodCleaningPage() {
                 {
                   title: "Hood Canopy & Plenum Cleaning",
                   desc: "Deep degreasing, washing, and hand-polishing of both the interior and exterior stainless steel hood structures.",
-                  icon: <i className="fa-solid fa-sparkles text-xl"></i>
+                  icon: <i className="fa-solid fa-hands-bubbles text-xl"></i>
                 },
                 {
                   title: "Grease Filter Deep Wash",
