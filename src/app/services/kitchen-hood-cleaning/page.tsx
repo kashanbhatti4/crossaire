@@ -107,7 +107,7 @@ export default function KitchenHoodCleaningPage() {
       </section>
 
       {/* 2. EMBLEMS & PARTNERS SECTION */}
-      <section className="bg-main-bg border-b border-border-stroke py-16 px-6">
+      <section className="bg-white border-b border-border-stroke py-16 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Industry Certifications & Affiliations Row */}
           <div className="flex flex-col items-center justify-center text-center pb-12 border-b border-border-stroke/60">
@@ -169,7 +169,7 @@ export default function KitchenHoodCleaningPage() {
       </section>
 
       {/* 3. OVERVIEW OF THE SERVICE */}
-      <section className="py-24 px-6 bg-white border-b border-border-stroke">
+      <section className="py-24 px-6 bg-main-bg border-b border-border-stroke">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-4">
@@ -191,7 +191,7 @@ export default function KitchenHoodCleaningPage() {
       </section>
 
       {/* 3. WHY THIS SERVICE MATTERS */}
-      <section className="py-24 px-6 bg-main-bg border-b border-border-stroke">
+      <section className="py-24 px-6 bg-white border-b border-border-stroke">
         <div className="max-w-7xl mx-auto">
           <div className="text-center flex flex-col items-center mb-16">
             <span className="subtitle-badge">(CRITICAL HYGIENE & SAFETY)</span>
@@ -238,7 +238,7 @@ export default function KitchenHoodCleaningPage() {
       </section>
 
       {/* 4. SIGNS YOU NEED THIS SERVICE */}
-      <section className="py-24 px-6 bg-white border-b border-border-stroke">
+      <section className="py-24 px-6 bg-main-bg border-b border-border-stroke">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-start mb-16">
             <span className="subtitle-badge">(SYSTEM WARNING SIGNS)</span>
@@ -298,7 +298,7 @@ export default function KitchenHoodCleaningPage() {
       </section>
 
       {/* 5. WHAT'S INCLUDED */}
-      <section className="py-24 px-6 bg-[#F8FAFC] border-b border-border-stroke">
+      <section className="py-24 px-6 bg-white border-b border-border-stroke">
         <div className="max-w-7xl mx-auto">
           <div className="text-center flex flex-col items-center mb-16">
             <span className="subtitle-badge">(SERVICE SCOPE)</span>
@@ -350,7 +350,7 @@ export default function KitchenHoodCleaningPage() {
       </section>
 
       {/* 6. BENEFITS OF THE SERVICE */}
-      <section className="py-24 px-6 bg-white border-b border-border-stroke">
+      <section className="py-24 px-6 bg-main-bg border-b border-border-stroke">
         <div className="max-w-7xl mx-auto">
           <div className="text-center flex flex-col items-center mb-16">
             <span className="subtitle-badge">(BUSINESS VALUE)</span>
@@ -406,7 +406,7 @@ export default function KitchenHoodCleaningPage() {
       </section>
 
       {/* 7. OUR SERVICE PROCESS */}
-      <section className="py-24 px-6 bg-main-bg border-b border-border-stroke">
+      <section className="py-24 px-6 bg-white border-b border-border-stroke">
         <div className="max-w-7xl mx-auto">
           <div className="text-center flex flex-col items-center mb-16">
             <span className="subtitle-badge">(HOW WE WORK)</span>
