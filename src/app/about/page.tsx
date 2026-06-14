@@ -12,31 +12,33 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <div className="bg-white min-h-screen">
-      {/* 1. HERO SECTION */}
-      <section className="relative text-white pt-32 pb-24 px-6 overflow-hidden">
+      {/* 1. PAGE HEADER (white bg) */}
+      <section className="pt-32 pb-16 px-6 bg-white border-b border-border-stroke/40">
+        <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
+          <span className="subtitle-badge block mb-3">
+            Get to Know Us
+          </span>
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-primary-text mb-6 leading-[1.1]">
+            About <span className="text-accent">Crossaire</span>
+          </h1>
+          <p className="text-body-text text-lg md:text-xl leading-relaxed max-w-3xl">
+            We are Maryland, DC, and Virginia's premier NFPA 96 certified commercial kitchen exhaust safety experts. We exist to protect kitchen staff, patrons, and facilities from fire hazards while guaranteeing absolute regulatory compliance.
+          </p>
+        </div>
+      </section>
+
+      {/* 1.5 HERO STAT CARDS SECTION (dark image bg) */}
+      <section className="relative text-white py-24 px-6 overflow-hidden">
         {/* Background Image */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-fade-in"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/media/images/why-people-trust.png')" }}
         />
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-[#0C1A2B]/92" />
         
-        {/* Centered Narrative Container */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center mb-16">
-          <span className="text-sm uppercase tracking-wider font-extrabold text-accent block mb-3">
-            Get to Know Us
-          </span>
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
-            About <span className="text-accent">Crossaire</span>
-          </h1>
-          <p className="text-white/85 text-lg md:text-xl leading-relaxed max-w-3xl">
-            We are Maryland, DC, and Virginia's premier NFPA 96 certified commercial kitchen exhaust safety experts. We exist to protect kitchen staff, patrons, and facilities from fire hazards while guaranteeing absolute regulatory compliance.
-          </p>
-        </div>
-
         {/* Floating Masonry Cards Grid */}
-        <div className="relative z-10 max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 pt-6 pb-4">
+        <div className="relative z-10 max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 pt-4 pb-4">
           
           {/* Card 1: Compliance */}
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 shadow-xl backdrop-blur-sm transition-all duration-300 hover:scale-[1.03] hover:bg-white/10 md:-translate-y-4 flex flex-col justify-between">
