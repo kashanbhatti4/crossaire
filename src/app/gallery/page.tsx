@@ -133,47 +133,27 @@ export default function GalleryPage() {
 
   return (
     <div className="bg-white min-h-screen">
-      {/* 1. COMBINED HERO & SLIDER SECTION */}
-      <section className="relative text-white pt-32 pb-24 px-6 overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/media/images/why-people-trust.png')" }}
-        />
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-[#0C1A2B]/92" />
+      {/* 1. HERO & SLIDER SECTION */}
+      <section className="relative text-white pt-32 pb-24 px-6 overflow-hidden bg-[#0C1A2B]">
+        {/* Subtle accent glow in background */}
+        <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-accent/10 blur-[120px]"></div>
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-accent/5 blur-[120px]"></div>
         
-        <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Hero Left: Title & Description */}
-          <div className="lg:col-span-5 flex flex-col justify-center text-left">
-            <span className="text-sm uppercase tracking-wider font-extrabold text-accent block mb-3">
-              Work Showcase
-            </span>
-            <h1 className="text-4xl md:text-5xl lg:text-[56px] font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
-              Our Work <br />
-              <span className="text-accent">In Action</span>
-            </h1>
-            <p className="text-white/80 text-base md:text-lg leading-relaxed mb-8">
-              Explore photos of our certified kitchen hood cleaning, exhaust fan servicing, and ductwork degreasing across Maryland, DC, and Virginia. Drag the center slider handle on the right to compare before & after transformations.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 items-start">
-              <a href="/#booking-form-section" className="btn-primary w-full sm:w-auto px-6 py-3.5 font-bold text-center">
-                Book An Inspection
-              </a>
-              <a href="tel:8663992885" className="w-full sm:w-auto border border-white/20 bg-white/5 hover:bg-white/10 text-white font-bold px-6 py-3.5 rounded-lg transition-all text-center flex items-center justify-center gap-2">
-                <i className="fa-solid fa-phone text-sm"></i>
-                <span>Call 866-399-2885</span>
-              </a>
-            </div>
-          </div>
+        <div className="relative z-10 max-w-4xl mx-auto w-full flex flex-col items-center text-center">
+          {/* Heading */}
+          <span className="text-sm uppercase tracking-wider font-extrabold text-accent block mb-3">
+            Work Showcase
+          </span>
+          <h1 className="text-4xl md:text-5xl lg:text-[56px] font-extrabold tracking-tight text-white mb-8 leading-[1.1]">
+            Our Work <span className="text-accent">In Action</span>
+          </h1>
 
           {/* Hero Right: Draggable Before/After Comparison Slider */}
-          <div className="lg:col-span-7 w-full">
+          <div className="w-full mb-10">
             <div 
               ref={containerRef}
               onPointerDown={handlePointerDown}
-              className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] rounded-2xl overflow-hidden shadow-2xl border border-white/10 select-none cursor-ew-resize"
+              className="relative w-full h-[300px] sm:h-[400px] md:h-[480px] rounded-2xl overflow-hidden shadow-2xl border border-white/10 select-none cursor-ew-resize mx-auto"
             >
               {/* After Image (Background) */}
               <img 
@@ -218,6 +198,23 @@ export default function GalleryPage() {
               </div>
             </div>
           </div>
+
+          {/* Hero Left: Title & Description */}
+          <div className="max-w-2xl mx-auto">
+            <p className="text-white/80 text-base md:text-lg leading-relaxed mb-8">
+              Explore photos of our certified kitchen hood cleaning, exhaust fan servicing, and ductwork degreasing across Maryland, DC, and Virginia. Drag the center slider handle to compare before & after transformations.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+              <a href="/#booking-form-section" className="btn-primary w-full sm:w-auto px-8 py-3.5 font-bold text-center">
+                Book An Inspection
+              </a>
+              <a href="tel:8663992885" className="w-full sm:w-auto border border-white/20 bg-white/5 hover:bg-white/10 text-white font-bold px-8 py-3.5 rounded-lg transition-all text-center flex items-center justify-center gap-2">
+                <i className="fa-solid fa-phone text-sm"></i>
+                <span>Call 866-399-2885</span>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -226,13 +223,13 @@ export default function GalleryPage() {
         <div className="max-w-7xl mx-auto">
           
           {/* Scrollable Category Filter tabs row */}
-          <div className="flex overflow-x-auto whitespace-nowrap scrollbar-none gap-3 mb-16 px-4 justify-start lg:justify-center">
+          <div className="flex overflow-x-auto whitespace-nowrap lg:whitespace-normal lg:flex-wrap scrollbar-none gap-3 mb-16 px-4 justify-start lg:justify-center">
             {servicesList.map((category) => (
               <button
                 key={category}
                 type="button"
                 onClick={() => setSelectedCategory(category)}
-                className={`px-5 py-2.5 rounded-full text-xs font-bold border transition-all cursor-pointer select-none ${
+                className={`px-5 py-2.5 rounded-full text-xs font-bold border transition-all cursor-pointer select-none whitespace-nowrap ${
                   selectedCategory === category
                     ? "bg-accent border-accent text-white shadow-md shadow-accent/15"
                     : "bg-white border-border-stroke text-body-text hover:border-accent hover:text-accent"
