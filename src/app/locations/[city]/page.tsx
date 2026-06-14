@@ -20,7 +20,7 @@ export default async function LocationPage({ params }: PageProps) {
         
         {/* Left Column: Local details */}
         <div className="lg:col-span-7">
-          <span className="subtitle-badge">Certified Commercial Services</span>
+          <span className="subtitle-badge">(Certified Commercial Services)</span>
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-primary-text mb-6">
             Commercial Kitchen Exhaust & Hood Cleaning in <span className="text-accent">{decodedCity}</span>
           </h1>
@@ -51,7 +51,7 @@ export default async function LocationPage({ params }: PageProps) {
         {/* Right Column: Interactive Form */}
         <div className="lg:col-span-5 w-full">
           <div className="text-center mb-6 lg:hidden">
-            <span className="text-sm font-bold text-accent">Book Service in {decodedCity}</span>
+            <span className="text-sm font-bold text-accent">(Book Service in {decodedCity})</span>
           </div>
           <BookingForm />
         </div>

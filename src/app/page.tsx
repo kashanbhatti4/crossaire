@@ -319,7 +319,7 @@ export default function Home() {
           {/* Industry Certifications & Affiliations Row */}
           <div className="border-t border-border-stroke/60 mt-10 pt-10 flex flex-col items-center justify-center text-center">
             <span className="text-[11px] uppercase tracking-widest font-extrabold text-body-text/60 mb-6 block">
-              Our Industry Certifications & Affiliations
+              (Our Industry Certifications & Affiliations)
             </span>
             <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
               <div className="relative group">
@@ -355,7 +355,7 @@ export default function Home() {
       <section className="py-16 px-6 bg-main-bg border-y border-border-stroke">
         <div className="max-w-7xl mx-auto text-center">
           <span className="text-[11px] uppercase tracking-widest font-extrabold text-body-text/60 mb-8 block">
-            Trusted by Leading Brands in MD, DC & VA
+            (Trusted by Leading Brands in MD, DC & VA)
           </span>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 md:gap-12 items-center justify-items-center">
             <div className="flex items-center justify-center">
@@ -569,7 +569,7 @@ export default function Home() {
             {/* Right Column: Compliance Badges List */}
             <div className="lg:col-span-5 flex flex-col">
               <span className="text-[11px] uppercase tracking-widest font-extrabold text-body-text/60 block mb-6 text-left">
-                Fully Aligned with National Safety Standards
+                (Fully Aligned with National Safety Standards)
               </span>
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-3 bg-white border border-border-stroke rounded-xl p-4 shadow-sm transition-all hover:scale-[1.02] hover:shadow-md">
@@ -681,7 +681,7 @@ export default function Home() {
         <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-accent/20 blur-[120px]"></div>
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-4">Start Clean. Stay Compliant.</span>
+          <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-4">(Start Clean. Stay Compliant.)</span>
           
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
             Secure Your Kitchen Safety Certificate Today

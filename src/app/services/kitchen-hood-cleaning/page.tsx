@@ -116,7 +116,7 @@ export default function KitchenHoodCleaningPage() {
           {/* Hero Left */}
           <div className="lg:col-span-7 flex flex-col justify-center">
             <span className="text-sm uppercase tracking-wider font-extrabold text-accent block mb-3">
-              Certified Commercial Service
+              (Certified Commercial Service)
             </span>
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
               Commercial Kitchen <span className="text-accent">Hood Cleaning</span>
@@ -158,7 +158,7 @@ export default function KitchenHoodCleaningPage() {
           {/* Industry Certifications & Affiliations Row */}
           <div className="flex flex-col items-center justify-center text-center pb-12 border-b border-border-stroke/60">
             <span className="text-[11px] uppercase tracking-widest font-extrabold text-body-text/60 mb-6 block">
-              Our Industry Certifications & Affiliations
+              (Our Industry Certifications & Affiliations)
             </span>
             <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
               <div className="relative group">
@@ -176,7 +176,7 @@ export default function KitchenHoodCleaningPage() {
           {/* Partners Row */}
           <div className="pt-12 text-center">
             <span className="text-[11px] uppercase tracking-widest font-extrabold text-body-text/60 mb-8 block">
-              Trusted by Leading Brands in MD, DC & VA
+              (Trusted by Leading Brands in MD, DC & VA)
             </span>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 md:gap-12 items-center justify-items-center">
               <div className="flex items-center justify-center">
@@ -702,7 +702,7 @@ export default function KitchenHoodCleaningPage() {
         <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-accent/20 blur-[120px]"></div>
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-4">NFPA 96 CERTIFIED & INSURED</span>
+          <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-4">(NFPA 96 CERTIFIED & INSURED)</span>
           
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
             Schedule Your Certified Kitchen Hood Cleaning Today

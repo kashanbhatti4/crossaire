@@ -20,7 +20,7 @@ export default async function ServicePage({ params }: PageProps) {
         
         {/* Left Column: Service details */}
         <div className="lg:col-span-7">
-          <span className="subtitle-badge">Certified Commercial Services</span>
+          <span className="subtitle-badge">(Certified Commercial Services)</span>
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-primary-text mb-6">
             Commercial <span className="text-accent">{decodedService}</span>
           </h1>
@@ -51,7 +51,7 @@ export default async function ServicePage({ params }: PageProps) {
         {/* Right Column: Interactive Form */}
         <div className="lg:col-span-5 w-full">
           <div className="text-center mb-6 lg:hidden">
-            <span className="text-sm font-bold text-accent">Request Quote for {decodedService}</span>
+            <span className="text-sm font-bold text-accent">(Request Quote for {decodedService})</span>
           </div>
           <BookingForm />
         </div>

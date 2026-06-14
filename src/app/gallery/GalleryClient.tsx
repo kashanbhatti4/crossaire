@@ -142,7 +142,7 @@ export default function GalleryClient() {
         <div className="relative z-10 max-w-4xl mx-auto w-full flex flex-col items-center text-center">
           {/* Heading */}
           <span className="text-sm uppercase tracking-wider font-extrabold text-accent block mb-3">
-            Work Showcase
+            (Work Showcase)
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-[56px] font-extrabold tracking-tight text-white mb-8 leading-[1.1]">
             See the Difference We Make
@@ -332,7 +332,7 @@ export default function GalleryClient() {
         <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-accent/20 blur-[120px]"></div>
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-4">Start Clean. Stay Compliant.</span>
+          <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-4">(Start Clean. Stay Compliant.)</span>
           
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
             Ready to Restore Your Kitchen Ventilation Safety?
