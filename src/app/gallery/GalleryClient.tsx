@@ -8,6 +8,8 @@ interface GalleryItem {
   id: number;
   image: string;
   category: string;
+  width: number;
+  height: number;
 }
 
 const servicesList = [
@@ -27,32 +29,32 @@ const servicesList = [
 
 const galleryItems: GalleryItem[] = [
   // 1. Kitchen Hood Cleaning
-  { id: 1, image: "/media/images/kitchen-hood.webp", category: "Kitchen Hood Cleaning" },
-  { id: 2, image: "/media/images/why-people-trust.webp", category: "Kitchen Hood Cleaning" },
+  { id: 1, image: "/media/images/kitchen-hood.webp", category: "Kitchen Hood Cleaning", width: 800, height: 800 },
+  { id: 2, image: "/media/images/why-people-trust.webp", category: "Kitchen Hood Cleaning", width: 1536, height: 2064 },
   // 2. Restaurant Kitchen Exhaust System Cleaning
-  { id: 3, image: "/media/images/duct-system.webp", category: "Restaurant Kitchen Exhaust System Cleaning" },
-  { id: 4, image: "/media/images/onboarding3.webp", category: "Restaurant Kitchen Exhaust System Cleaning" },
+  { id: 3, image: "/media/images/duct-system.webp", category: "Restaurant Kitchen Exhaust System Cleaning", width: 800, height: 640 },
+  { id: 4, image: "/media/images/onboarding3.webp", category: "Restaurant Kitchen Exhaust System Cleaning", width: 800, height: 800 },
   // 3. Kitchen Exhaust Fan Repairs
-  { id: 5, image: "/media/images/exhaust-fan.webp", category: "Kitchen Exhaust Fan Repairs" },
-  { id: 6, image: "/media/images/onboarding2.webp", category: "Kitchen Exhaust Fan Repairs" },
+  { id: 5, image: "/media/images/exhaust-fan.webp", category: "Kitchen Exhaust Fan Repairs", width: 800, height: 800 },
+  { id: 6, image: "/media/images/onboarding2.webp", category: "Kitchen Exhaust Fan Repairs", width: 800, height: 800 },
   // 4. Kitchen Exhaust Fan Installation
-  { id: 7, image: "/media/images/exhaust-fan.webp", category: "Kitchen Exhaust Fan Installation" },
+  { id: 7, image: "/media/images/exhaust-fan.webp", category: "Kitchen Exhaust Fan Installation", width: 800, height: 800 },
   // 5. Grease Trap Cleaning
-  { id: 8, image: "/media/images/onboarding3.webp", category: "Grease Trap Cleaning" },
+  { id: 8, image: "/media/images/onboarding3.webp", category: "Grease Trap Cleaning", width: 800, height: 800 },
   // 6. Pollution Control Systems Maintenance
-  { id: 9, image: "/media/images/precision-care.webp", category: "Pollution Control Systems Maintenance" },
+  { id: 9, image: "/media/images/precision-care.webp", category: "Pollution Control Systems Maintenance", width: 800, height: 800 },
   // 7. Kitchen Hood Startups and Commissioning
-  { id: 10, image: "/media/images/onboarding1.webp", category: "Kitchen Hood Startups and Commissioning" },
+  { id: 10, image: "/media/images/onboarding1.webp", category: "Kitchen Hood Startups and Commissioning", width: 800, height: 800 },
   // 8. Roof Grease Containment Systems Installations
-  { id: 11, image: "/media/images/onboarding2.webp", category: "Roof Grease Containment Systems Installations" },
+  { id: 11, image: "/media/images/onboarding2.webp", category: "Roof Grease Containment Systems Installations", width: 800, height: 800 },
   // 9. Restaurant Hood Filter Cleaning & Exchange
-  { id: 12, image: "/media/images/kitchen-hood.webp", category: "Restaurant Hood Filter Cleaning & Exchange" },
-  { id: 13, image: "/media/images/onboarding1.webp", category: "Restaurant Hood Filter Cleaning & Exchange" },
+  { id: 12, image: "/media/images/kitchen-hood.webp", category: "Restaurant Hood Filter Cleaning & Exchange", width: 800, height: 800 },
+  { id: 13, image: "/media/images/onboarding1.webp", category: "Restaurant Hood Filter Cleaning & Exchange", width: 800, height: 800 },
   // 10. Kitchen Exhaust Duct Repair & Access Panel Installation
-  { id: 14, image: "/media/images/onboardin4.webp", category: "Kitchen Exhaust Duct Repair & Access Panel Installation" },
+  { id: 14, image: "/media/images/onboardin4.webp", category: "Kitchen Exhaust Duct Repair & Access Panel Installation", width: 800, height: 800 },
   // 11. Kitchen Hood Inspections
-  { id: 15, image: "/media/images/compliance.webp", category: "Kitchen Hood Inspections" },
-  { id: 16, image: "/media/images/onboarding5.webp", category: "Kitchen Hood Inspections" },
+  { id: 15, image: "/media/images/compliance.webp", category: "Kitchen Hood Inspections", width: 800, height: 800 },
+  { id: 16, image: "/media/images/onboarding5.webp", category: "Kitchen Hood Inspections", width: 800, height: 800 },
 ];
 
 export default function GalleryClient() {
@@ -62,24 +64,8 @@ export default function GalleryClient() {
 
   // Before/After comparison slider states
   const containerRef = useRef<HTMLDivElement>(null);
-  const [containerWidth, setContainerWidth] = useState(800);
   const [sliderPosition, setSliderPosition] = useState(50);
   const isDragging = useRef(false);
-
-  // Measure container width for responsive Before/After image clipping
-  useEffect(() => {
-    if (!containerRef.current) return;
-    setContainerWidth(containerRef.current.getBoundingClientRect().width);
-    
-    const handleResize = () => {
-      if (containerRef.current) {
-        setContainerWidth(containerRef.current.getBoundingClientRect().width);
-      }
-    };
-    
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   // Global pointer listeners for dragging slider handle
   useEffect(() => {
@@ -159,25 +145,20 @@ export default function GalleryClient() {
               <img 
                 src="/media/images/after.webp" 
                 alt="Clean commercial kitchen hood after steam cleaning service" 
+                width={1200}
+                height={675}
                 className="absolute inset-0 w-full h-full object-cover pointer-events-none" 
               />
               
               {/* Before Image (Clipping Foreground) */}
-              <div 
-                className="absolute inset-y-0 left-0 overflow-hidden pointer-events-none" 
-                style={{ width: `${sliderPosition}%` }}
-              >
-                <div 
-                  className="absolute inset-y-0 left-0 h-full pointer-events-none" 
-                  style={{ width: `${containerWidth}px` }}
-                >
-                  <img 
-                    src="/media/images/before.webp" 
-                    alt="Greasy dirty commercial kitchen hood before cleaning" 
-                    className="absolute inset-0 w-full h-full object-cover pointer-events-none" 
-                  />
-                </div>
-              </div>
+              <img 
+                src="/media/images/before.webp" 
+                alt="Greasy dirty commercial kitchen hood before cleaning" 
+                width={1200}
+                height={675}
+                className="absolute inset-0 w-full h-full object-cover pointer-events-none z-10" 
+                style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
+              />
 
               {/* Draggable Divider Bar */}
               <div 
@@ -190,10 +171,10 @@ export default function GalleryClient() {
               </div>
 
               {/* Labels */}
-              <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-sm text-white px-3 py-1 text-xs font-bold rounded-lg uppercase tracking-wide select-none pointer-events-none z-10">
+              <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-sm text-white px-3 py-1 text-xs font-bold rounded-lg uppercase tracking-wide select-none pointer-events-none z-30">
                 Before
               </div>
-              <div className="absolute top-4 right-4 bg-accent/90 backdrop-blur-sm text-white px-3 py-1 text-xs font-bold rounded-lg uppercase tracking-wide select-none pointer-events-none z-10">
+              <div className="absolute top-4 right-4 bg-accent/90 backdrop-blur-sm text-white px-3 py-1 text-xs font-bold rounded-lg uppercase tracking-wide select-none pointer-events-none z-30">
                 After
               </div>
             </div>
@@ -251,6 +232,8 @@ export default function GalleryClient() {
                 <img 
                   src={item.image} 
                   alt={item.category} 
+                  width={item.width}
+                  height={item.height}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
                 />
                 {/* Hover Overlay Zoom icon */}
@@ -299,6 +282,8 @@ export default function GalleryClient() {
             <img 
               src={filteredItems[activeImageIndex].image} 
               alt={filteredItems[activeImageIndex].category} 
+              width={filteredItems[activeImageIndex].width}
+              height={filteredItems[activeImageIndex].height}
               className="max-h-[75vh] md:max-h-[80vh] w-auto max-w-full rounded-lg object-contain shadow-2xl border border-white/5" 
             />
             <div className="text-center text-white max-w-2xl px-4 mt-2">
