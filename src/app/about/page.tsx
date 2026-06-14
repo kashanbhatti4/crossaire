@@ -12,6 +12,89 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <div className="bg-white min-h-screen">
+      {/* JSON-LD Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "About Crossaire",
+            "description": "Crossaire is the premier NFPA 96 certified commercial kitchen exhaust safety expert serving Maryland, DC, and Virginia.",
+            "mainEntity": {
+              "@type": "LocalBusiness",
+              "name": "Crossaire",
+              "telephone": "866-399-2885",
+              "image": "https://crossaire.vercel.app/media/images/logo.png",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Glen Burnie",
+                "addressRegion": "MD",
+                "addressCountry": "US"
+              }
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is Crossaire fully licensed and insured?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Crossaire is fully licensed, bonded, and carries a comprehensive $5,000,000 General Liability insurance policy alongside full workers' compensation coverage for our technicians."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What credentials do your kitchen hood technicians hold?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "All of our commercial exhaust system cleaning technicians are fully trained and certified in compliance with NFPA 96 standard protocols. They also undergo regular safety workshops and background checks."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you service kitchens overnight or during closed hours?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We schedule all commercial cleanings during your facility's closed or off-peak hours—typically overnight—to guarantee zero disruption to your staff and business operations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide compliance documentation for fire inspectors?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutely. Once a cleaning is completed, we apply an official, dated NFPA 96 certification sticker to your hood showing the service date, next cleaning date, and technician details. We also deliver a detailed digital photo report with before/after photos for your records."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What geographical areas do you cover?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We actively service commercial kitchens throughout the entire Maryland, Washington DC, and Virginia (MD, DC, VA) metro areas."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you ensure my kitchen remains clean after service?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our team is highly trained in workspace isolation. We cover all equipment, ranges, prep lines, and floors in heavy plastic draping to catch any runoff water and degreasing agents, leaving your kitchen pristine."
+                }
+              }
+            ]
+          })
+        }}
+      />
       {/* 1. PAGE HEADER (white bg) */}
       <section className="pt-32 pb-16 px-6 bg-white border-b border-border-stroke/40">
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
