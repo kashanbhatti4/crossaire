@@ -41,6 +41,57 @@ export default function AberdeenLocationPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Why is certified kitchen hood cleaning important in Aberdeen?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Certified cleaning helps reduce the risk of fire in commercial kitchens by removing grease buildup. It is required to maintain NFPA 96 compliance and meet local health department regulations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How often does NFPA 96 require exhaust system cleaning?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Frequency depends on your cooking style. High-volume operations like diners and fast-food locations usually require quarterly cleaning, while moderate-volume facilities need service semi-annually."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you clean the entire exhaust ductwork and fan?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, our certified services cover the entire system, including the hood canopy, filters, ductwork runs, and the rooftop exhaust fan, rather than just cleaning visible surfaces."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What documentation do you provide after a cleaning service?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We apply an official compliance sticker to the hood showing the service details and date. We also provide a complete digital photo report showing the before-and-after results for your records."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you handle scheduling to prevent business disruption?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We offer flexible scheduling, including overnight and closed-hours appointments, so your kitchen remains fully operational during business hours."
+                }
+              }
+            ]
+          })
+        }}
+      />
 
       {/* 1. HERO SECTION */}
       <section className="relative text-white pt-32 pb-24 px-6 overflow-hidden">
