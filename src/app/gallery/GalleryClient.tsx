@@ -157,7 +157,7 @@ export default function GalleryClient() {
             >
               {/* After Image (Background) */}
               <img 
-                src="/media/images/precision-care.webp" 
+                src="/media/images/after.webp" 
                 alt="Clean commercial kitchen hood after steam cleaning service" 
                 className="absolute inset-0 w-full h-full object-cover pointer-events-none" 
               />
@@ -172,7 +172,7 @@ export default function GalleryClient() {
                   style={{ width: `${containerWidth}px` }}
                 >
                   <img 
-                    src="/media/images/kitchen-hood.webp" 
+                    src="/media/images/before.webp" 
                     alt="Greasy dirty commercial kitchen hood before cleaning" 
                     className="absolute inset-0 w-full h-full object-cover pointer-events-none" 
                   />
