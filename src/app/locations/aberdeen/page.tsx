@@ -355,23 +355,27 @@ export default function AberdeenLocationPage() {
               We offer fast commercial kitchen safety services across all major neighborhoods, military zones, and business corridors in the City of Aberdeen. Our dispatch teams are zoned locally to ensure prompt response times and reliable scheduling.
             </p>
             
-            <div className="flex flex-col gap-4 border border-border-stroke/60 rounded-2xl p-6 bg-white mb-8">
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center text-accent text-sm shrink-0">
+            <div className="flex flex-col gap-8 p-8 md:p-10 border border-border-stroke/60 rounded-2xl bg-white mb-8 shadow-sm">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent text-sm shrink-0 mt-0.5">
                   <i className="fa-solid fa-truck-fast"></i>
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-primary-text">Zoned Dispatch Center</h4>
-                  <p className="text-body-text text-xs">Technicians dispatch locally from nearby depots in Harford County.</p>
+                  <h4 className="text-base font-extrabold text-primary-text mb-1">Zoned Dispatch Center</h4>
+                  <p className="text-body-text text-sm leading-relaxed">Technicians dispatch locally from nearby depots in Harford County.</p>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center text-accent text-sm shrink-0">
+              
+              {/* Divider line */}
+              <div className="h-px bg-border-stroke/40" />
+
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent text-sm shrink-0 mt-0.5">
                   <i className="fa-solid fa-shield-halved"></i>
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-primary-text">Guaranteed Local Coverage</h4>
-                  <p className="text-body-text text-xs">Comprehensive commercial kitchen exhaust maintenance in all Aberdeen zones.</p>
+                  <h4 className="text-base font-extrabold text-primary-text mb-1">Guaranteed Local Coverage</h4>
+                  <p className="text-body-text text-sm leading-relaxed">Comprehensive commercial kitchen exhaust maintenance in all Aberdeen zones.</p>
                 </div>
               </div>
             </div>
