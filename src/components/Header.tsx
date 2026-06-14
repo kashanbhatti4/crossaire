@@ -213,7 +213,7 @@ export default function Header() {
           </div>
 
           <a 
-            href="#gallery" 
+            href="/gallery" 
             className="transition-colors text-primary-text hover:text-accent"
           >
             Gallery
@@ -353,7 +353,7 @@ export default function Header() {
           </div>
         </div>
 
-        <a href="#gallery" onClick={handleMobileLinkClick} className="mobile-link py-2 text-primary-text border-b border-gray-100">Gallery</a>
+        <a href="/gallery" onClick={handleMobileLinkClick} className="mobile-link py-2 text-primary-text border-b border-gray-100">Gallery</a>
         
         <div className="flex flex-col gap-4 mt-2">
           <a href="tel:8663992885" className="flex items-center justify-center gap-2 py-3 bg-main-bg text-primary-text rounded-lg">
