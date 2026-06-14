@@ -143,6 +143,68 @@ export default function AberdeenLocationPage() {
         </div>
       </section>
 
+      {/* EMBLEMS & PARTNERS SECTION */}
+      <section className="bg-white border-b border-border-stroke py-16 px-6">
+        <div className="max-w-7xl mx-auto">
+          {/* Industry Certifications & Affiliations Row */}
+          <div className="flex flex-col items-center justify-center text-center pb-12 border-b border-border-stroke/60">
+            <span className="text-[11px] uppercase tracking-widest font-extrabold text-body-text/60 mb-6 block">
+              (Our Industry Certifications & Affiliations)
+            </span>
+            <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
+              <div className="relative group">
+                <img src="/media/images/emblem1.png" alt="NFPA 96 Certified Commercial Exhaust Cleaning Compliance Logo" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="relative group">
+                <img src="/media/images/emblem2.png" alt="OSHA Compliant Commercial Kitchen Safety Standard Certification" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="relative group">
+                <img src="/media/images/emblem3.png" alt="IKECA Equivalent Equivalent Exhaust System Cleaning Standard Logo" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+            </div>
+          </div>
+
+          {/* Partners Row */}
+          <div className="pt-12 text-center">
+            <span className="text-[11px] uppercase tracking-widest font-extrabold text-body-text/60 mb-8 block">
+              (Trusted by Leading Brands in MD, DC & VA)
+            </span>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 md:gap-12 items-center justify-items-center">
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/amazon.png" alt="Amazon Commercial Facility Kitchen Service Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/burger-king.png" alt="Burger King Restaurant Exhaust Service Client" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/hilton.png" alt="Hilton Hotel Kitchen Hood Service Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/ihg-hotels.png" alt="IHG Hotels Ventilation Cleaning Client" className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/subway.png" alt="Subway Restaurant Grease Trap Cleaning Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/wing-stop.png" alt="Wing Stop Hood Filter Cleaning Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/ruth-chris.png" alt="Ruth's Chris Steak House Exhaust Service Client" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/the-halal-guys.png" alt="The Halal Guys Commercial Kitchen Service Client" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/omni.png" alt="Omni Hotels & Resorts Kitchen Exhaust Client" className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div className="flex items-center justify-center">
+                <img src="/media/images/partners/bowie.png" alt="Bowie State University Dining Facility Service Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 2. ABOUT OUR SERVICES IN ABERDEEN */}
       <section className="py-24 px-6 bg-white animate-on-scroll">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
