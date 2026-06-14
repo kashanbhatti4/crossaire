@@ -342,7 +342,7 @@ export default function AberdeenLocationPage() {
       </section>
 
       {/* 7. NEIGHBORHOOD SERVICE COVERAGE */}
-      <section className="py-24 px-6 bg-white border-y border-border-stroke animate-on-scroll">
+      <section className="py-24 px-6 bg-main-bg border-y border-border-stroke animate-on-scroll">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Left Column: Context & Action */}
@@ -355,7 +355,7 @@ export default function AberdeenLocationPage() {
               We offer fast commercial kitchen safety services across all major neighborhoods, military zones, and business corridors in the City of Aberdeen. Our dispatch teams are zoned locally to ensure prompt response times and reliable scheduling.
             </p>
             
-            <div className="flex flex-col gap-4 border border-border-stroke/60 rounded-2xl p-6 bg-main-bg mb-8">
+            <div className="flex flex-col gap-4 border border-border-stroke/60 rounded-2xl p-6 bg-white mb-8">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center text-accent text-sm shrink-0">
                   <i className="fa-solid fa-truck-fast"></i>
@@ -445,9 +445,9 @@ export default function AberdeenLocationPage() {
                 services: ["Duct Cleanings", "ESP Maintenance", "Grease Interceptors"]
               }
             ].map((area, i) => (
-              <div key={i} className="group flex flex-col justify-between p-5 bg-main-bg border border-border-stroke rounded-2xl transition-all duration-300 hover:bg-white hover:shadow-lg hover:-translate-y-0.5 hover:border-accent/20">
+              <div key={i} className="group flex flex-col justify-between p-5 bg-white border border-border-stroke rounded-2xl transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 hover:border-accent/20">
                 <div className="flex items-start gap-4 mb-3">
-                  <div className="w-10 h-10 rounded-xl bg-white border border-border-stroke flex items-center justify-center text-body-text/40 group-hover:text-accent group-hover:border-accent/20 transition-colors shrink-0 shadow-sm">
+                  <div className="w-10 h-10 rounded-xl bg-main-bg border border-border-stroke flex items-center justify-center text-body-text/40 group-hover:text-accent group-hover:border-accent/20 transition-colors shrink-0 shadow-sm">
                     <i className="fa-solid fa-map-pin text-sm"></i>
                   </div>
                   <div>
