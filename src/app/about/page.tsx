@@ -13,7 +13,7 @@ export default function AboutPage() {
   return (
     <div className="bg-white min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="relative text-white pt-32 pb-20 px-6 overflow-hidden">
+      <section className="relative text-white pt-32 pb-24 px-6 overflow-hidden">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-fade-in"
@@ -22,76 +22,64 @@ export default function AboutPage() {
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-[#0C1A2B]/92" />
         
-        <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Hero Left */}
-          <div className="lg:col-span-7 flex flex-col justify-center">
-            <span className="text-sm uppercase tracking-wider font-extrabold text-accent block mb-3">
-              Get to Know Us
-            </span>
-            <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
-              About <span className="text-accent">Crossaire</span>
-            </h1>
-            <p className="text-white/80 text-lg leading-relaxed mb-8 max-w-2xl">
-              We are Maryland, DC, and Virginia's premier NFPA 96 certified commercial kitchen exhaust safety experts. We exist to protect kitchen staff, patrons, and facilities from fire hazards while guaranteeing absolute regulatory compliance.
-            </p>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-white/95 font-semibold">
-              <div className="flex items-center gap-3">
-                <i className="fa-solid fa-circle-check text-accent text-lg shrink-0"></i>
-                <span>NFPA 96 Certified Exhaust Technicians</span>
+        {/* Centered Narrative Container */}
+        <div className="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center mb-16">
+          <span className="text-sm uppercase tracking-wider font-extrabold text-accent block mb-3">
+            Get to Know Us
+          </span>
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
+            About <span className="text-accent">Crossaire</span>
+          </h1>
+          <p className="text-white/85 text-lg md:text-xl leading-relaxed max-w-3xl">
+            We are Maryland, DC, and Virginia's premier NFPA 96 certified commercial kitchen exhaust safety experts. We exist to protect kitchen staff, patrons, and facilities from fire hazards while guaranteeing absolute regulatory compliance.
+          </p>
+        </div>
+
+        {/* Floating Masonry Cards Grid */}
+        <div className="relative z-10 max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 pt-6 pb-4">
+          
+          {/* Card 1: Compliance */}
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 shadow-xl backdrop-blur-sm transition-all duration-300 hover:scale-[1.03] hover:bg-white/10 md:-translate-y-4 flex flex-col justify-between">
+            <div>
+              <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center text-accent mb-6 shadow-inner">
+                <i className="fa-solid fa-shield-halved text-xl"></i>
               </div>
-              <div className="flex items-center gap-3">
-                <i className="fa-solid fa-circle-check text-accent text-lg shrink-0"></i>
-                <span>$5M General Liability Insured</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <i className="fa-solid fa-circle-check text-accent text-lg shrink-0"></i>
-                <span>Available 24/7 for Closed-Hours Scheduling</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <i className="fa-solid fa-circle-check text-accent text-lg shrink-0"></i>
-                <span>100% Upfront, Transparent Estimates</span>
-              </div>
+              <div className="text-4xl font-extrabold text-white mb-1">100%</div>
+              <h3 className="font-bold text-base text-accent mb-3">Certified Compliance</h3>
+              <p className="text-xs text-white/70 leading-relaxed">
+                Fully certified under NFPA 96 standard protocols to ensure your ventilation system passes all local fire marshal and health department audits.
+              </p>
             </div>
           </div>
 
-          {/* Hero Right: Summary Card */}
-          <div className="lg:col-span-5 relative w-full">
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm shadow-xl">
-              <span className="text-accent font-extrabold text-xs uppercase tracking-widest block mb-4">Crossaire at a Glance</span>
-              <div className="space-y-6 text-white/90">
-                <div className="flex gap-4 items-start">
-                  <div className="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center text-accent shrink-0 mt-0.5">
-                    <i className="fa-solid fa-location-dot text-lg"></i>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-sm text-white">Regional Coverage</h3>
-                    <p className="text-xs text-white/70 mt-1">Serving restaurants and facilities across Maryland, Washington DC, and Northern Virginia.</p>
-                  </div>
-                </div>
-                
-                <div className="flex gap-4 items-start">
-                  <div className="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center text-accent shrink-0 mt-0.5">
-                    <i className="fa-solid fa-shield-halved text-lg"></i>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-sm text-white">Full NFPA 96 Compliance</h3>
-                    <p className="text-xs text-white/70 mt-1">Every cleaning is validated down to bare metal with a dated compliance sticker placed on the hood.</p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4 items-start">
-                  <div className="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center text-accent shrink-0 mt-0.5">
-                    <i className="fa-solid fa-clock-rotate-left text-lg"></i>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-sm text-white">Flexible 24/7 Dispatch</h3>
-                    <p className="text-xs text-white/70 mt-1">Working overnight or during closed hours so your kitchen never experiences operational downtime.</p>
-                  </div>
-                </div>
+          {/* Card 2: Insurance */}
+          <div className="bg-[#1C6CCF]/10 border border-[#1C6CCF]/20 rounded-2xl p-6 md:p-8 shadow-xl backdrop-blur-sm transition-all duration-300 hover:scale-[1.03] hover:bg-[#1C6CCF]/15 md:translate-y-4 flex flex-col justify-between">
+            <div>
+              <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-white mb-6 shadow-inner">
+                <i className="fa-solid fa-lock text-xl"></i>
               </div>
+              <div className="text-4xl font-extrabold text-white mb-1">$5M</div>
+              <h3 className="font-bold text-base text-white mb-3">Liability Insured</h3>
+              <p className="text-xs text-white/70 leading-relaxed">
+                Rest easy knowing your kitchen property and operations are backed by a comprehensive $5,000,000 General Liability insurance policy.
+              </p>
             </div>
           </div>
+
+          {/* Card 3: Availability */}
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 shadow-xl backdrop-blur-sm transition-all duration-300 hover:scale-[1.03] hover:bg-white/10 md:-translate-y-1 flex flex-col justify-between">
+            <div>
+              <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center text-accent mb-6 shadow-inner">
+                <i className="fa-solid fa-clock-rotate-left text-xl"></i>
+              </div>
+              <div className="text-4xl font-extrabold text-white mb-1">24/7</div>
+              <h3 className="font-bold text-base text-accent mb-3">Closed-Hour Dispatch</h3>
+              <p className="text-xs text-white/70 leading-relaxed">
+                Flexible overnight and after-hours scheduling that aligns with your kitchen downtime to eliminate any operational disruptions.
+              </p>
+            </div>
+          </div>
+
         </div>
       </section>
 
