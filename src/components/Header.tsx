@@ -120,7 +120,7 @@ export default function Header() {
         {/* Desktop Menu Links */}
         <nav className="hidden md:flex items-center gap-8 font-semibold text-sm">
           <a 
-            href="#who-we-are" 
+            href="/about" 
             className="transition-colors text-primary-text hover:text-accent"
           >
             About Us
@@ -257,7 +257,7 @@ export default function Header() {
       <div className={`fixed top-20 left-0 w-full h-[calc(100vh-5rem)] bg-white border-b border-border-stroke shadow-lg py-6 px-6 flex flex-col gap-5 font-semibold text-base overflow-y-auto pb-12 transition-all duration-300 ${
         mobileMenuOpen ? "opacity-100 block" : "opacity-0 hidden pointer-events-none"
       }`}>
-        <a href="#who-we-are" onClick={handleMobileLinkClick} className="mobile-link py-2 text-primary-text border-b border-gray-100">About Us</a>
+        <a href="/about" onClick={handleMobileLinkClick} className="mobile-link py-2 text-primary-text border-b border-gray-100">About Us</a>
         
         {/* Mobile Services Accordion */}
         <div>
