@@ -126,7 +126,7 @@ export default function AberdeenLocationPage() {
             Our Kitchen Safety Services in Aberdeen
           </h2>
           <p className="text-body-text text-base md:text-lg max-w-2xl mx-auto">
-            From emergency repairs to scheduled maintenance, we provide complete ventilation services for your kitchen.
+            From emergency repairs to scheduled maintenance, we provide complete compliance services for your kitchen in Aberdeen, MD.
           </p>
         </div>
 
@@ -134,41 +134,83 @@ export default function AberdeenLocationPage() {
           {[
             {
               icon: "fa-fire-extinguisher",
-              title: "Kitchen Hood Cleaning",
-              desc: "NFPA 96 certified removal of grease buildup from the hood canopy, filters, and plenum using professional steam cleaning equipment."
+              title: "Kitchen Hood Cleaning in Aberdeen",
+              desc: "NFPA 96 certified removal of grease buildup from the hood canopy, filters, and plenum using professional steam cleaning equipment.",
+              link: "/services/kitchen-hood-cleaning"
+            },
+            {
+              icon: "fa-cubes",
+              title: "Restaurant Exhaust System Cleaning in Aberdeen",
+              desc: "Complete scrubbing of the exhaust system, covering the hood, duct runs, and rooftop blower unit for safety.",
+              link: "/services/restaurant-kitchen-exhaust-system-cleaning"
+            },
+            {
+              icon: "fa-gears",
+              title: "Kitchen Exhaust Fan Repairs in Aberdeen",
+              desc: "Rooftop exhaust fan motor, belt, bearing, and pulley repair services to maintain proper airflow in your kitchen.",
+              link: "/services/kitchen-exhaust-fan-repairs"
             },
             {
               icon: "fa-fan",
-              title: "Exhaust Fan Maintenance",
-              desc: "Rooftop fan cleaning, motor replacements, belt checks, and hinge kit installations to ensure safe and efficient ventilation."
-            },
-            {
-              icon: "fa-wind",
-              title: "Duct Degreasing & Panels",
-              desc: "Grease removal throughout horizontal and vertical duct systems. We install code-compliant access panels for complete duct access."
-            },
-            {
-              icon: "fa-shield-halved",
-              title: "NFPA 96 Compliance Audits",
-              desc: "Detailed safety inspections to help you avoid fire hazards, lower insurance risks, and prepare for local health department audits."
+              title: "Kitchen Exhaust Fan Installation in Aberdeen",
+              desc: "Rooftop exhaust fan replacement and install services, with heavy-duty code-compliant fan hinge kits.",
+              link: "/services/kitchen-exhaust-fan-installation"
             },
             {
               icon: "fa-soap",
-              title: "Grease Trap Cleaning",
-              desc: "Complete pumping, scraping, and disposal of grease trap waste to prevent backup, pipe clogs, and local sewer system issues."
+              title: "Grease Trap Cleaning in Aberdeen",
+              desc: "Waste pumping, interceptor cleaning, and line jetting to prevent backups, clogs, and environmental penalties.",
+              link: "/services/grease-trap-cleaning"
             },
             {
               icon: "fa-filter",
-              title: "Hood Filter Programs",
-              desc: "Regular replacement and cleaning of heavy-duty stainless steel hood filters to ensure efficient grease capture and airflow."
+              title: "Pollution Control Systems Maintenance in Aberdeen",
+              desc: "Electrostatic precipitator (ESP) cell cleaning, charcoal filter changes, and regular PCS maintenance scheduling.",
+              link: "/services/pollution-control-systems-maintenance"
+            },
+            {
+              icon: "fa-bolt",
+              title: "Kitchen Hood Startups and Commissioning in Aberdeen",
+              desc: "Airflow balancing, makeup air unit adjustment, and exhaust startup commissioning audits for commercial kitchens.",
+              link: "/services/kitchen-hood-startups-and-commissioning"
+            },
+            {
+              icon: "fa-shield-halved",
+              title: "Roof Grease Containment Systems Installations in Aberdeen",
+              desc: "Rooftop grease diaper containment systems, membrane shield guards, and grease absorber installs to protect your roof.",
+              link: "/services/roof-grease-containment-systems-installations"
+            },
+            {
+              icon: "fa-arrows-rotate",
+              title: "Restaurant Hood Filter Cleaning & Exchange in Aberdeen",
+              desc: "Stainless steel baffle filter cleaning, custom sizing, and filter exchange programs to maintain clean air filter lines.",
+              link: "/services/restaurant-hood-filter-cleaning-exchange"
+            },
+            {
+              icon: "fa-wrench",
+              title: "Kitchen Exhaust Duct Repair & Access Panel Installation in Aberdeen",
+              desc: "Certified access panel installations and structural duct repairs to enable complete code-required duct cleaning access.",
+              link: "/services/kitchen-exhaust-duct-repair-access-panel-installation"
+            },
+            {
+              icon: "fa-clipboard-check",
+              title: "Kitchen Hood Inspections in Aberdeen",
+              desc: "Regular NFPA 96 compliance audits, inspection stickers, and report logs for fire inspectors and insurers.",
+              link: "/services/kitchen-hood-inspections"
             }
           ].map((item, idx) => (
-            <div key={idx} className="bg-white rounded-2xl p-8 border border-border-stroke shadow-sm hover:shadow-md hover:border-accent/30 transition-all">
-              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent text-xl mb-6">
-                <i className={`fa-solid ${item.icon}`}></i>
+            <div key={idx} className="bg-white rounded-2xl p-8 border border-border-stroke shadow-sm hover:shadow-md hover:border-accent/30 transition-all flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent text-xl mb-6">
+                  <i className={`fa-solid ${item.icon}`}></i>
+                </div>
+                <h3 className="text-xl font-bold text-primary-text mb-3">{item.title}</h3>
+                <p className="text-body-text text-sm leading-relaxed mb-6">{item.desc}</p>
               </div>
-              <h3 className="text-xl font-bold text-primary-text mb-3">{item.title}</h3>
-              <p className="text-body-text text-sm leading-relaxed">{item.desc}</p>
+              <a href={item.link} className="text-accent hover:text-accent-hover font-bold text-xs flex items-center gap-1.5 mt-auto select-none">
+                <span>Learn more</span>
+                <i className="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
             </div>
           ))}
         </div>
@@ -298,35 +340,75 @@ export default function AberdeenLocationPage() {
         </div>
       </section>
 
-      {/* 7. NEARBY AREAS WE SERVE */}
-      <section className="py-24 px-6 bg-main-bg border-y border-border-stroke animate-on-scroll">
-        <div className="max-w-4xl mx-auto text-center">
-          <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-3">Service Coverage</span>
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-primary-text mb-6">
-            Serving Aberdeen and Surrounding Communities
-          </h2>
-          <p className="text-body-text text-base md:text-lg leading-relaxed mb-10">
-            We provide commercial kitchen hood cleaning services throughout Aberdeen and nearby areas in Harford and Cecil Counties.
-          </p>
+      {/* 7. NEIGHBORHOOD SERVICE COVERAGE */}
+      <section className="py-24 px-6 bg-white border-y border-border-stroke animate-on-scroll">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          {/* Left Column: Context & Action */}
+          <div className="lg:col-span-5">
+            <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-3">Service Coverage</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-primary-text mb-6">
+              Neighborhoods We Serve in Aberdeen, MD
+            </h2>
+            <p className="text-body-text text-base md:text-lg leading-relaxed mb-8">
+              We offer fast commercial kitchen safety services across all major neighborhoods, military zones, and business corridors in the City of Aberdeen. Our dispatch teams are zoned locally to ensure prompt response times and reliable scheduling.
+            </p>
+            
+            <div className="flex flex-col gap-4 border border-border-stroke/60 rounded-2xl p-6 bg-main-bg mb-8">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center text-accent text-sm shrink-0">
+                  <i className="fa-solid fa-truck-fast"></i>
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold text-primary-text">Zoned Dispatch Center</h4>
+                  <p className="text-body-text text-xs">Technicians dispatch locally from nearby depots in Harford County.</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center text-accent text-sm shrink-0">
+                  <i className="fa-solid fa-house-shield"></i>
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold text-primary-text">Guaranteed Local Coverage</h4>
+                  <p className="text-body-text text-xs">Comprehensive commercial kitchen exhaust maintenance in all Aberdeen zones.</p>
+                </div>
+              </div>
+            </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-left font-bold text-primary-text max-w-2xl mx-auto">
+            <a href="#booking-form-section" className="btn-primary w-full sm:w-auto inline-block text-center font-bold px-6 py-3 rounded-lg">
+              Book Local Dispatch
+            </a>
+          </div>
+
+          {/* Right Column: Premium Neighborhood Grid */}
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              "Bel Air",
-              "Havre de Grace",
-              "Abingdon",
-              "Edgewood",
-              "Perryville",
-              "Joppatowne",
-              "Churchville",
-              "Fallston",
-              "Belcamp"
+              { name: "Aberdeen Proving Ground (APG)", zip: "21005", desc: "Military facilities & food services" },
+              { name: "Downtown Aberdeen", zip: "21001", desc: "Main Street restaurants & diners" },
+              { name: "Swan Meadows", zip: "21001", desc: "Local community businesses" },
+              { name: "Paradise", zip: "21001", desc: "Commercial avenues & dining units" },
+              { name: "Aberdeen Heights", zip: "21001", desc: "Local enterprise kitchens" },
+              { name: "Carsins Run", zip: "21001", desc: "Route 22 & highway food facilities" },
+              { name: "Rogers Street Corridor", zip: "21001", desc: "Retail centers & restaurant rows" },
+              { name: "Chapel Hill", zip: "21001", desc: "Local dining spots & facilities" },
+              { name: "Cranberry", zip: "21001", desc: "Suburban commercial kitchens" },
+              { name: "Long Drive", zip: "21001", desc: "Golf club & hospitality kitchens" }
             ].map((area, i) => (
-              <div key={i} className="flex items-center gap-2.5 p-3.5 bg-white border border-border-stroke rounded-xl shadow-sm">
-                <span className="w-2 h-2 rounded-full bg-accent"></span>
-                <span className="text-xs sm:text-sm">{area}</span>
+              <div key={i} className="group flex items-start gap-4 p-5 bg-main-bg border border-border-stroke rounded-2xl transition-all duration-300 hover:bg-white hover:shadow-lg hover:-translate-y-0.5 hover:border-accent/20">
+                <div className="w-10 h-10 rounded-xl bg-white border border-border-stroke flex items-center justify-center text-body-text/40 group-hover:text-accent group-hover:border-accent/20 transition-colors shrink-0 shadow-sm">
+                  <i className="fa-solid fa-map-pin text-sm"></i>
+                </div>
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <h3 className="font-bold text-sm text-primary-text group-hover:text-accent transition-colors">{area.name}</h3>
+                    <span className="text-[10px] font-bold text-body-text/40 bg-white border border-border-stroke/40 rounded px-1.5 py-0.5 select-none">{area.zip}</span>
+                  </div>
+                  <p className="text-body-text text-[11px] leading-normal">{area.desc}</p>
+                </div>
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
