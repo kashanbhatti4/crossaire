@@ -229,7 +229,7 @@ export default function Header() {
             <i className="fa-solid fa-phone text-base"></i>
             <span>866-399-2885</span>
           </a>
-          <a href="#booking-form-section" className="btn-primary">Book Inspection</a>
+          <a href="/contact" className="btn-primary">Contact Us</a>
         </div>
 
         {/* Mobile Menu Trigger */}
@@ -360,7 +360,7 @@ export default function Header() {
             <i className="fa-solid fa-phone text-base text-accent"></i>
             <span>866-399-2885</span>
           </a>
-          <a href="#booking-form-section" onClick={handleMobileLinkClick} className="btn-primary w-full py-3 text-center">Book Inspection</a>
+          <a href="/contact" onClick={handleMobileLinkClick} className="btn-primary w-full py-3 text-center">Contact Us</a>
         </div>
       </div>
     </header>
