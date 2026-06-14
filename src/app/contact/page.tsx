@@ -13,7 +13,6 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <div className="bg-[#0C1A2B] min-h-screen">
-      {/* JSON-LD Schema Markup */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -58,6 +57,66 @@ export default function ContactPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How fast can I get a cleaning proposal?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We compile and deliver custom service proposals within 24 hours of your inquiry. For standard operations, we can often generate a quote directly using photos of your hood setup and duct run."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you charge for site inspections or walkthroughs?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. All initial walkthroughs, consultations, and code compliance inspections are 100% free of charge with no obligation."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I schedule service to avoid disrupting my kitchen?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "All of our cleanings are performed during your closed hours (typically overnight or early morning) so there is zero interruption to your prep lines, staff, or business operations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are you certified to issue official compliance stickers?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We are NFPA 96 certified commercial kitchen exhaust cleaning specialists. Upon completing service, we apply an official dated certification sticker directly to the hood canopy for fire marshal inspections."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What if I have an emergency grease trap overflow?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We provide 24/7/365 emergency dispatch services across Maryland, Washington DC, and Virginia. Call our toll-free line at 866-399-2885 for immediate scheduling."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide photo documentation of the clean?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We deliver a complete digital report containing before-and-after photographs of the hood canopy, filters, ductwork, and exhaust fan for your compliance records."
+                }
+              }
+            ]
+          })
+        }}
+      />
+
 
       {/* 1. HERO SECTION (Dark theme) */}
       <section className="relative text-white pt-36 pb-20 px-6 overflow-hidden">
