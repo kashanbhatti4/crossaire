@@ -93,6 +93,8 @@ export default function CoverageMap() {
           <img 
             src="/media/images/map.svg" 
             alt="MD, DC & VA Service Coverage Map" 
+            width={1081}
+            height={707}
             className="w-full h-auto block select-none pointer-events-none" 
           />
           

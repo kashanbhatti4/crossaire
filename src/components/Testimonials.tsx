@@ -125,6 +125,8 @@ export default function Testimonials() {
                   <img 
                     src={t.image} 
                     alt={t.name} 
+                    width={44}
+                    height={44}
                     className="w-11 h-11 rounded-full object-cover border border-border-stroke/45" 
                   />
                   <div>

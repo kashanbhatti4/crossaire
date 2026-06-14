@@ -324,13 +324,13 @@ export default function Home() {
             </span>
             <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
               <div className="relative group">
-                <img src="/media/images/emblem1.webp" alt="NFPA 96 Certified Commercial Exhaust Cleaning Compliance Logo" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/emblem1.webp" alt="NFPA 96 Certified Commercial Exhaust Cleaning Compliance Logo" width={160} height={176} className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="relative group">
-                <img src="/media/images/emblem2.webp" alt="OSHA Compliant Commercial Kitchen Safety Standard Certification" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/emblem2.webp" alt="OSHA Compliant Commercial Kitchen Safety Standard Certification" width={160} height={185} className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="relative group">
-                <img src="/media/images/emblem3.webp" alt="IKECA Equivalent Equivalent Exhaust System Cleaning Standard Logo" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/emblem3.webp" alt="IKECA Equivalent Equivalent Exhaust System Cleaning Standard Logo" width={160} height={186} className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
             </div>
           </div>
@@ -360,34 +360,34 @@ export default function Home() {
           </span>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 md:gap-12 items-center justify-items-center">
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/amazon.webp" alt="Amazon Commercial Facility Kitchen Service Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img src="/media/images/partners/amazon.webp" alt="Amazon Commercial Facility Kitchen Service Client" width={240} height={73} className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/burger-king.webp" alt="Burger King Restaurant Exhaust Service Client" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img src="/media/images/partners/burger-king.webp" alt="Burger King Restaurant Exhaust Service Client" width={160} height={166} className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/hilton.webp" alt="Hilton Hotel Kitchen Hood Service Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img src="/media/images/partners/hilton.webp" alt="Hilton Hotel Kitchen Hood Service Client" width={160} height={82} className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/ihg-hotels.webp" alt="IHG Hotels Ventilation Cleaning Client" className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img src="/media/images/partners/ihg-hotels.webp" alt="IHG Hotels Ventilation Cleaning Client" width={160} height={57} className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/subway.webp" alt="Subway Restaurant Grease Trap Cleaning Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img src="/media/images/partners/subway.webp" alt="Subway Restaurant Grease Trap Cleaning Client" width={240} height={69} className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/wing-stop.webp" alt="Wing Stop Hood Filter Cleaning Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img src="/media/images/partners/wing-stop.webp" alt="Wing Stop Hood Filter Cleaning Client" width={240} height={82} className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/ruth-chris.webp" alt="Ruth's Chris Steak House Exhaust Service Client" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img src="/media/images/partners/ruth-chris.webp" alt="Ruth's Chris Steak House Exhaust Service Client" width={240} height={129} className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/the-halal-guys.webp" alt="The Halal Guys Commercial Kitchen Service Client" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img src="/media/images/partners/the-halal-guys.webp" alt="The Halal Guys Commercial Kitchen Service Client" width={150} height={150} className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/omni.webp" alt="Omni Hotels & Resorts Kitchen Exhaust Client" className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img src="/media/images/partners/omni.webp" alt="Omni Hotels & Resorts Kitchen Exhaust Client" width={160} height={26} className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/bowie.webp" alt="Bowie State University Dining Facility Service Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img src="/media/images/partners/bowie.webp" alt="Bowie State University Dining Facility Service Client" width={160} height={137} className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
           </div>
         </div>
@@ -458,7 +458,7 @@ export default function Home() {
                 Submit a request online or call us directly. Sending photos of your hood setup helps us quote faster.
               </p>
               <div className="relative rounded-xl overflow-hidden aspect-square border border-border-stroke bg-white">
-                <img src="/media/images/onboarding1.webp" alt="Step 1: Inspecting Commercial Kitchen Stainless Steel Hood setup" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src="/media/images/onboarding1.webp" alt="Step 1: Inspecting Commercial Kitchen Stainless Steel Hood setup" width={800} height={800} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
             </div>
 
@@ -479,7 +479,7 @@ export default function Home() {
                 Upfront, itemized pricing tailored to your specific kitchen layout. No hidden fees or surprise charges.
               </p>
               <div className="relative rounded-xl overflow-hidden aspect-square border border-border-stroke bg-white">
-                <img src="/media/images/onboarding2.webp" alt="Step 2: Commercial Kitchen Exhaust Fan Audit and Price Estimate" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src="/media/images/onboarding2.webp" alt="Step 2: Commercial Kitchen Exhaust Fan Audit and Price Estimate" width={800} height={800} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
             </div>
 
@@ -500,7 +500,7 @@ export default function Home() {
                 We set a precise service window during your off-hours to avoid any disruption to kitchen operations.
               </p>
               <div className="relative rounded-xl overflow-hidden aspect-square border border-border-stroke bg-white">
-                <img src="/media/images/onboarding3.webp" alt="Step 3: Scheduling Commercial Kitchen Grease Cleaning during off-hours" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src="/media/images/onboarding3.webp" alt="Step 3: Scheduling Commercial Kitchen Grease Cleaning during off-hours" width={800} height={800} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
             </div>
 
@@ -521,7 +521,7 @@ export default function Home() {
                 Clean workspace, protected floors, and NFPA 96 certified cleaning down to bare metal.
               </p>
               <div className="relative rounded-xl overflow-hidden aspect-square border border-border-stroke bg-white">
-                <img src="/media/images/onboardin4.webp" alt="Step 4: Certified Kitchen Hood Exhaust System Compliance Cleaning" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src="/media/images/onboardin4.webp" alt="Step 4: Certified Kitchen Hood Exhaust System Compliance Cleaning" width={800} height={800} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
             </div>
 
@@ -542,7 +542,7 @@ export default function Home() {
                 Compliance certification sticker placed, digital receipt, and simple online payment.
               </p>
               <div className="relative rounded-xl overflow-hidden aspect-square border border-border-stroke bg-white">
-                <img src="/media/images/onboarding5.webp" alt="Step 5: Official NFPA 96 Compliance Sticker Placement and Payment" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src="/media/images/onboarding5.webp" alt="Step 5: Official NFPA 96 Compliance Sticker Placement and Payment" width={800} height={800} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
             </div>
           </div>
@@ -622,7 +622,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             {/* Left Column: Image Card */}
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5] border border-border-stroke shadow-md bg-white">
-              <img src="/media/images/why-people-trust.webp" alt="Certified Commercial Exhaust Safety Technician performing deep degreasing" className="absolute inset-0 w-full h-full object-cover" />
+              <img src="/media/images/why-people-trust.webp" alt="Certified Commercial Exhaust Safety Technician performing deep degreasing" width={1536} height={2064} className="absolute inset-0 w-full h-full object-cover" />
             </div>
 
             {/* Right Column: Features List */}

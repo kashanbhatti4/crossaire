@@ -7,6 +7,8 @@ interface GalleryItem {
   image: string;
   title: string;
   desc: string;
+  width: number;
+  height: number;
 }
 
 const galleryItems: GalleryItem[] = [
@@ -15,30 +17,40 @@ const galleryItems: GalleryItem[] = [
     image: "/media/images/kitchen-hood.webp",
     title: "Kitchen Hoods",
     desc: "NFPA 96 compliance deep steam cleaning",
+    width: 800,
+    height: 800,
   },
   {
     id: 2,
     image: "/media/images/exhaust-fan.webp",
     title: "Exhaust Fans",
     desc: "Belt checks, motor audits & bearing lubes",
+    width: 800,
+    height: 800,
   },
   {
     id: 3,
     image: "/media/images/compliance.webp",
     title: "Compliance Audits",
     desc: "Detailed visual reports & before-after photos",
+    width: 800,
+    height: 800,
   },
   {
     id: 4,
     image: "/media/images/precision-care.webp",
     title: "Pollution Control Units",
     desc: "Advanced PCU diagnostics & filter cleaning",
+    width: 800,
+    height: 800,
   },
   {
     id: 5,
     image: "/media/images/duct-system.webp",
     title: "Ductwork Systems",
     desc: "Horizontal & vertical access grease removal",
+    width: 800,
+    height: 640,
   },
 ];
 
@@ -84,6 +96,8 @@ export default function Gallery() {
               <img 
                 src={item.image} 
                 alt={item.title} 
+                width={item.width}
+                height={item.height}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary-text/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8 text-white">
@@ -107,7 +121,13 @@ export default function Gallery() {
                 className="snap-start shrink-0 w-[85%] sm:w-[60%] border border-border-stroke rounded-2xl overflow-hidden shadow-sm bg-white"
               >
                 <div className="aspect-[4/3] w-full overflow-hidden bg-gray-100">
-                  <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+                  <img 
+                    src={item.image} 
+                    alt={item.title} 
+                    width={item.width}
+                    height={item.height}
+                    className="w-full h-full object-cover" 
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-bold text-primary-text mb-1">{item.title}</h3>
