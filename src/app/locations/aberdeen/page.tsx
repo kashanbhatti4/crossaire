@@ -12,6 +12,7 @@ export const metadata = {
 export default function AberdeenLocationPage() {
   return (
     <div className="bg-white min-h-screen">
+      <link rel="preload" href="/media/images/why-people-trust.webp" as="image" fetchPriority="high" />
       {/* Structured Schema Data */}
       <script
         type="application/ld+json"

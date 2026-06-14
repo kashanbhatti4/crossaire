@@ -104,6 +104,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
+      <link rel="preload" href="/media/images/hero.webp" as="image" fetchPriority="high" />
       <ScrollReveal />
       
       {/* Structured Schema Data */}

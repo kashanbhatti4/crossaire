@@ -12,6 +12,7 @@ export const metadata = {
 export default function KitchenHoodCleaningPage() {
   return (
     <div className="bg-white min-h-screen">
+      <link rel="preload" href="/media/images/services/commercial-kitchen-hood-cleaning.webp" as="image" fetchPriority="high" />
       {/* Structured Schema Data */}
       <script
         type="application/ld+json"

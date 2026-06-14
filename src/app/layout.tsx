@@ -38,11 +38,33 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <link 
+          rel="preload" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          as="style" 
+          crossOrigin="anonymous" 
+        />
+        <link 
+          id="font-awesome-css"
           rel="stylesheet" 
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          media="print" 
           crossOrigin="anonymous" 
           referrerPolicy="no-referrer" 
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var link = document.getElementById('font-awesome-css');
+                if (link) {
+                  link.addEventListener('load', function() { this.media = 'all'; });
+                  if (link.sheet) link.media = 'all';
+                }
+              })();
+            `
+          }}
         />
       </head>
       <body className={`${plusJakartaSans.variable} ${inter.variable} font-sans min-h-screen antialiased text-primary-text bg-main-bg flex flex-col`}>
