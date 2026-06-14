@@ -145,7 +145,7 @@ export default function GalleryPage() {
             Work Showcase
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-[56px] font-extrabold tracking-tight text-white mb-8 leading-[1.1]">
-            Our Work In Action
+            Visual Proof Of Our High Quality Commercial Kitchen Cleaning Standards
           </h1>
 
           {/* Hero Right: Draggable Before/After Comparison Slider */}
