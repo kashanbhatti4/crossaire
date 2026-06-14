@@ -25,7 +25,7 @@ export default function AberdeenLocationPage() {
             "provider": {
               "@type": "LocalBusiness",
               "name": "Crossaire",
-              "image": "https://crossaire.vercel.app/media/images/logo.png",
+              "image": "https://crossaire.vercel.app/media/images/logo.webp",
               "telephone": "866-399-2885",
               "address": {
                 "@type": "PostalAddress",
@@ -98,7 +98,7 @@ export default function AberdeenLocationPage() {
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/media/images/why-people-trust.png')" }}
+          style={{ backgroundImage: "url('/media/images/why-people-trust.webp')" }}
         />
         {/* Dark Overlay of #0c1a2b */}
         <div className="absolute inset-0 bg-[#0C1A2B]/92" />
@@ -153,13 +153,13 @@ export default function AberdeenLocationPage() {
             </span>
             <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
               <div className="relative group">
-                <img src="/media/images/emblem1.png" alt="NFPA 96 Certified Commercial Exhaust Cleaning Compliance Logo" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/emblem1.webp" alt="NFPA 96 Certified Commercial Exhaust Cleaning Compliance Logo" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="relative group">
-                <img src="/media/images/emblem2.png" alt="OSHA Compliant Commercial Kitchen Safety Standard Certification" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/emblem2.webp" alt="OSHA Compliant Commercial Kitchen Safety Standard Certification" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="relative group">
-                <img src="/media/images/emblem3.png" alt="IKECA Equivalent Equivalent Exhaust System Cleaning Standard Logo" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/emblem3.webp" alt="IKECA Equivalent Equivalent Exhaust System Cleaning Standard Logo" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
             </div>
           </div>
@@ -171,34 +171,34 @@ export default function AberdeenLocationPage() {
             </span>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 md:gap-12 items-center justify-items-center">
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/amazon.png" alt="Amazon Commercial Facility Kitchen Service Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/amazon.webp" alt="Amazon Commercial Facility Kitchen Service Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/burger-king.png" alt="Burger King Restaurant Exhaust Service Client" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/burger-king.webp" alt="Burger King Restaurant Exhaust Service Client" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/hilton.png" alt="Hilton Hotel Kitchen Hood Service Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/hilton.webp" alt="Hilton Hotel Kitchen Hood Service Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/ihg-hotels.png" alt="IHG Hotels Ventilation Cleaning Client" className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/ihg-hotels.webp" alt="IHG Hotels Ventilation Cleaning Client" className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/subway.png" alt="Subway Restaurant Grease Trap Cleaning Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/subway.webp" alt="Subway Restaurant Grease Trap Cleaning Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/wing-stop.png" alt="Wing Stop Hood Filter Cleaning Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/wing-stop.webp" alt="Wing Stop Hood Filter Cleaning Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/ruth-chris.png" alt="Ruth's Chris Steak House Exhaust Service Client" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/ruth-chris.webp" alt="Ruth's Chris Steak House Exhaust Service Client" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/the-halal-guys.png" alt="The Halal Guys Commercial Kitchen Service Client" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/the-halal-guys.webp" alt="The Halal Guys Commercial Kitchen Service Client" className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/omni.png" alt="Omni Hotels & Resorts Kitchen Exhaust Client" className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/omni.webp" alt="Omni Hotels & Resorts Kitchen Exhaust Client" className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="flex items-center justify-center">
-                <img src="/media/images/partners/bowie.png" alt="Bowie State University Dining Facility Service Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/partners/bowie.webp" alt="Bowie State University Dining Facility Service Client" className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
             </div>
           </div>
@@ -222,7 +222,7 @@ export default function AberdeenLocationPage() {
           </div>
           <div className="relative rounded-2xl overflow-hidden shadow-xl border border-border-stroke/60 aspect-[4/3]">
             <img 
-              src="/media/images/precision-care.png" 
+              src="/media/images/precision-care.webp" 
               alt="Clean commercial kitchen hood after steam cleaning in Aberdeen" 
               className="w-full h-full object-cover"
             />

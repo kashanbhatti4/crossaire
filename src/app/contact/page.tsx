@@ -27,7 +27,7 @@ export default function ContactPage() {
               "name": "Crossaire",
               "telephone": "866-399-2885",
               "email": "info@crossaire.com",
-              "image": "https://crossaire.vercel.app/media/images/logo.png",
+              "image": "https://crossaire.vercel.app/media/images/logo.webp",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Glen Burnie",

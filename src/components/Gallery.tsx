@@ -12,31 +12,31 @@ interface GalleryItem {
 const galleryItems: GalleryItem[] = [
   {
     id: 1,
-    image: "/media/images/kitchen-hood.png",
+    image: "/media/images/kitchen-hood.webp",
     title: "Kitchen Hoods",
     desc: "NFPA 96 compliance deep steam cleaning",
   },
   {
     id: 2,
-    image: "/media/images/exhaust-fan.png",
+    image: "/media/images/exhaust-fan.webp",
     title: "Exhaust Fans",
     desc: "Belt checks, motor audits & bearing lubes",
   },
   {
     id: 3,
-    image: "/media/images/compliance.png",
+    image: "/media/images/compliance.webp",
     title: "Compliance Audits",
     desc: "Detailed visual reports & before-after photos",
   },
   {
     id: 4,
-    image: "/media/images/precision-care.png",
+    image: "/media/images/precision-care.webp",
     title: "Pollution Control Units",
     desc: "Advanced PCU diagnostics & filter cleaning",
   },
   {
     id: 5,
-    image: "/media/images/duct-system.png",
+    image: "/media/images/duct-system.webp",
     title: "Ductwork Systems",
     desc: "Horizontal & vertical access grease removal",
   },

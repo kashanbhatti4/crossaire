@@ -27,32 +27,32 @@ const servicesList = [
 
 const galleryItems: GalleryItem[] = [
   // 1. Kitchen Hood Cleaning
-  { id: 1, image: "/media/images/kitchen-hood.png", category: "Kitchen Hood Cleaning" },
-  { id: 2, image: "/media/images/why-people-trust.png", category: "Kitchen Hood Cleaning" },
+  { id: 1, image: "/media/images/kitchen-hood.webp", category: "Kitchen Hood Cleaning" },
+  { id: 2, image: "/media/images/why-people-trust.webp", category: "Kitchen Hood Cleaning" },
   // 2. Restaurant Kitchen Exhaust System Cleaning
-  { id: 3, image: "/media/images/duct-system.png", category: "Restaurant Kitchen Exhaust System Cleaning" },
-  { id: 4, image: "/media/images/onboarding3.png", category: "Restaurant Kitchen Exhaust System Cleaning" },
+  { id: 3, image: "/media/images/duct-system.webp", category: "Restaurant Kitchen Exhaust System Cleaning" },
+  { id: 4, image: "/media/images/onboarding3.webp", category: "Restaurant Kitchen Exhaust System Cleaning" },
   // 3. Kitchen Exhaust Fan Repairs
-  { id: 5, image: "/media/images/exhaust-fan.png", category: "Kitchen Exhaust Fan Repairs" },
-  { id: 6, image: "/media/images/onboarding2.png", category: "Kitchen Exhaust Fan Repairs" },
+  { id: 5, image: "/media/images/exhaust-fan.webp", category: "Kitchen Exhaust Fan Repairs" },
+  { id: 6, image: "/media/images/onboarding2.webp", category: "Kitchen Exhaust Fan Repairs" },
   // 4. Kitchen Exhaust Fan Installation
-  { id: 7, image: "/media/images/exhaust-fan.png", category: "Kitchen Exhaust Fan Installation" },
+  { id: 7, image: "/media/images/exhaust-fan.webp", category: "Kitchen Exhaust Fan Installation" },
   // 5. Grease Trap Cleaning
-  { id: 8, image: "/media/images/onboarding3.png", category: "Grease Trap Cleaning" },
+  { id: 8, image: "/media/images/onboarding3.webp", category: "Grease Trap Cleaning" },
   // 6. Pollution Control Systems Maintenance
-  { id: 9, image: "/media/images/precision-care.png", category: "Pollution Control Systems Maintenance" },
+  { id: 9, image: "/media/images/precision-care.webp", category: "Pollution Control Systems Maintenance" },
   // 7. Kitchen Hood Startups and Commissioning
-  { id: 10, image: "/media/images/onboarding1.png", category: "Kitchen Hood Startups and Commissioning" },
+  { id: 10, image: "/media/images/onboarding1.webp", category: "Kitchen Hood Startups and Commissioning" },
   // 8. Roof Grease Containment Systems Installations
-  { id: 11, image: "/media/images/onboarding2.png", category: "Roof Grease Containment Systems Installations" },
+  { id: 11, image: "/media/images/onboarding2.webp", category: "Roof Grease Containment Systems Installations" },
   // 9. Restaurant Hood Filter Cleaning & Exchange
-  { id: 12, image: "/media/images/kitchen-hood.png", category: "Restaurant Hood Filter Cleaning & Exchange" },
-  { id: 13, image: "/media/images/onboarding1.png", category: "Restaurant Hood Filter Cleaning & Exchange" },
+  { id: 12, image: "/media/images/kitchen-hood.webp", category: "Restaurant Hood Filter Cleaning & Exchange" },
+  { id: 13, image: "/media/images/onboarding1.webp", category: "Restaurant Hood Filter Cleaning & Exchange" },
   // 10. Kitchen Exhaust Duct Repair & Access Panel Installation
-  { id: 14, image: "/media/images/onboardin4.png", category: "Kitchen Exhaust Duct Repair & Access Panel Installation" },
+  { id: 14, image: "/media/images/onboardin4.webp", category: "Kitchen Exhaust Duct Repair & Access Panel Installation" },
   // 11. Kitchen Hood Inspections
-  { id: 15, image: "/media/images/compliance.png", category: "Kitchen Hood Inspections" },
-  { id: 16, image: "/media/images/onboarding5.png", category: "Kitchen Hood Inspections" },
+  { id: 15, image: "/media/images/compliance.webp", category: "Kitchen Hood Inspections" },
+  { id: 16, image: "/media/images/onboarding5.webp", category: "Kitchen Hood Inspections" },
 ];
 
 export default function GalleryClient() {
@@ -157,7 +157,7 @@ export default function GalleryClient() {
             >
               {/* After Image (Background) */}
               <img 
-                src="/media/images/precision-care.png" 
+                src="/media/images/precision-care.webp" 
                 alt="Clean commercial kitchen hood after steam cleaning service" 
                 className="absolute inset-0 w-full h-full object-cover pointer-events-none" 
               />
@@ -172,7 +172,7 @@ export default function GalleryClient() {
                   style={{ width: `${containerWidth}px` }}
                 >
                   <img 
-                    src="/media/images/kitchen-hood.png" 
+                    src="/media/images/kitchen-hood.webp" 
                     alt="Greasy dirty commercial kitchen hood before cleaning" 
                     className="absolute inset-0 w-full h-full object-cover pointer-events-none" 
                   />

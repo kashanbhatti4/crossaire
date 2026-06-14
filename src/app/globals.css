@@ -527,7 +527,7 @@ header.nav-scrolled .nav-phone-link:hover {
   left: 0;
   width: 100%;
   height: 700px; /* Adjusted height to cover increased padding + text (+140px) */
-  background-image: linear-gradient(180deg, rgba(28, 108, 207, 0.1) 0%, rgba(28, 108, 207, 0.7) 70%, var(--accent) 100%), url('/media/images/hero.jpg');
+  background-image: linear-gradient(180deg, rgba(28, 108, 207, 0.1) 0%, rgba(28, 108, 207, 0.7) 70%, var(--accent) 100%), url('/media/images/hero.webp');
   background-repeat: no-repeat;
   background-position: center center; /* centered on mobile */
   background-size: cover; /* kept cover as on desktop */
@@ -547,7 +547,7 @@ header.nav-scrolled .nav-phone-link:hover {
   .hero-section::before {
     height: 100%; /* Desktop covers full height */
     background-position: center top;
-    background-image: linear-gradient(180deg, rgba(28, 108, 207, 0.1) 0%, rgba(28, 108, 207, 0.6) 65%, var(--accent) 92%), url('/media/images/hero.jpg');
+    background-image: linear-gradient(180deg, rgba(28, 108, 207, 0.1) 0%, rgba(28, 108, 207, 0.6) 65%, var(--accent) 92%), url('/media/images/hero.webp');
   }
 }
 

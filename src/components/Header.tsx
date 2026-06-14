@@ -111,7 +111,7 @@ export default function Header() {
         {/* Brand Logo */}
         <a href="/" className="flex items-center group logo-link" onClick={handleMobileLinkClick}>
           <img 
-            src="/media/images/logo.png" 
+            src="/media/images/logo.webp" 
             alt="Crossaire Logo" 
             className="h-10 w-auto object-contain transition-opacity duration-300" 
           />

@@ -25,7 +25,7 @@ export default function AboutPage() {
               "@type": "LocalBusiness",
               "name": "Crossaire",
               "telephone": "866-399-2885",
-              "image": "https://crossaire.vercel.app/media/images/logo.png",
+              "image": "https://crossaire.vercel.app/media/images/logo.webp",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Glen Burnie",
@@ -115,7 +115,7 @@ export default function AboutPage() {
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/media/images/why-people-trust.png')" }}
+          style={{ backgroundImage: "url('/media/images/why-people-trust.webp')" }}
         />
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-[#0C1A2B]/92" />
@@ -194,7 +194,7 @@ export default function AboutPage() {
             {/* Right Column: Image Card */}
             <div className="lg:col-span-5 relative rounded-2xl overflow-hidden aspect-[4/5] border border-border-stroke shadow-md bg-white">
               <img 
-                src="/media/images/precision-care.png" 
+                src="/media/images/precision-care.webp" 
                 alt="Crossaire technician performing precise kitchen hood exhaust cleaning" 
                 className="absolute inset-0 w-full h-full object-cover" 
               />
@@ -342,7 +342,7 @@ export default function AboutPage() {
             {/* Left Column: Image Card */}
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5] border border-border-stroke shadow-md bg-white">
               <img 
-                src="/media/images/compliance.png" 
+                src="/media/images/compliance.webp" 
                 alt="Certified Commercial Exhaust Safety Technician performing compliance verification" 
                 className="absolute inset-0 w-full h-full object-cover" 
               />
