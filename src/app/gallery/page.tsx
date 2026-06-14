@@ -7,75 +7,52 @@ import ScrollReveal from "@/components/ScrollReveal";
 interface GalleryItem {
   id: number;
   image: string;
-  title: string;
-  desc: string;
-  category: "Kitchen Hoods" | "Exhaust Fans" | "Ductwork" | "Compliance";
+  category: string;
 }
 
+const servicesList = [
+  "All",
+  "Kitchen Hood Cleaning",
+  "Restaurant Kitchen Exhaust System Cleaning",
+  "Kitchen Exhaust Fan Repairs",
+  "Kitchen Exhaust Fan Installation",
+  "Grease Trap Cleaning",
+  "Pollution Control Systems Maintenance",
+  "Kitchen Hood Startups and Commissioning",
+  "Roof Grease Containment Systems Installations",
+  "Restaurant Hood Filter Cleaning & Exchange",
+  "Kitchen Exhaust Duct Repair & Access Panel Installation",
+  "Kitchen Hood Inspections"
+];
+
 const galleryItems: GalleryItem[] = [
-  {
-    id: 1,
-    image: "/media/images/kitchen-hood.png",
-    title: "Commercial Kitchen Hood Cleaning",
-    desc: "NFPA 96 certified deep steam cleaning and degreasing of stainless steel canopy.",
-    category: "Kitchen Hoods",
-  },
-  {
-    id: 2,
-    image: "/media/images/exhaust-fan.png",
-    title: "Rooftop Exhaust Fan Service",
-    desc: "Complete fan housing cleaning, fan blades scraping, and electrical belt inspection.",
-    category: "Exhaust Fans",
-  },
-  {
-    id: 3,
-    image: "/media/images/compliance.png",
-    title: "Fire Compliance Certification",
-    desc: "Post-service audit and certification sticker applied for fire inspector logs.",
-    category: "Compliance",
-  },
-  {
-    id: 4,
-    image: "/media/images/precision-care.png",
-    title: "Pollution Control Unit Degreasing",
-    desc: "Advanced PCU module diagnostics, scrubbing, and electrostatic filter replacement.",
-    category: "Ductwork",
-  },
-  {
-    id: 5,
-    image: "/media/images/duct-system.png",
-    title: "Commercial Exhaust Ductwork",
-    desc: "Access panels opened to clean vertical and horizontal grease-heavy duct paths.",
-    category: "Ductwork",
-  },
-  {
-    id: 6,
-    image: "/media/images/onboarding5.png",
-    title: "NFPA 96 sticker placement",
-    desc: "Official dated safety sticker placed on the hood for local health department audits.",
-    category: "Compliance",
-  },
-  {
-    id: 7,
-    image: "/media/images/onboarding1.png",
-    title: "Pre-service system inspection",
-    desc: "Detailed visual audit of grease deposits and system flow before starting service.",
-    category: "Compliance",
-  },
-  {
-    id: 8,
-    image: "/media/images/onboarding2.png",
-    title: "Rooftop Fan Grease Containment",
-    desc: "Servicing and clearing grease collection systems to protect the roof structure.",
-    category: "Exhaust Fans",
-  },
-  {
-    id: 9,
-    image: "/media/images/onboardin4.png",
-    title: "Deep Duct Grease Scraping",
-    desc: "Manual scraping of heavy buildup down to bare steel prior to foam treatment.",
-    category: "Ductwork",
-  },
+  // 1. Kitchen Hood Cleaning
+  { id: 1, image: "/media/images/kitchen-hood.png", category: "Kitchen Hood Cleaning" },
+  { id: 2, image: "/media/images/why-people-trust.png", category: "Kitchen Hood Cleaning" },
+  // 2. Restaurant Kitchen Exhaust System Cleaning
+  { id: 3, image: "/media/images/duct-system.png", category: "Restaurant Kitchen Exhaust System Cleaning" },
+  { id: 4, image: "/media/images/onboarding3.png", category: "Restaurant Kitchen Exhaust System Cleaning" },
+  // 3. Kitchen Exhaust Fan Repairs
+  { id: 5, image: "/media/images/exhaust-fan.png", category: "Kitchen Exhaust Fan Repairs" },
+  { id: 6, image: "/media/images/onboarding2.png", category: "Kitchen Exhaust Fan Repairs" },
+  // 4. Kitchen Exhaust Fan Installation
+  { id: 7, image: "/media/images/exhaust-fan.png", category: "Kitchen Exhaust Fan Installation" },
+  // 5. Grease Trap Cleaning
+  { id: 8, image: "/media/images/onboarding3.png", category: "Grease Trap Cleaning" },
+  // 6. Pollution Control Systems Maintenance
+  { id: 9, image: "/media/images/precision-care.png", category: "Pollution Control Systems Maintenance" },
+  // 7. Kitchen Hood Startups and Commissioning
+  { id: 10, image: "/media/images/onboarding1.png", category: "Kitchen Hood Startups and Commissioning" },
+  // 8. Roof Grease Containment Systems Installations
+  { id: 11, image: "/media/images/onboarding2.png", category: "Roof Grease Containment Systems Installations" },
+  // 9. Restaurant Hood Filter Cleaning & Exchange
+  { id: 12, image: "/media/images/kitchen-hood.png", category: "Restaurant Hood Filter Cleaning & Exchange" },
+  { id: 13, image: "/media/images/onboarding1.png", category: "Restaurant Hood Filter Cleaning & Exchange" },
+  // 10. Kitchen Exhaust Duct Repair & Access Panel Installation
+  { id: 14, image: "/media/images/onboardin4.png", category: "Kitchen Exhaust Duct Repair & Access Panel Installation" },
+  // 11. Kitchen Hood Inspections
+  { id: 15, image: "/media/images/compliance.png", category: "Kitchen Hood Inspections" },
+  { id: 16, image: "/media/images/onboarding5.png", category: "Kitchen Hood Inspections" },
 ];
 
 export default function GalleryPage() {
@@ -140,9 +117,7 @@ export default function GalleryPage() {
     : galleryItems.filter(item => item.category === selectedCategory);
 
   const openLightbox = (index: number) => {
-    // Find index of the clicked item in the filtered items array
-    const filteredIndex = filteredItems.findIndex(item => item.id === filteredItems[index].id);
-    setActiveImageIndex(filteredIndex);
+    setActiveImageIndex(index);
     setLightboxOpen(true);
   };
 
@@ -158,97 +133,106 @@ export default function GalleryPage() {
 
   return (
     <div className="bg-white min-h-screen">
-      {/* 1. PAGE HEADER */}
-      <section className="pt-32 pb-16 px-6 bg-white border-b border-border-stroke/40">
-        <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
-          <span className="subtitle-badge block mb-3">
-            Work Showcase
-          </span>
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-primary-text mb-6 leading-[1.1]">
-            Our Work <span className="text-accent">In Action</span>
-          </h1>
-          <p className="text-body-text text-lg md:text-xl leading-relaxed max-w-3xl">
-            Explore photos of our certified kitchen hood cleaning, ductwork degreasing, rooftop fan servicing, and compliance audits across Maryland, DC, and Virginia.
-          </p>
-        </div>
-      </section>
-
-      {/* 2. BEFORE & AFTER INTERACTIVE COMPARISON SLIDER */}
-      <section className="py-24 px-6 bg-main-bg border-b border-border-stroke animate-on-scroll">
-        <div className="max-w-4xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center flex flex-col items-center mb-12">
-            <span className="subtitle-badge block mb-3">(Interactive Transformation)</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-primary-text tracking-tight mb-4">
-              See the Crossaire Difference
-            </h2>
-            <p className="text-body-text text-sm md:text-base max-w-xl">
-              Drag the center slider handles left and right to compare a greasy "before" exhaust setup with a pristine NFPA 96 "after" cleaning.
+      {/* 1. COMBINED HERO & SLIDER SECTION */}
+      <section className="relative text-white pt-32 pb-24 px-6 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/media/images/why-people-trust.png')" }}
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-[#0C1A2B]/92" />
+        
+        <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          {/* Hero Left: Title & Description */}
+          <div className="lg:col-span-5 flex flex-col justify-center text-left">
+            <span className="text-sm uppercase tracking-wider font-extrabold text-accent block mb-3">
+              Work Showcase
+            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-[56px] font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
+              Our Work <br />
+              <span className="text-accent">In Action</span>
+            </h1>
+            <p className="text-white/80 text-base md:text-lg leading-relaxed mb-8">
+              Explore photos of our certified kitchen hood cleaning, exhaust fan servicing, and ductwork degreasing across Maryland, DC, and Virginia. Drag the center slider handle on the right to compare before & after transformations.
             </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 items-start">
+              <a href="/#booking-form-section" className="btn-primary w-full sm:w-auto px-6 py-3.5 font-bold text-center">
+                Book An Inspection
+              </a>
+              <a href="tel:8663992885" className="w-full sm:w-auto border border-white/20 bg-white/5 hover:bg-white/10 text-white font-bold px-6 py-3.5 rounded-lg transition-all text-center flex items-center justify-center gap-2">
+                <i className="fa-solid fa-phone text-sm"></i>
+                <span>Call 866-399-2885</span>
+              </a>
+            </div>
           </div>
 
-          {/* Slider Frame */}
-          <div 
-            ref={containerRef}
-            onPointerDown={handlePointerDown}
-            className="relative w-full h-[350px] sm:h-[450px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-border-stroke select-none cursor-ew-resize"
-          >
-            {/* After Image (Background) */}
-            <img 
-              src="/media/images/precision-care.png" 
-              alt="Clean commercial kitchen hood after steam cleaning service" 
-              className="absolute inset-0 w-full h-full object-cover pointer-events-none" 
-            />
-            
-            {/* Before Image (Clipping Foreground) */}
+          {/* Hero Right: Draggable Before/After Comparison Slider */}
+          <div className="lg:col-span-7 w-full">
             <div 
-              className="absolute inset-y-0 left-0 overflow-hidden pointer-events-none" 
-              style={{ width: `${sliderPosition}%` }}
+              ref={containerRef}
+              onPointerDown={handlePointerDown}
+              className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] rounded-2xl overflow-hidden shadow-2xl border border-white/10 select-none cursor-ew-resize"
             >
+              {/* After Image (Background) */}
+              <img 
+                src="/media/images/precision-care.png" 
+                alt="Clean commercial kitchen hood after steam cleaning service" 
+                className="absolute inset-0 w-full h-full object-cover pointer-events-none" 
+              />
+              
+              {/* Before Image (Clipping Foreground) */}
               <div 
-                className="absolute inset-y-0 left-0 h-full pointer-events-none" 
-                style={{ width: `${containerWidth}px` }}
+                className="absolute inset-y-0 left-0 overflow-hidden pointer-events-none" 
+                style={{ width: `${sliderPosition}%` }}
               >
-                <img 
-                  src="/media/images/kitchen-hood.png" 
-                  alt="Greasy dirty commercial kitchen hood before cleaning" 
-                  className="absolute inset-0 w-full h-full object-cover pointer-events-none" 
-                />
+                <div 
+                  className="absolute inset-y-0 left-0 h-full pointer-events-none" 
+                  style={{ width: `${containerWidth}px` }}
+                >
+                  <img 
+                    src="/media/images/kitchen-hood.png" 
+                    alt="Greasy dirty commercial kitchen hood before cleaning" 
+                    className="absolute inset-0 w-full h-full object-cover pointer-events-none" 
+                  />
+                </div>
               </div>
-            </div>
 
-            {/* Draggable Divider Bar */}
-            <div 
-              className="absolute inset-y-0 w-1 bg-white shadow-xl cursor-ew-resize z-20 flex items-center justify-center"
-              style={{ left: `${sliderPosition}%` }}
-            >
-              <div className="w-10 h-10 rounded-full bg-white text-accent border border-border-stroke shadow-2xl flex items-center justify-center hover:scale-105 active:scale-95 transition-all">
-                <i className="fa-solid fa-arrows-left-right text-xs"></i>
+              {/* Draggable Divider Bar */}
+              <div 
+                className="absolute inset-y-0 w-1 bg-white shadow-xl cursor-ew-resize z-20 flex items-center justify-center"
+                style={{ left: `${sliderPosition}%` }}
+              >
+                <div className="w-10 h-10 rounded-full bg-white text-accent border border-border-stroke shadow-2xl flex items-center justify-center hover:scale-105 active:scale-95 transition-all">
+                  <i className="fa-solid fa-arrows-left-right text-xs"></i>
+                </div>
               </div>
-            </div>
 
-            {/* Labels */}
-            <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-sm text-white px-3 py-1 text-xs font-bold rounded-lg uppercase tracking-wide select-none pointer-events-none z-10">
-              Before
-            </div>
-            <div className="absolute top-4 right-4 bg-accent/90 backdrop-blur-sm text-white px-3 py-1 text-xs font-bold rounded-lg uppercase tracking-wide select-none pointer-events-none z-10">
-              After
+              {/* Labels */}
+              <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-sm text-white px-3 py-1 text-xs font-bold rounded-lg uppercase tracking-wide select-none pointer-events-none z-10">
+                Before
+              </div>
+              <div className="absolute top-4 right-4 bg-accent/90 backdrop-blur-sm text-white px-3 py-1 text-xs font-bold rounded-lg uppercase tracking-wide select-none pointer-events-none z-10">
+                After
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 3. INTERACTIVE CATEGORY TABS & FILTERING GRID */}
+      {/* 2. INTERACTIVE CATEGORY TABS & FILTERING GRID */}
       <section className="py-24 px-6 bg-white border-b border-border-stroke animate-on-scroll">
         <div className="max-w-7xl mx-auto">
-          {/* Category Filter buttons row */}
-          <div className="flex flex-wrap justify-center items-center gap-3 mb-16">
-            {["All", "Kitchen Hoods", "Exhaust Fans", "Ductwork", "Compliance"].map((category) => (
+          
+          {/* Scrollable Category Filter tabs row */}
+          <div className="flex overflow-x-auto whitespace-nowrap scrollbar-none gap-3 mb-16 px-4 justify-start lg:justify-center">
+            {servicesList.map((category) => (
               <button
                 key={category}
                 type="button"
                 onClick={() => setSelectedCategory(category)}
-                className={`px-5 py-2.5 rounded-full text-sm font-bold border transition-all cursor-pointer select-none ${
+                className={`px-5 py-2.5 rounded-full text-xs font-bold border transition-all cursor-pointer select-none ${
                   selectedCategory === category
                     ? "bg-accent border-accent text-white shadow-md shadow-accent/15"
                     : "bg-white border-border-stroke text-body-text hover:border-accent hover:text-accent"
@@ -259,31 +243,24 @@ export default function GalleryPage() {
             ))}
           </div>
 
-          {/* Filtering Image Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Filtering Image Grid (Images Only, No Text) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredItems.map((item, index) => (
               <div 
                 key={item.id}
                 onClick={() => openLightbox(index)}
-                className="group relative rounded-2xl overflow-hidden border border-border-stroke bg-white shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between"
+                className="group relative rounded-2xl overflow-hidden border border-border-stroke bg-white shadow-sm hover:shadow-lg hover:scale-[1.02] transition-all duration-300 cursor-pointer aspect-[4/3]"
               >
-                <div className="aspect-[4/3] w-full overflow-hidden bg-gray-100 relative">
-                  <img 
-                    src={item.image} 
-                    alt={item.title} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-                  />
-                  {/* Hover Overlay Zoom icon */}
-                  <div className="absolute inset-0 bg-primary-text/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <div className="w-12 h-12 rounded-full bg-white text-accent flex items-center justify-center shadow-lg transform scale-75 group-hover:scale-100 transition-transform duration-300">
-                      <i className="fa-solid fa-magnifying-glass-plus text-lg"></i>
-                    </div>
+                <img 
+                  src={item.image} 
+                  alt={item.category} 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                />
+                {/* Hover Overlay Zoom icon */}
+                <div className="absolute inset-0 bg-primary-text/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-full bg-white text-accent flex items-center justify-center shadow-lg transform scale-75 group-hover:scale-100 transition-transform duration-300">
+                    <i className="fa-solid fa-magnifying-glass-plus text-lg"></i>
                   </div>
-                </div>
-                <div className="p-6 border-t border-border-stroke/40">
-                  <span className="text-[10px] font-extrabold uppercase tracking-widest text-accent mb-2 block">{item.category}</span>
-                  <h3 className="text-base font-bold text-primary-text mb-1 group-hover:text-accent transition-colors">{item.title}</h3>
-                  <p className="text-xs text-body-text leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -291,7 +268,7 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* 4. LIGHTBOX MODAL */}
+      {/* 3. LIGHTBOX MODAL */}
       {lightboxOpen && filteredItems[activeImageIndex] && (
         <div 
           onClick={() => setLightboxOpen(false)}
@@ -324,15 +301,13 @@ export default function GalleryPage() {
           >
             <img 
               src={filteredItems[activeImageIndex].image} 
-              alt={filteredItems[activeImageIndex].title} 
-              className="max-h-[70vh] md:max-h-[75vh] w-auto max-w-full rounded-lg object-contain shadow-2xl border border-white/5" 
+              alt={filteredItems[activeImageIndex].category} 
+              className="max-h-[75vh] md:max-h-[80vh] w-auto max-w-full rounded-lg object-contain shadow-2xl border border-white/5" 
             />
             <div className="text-center text-white max-w-2xl px-4 mt-2">
               <span className="text-[10px] font-extrabold uppercase tracking-widest text-accent mb-1.5 block">
                 {filteredItems[activeImageIndex].category}
               </span>
-              <h3 className="text-lg font-bold text-white mb-1">{filteredItems[activeImageIndex].title}</h3>
-              <p className="text-sm text-white/70">{filteredItems[activeImageIndex].desc}</p>
               <div className="text-xs text-white/40 mt-3 font-semibold select-none">
                 {activeImageIndex + 1} of {filteredItems.length}
               </div>
@@ -351,10 +326,10 @@ export default function GalleryPage() {
         </div>
       )}
 
-      {/* 5. COVERAGE AREA */}
+      {/* 4. COVERAGE AREA */}
       <CoverageMap />
 
-      {/* 6. CALL TO ACTION (CTA) */}
+      {/* 5. CALL TO ACTION (CTA) */}
       <section className="py-24 px-6 bg-[#0C1A2B] text-white relative overflow-hidden">
         {/* Accent Glow background blur */}
         <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-accent/20 blur-[120px]"></div>
