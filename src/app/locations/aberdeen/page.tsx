@@ -56,11 +56,10 @@ export default function AberdeenLocationPage() {
           {/* Hero Left */}
           <div className="lg:col-span-7 flex flex-col justify-center">
             <span className="text-sm uppercase tracking-wider font-extrabold text-accent block mb-3">
-              Certified Commercial Service
+              (Certified Commercial Service)
             </span>
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
-              Commercial Kitchen <br />
-              <span className="text-accent">Hood Cleaning</span> in Aberdeen, MD
+              Commercial Kitchen Hood Cleaning in <span className="text-accent">Aberdeen, MD</span>
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-8 max-w-2xl">
               Keep your Aberdeen restaurant safe, sanitary, and fully compliant with NFPA 96 standards. Our local certified specialists degrease exhaust fans, duct runs, and hood canopies down to bare metal. 
@@ -97,7 +96,7 @@ export default function AberdeenLocationPage() {
       <section className="py-24 px-6 bg-white animate-on-scroll">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
-            <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-3">Local Exhaust Experts</span>
+            <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-3">(Local Exhaust Experts)</span>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-primary-text mb-6">
               Complete Kitchen Ventilation Care for Aberdeen Businesses
             </h2>
@@ -121,7 +120,7 @@ export default function AberdeenLocationPage() {
       {/* 3. SERVICES WE OFFER IN ABERDEEN */}
       <section className="py-24 px-6 bg-main-bg border-y border-border-stroke animate-on-scroll">
         <div className="max-w-7xl mx-auto text-center mb-16">
-          <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-3">What We Do</span>
+          <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-3">(What We Do)</span>
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-primary-text mb-4">
             Our Kitchen Safety Services in Aberdeen
           </h2>
@@ -216,57 +215,59 @@ export default function AberdeenLocationPage() {
         </div>
       </section>
 
-      {/* 4. WHY CHOOSE US */}
+      {/* 4. OUR STANDARDS */}
       <section className="py-24 px-6 bg-white animate-on-scroll">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-5">
-            <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-3">Our Standards</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-primary-text mb-6">
+        <div className="max-w-7xl mx-auto">
+          {/* Centered Header */}
+          <div className="text-center mb-16 max-w-3xl mx-auto">
+            <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-3">(Our Standards)</span>
+            <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-primary-text mb-4">
               Why Aberdeen Restaurants Rely on Crossaire
             </h2>
-            <p className="text-body-text text-base md:text-lg leading-relaxed mb-8">
+            <p className="text-body-text text-base md:text-lg">
               We provide professional commercial cleaning services that help protect your staff, property, and business reputation.
             </p>
-            
-            <div className="flex items-center gap-6 p-6 bg-main-bg rounded-2xl border border-border-stroke">
-              <div className="w-14 h-14 rounded-full bg-accent text-white flex items-center justify-center text-2xl shrink-0 shadow-lg shadow-accent/10">
-                <i className="fa-solid fa-star"></i>
-              </div>
-              <div>
-                <h4 className="text-lg font-bold text-primary-text mb-1">Fully Certified & Insured</h4>
-                <p className="text-body-text text-xs leading-relaxed">Our technicians are NFPA 96 certified and we carry $5,000,000 in general liability insurance.</p>
-              </div>
-            </div>
           </div>
 
-          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {/* Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
+              {
+                icon: "fa-certificate",
+                title: "Fully Certified & Insured",
+                desc: "Our technicians are NFPA 96 certified commercial kitchen exhaust cleaners. We carry $5M in General Liability insurance."
+              },
               {
                 icon: "fa-clock",
                 title: "24/7 Flexible Service",
-                desc: "We work overnight or during closed hours so you don't lose kitchen uptime."
+                desc: "We work overnight or during closed hours so you don't lose kitchen uptime or disrupt dining customers."
               },
               {
                 icon: "fa-camera",
                 title: "Photo-Proof Reports",
-                desc: "We provide complete before-and-after photo logs of our services for your records."
+                desc: "We deliver complete, transparent before-and-after photo logs of our services for your records and compliance."
               },
               {
                 icon: "fa-clipboard-check",
-                title: "Official Compliance Stickers",
-                desc: "We place official compliance stickers on the hood for health and fire inspectors."
+                title: "Official NFPA Stickers",
+                desc: "We place official NFPA 96 compliance stickers on the hood canopy to satisfy fire marshals, health inspectors, and insurers."
               },
               {
-                icon: "fa-handshake",
+                icon: "fa-handshake-angle",
                 title: "Satisfaction Guarantee",
-                desc: "Our cleaning is guaranteed to meet local fire marshal and insurance requirements."
+                desc: "Our exhaust degreasing is guaranteed to meet all local Aberdeen fire codes and standard compliance parameters."
+              },
+              {
+                icon: "fa-shield-halved",
+                title: "Safety First Approach",
+                desc: "We protect kitchen surfaces and appliances with heavy plastic sheeting and gather all waste water in secure containment bins."
               }
             ].map((box, i) => (
-              <div key={i} className="bg-main-bg rounded-2xl p-6 border border-border-stroke hover:border-accent/20 transition-all">
-                <div className="text-accent text-xl mb-4">
+              <div key={i} className="group relative bg-main-bg border border-border-stroke rounded-2xl p-8 hover:bg-white hover:shadow-xl hover:border-accent/20 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-white border border-border-stroke/80 flex items-center justify-center text-accent text-xl mb-6 group-hover:bg-accent group-hover:text-white group-hover:border-accent transition-all duration-300 shadow-sm">
                   <i className={`fa-solid ${box.icon}`}></i>
                 </div>
-                <h3 className="text-lg font-bold text-primary-text mb-2">{box.title}</h3>
+                <h3 className="text-lg font-extrabold text-primary-text mb-3">{box.title}</h3>
                 <p className="text-body-text text-sm leading-relaxed">{box.desc}</p>
               </div>
             ))}
@@ -280,7 +281,7 @@ export default function AberdeenLocationPage() {
         
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-3">Who We Serve</span>
+            <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-3">(Who We Serve)</span>
             <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4">
               Providing Kitchen Safety Across Diverse Industries
             </h2>
@@ -312,7 +313,7 @@ export default function AberdeenLocationPage() {
       <section className="py-24 px-6 bg-white animate-on-scroll">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-3">Workflow</span>
+            <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-3">(Workflow)</span>
             <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-primary-text mb-4">
               Our Certified Service Process
             </h2>
@@ -346,7 +347,7 @@ export default function AberdeenLocationPage() {
           
           {/* Left Column: Context & Action */}
           <div className="lg:col-span-5">
-            <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-3">Service Coverage</span>
+            <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-3">(Service Coverage)</span>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-primary-text mb-6">
               Neighborhoods We Serve in Aberdeen, MD
             </h2>
@@ -366,7 +367,7 @@ export default function AberdeenLocationPage() {
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center text-accent text-sm shrink-0">
-                  <i className="fa-solid fa-house-shield"></i>
+                  <i className="fa-solid fa-shield-halved"></i>
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-primary-text">Guaranteed Local Coverage</h4>
@@ -383,27 +384,86 @@ export default function AberdeenLocationPage() {
           {/* Right Column: Premium Neighborhood Grid */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { name: "Aberdeen Proving Ground (APG)", zip: "21005", desc: "Military facilities & food services" },
-              { name: "Downtown Aberdeen", zip: "21001", desc: "Main Street restaurants & diners" },
-              { name: "Swan Meadows", zip: "21001", desc: "Local community businesses" },
-              { name: "Paradise", zip: "21001", desc: "Commercial avenues & dining units" },
-              { name: "Aberdeen Heights", zip: "21001", desc: "Local enterprise kitchens" },
-              { name: "Carsins Run", zip: "21001", desc: "Route 22 & highway food facilities" },
-              { name: "Rogers Street Corridor", zip: "21001", desc: "Retail centers & restaurant rows" },
-              { name: "Chapel Hill", zip: "21001", desc: "Local dining spots & facilities" },
-              { name: "Cranberry", zip: "21001", desc: "Suburban commercial kitchens" },
-              { name: "Long Drive", zip: "21001", desc: "Golf club & hospitality kitchens" }
+              { 
+                name: "Aberdeen Proving Ground (APG)", 
+                zip: "21005", 
+                desc: "Military facilities & food services",
+                services: ["Hood Cleaning", "Compliance Audits", "PCS Maintenance"]
+              },
+              { 
+                name: "Downtown Aberdeen", 
+                zip: "21001", 
+                desc: "Main Street restaurants & diners",
+                services: ["Grease Removal", "Fan Repairs", "Filter Pumping"]
+              },
+              { 
+                name: "Swan Meadows", 
+                zip: "21001", 
+                desc: "Local community businesses",
+                services: ["Hood Cleaning", "Fan Repairs", "Compliance Audits"]
+              },
+              { 
+                name: "Paradise", 
+                zip: "21001", 
+                desc: "Commercial avenues & dining units",
+                services: ["Grease Trap Pumping", "Duct Panel Install", "Fan Inspections"]
+              },
+              { 
+                name: "Aberdeen Heights", 
+                zip: "21001", 
+                desc: "Local enterprise kitchens",
+                services: ["Exhaust Fan Installs", "Blower Repairs", "Steam Washing"]
+              },
+              { 
+                name: "Carsins Run", 
+                zip: "21001", 
+                desc: "Route 22 & highway food facilities",
+                services: ["NFPA 96 Compliance", "Hood Cleaning", "Filter Exchange"]
+              },
+              { 
+                name: "Rogers Street Corridor", 
+                zip: "21001", 
+                desc: "Retail centers & restaurant rows",
+                services: ["Motor Adjustments", "Grease Pumping", "Inspections"]
+              },
+              { 
+                name: "Chapel Hill", 
+                zip: "21001", 
+                desc: "Local dining spots & facilities",
+                services: ["Canopy Degreasing", "Plenum Scraping", "Duct Panels"]
+              },
+              { 
+                name: "Cranberry", 
+                zip: "21001", 
+                desc: "Suburban commercial kitchens",
+                services: ["Rooftop Fan Cleaning", "Belt Replacement", "Sticker Placements"]
+              },
+              { 
+                name: "Long Drive", 
+                zip: "21001", 
+                desc: "Golf club & hospitality kitchens",
+                services: ["Duct Cleanings", "ESP Maintenance", "Grease Interceptors"]
+              }
             ].map((area, i) => (
-              <div key={i} className="group flex items-start gap-4 p-5 bg-main-bg border border-border-stroke rounded-2xl transition-all duration-300 hover:bg-white hover:shadow-lg hover:-translate-y-0.5 hover:border-accent/20">
-                <div className="w-10 h-10 rounded-xl bg-white border border-border-stroke flex items-center justify-center text-body-text/40 group-hover:text-accent group-hover:border-accent/20 transition-colors shrink-0 shadow-sm">
-                  <i className="fa-solid fa-map-pin text-sm"></i>
-                </div>
-                <div>
-                  <div className="flex items-center gap-2 mb-1">
-                    <h3 className="font-bold text-sm text-primary-text group-hover:text-accent transition-colors">{area.name}</h3>
-                    <span className="text-[10px] font-bold text-body-text/40 bg-white border border-border-stroke/40 rounded px-1.5 py-0.5 select-none">{area.zip}</span>
+              <div key={i} className="group flex flex-col justify-between p-5 bg-main-bg border border-border-stroke rounded-2xl transition-all duration-300 hover:bg-white hover:shadow-lg hover:-translate-y-0.5 hover:border-accent/20">
+                <div className="flex items-start gap-4 mb-3">
+                  <div className="w-10 h-10 rounded-xl bg-white border border-border-stroke flex items-center justify-center text-body-text/40 group-hover:text-accent group-hover:border-accent/20 transition-colors shrink-0 shadow-sm">
+                    <i className="fa-solid fa-map-pin text-sm"></i>
                   </div>
-                  <p className="text-body-text text-[11px] leading-normal">{area.desc}</p>
+                  <div>
+                    <div className="flex items-center gap-2 mb-1">
+                      <h3 className="font-bold text-sm text-primary-text group-hover:text-accent transition-colors">{area.name}</h3>
+                      <span className="text-[10px] font-bold text-body-text/40 bg-white border border-border-stroke/40 rounded px-1.5 py-0.5 select-none">{area.zip}</span>
+                    </div>
+                    <p className="text-body-text text-[11px] leading-normal">{area.desc}</p>
+                  </div>
+                </div>
+                <div className="flex flex-wrap gap-1 mt-1 border-t border-border-stroke/40 pt-3">
+                  {area.services.map((srv, sIdx) => (
+                    <span key={sIdx} className="text-[9px] font-bold text-accent bg-accent/5 px-2 py-0.5 rounded-full select-none border border-accent/10">
+                      {srv}
+                    </span>
+                  ))}
                 </div>
               </div>
             ))}
@@ -416,7 +476,7 @@ export default function AberdeenLocationPage() {
       <section className="py-24 px-6 bg-white animate-on-scroll">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-3">Help Center</span>
+            <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-3">(Help Center)</span>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-primary-text mb-4">
               Aberdeen Kitchen Safety FAQs
             </h2>
@@ -449,7 +509,7 @@ export default function AberdeenLocationPage() {
       <section className="py-24 px-6 bg-main-bg border-t border-border-stroke animate-on-scroll">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-2">Related Safety Solutions</span>
+            <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-2">(Related Safety Solutions)</span>
             <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight text-primary-text">Our Services</h2>
           </div>
 
@@ -492,7 +552,7 @@ export default function AberdeenLocationPage() {
         <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-accent/20 blur-[120px]"></div>
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-4">Start Clean. Stay Compliant.</span>
+          <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-4">(Start Clean. Stay Compliant.)</span>
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
             Ready to Schedule Your Hood Inspection in Aberdeen?
           </h2>
