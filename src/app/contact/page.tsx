@@ -6,7 +6,7 @@ import LocalFAQItem from "@/components/LocalFAQItem";
 
 export const metadata = {
   title: "Contact Crossaire | Commercial Kitchen Exhaust & Safety",
-  description: "Get in touch with Crossaire. Request a proposal for certified commercial kitchen exhaust hood cleaning, grease trap extraction, and fan repairs in MD, DC, and VA.",
+  description: "Get in touch with Crossaire. Request a quote for certified commercial kitchen exhaust hood cleaning, grease trap extraction, and fan repairs in MD, DC, and VA.",
   keywords: "contact crossaire, kitchen hood cleaning quote, restaurant exhaust cleaning contact, commercial kitchen safety maryland",
 };
 
@@ -66,10 +66,10 @@ export default function ContactPage() {
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "How fast can I get a cleaning proposal?",
+                "name": "How fast can I get a cleaning quote?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "We compile and deliver custom service proposals within 24 hours of your inquiry. For standard operations, we can often generate a quote directly using photos of your hood setup and duct run."
+                  "text": "We compile and deliver custom service quotes within 24 hours of your inquiry. For standard operations, we can often generate a quote directly using photos of your hood setup and duct run."
                 }
               },
               {
@@ -132,7 +132,7 @@ export default function ContactPage() {
             Get in Touch with Our <span className="text-accent">Safety Experts</span>
           </h1>
           <p className="text-white/75 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Have questions about code compliance or need a rapid proposal? We are available 24/7/365 to support your commercial kitchen safety needs.
+            Have questions about code compliance or need a rapid quote? We are available 24/7/365 to support your commercial kitchen safety needs.
           </p>
         </div>
       </section>
@@ -164,7 +164,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-base font-bold text-white mb-1">Phone Line (24/7 Service)</h3>
-                    <p className="text-white/60 text-xs mb-3 leading-relaxed">Call our dispatch team for scheduling, proposals, or emergency requests.</p>
+                    <p className="text-white/60 text-xs mb-3 leading-relaxed">Call our dispatch team for scheduling, quotes, or emergency requests.</p>
                     <a href="tel:8663992885" className="text-accent font-extrabold text-lg hover:underline inline-flex items-center gap-1.5 transition-all">
                       866-399-2885
                       <i className="fa-solid fa-arrow-right-long text-xs"></i>
@@ -215,8 +215,8 @@ export default function ContactPage() {
               <span className="text-xs uppercase tracking-widest font-extrabold text-accent block mb-2">
                 (Send A Message)
               </span>
-              <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-primary-text">Request Proposal or Info</h2>
-              <p className="text-body-text text-sm mt-2">Fill out the fields below, and our commercial safety team will compile a proposal or contact you within 24 hours.</p>
+              <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-primary-text">Request Quote or Info</h2>
+              <p className="text-body-text text-sm mt-2">Fill out the fields below, and our commercial safety team will compile a quote or contact you within 24 hours.</p>
             </div>
             <BookingForm />
           </div>
@@ -237,15 +237,15 @@ export default function ContactPage() {
               Frequently Asked Questions
             </h2>
             <p className="text-body-text text-base md:text-lg max-w-3xl mx-auto">
-              Find answers to scheduling, consultations, proposals, and compliance operations:
+              Find answers to scheduling, consultations, quotes, and compliance operations:
             </p>
           </div>
 
           {/* FAQ Accordion Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start max-w-5xl mx-auto">
             <div className="flex flex-col gap-4">
-              <LocalFAQItem question="How fast can I get a cleaning proposal?">
-                We compile and deliver custom service proposals within 24 hours of your inquiry. For standard operations, we can often generate a quote directly using photos of your hood setup and duct run.
+              <LocalFAQItem question="How fast can I get a cleaning quote?">
+                We compile and deliver custom service quotes within 24 hours of your inquiry. For standard operations, we can often generate a quote directly using photos of your hood setup and duct run.
               </LocalFAQItem>
 
               <LocalFAQItem question="Do you charge for site inspections or walkthroughs?">

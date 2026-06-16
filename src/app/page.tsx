@@ -563,7 +563,7 @@ export default function Home() {
                 Don't wait for code infractions or fire marshals. Standardize your kitchen cleaning schedule today.
               </p>
               <a href="#booking-form-section" className="btn-primary inline-flex">
-                Get Your Proposal
+                Get Your Quote
               </a>
             </div>
 
