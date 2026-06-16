@@ -19,17 +19,17 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} Crossaire. All rights reserved. Strictly conforming to NFPA Standard 96.
         </p>
         <div className="flex gap-5 items-center text-lg">
-          <a href="#" className="text-white/60 hover:text-white transition-colors" aria-label="Facebook">
+          <a href="https://www.facebook.com/people/CrossAire/61566989969821/#" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors" aria-label="Facebook">
             <i className="fa-brands fa-facebook-f"></i>
           </a>
-          <a href="#" className="text-white/60 hover:text-white transition-colors" aria-label="Twitter">
+          <a href="https://x.com/realcrossaire" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors" aria-label="X (Twitter)">
             <i className="fa-brands fa-x-twitter"></i>
           </a>
-          <a href="#" className="text-white/60 hover:text-white transition-colors" aria-label="Instagram">
-            <i className="fa-brands fa-instagram"></i>
+          <a href="https://www.youtube.com/@realCrossAire" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors" aria-label="YouTube">
+            <i className="fa-brands fa-youtube"></i>
           </a>
-          <a href="#" className="text-white/60 hover:text-white transition-colors" aria-label="LinkedIn">
-            <i className="fa-brands fa-linkedin-in"></i>
+          <a href="https://www.tiktok.com/@realcrossaire" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors" aria-label="TikTok">
+            <i className="fa-brands fa-tiktok"></i>
           </a>
         </div>
       </div>

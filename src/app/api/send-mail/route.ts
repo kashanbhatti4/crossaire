@@ -83,8 +83,16 @@ export async function POST(request: Request) {
                 </tr>
               </table>
               
-              <div style="margin-top: 30px; padding-top: 15px; border-top: 1px solid #e9eef3; font-size: 11px; color: #94a3b8; text-align: center;">
-                Sent automatically via Resend from the Crossaire Website.
+              <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e9eef3; text-align: center;">
+                <div style="margin-bottom: 12px;">
+                  <a href="https://www.facebook.com/people/CrossAire/61566989969821/#" target="_blank" style="color: #1c6ccf; text-decoration: none; margin: 0 10px; font-size: 13px; font-weight: bold;">Facebook</a>
+                  <a href="https://x.com/realcrossaire" target="_blank" style="color: #1c6ccf; text-decoration: none; margin: 0 10px; font-size: 13px; font-weight: bold;">X (Twitter)</a>
+                  <a href="https://www.youtube.com/@realCrossAire" target="_blank" style="color: #1c6ccf; text-decoration: none; margin: 0 10px; font-size: 13px; font-weight: bold;">YouTube</a>
+                  <a href="https://www.tiktok.com/@realcrossaire" target="_blank" style="color: #1c6ccf; text-decoration: none; margin: 0 10px; font-size: 13px; font-weight: bold;">TikTok</a>
+                </div>
+                <div style="font-size: 11px; color: #94a3b8;">
+                  Sent automatically via Resend from the Crossaire Website.
+                </div>
               </div>
             </div>
           `,

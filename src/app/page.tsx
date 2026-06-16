@@ -148,9 +148,10 @@ export default function Home() {
               "closes": "23:59"
             },
             "sameAs": [
-              "https://www.facebook.com/crossaire",
-              "https://twitter.com/crossaire",
-              "https://www.instagram.com/crossaire"
+              "https://www.facebook.com/people/CrossAire/61566989969821/#",
+              "https://x.com/realcrossaire",
+              "https://www.youtube.com/@realCrossAire",
+              "https://www.tiktok.com/@realcrossaire"
             ],
             "areaServed": [
               { "@type": "AdministrativeArea", "name": "Maryland" },
