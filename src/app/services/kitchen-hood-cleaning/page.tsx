@@ -12,7 +12,7 @@ export const metadata = {
 export default function KitchenHoodCleaningPage() {
   return (
     <div className="bg-white min-h-screen">
-      <link rel="preload" href="/media/images/services/commercial-kitchen-hood-cleaning.webp" as="image" fetchPriority="high" />
+      <link rel="preload" href="/media/images/gallery/kitchen-hood-cleaning-1.webp" as="image" fetchPriority="high" />
       {/* Structured Schema Data */}
       <script
         type="application/ld+json"
@@ -108,7 +108,7 @@ export default function KitchenHoodCleaningPage() {
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/media/images/services/commercial-kitchen-hood-cleaning.webp')" }}
+          style={{ backgroundImage: "url('/media/images/gallery/kitchen-hood-cleaning-1.webp')" }}
         />
         {/* Dark Overlay of #0c1a2b */}
         <div className="absolute inset-0 bg-[#0C1A2B]/92" />
@@ -358,7 +358,7 @@ export default function KitchenHoodCleaningPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             {/* Left Column: Image Card */}
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5] border border-border-stroke shadow-md bg-white">
-              <img src="/media/images/why-people-trust.webp" alt="Certified Commercial Exhaust Safety Technician performing deep degreasing" className="absolute inset-0 w-full h-full object-cover" />
+              <img src="/media/images/gallery/kitchen-hood-cleaning-2.webp" alt="Certified Commercial Exhaust Safety Technician performing deep degreasing" className="absolute inset-0 w-full h-full object-cover" width={800} height={600} />
             </div>
 
             {/* Right Column: Features List */}
