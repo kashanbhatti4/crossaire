@@ -223,7 +223,7 @@ export default function AberdeenLocationPage() {
           </div>
           <div className="relative rounded-2xl overflow-hidden shadow-xl border border-border-stroke/60 aspect-[4/3]">
             <img 
-              src="/media/images/precision-care.webp" 
+              src="/media/images/gallery/kitchen-hood-cleaning-3.webp" 
               alt="Clean commercial kitchen hood after steam cleaning in Aberdeen" 
               className="w-full h-full object-cover"
             />

@@ -195,7 +195,7 @@ export default function AboutPage() {
             {/* Right Column: Image Card */}
             <div className="lg:col-span-5 relative rounded-2xl overflow-hidden aspect-[4/5] border border-border-stroke shadow-md bg-white">
               <img 
-                src="/media/images/precision-care.webp" 
+                src="/media/images/gallery/kitchen-hood-cleaning-3.webp" 
                 alt="Crossaire technician performing precise kitchen hood exhaust cleaning" 
                 className="absolute inset-0 w-full h-full object-cover" 
               />
@@ -343,7 +343,7 @@ export default function AboutPage() {
             {/* Left Column: Image Card */}
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5] border border-border-stroke shadow-md bg-white">
               <img 
-                src="/media/images/compliance.webp" 
+                src="/media/images/gallery/kitchen-hood-inspections-1.webp" 
                 alt="Certified Commercial Exhaust Safety Technician performing compliance verification" 
                 className="absolute inset-0 w-full h-full object-cover" 
               />
