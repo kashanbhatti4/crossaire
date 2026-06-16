@@ -28,33 +28,335 @@ const servicesList = [
 ];
 
 const galleryItems: GalleryItem[] = [
-  // 1. Kitchen Hood Cleaning
-  { id: 1, image: "/media/images/kitchen-hood.webp", category: "Kitchen Hood Cleaning", width: 800, height: 800 },
-  { id: 2, image: "/media/images/why-people-trust.webp", category: "Kitchen Hood Cleaning", width: 1536, height: 2064 },
-  // 2. Restaurant Kitchen Exhaust System Cleaning
-  { id: 3, image: "/media/images/duct-system.webp", category: "Restaurant Kitchen Exhaust System Cleaning", width: 800, height: 640 },
-  { id: 4, image: "/media/images/onboarding3.webp", category: "Restaurant Kitchen Exhaust System Cleaning", width: 800, height: 800 },
-  // 3. Kitchen Exhaust Fan Repairs
-  { id: 5, image: "/media/images/exhaust-fan.webp", category: "Kitchen Exhaust Fan Repairs", width: 800, height: 800 },
-  { id: 6, image: "/media/images/onboarding2.webp", category: "Kitchen Exhaust Fan Repairs", width: 800, height: 800 },
-  // 4. Kitchen Exhaust Fan Installation
-  { id: 7, image: "/media/images/exhaust-fan.webp", category: "Kitchen Exhaust Fan Installation", width: 800, height: 800 },
-  // 5. Grease Trap Cleaning
-  { id: 8, image: "/media/images/onboarding3.webp", category: "Grease Trap Cleaning", width: 800, height: 800 },
-  // 6. Pollution Control Systems Maintenance
-  { id: 9, image: "/media/images/precision-care.webp", category: "Pollution Control Systems Maintenance", width: 800, height: 800 },
-  // 7. Kitchen Hood Startups and Commissioning
-  { id: 10, image: "/media/images/onboarding1.webp", category: "Kitchen Hood Startups and Commissioning", width: 800, height: 800 },
-  // 8. Roof Grease Containment Systems Installations
-  { id: 11, image: "/media/images/onboarding2.webp", category: "Roof Grease Containment Systems Installations", width: 800, height: 800 },
-  // 9. Restaurant Hood Filter Cleaning & Exchange
-  { id: 12, image: "/media/images/kitchen-hood.webp", category: "Restaurant Hood Filter Cleaning & Exchange", width: 800, height: 800 },
-  { id: 13, image: "/media/images/onboarding1.webp", category: "Restaurant Hood Filter Cleaning & Exchange", width: 800, height: 800 },
-  // 10. Kitchen Exhaust Duct Repair & Access Panel Installation
-  { id: 14, image: "/media/images/onboardin4.webp", category: "Kitchen Exhaust Duct Repair & Access Panel Installation", width: 800, height: 800 },
-  // 11. Kitchen Hood Inspections
-  { id: 15, image: "/media/images/compliance.webp", category: "Kitchen Hood Inspections", width: 800, height: 800 },
-  { id: 16, image: "/media/images/onboarding5.webp", category: "Kitchen Hood Inspections", width: 800, height: 800 },
+  {
+    id: 1,
+    image: "/media/images/gallery/grease-trap-cleaning-1.webp",
+    category: "Grease Trap Cleaning",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 2,
+    image: "/media/images/gallery/grease-trap-cleaning-2.webp",
+    category: "Grease Trap Cleaning",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 3,
+    image: "/media/images/gallery/grease-trap-cleaning-3.webp",
+    category: "Grease Trap Cleaning",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 4,
+    image: "/media/images/gallery/grease-trap-cleaning-4.webp",
+    category: "Grease Trap Cleaning",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 5,
+    image: "/media/images/gallery/kitchen-exhaust-duct-repair-&-access-panel-installation-1.webp",
+    category: "Kitchen Exhaust Duct Repair & Access Panel Installation",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 6,
+    image: "/media/images/gallery/kitchen-exhaust-duct-repair-&-access-panel-installation-2.webp",
+    category: "Kitchen Exhaust Duct Repair & Access Panel Installation",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 7,
+    image: "/media/images/gallery/kitchen-exhaust-duct-repair-&-access-panel-installation-3.webp",
+    category: "Kitchen Exhaust Duct Repair & Access Panel Installation",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 8,
+    image: "/media/images/gallery/kitchen-exhaust-fan-installation-1.webp",
+    category: "Kitchen Exhaust Fan Installation",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 9,
+    image: "/media/images/gallery/kitchen-exhaust-fan-installation-2.webp",
+    category: "Kitchen Exhaust Fan Installation",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 10,
+    image: "/media/images/gallery/kitchen-exhaust-fan-installation-3.webp",
+    category: "Kitchen Exhaust Fan Installation",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 11,
+    image: "/media/images/gallery/kitchen-exhaust-fan-repairs-1.webp",
+    category: "Kitchen Exhaust Fan Repairs",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 12,
+    image: "/media/images/gallery/kitchen-exhaust-fan-repairs-2.webp",
+    category: "Kitchen Exhaust Fan Repairs",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 13,
+    image: "/media/images/gallery/kitchen-exhaust-fan-repairs-3.webp",
+    category: "Kitchen Exhaust Fan Repairs",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 14,
+    image: "/media/images/gallery/kitchen-hood-cleaning-1.webp",
+    category: "Kitchen Hood Cleaning",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 15,
+    image: "/media/images/gallery/kitchen-hood-cleaning-2.webp",
+    category: "Kitchen Hood Cleaning",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 16,
+    image: "/media/images/gallery/kitchen-hood-cleaning-3.webp",
+    category: "Kitchen Hood Cleaning",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 17,
+    image: "/media/images/gallery/kitchen-hood-cleaning-4.webp",
+    category: "Kitchen Hood Cleaning",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 18,
+    image: "/media/images/gallery/kitchen-hood-cleaning-5.webp",
+    category: "Kitchen Hood Cleaning",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 19,
+    image: "/media/images/gallery/kitchen-hood-cleaning-6.webp",
+    category: "Kitchen Hood Cleaning",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 20,
+    image: "/media/images/gallery/kitchen-hood-cleaning-7.webp",
+    category: "Kitchen Hood Cleaning",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 21,
+    image: "/media/images/gallery/kitchen-hood-inspections-1.webp",
+    category: "Kitchen Hood Inspections",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 22,
+    image: "/media/images/gallery/kitchen-hood-inspections-2.webp",
+    category: "Kitchen Hood Inspections",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 23,
+    image: "/media/images/gallery/kitchen-hood-startups-and-commissioning-1.webp",
+    category: "Kitchen Hood Startups and Commissioning",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 24,
+    image: "/media/images/gallery/kitchen-hood-startups-and-commissioning-2.webp",
+    category: "Kitchen Hood Startups and Commissioning",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 25,
+    image: "/media/images/gallery/kitchen-hood-startups-and-commissioning-3.webp",
+    category: "Kitchen Hood Startups and Commissioning",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 26,
+    image: "/media/images/gallery/kitchen-hood-startups-and-commissioning-4.webp",
+    category: "Kitchen Hood Startups and Commissioning",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 27,
+    image: "/media/images/gallery/kitchen-hood-startups-and-commissioning-5.webp",
+    category: "Kitchen Hood Startups and Commissioning",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 28,
+    image: "/media/images/gallery/kitchen-hood-startups-and-commissioning-6.webp",
+    category: "Kitchen Hood Startups and Commissioning",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 29,
+    image: "/media/images/gallery/pollution-control-systems-maintenance-1.webp",
+    category: "Pollution Control Systems Maintenance",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 30,
+    image: "/media/images/gallery/pollution-control-systems-maintenance-2.webp",
+    category: "Pollution Control Systems Maintenance",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 31,
+    image: "/media/images/gallery/pollution-control-systems-maintenance-3.webp",
+    category: "Pollution Control Systems Maintenance",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 32,
+    image: "/media/images/gallery/pollution-control-systems-maintenance-4.webp",
+    category: "Pollution Control Systems Maintenance",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 33,
+    image: "/media/images/gallery/pollution-control-systems-maintenance-5.webp",
+    category: "Pollution Control Systems Maintenance",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 34,
+    image: "/media/images/gallery/pollution-control-systems-maintenance-6.webp",
+    category: "Pollution Control Systems Maintenance",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 35,
+    image: "/media/images/gallery/restaurant-hood-filter-cleaning-&-exchange-1.webp",
+    category: "Restaurant Hood Filter Cleaning & Exchange",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 36,
+    image: "/media/images/gallery/restaurant-hood-filter-cleaning-&-exchange-2.webp",
+    category: "Restaurant Hood Filter Cleaning & Exchange",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 37,
+    image: "/media/images/gallery/restaurant-kitchen-exhaust-system-cleaning-1.webp",
+    category: "Restaurant Kitchen Exhaust System Cleaning",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 38,
+    image: "/media/images/gallery/restaurant-kitchen-exhaust-system-cleaning-2.webp",
+    category: "Restaurant Kitchen Exhaust System Cleaning",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 39,
+    image: "/media/images/gallery/restaurant-kitchen-exhaust-system-cleaning-3.webp",
+    category: "Restaurant Kitchen Exhaust System Cleaning",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 40,
+    image: "/media/images/gallery/restaurant-kitchen-exhaust-system-cleaning-4.webp",
+    category: "Restaurant Kitchen Exhaust System Cleaning",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 41,
+    image: "/media/images/gallery/restaurant-kitchen-exhaust-system-cleaning-5.webp",
+    category: "Restaurant Kitchen Exhaust System Cleaning",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 42,
+    image: "/media/images/gallery/restaurant-kitchen-exhaust-system-cleaning-6.webp",
+    category: "Restaurant Kitchen Exhaust System Cleaning",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 43,
+    image: "/media/images/gallery/restaurant-kitchen-exhaust-system-cleaning-7.webp",
+    category: "Restaurant Kitchen Exhaust System Cleaning",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 44,
+    image: "/media/images/gallery/restaurant-kitchen-exhaust-system-cleaning-8.webp",
+    category: "Restaurant Kitchen Exhaust System Cleaning",
+    width: 800,
+    height: 600
+  },
+  {
+    id: 45,
+    image: "/media/images/gallery/roof-grease-containment-systems-installation-1.webp",
+    category: "Roof Grease Containment Systems Installations",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 46,
+    image: "/media/images/gallery/roof-grease-containment-systems-installation-2.webp",
+    category: "Roof Grease Containment Systems Installations",
+    width: 600,
+    height: 800
+  },
+  {
+    id: 47,
+    image: "/media/images/gallery/roof-grease-containment-systems-installation-3.webp",
+    category: "Roof Grease Containment Systems Installations",
+    width: 600,
+    height: 800
+  }
 ];
 
 export default function GalleryClient() {
