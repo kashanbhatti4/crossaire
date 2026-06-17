@@ -230,11 +230,11 @@ export default function Header() {
         {/* Call-to-Action & Emergency Call */}
         <div className="hidden lg:flex items-center gap-6">
           <a 
-            href="tel:8663992885" 
+            href="tel:5717231406" 
             className="flex items-center gap-2 font-bold text-sm transition-colors text-accent hover:text-accent-hover"
           >
             <i className="fa-solid fa-phone text-base"></i>
-            <span>866-399-2885</span>
+            <span>571-723-1406</span>
           </a>
           <a href="/contact" className="btn-primary">Contact Us</a>
         </div>
@@ -363,9 +363,9 @@ export default function Header() {
         <a href="/gallery" onClick={handleMobileLinkClick} className="mobile-link py-2 text-primary-text border-b border-gray-100">Gallery</a>
         
         <div className="flex flex-col gap-4 mt-2">
-          <a href="tel:8663992885" className="flex items-center justify-center gap-2 py-3 bg-main-bg text-primary-text rounded-lg">
+          <a href="tel:5717231406" className="flex items-center justify-center gap-2 py-3 bg-main-bg text-primary-text rounded-lg">
             <i className="fa-solid fa-phone text-base text-accent"></i>
-            <span>866-399-2885</span>
+            <span>571-723-1406</span>
           </a>
           <a href="/contact" onClick={handleMobileLinkClick} className="btn-primary w-full py-3 text-center">Contact Us</a>
         </div>

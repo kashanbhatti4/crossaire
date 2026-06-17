@@ -125,7 +125,7 @@ export default function Faq() {
             </LocalFAQItem>
 
             <LocalFAQItem question="How do I schedule a service or get a quote?">
-              You can call us directly at <a href="tel:8663992885" className="text-accent font-extrabold">866-399-2885</a>, fill out our interactive contact form at the top of this website, or book an inspection date directly.
+              You can call us directly at <a href="tel:5717231406" className="text-accent font-extrabold">571-723-1406</a>, fill out our interactive contact form at the top of this website, or book an inspection date directly.
             </LocalFAQItem>
 
             <LocalFAQItem question="Do you provide emergency or rush services?">

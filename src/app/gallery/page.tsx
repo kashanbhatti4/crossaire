@@ -22,7 +22,7 @@ export default function GalleryPage() {
             "provider": {
               "@type": "LocalBusiness",
               "name": "Crossaire",
-              "telephone": "866-399-2885",
+              "telephone": "571-723-1406",
               "image": "https://crossaire.vercel.app/media/images/logo.webp"
             }
           })

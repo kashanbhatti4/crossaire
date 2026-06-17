@@ -87,7 +87,7 @@ export default function BookingForm({ initialService = "" }: BookingFormProps) {
               <i className="fa-solid fa-circle-exclamation mr-2 text-red-600"></i>
               Emergency Dispatch Active
             </span>
-            <span className="text-sm">For immediate support, please call our hotline directly at <a href="tel:8663992885" className="underline font-bold text-red-700">866-399-2885</a>.</span>
+            <span className="text-sm">For immediate support, please call our hotline directly at <a href="tel:5717231406" className="underline font-bold text-red-700">571-723-1406</a>.</span>
           </div>
         )}
         <button 
@@ -147,7 +147,7 @@ export default function BookingForm({ initialService = "" }: BookingFormProps) {
             </div>
             <div>
               <span className="font-bold block">Immediate Dispatch Request</span>
-              Calls take priority. For dispatch under 90 mins, dial <a href="tel:8663992885" className="underline font-bold text-red-700">866-399-2885</a>.
+              Calls take priority. For dispatch under 90 mins, dial <a href="tel:5717231406" className="underline font-bold text-red-700">571-723-1406</a>.
             </div>
           </div>
         )}

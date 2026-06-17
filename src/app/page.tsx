@@ -118,7 +118,7 @@ export default function Home() {
             "image": "https://crossaire.vercel.app/media/images/logo.webp",
             "@id": "https://crossaire.vercel.app/#localbusiness",
             "url": "https://crossaire.vercel.app",
-            "telephone": "866-399-2885",
+            "telephone": "571-723-1406",
             "priceRange": "$$",
             "address": {
               "@type": "PostalAddress",
@@ -248,8 +248,8 @@ export default function Home() {
                   <i className="fa-solid fa-phone text-2xl text-accent"></i>
                 </div>
                 <div>
-                  <span className="block text-xs uppercase tracking-wider text-white/50 font-bold">Call Toll-Free</span>
-                  <a href="tel:8663992885" className="text-base font-extrabold text-white hover:text-accent transition-colors">866-399-2885</a>
+                  <span className="block text-xs uppercase tracking-wider text-white/50 font-bold">Call Direct</span>
+                  <a href="tel:5717231406" className="text-base font-extrabold text-white hover:text-accent transition-colors">571-723-1406</a>
                 </div>
               </div>
 
@@ -697,9 +697,9 @@ export default function Home() {
             <a href="#booking-form-section" className="btn-primary w-full sm:w-auto px-8 py-4 font-bold text-center">
               Request An Inspection
             </a>
-            <a href="tel:8663992885" className="w-full sm:w-auto border border-white/20 bg-white/5 hover:bg-white/10 text-white font-bold px-8 py-4 rounded-lg transition-all text-center flex items-center justify-center gap-2">
+            <a href="tel:5717231406" className="w-full sm:w-auto border border-white/20 bg-white/5 hover:bg-white/10 text-white font-bold px-8 py-4 rounded-lg transition-all text-center flex items-center justify-center gap-2">
               <i className="fa-solid fa-phone text-sm"></i>
-              <span>Call 866-399-2885</span>
+              <span>Call 571-723-1406</span>
             </a>
           </div>
         </div>

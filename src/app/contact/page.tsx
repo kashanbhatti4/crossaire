@@ -25,7 +25,7 @@ export default function ContactPage() {
             "mainEntity": {
               "@type": "LocalBusiness",
               "name": "Crossaire",
-              "telephone": "866-399-2885",
+              "telephone": "571-723-1406",
               "email": "info@crossaire.com",
               "image": "https://crossaire.vercel.app/media/images/logo.webp",
               "address": {
@@ -101,7 +101,7 @@ export default function ContactPage() {
                 "name": "What if I have an emergency grease trap overflow?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "We provide 24/7/365 emergency dispatch services across Maryland, Washington DC, and Virginia. Call our toll-free line at 866-399-2885 for immediate scheduling."
+                  "text": "We provide 24/7/365 emergency dispatch services across Maryland, Washington DC, and Virginia. Call our direct line at 571-723-1406 for immediate scheduling."
                 }
               },
               {
@@ -165,8 +165,8 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-base font-bold text-white mb-1">Phone Line (24/7 Service)</h3>
                     <p className="text-white/60 text-xs mb-3 leading-relaxed">Call our dispatch team for scheduling, quotes, or emergency requests.</p>
-                    <a href="tel:8663992885" className="text-accent font-extrabold text-lg hover:underline inline-flex items-center gap-1.5 transition-all">
-                      866-399-2885
+                    <a href="tel:5717231406" className="text-accent font-extrabold text-lg hover:underline inline-flex items-center gap-1.5 transition-all">
+                      571-723-1406
                       <i className="fa-solid fa-arrow-right-long text-xs"></i>
                     </a>
                   </div>
@@ -263,7 +263,7 @@ export default function ContactPage() {
               </LocalFAQItem>
 
               <LocalFAQItem question="What if I have an emergency grease trap overflow?">
-                We provide 24/7/365 emergency dispatch services across Maryland, Washington DC, and Virginia. Call our toll-free line at 866-399-2885 for immediate scheduling.
+                We provide 24/7/365 emergency dispatch services across Maryland, Washington DC, and Virginia. Call our direct line at 571-723-1406 for immediate scheduling.
               </LocalFAQItem>
 
               <LocalFAQItem question="Do you provide photo documentation of the clean?">

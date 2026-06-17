@@ -492,9 +492,9 @@ export default function GalleryClient() {
               <a href="/#booking-form-section" className="btn-primary w-full sm:w-auto px-8 py-3.5 font-bold text-center">
                 Book An Inspection
               </a>
-              <a href="tel:8663992885" className="w-full sm:w-auto border border-white/20 bg-white/5 hover:bg-white/10 text-white font-bold px-8 py-3.5 rounded-lg transition-all text-center flex items-center justify-center gap-2">
+              <a href="tel:5717231406" className="w-full sm:w-auto border border-white/20 bg-white/5 hover:bg-white/10 text-white font-bold px-8 py-3.5 rounded-lg transition-all text-center flex items-center justify-center gap-2">
                 <i className="fa-solid fa-phone text-sm"></i>
-                <span>Call 866-399-2885</span>
+                <span>Call 571-723-1406</span>
               </a>
             </div>
           </div>
@@ -633,9 +633,9 @@ export default function GalleryClient() {
             <a href="/#booking-form-section" className="btn-primary w-full sm:w-auto px-8 py-4 font-bold text-center">
               Request A Quote
             </a>
-            <a href="tel:8663992885" className="w-full sm:w-auto border border-white/20 bg-white/5 hover:bg-white/10 text-white font-bold px-8 py-4 rounded-lg transition-all text-center flex items-center justify-center gap-2">
+            <a href="tel:5717231406" className="w-full sm:w-auto border border-white/20 bg-white/5 hover:bg-white/10 text-white font-bold px-8 py-4 rounded-lg transition-all text-center flex items-center justify-center gap-2">
               <i className="fa-solid fa-phone text-sm"></i>
-              <span>Call 866-399-2885</span>
+              <span>Call 571-723-1406</span>
             </a>
           </div>
         </div>
