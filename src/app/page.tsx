@@ -608,7 +608,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             {/* Left Column: Image Card */}
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5] border border-border-stroke shadow-md bg-white">
-              <img src="/media/images/why-people-trust-home.webp" alt="Certified Commercial Exhaust Safety Technician performing deep degreasing" width={1537} height={1023} className="absolute inset-0 w-full h-full object-cover" />
+              <img src="/media/images/why-people-trust.webp" alt="Certified Commercial Exhaust Safety Technician performing deep degreasing" width={1537} height={1023} className="absolute inset-0 w-full h-full object-cover" />
             </div>
 
             {/* Right Column: Features List */}
