@@ -120,7 +120,7 @@ export default async function LocationPage({ params }: PageProps) {
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-8 max-w-2xl">{heroDescription}</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-white/95 font-semibold">
-              {["NFPA 96 Compliance Stickers", "$5M Liability Insured & Bonded", "Complete Photo-Evidence Reports", "24/7 Overnight Dispatch Service"].map((item, i) => (
+              {["NFPA 96 Compliant", "Licensed and Insured", "Service Report with Before and After Photos", "24/7 Emergency Service"].map((item, i) => (
                 <div key={i} className="flex items-center gap-3">
                   <i className="fa-solid fa-circle-check text-accent text-lg shrink-0"></i>
                   <span>{item}</span>

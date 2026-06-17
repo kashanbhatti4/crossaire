@@ -129,19 +129,19 @@ export default function KitchenHoodCleaningPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-white/95 font-semibold">
               <div className="flex items-center gap-3">
                 <i className="fa-solid fa-circle-check text-accent text-lg shrink-0"></i>
-                <span>NFPA 96 Code Compliance</span>
+                <span>NFPA 96 Compliant</span>
               </div>
               <div className="flex items-center gap-3">
                 <i className="fa-solid fa-circle-check text-accent text-lg shrink-0"></i>
-                <span>$5M General Liability Insured</span>
+                <span>Licensed and Insured</span>
               </div>
               <div className="flex items-center gap-3">
                 <i className="fa-solid fa-circle-check text-accent text-lg shrink-0"></i>
-                <span>Full Before/After Photo Logs</span>
+                <span>Service Report with Before and After Photos</span>
               </div>
               <div className="flex items-center gap-3">
                 <i className="fa-solid fa-circle-check text-accent text-lg shrink-0"></i>
-                <span>Flexible 24/7 After-Hours Scheduling</span>
+                <span>24/7 Emergency Service</span>
               </div>
             </div>
           </div>
