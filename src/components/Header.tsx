@@ -66,7 +66,7 @@ const regionsList: Region[] = [
   },
   {
     name: "Virginia (VA)",
-    cities: ["Arlington", "Alexandria", "Fairfax", "Falls Church", "Vienna", "Reston", "Herndon", "Chantilly", "Leesburg", "Ashburn", "Manassas", "Woodbridge", "Springfield", "Tysons", "McLean", "Richmond", "Norfolk", "Roanoke"]
+    cities: ["Arlington", "Alexandria", "Fairfax", "Falls Church", "Vienna", "Reston", "Herndon", "Chantilly", "Leesburg", "Ashburn", "Manassas", "Woodbridge", "Springfield", "Tysons", "McLean"]
   },
   {
     name: "Washington DC",
