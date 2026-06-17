@@ -55,7 +55,7 @@ export default function Faq() {
             </LocalFAQItem>
 
             <LocalFAQItem question="Are you insured and certified?">
-              Yes. We are fully licensed, bonded, and insured with a $5M general liability policy. Our professional technicians are extensively trained and certified in NFPA 96 standards, OSHA compliance, and commercial kitchen exhaust safety.
+              Yes. We are fully licensed, bonded, and insured. Our professional technicians are extensively trained and certified in NFPA 96 standards, OSHA compliance, and commercial kitchen exhaust safety.
             </LocalFAQItem>
 
             <LocalFAQItem question="Are you certified to service Gaylord systems?">

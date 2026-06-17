@@ -206,7 +206,7 @@ export default function Home() {
                 "name": "Are you insured and certified?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. We carry a $5M general liability policy, are fully bonded, and our technicians are completely NFPA 96 certified and OSHA compliant."
+                  "text": "Yes. We are fully licensed, bonded, and insured, and our technicians are completely NFPA 96 certified and OSHA compliant."
                 }
               },
               {
