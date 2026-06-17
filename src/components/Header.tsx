@@ -82,6 +82,11 @@ const regionsList: Region[] = [
   }
 ];
 
+// Build the /locations slug from a city/county name. Apostrophes are stripped
+// (not turned into dashes) so "Prince George's County" -> "prince-georges-county".
+const toLocationSlug = (name: string) =>
+  name.toLowerCase().replace(/'/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeRegion, setActiveRegion] = useState<Region | null>(null);
@@ -204,7 +209,7 @@ export default function Header() {
                 {activeRegion?.cities.map((city) => (
                   <a 
                     key={city} 
-                    href={`/locations/${city.toLowerCase().replace(/[^a-z0-9]/g, "-")}`}
+                    href={`/locations/${toLocationSlug(city)}`}
                     className="block px-5 py-2 text-xs font-bold text-primary-text hover:text-accent hover:bg-black/[0.01] transition-colors"
                   >
                     {city}
@@ -341,7 +346,7 @@ export default function Header() {
                     {reg.cities.map((city) => (
                       <a 
                         key={city} 
-                        href={`/locations/${city.toLowerCase().replace(/[^a-z0-9]/g, "-")}`}
+                        href={`/locations/${toLocationSlug(city)}`}
                         onClick={handleMobileLinkClick}
                         className="block py-1.5 text-xs font-semibold text-body-text hover:text-accent transition-colors"
                       >
