@@ -1665,6 +1665,134 @@ const locationsData: Record<string, LocationData> = {
     ],
     faqCityContext: "Howard County, MD",
   },
+  "baltimore-county": {
+    city: "Baltimore County",
+    state: "Maryland",
+    stateAbbr: "MD",
+    county: "Baltimore County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing throughout Baltimore County, MD. NFPA 96 compliant services for restaurants and commercial kitchens countywide.",
+    metaKeywords:
+      "kitchen hood cleaning Baltimore County MD, commercial exhaust cleaning Baltimore County, restaurant hood cleaning Baltimore County, NFPA 96 compliance Baltimore County MD",
+    heroDescription:
+      "Crossaire provides certified NFPA 96 kitchen exhaust cleaning throughout Baltimore County, MD — from Towson and Catonsville to Dundalk, Owings Mills, and Essex. We serve all commercial kitchens countywide.",
+    aboutParagraph1:
+      "Baltimore County, MD wraps around Baltimore City and is home to a vast and varied restaurant scene, from the Towson county seat and Catonsville's Frederick Road strip to waterfront diners in Dundalk and upscale dining in Owings Mills. All commercial kitchens must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve restaurants throughout all Baltimore County communities including Towson, Catonsville, Dundalk, Owings Mills, and Essex. Our certified technicians provide complete exhaust cleaning with compliance stickers and photo documentation countywide.",
+    dispatchContext: "Technicians dispatch from multiple Baltimore County depots for rapid countywide coverage.",
+    coverageContext: "We provide certified services across all Baltimore County cities, waterfront communities, and commercial districts.",
+    industriesExtra: "Towson University & Hospital Campus Dining",
+    neighborhoods: [
+      { name: "Towson", zip: "21204", desc: "County seat dining & university hub", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Catonsville", zip: "21228", desc: "Frederick Road restaurant strip", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Dundalk", zip: "21222", desc: "Waterfront diners & taverns", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Owings Mills", zip: "21117", desc: "Upscale community & mall dining", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Essex", zip: "21221", desc: "Waterfront community restaurants", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Parkville", zip: "21234", desc: "Suburban dining & local eateries", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Pikesville", zip: "21208", desc: "Community dining & delis", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Cockeysville", zip: "21030", desc: "Hunt Valley corridor dining", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "White Marsh", zip: "21236", desc: "Mall food courts & chain restaurants", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Reisterstown", zip: "21136", desc: "Main Street community dining", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Baltimore County, MD",
+  },
+  "harford-county": {
+    city: "Harford County",
+    state: "Maryland",
+    stateAbbr: "MD",
+    county: "Harford County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing throughout Harford County, MD. NFPA 96 compliant services for restaurants and commercial kitchens countywide.",
+    metaKeywords:
+      "kitchen hood cleaning Harford County MD, commercial exhaust cleaning Harford County, restaurant hood cleaning Harford County, NFPA 96 compliance Harford County MD",
+    heroDescription:
+      "Crossaire provides certified NFPA 96 kitchen exhaust cleaning throughout Harford County, MD — from the Bel Air county seat and Aberdeen to Havre de Grace, Edgewood, and Abingdon. We serve all commercial kitchens countywide.",
+    aboutParagraph1:
+      "Harford County, MD sits along the I-95 corridor northeast of Baltimore, anchored by the Bel Air county seat and home to Aberdeen Proving Ground, the historic waterfront city of Havre de Grace, and growing Route 40 dining. All commercial kitchens must comply with NFPA 96 fire safety standards.",
+    aboutParagraph2:
+      "We serve restaurants throughout all Harford County communities including Bel Air, Aberdeen, Havre de Grace, Edgewood, and Abingdon. Our certified technicians provide complete exhaust cleaning with compliance stickers and photo documentation countywide.",
+    dispatchContext: "Technicians dispatch from Harford County service hubs covering the Bel Air and I-95 corridors.",
+    coverageContext: "We provide certified services across all Harford County cities, waterfront communities, and commercial corridors.",
+    industriesExtra: "Aberdeen Proving Ground Military Dining",
+    neighborhoods: [
+      { name: "Bel Air", zip: "21014", desc: "County seat restaurants & cafes", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Aberdeen", zip: "21001", desc: "Route 40 & military area dining", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Havre de Grace", zip: "21078", desc: "Historic waterfront dining", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Edgewood", zip: "21040", desc: "Commercial corridor restaurants", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Abingdon", zip: "21009", desc: "Retail centers & fast food", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Joppatowne", zip: "21085", desc: "Community dining & local eateries", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Fallston", zip: "21047", desc: "Suburban commercial kitchens", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Forest Hill", zip: "21050", desc: "Local eateries & food establishments", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Jarrettsville", zip: "21084", desc: "Rural dining & catering services", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Churchville", zip: "21028", desc: "Community dining & catering kitchens", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Harford County, MD",
+  },
+  "carroll-county": {
+    city: "Carroll County",
+    state: "Maryland",
+    stateAbbr: "MD",
+    county: "Carroll County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing throughout Carroll County, MD. NFPA 96 compliant services for restaurants and commercial kitchens countywide.",
+    metaKeywords:
+      "kitchen hood cleaning Carroll County MD, commercial exhaust cleaning Carroll County, restaurant hood cleaning Carroll County, NFPA 96 compliance Carroll County MD",
+    heroDescription:
+      "Crossaire provides certified NFPA 96 kitchen exhaust cleaning throughout Carroll County, MD — from the Westminster county seat and Eldersburg to Sykesville, Hampstead, and Taneytown. We serve all commercial kitchens countywide.",
+    aboutParagraph1:
+      "Carroll County, MD is a largely agricultural county northwest of Baltimore, anchored by the Westminster county seat and McDaniel College, with growing commercial dining along the Liberty Road and Route 26 corridors in Eldersburg. All commercial kitchens must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve restaurants throughout all Carroll County communities including Westminster, Eldersburg, Sykesville, Hampstead, and Manchester. Our certified technicians provide complete exhaust cleaning with compliance stickers and photo documentation countywide.",
+    dispatchContext: "Technicians dispatch from Carroll County service hubs covering Westminster and the Route 26 corridor.",
+    coverageContext: "We provide certified services across all Carroll County towns, farm-country venues, and commercial corridors.",
+    industriesExtra: "Farm-to-Table & Event Venue Kitchens",
+    neighborhoods: [
+      { name: "Westminster", zip: "21157", desc: "County seat & Main Street dining", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Eldersburg", zip: "21784", desc: "Liberty Road commercial strip", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Sykesville", zip: "21784", desc: "Historic town restaurants & cafes", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Hampstead", zip: "21074", desc: "Local restaurants & food spots", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Manchester", zip: "21102", desc: "Rural community dining", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Taneytown", zip: "21787", desc: "Small-town diners & eateries", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Mount Airy", zip: "21771", desc: "Border-town commercial dining", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Finksburg", zip: "21048", desc: "Route 140 community dining", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "New Windsor", zip: "21776", desc: "Rural dining & catering services", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Union Bridge", zip: "21791", desc: "Small community food facilities", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Carroll County, MD",
+  },
+  "frederick-county": {
+    city: "Frederick County",
+    state: "Maryland",
+    stateAbbr: "MD",
+    county: "Frederick County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing throughout Frederick County, MD. NFPA 96 compliant services for restaurants, breweries, and commercial kitchens countywide.",
+    metaKeywords:
+      "kitchen hood cleaning Frederick County MD, commercial exhaust cleaning Frederick County, restaurant hood cleaning Frederick County, NFPA 96 compliance Frederick County MD",
+    heroDescription:
+      "Crossaire provides certified NFPA 96 kitchen exhaust cleaning throughout Frederick County, MD — from Downtown Frederick and Urbana to Brunswick, Middletown, and Thurmont. We serve all commercial kitchens countywide.",
+    aboutParagraph1:
+      "Frederick County, MD is one of Maryland's fastest-growing counties, anchored by the city of Frederick's vibrant Market Street brewery and restaurant district and home to Fort Detrick, with expanding dining in Urbana, Middletown, and the Route 15 corridor. All commercial kitchens must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve restaurants throughout all Frederick County communities including Frederick, Urbana, Walkersville, Brunswick, and Middletown. Our certified technicians provide complete exhaust cleaning with compliance stickers and photo documentation countywide.",
+    dispatchContext: "Technicians dispatch from Frederick County service hubs with broad coverage across the city and county.",
+    coverageContext: "We provide certified services across all Frederick County cities, valley communities, and commercial corridors.",
+    industriesExtra: "Craft Brewery & Winery Kitchens",
+    neighborhoods: [
+      { name: "Downtown Frederick", zip: "21701", desc: "Market Street restaurants & breweries", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Urbana", zip: "21704", desc: "Fast-growing commercial food district", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Walkersville", zip: "21793", desc: "Community dining & local eateries", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Brunswick", zip: "21716", desc: "Riverside town restaurants", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Middletown", zip: "21769", desc: "Valley community dining", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "New Market", zip: "21774", desc: "Historic Main Street dining", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Thurmont", zip: "21788", desc: "Gateway-to-Catoctin dining", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Emmitsburg", zip: "21727", desc: "College town & community dining", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Ballenger Creek", zip: "21703", desc: "Suburban restaurant operations", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Myersville", zip: "21773", desc: "Rural dining & roadside eateries", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Frederick County, MD",
+  },
 
   // ─────────────────── VA COUNTIES ───────────────────
   "fairfax-county": {

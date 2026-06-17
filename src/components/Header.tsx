@@ -78,7 +78,7 @@ const regionsList: Region[] = [
   },
   {
     name: "Maryland DC Suburbs",
-    cities: ["Montgomery County", "Prince George's County", "Anne Arundel County", "Howard County"]
+    cities: ["Montgomery County", "Prince George's County", "Anne Arundel County", "Howard County", "Baltimore County", "Harford County", "Carroll County", "Frederick County"]
   }
 ];
 
