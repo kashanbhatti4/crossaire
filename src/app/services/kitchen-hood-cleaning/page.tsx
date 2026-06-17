@@ -95,7 +95,7 @@ export default function KitchenHoodCleaningPage() {
                 "name": "Are you certified and insured?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. All of our technicians are fully NFPA 96 certified commercial kitchen exhaust cleaners. We carry $5,000,000 in General Liability insurance, as well as full workers' compensation coverage."
+                  "text": "Yes. All of our technicians are fully NFPA 96 certified commercial kitchen exhaust cleaners, and we are fully licensed, bonded, and insured with full workers' compensation coverage."
                 }
               }
             ]
@@ -551,8 +551,8 @@ export default function KitchenHoodCleaningPage() {
                   desc: "All technicians are fully trained and certified under modern exhaust cleaning standards."
                 },
                 {
-                  title: "$5M Liability Insurance",
-                  desc: "Rest easy knowing your kitchen property is backed by $5,000,000 in comprehensive commercial insurance."
+                  title: "Licensed & Insured",
+                  desc: "Rest easy knowing your kitchen property is protected — we are fully licensed, bonded, and insured."
                 },
                 {
                   title: "24/7/365 Service",
@@ -619,7 +619,7 @@ export default function KitchenHoodCleaningPage() {
               </LocalFAQItem>
 
               <LocalFAQItem question="Are you certified and insured?">
-                Yes. All of our technicians are fully NFPA 96 certified commercial kitchen exhaust cleaners. We carry $5,000,000 in General Liability insurance, as well as full workers' compensation coverage.
+                Yes. All of our technicians are fully NFPA 96 certified commercial kitchen exhaust cleaners, and we are fully licensed, bonded, and insured with full workers' compensation coverage.
               </LocalFAQItem>
             </div>
           </div>

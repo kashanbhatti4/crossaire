@@ -49,7 +49,7 @@ export default function AboutPage() {
                 "name": "Is Crossaire fully licensed and insured?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. Crossaire is fully licensed, bonded, and carries a comprehensive $5,000,000 General Liability insurance policy alongside full workers' compensation coverage for our technicians."
+                  "text": "Yes. Crossaire is fully licensed, bonded, and insured, alongside full workers' compensation coverage for our technicians."
                 }
               },
               {
@@ -144,10 +144,10 @@ export default function AboutPage() {
               <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-white mb-6 shadow-inner">
                 <i className="fa-solid fa-lock text-xl"></i>
               </div>
-              <div className="text-4xl font-extrabold text-white mb-1">$5M</div>
-              <h3 className="font-bold text-base text-white mb-3">Liability Insured</h3>
+              <div className="text-4xl font-extrabold text-white mb-1">Licensed</div>
+              <h3 className="font-bold text-base text-white mb-3">& Insured</h3>
               <p className="text-xs text-white/70 leading-relaxed">
-                Rest easy knowing your kitchen property and operations are backed by a comprehensive $5,000,000 General Liability insurance policy.
+                Rest easy knowing your kitchen property and operations are protected — we are fully licensed, bonded, and insured.
               </p>
             </div>
           </div>
@@ -415,7 +415,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start max-w-5xl mx-auto">
             <div className="flex flex-col gap-4">
               <LocalFAQItem question="Is Crossaire fully licensed and insured?">
-                Yes. Crossaire is fully licensed, bonded, and carries a comprehensive $5,000,000 General Liability insurance policy alongside full workers' compensation coverage for our technicians.
+                Yes. Crossaire is fully licensed, bonded, and insured, alongside full workers' compensation coverage for our technicians.
               </LocalFAQItem>
 
               <LocalFAQItem question="What credentials do your kitchen hood technicians hold?">

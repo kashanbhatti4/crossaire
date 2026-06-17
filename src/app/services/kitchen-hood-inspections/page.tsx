@@ -569,8 +569,8 @@ export default function ServicePage() {
                 <p className="text-white/70 text-sm leading-relaxed">All technicians are fully trained and certified under modern exhaust cleaning standards.</p>
               </div>
               <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                <h3 className="text-base font-extrabold text-white mb-2 uppercase tracking-wide">$5M Liability Insurance</h3>
-                <p className="text-white/70 text-sm leading-relaxed">Rest easy knowing your kitchen property is backed by $5,000,000 in comprehensive commercial insurance.</p>
+                <h3 className="text-base font-extrabold text-white mb-2 uppercase tracking-wide">Licensed & Insured</h3>
+                <p className="text-white/70 text-sm leading-relaxed">Rest easy knowing your kitchen property is protected — we are fully licensed, bonded, and insured.</p>
               </div>
               <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                 <h3 className="text-base font-extrabold text-white mb-2 uppercase tracking-wide">24/7/365 Service</h3>

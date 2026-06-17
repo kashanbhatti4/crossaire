@@ -222,7 +222,7 @@ export default async function LocationPage({ params }: PageProps) {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: "fa-certificate", title: "Fully Certified & Insured", desc: "Our technicians are NFPA 96 certified commercial kitchen exhaust cleaners. We carry $5M in General Liability insurance." },
+              { icon: "fa-certificate", title: "Fully Certified & Insured", desc: "Our technicians are NFPA 96 certified commercial kitchen exhaust cleaners, fully licensed, bonded, and insured." },
               { icon: "fa-clock", title: "24/7 Flexible Service", desc: "We work overnight or during closed hours so you don't lose kitchen uptime or disrupt dining customers." },
               { icon: "fa-camera", title: "Photo-Proof Reports", desc: "We deliver complete, transparent before-and-after photo logs of our services for your records and compliance." },
               { icon: "fa-clipboard-check", title: "Official NFPA Stickers", desc: "We place official NFPA 96 compliance stickers on the hood canopy to satisfy fire marshals, health inspectors, and insurers." },
