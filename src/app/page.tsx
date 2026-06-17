@@ -301,7 +301,7 @@ export default function Home() {
                 <i className="fa-solid fa-lock text-2xl md:text-xl text-accent"></i>
               </div>
               <div>
-                <span className="block text-base md:text-sm font-bold text-primary-text leading-tight">$5M Liability Insured</span>
+                <span className="block text-base md:text-sm font-bold text-primary-text leading-tight">Licensed and Insured</span>
                 <span className="block text-xs md:text-[11px] text-body-text font-semibold uppercase tracking-wider">Fully Insured</span>
               </div>
             </div>
