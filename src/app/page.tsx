@@ -458,9 +458,6 @@ export default function Home() {
               <p className="text-body-text text-sm leading-relaxed mb-6">
                 Submit a request online or call us directly. Sending photos of your hood setup helps us quote faster.
               </p>
-              <div className="relative rounded-xl overflow-hidden aspect-square border border-border-stroke bg-white">
-                <img src="/media/images/onboarding1.webp" alt="Step 1: Inspecting Commercial Kitchen Stainless Steel Hood setup" width={800} height={800} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-              </div>
             </div>
 
             {/* Step 2 */}
@@ -479,9 +476,6 @@ export default function Home() {
               <p className="text-body-text text-sm leading-relaxed mb-6">
                 Upfront, itemized pricing tailored to your specific kitchen layout. No hidden fees or surprise charges.
               </p>
-              <div className="relative rounded-xl overflow-hidden aspect-square border border-border-stroke bg-white">
-                <img src="/media/images/onboarding2.webp" alt="Step 2: Commercial Kitchen Exhaust Fan Audit and Price Estimate" width={800} height={800} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-              </div>
             </div>
 
             {/* Step 3 */}
@@ -500,9 +494,6 @@ export default function Home() {
               <p className="text-body-text text-sm leading-relaxed mb-6">
                 We set a precise service window during your off-hours to avoid any disruption to kitchen operations.
               </p>
-              <div className="relative rounded-xl overflow-hidden aspect-square border border-border-stroke bg-white">
-                <img src="/media/images/onboarding3.webp" alt="Step 3: Scheduling Commercial Kitchen Grease Cleaning during off-hours" width={800} height={800} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-              </div>
             </div>
 
             {/* Step 4 */}
@@ -521,9 +512,6 @@ export default function Home() {
               <p className="text-body-text text-sm leading-relaxed mb-6">
                 Clean workspace, protected floors, and NFPA 96 certified cleaning down to bare metal.
               </p>
-              <div className="relative rounded-xl overflow-hidden aspect-square border border-border-stroke bg-white">
-                <img src="/media/images/onboardin4.webp" alt="Step 4: Certified Kitchen Hood Exhaust System Compliance Cleaning" width={800} height={800} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-              </div>
             </div>
 
             {/* Step 5 */}
@@ -542,9 +530,6 @@ export default function Home() {
               <p className="text-body-text text-sm leading-relaxed mb-6">
                 Compliance certification sticker placed, digital receipt, and simple online payment.
               </p>
-              <div className="relative rounded-xl overflow-hidden aspect-square border border-border-stroke bg-white">
-                <img src="/media/images/onboarding5.webp" alt="Step 5: Official NFPA 96 Compliance Sticker Placement and Payment" width={800} height={800} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-              </div>
             </div>
           </div>
         </div>
