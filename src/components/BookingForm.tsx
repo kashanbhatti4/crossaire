@@ -146,8 +146,8 @@ export default function BookingForm({ initialService = "" }: BookingFormProps) {
               <i className="fa-solid fa-bullhorn"></i>
             </div>
             <div>
-              <span className="font-bold block">Immediate Dispatch Request</span>
-              Calls take priority. For dispatch under 90 mins, dial <a href="tel:5717231406" className="underline font-bold text-red-700">571-723-1406</a>.
+              <span className="font-bold block">Emergency Service Request</span>
+              Emergency calls take priority. For same-day emergency service, dial <a href="tel:5717231406" className="underline font-bold text-red-700">571-723-1406</a>.
             </div>
           </div>
         )}
