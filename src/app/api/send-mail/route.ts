@@ -46,14 +46,15 @@ export async function POST(request: Request) {
     }
 
     // Send styled HTML email via Resend if API key is configured
+    let emailStatus: { sent: boolean; id?: string; error?: string } = { sent: false };
     const apiKey = process.env.RESEND_API_KEY;
     if (apiKey) {
       const resend = new Resend(apiKey);
       try {
         const toEmail = process.env.NOTIFICATION_EMAIL || "info@crossaire.com";
         const fromEmail = process.env.SENDER_EMAIL || "Crossaire Forms <onboarding@resend.dev>";
-        
-        await resend.emails.send({
+
+        const { data: emailData, error: emailError } = await resend.emails.send({
           from: fromEmail,
           to: [toEmail],
           subject: `New Lead: ${fullname} - ${serviceType}`,
@@ -103,15 +104,24 @@ export async function POST(request: Request) {
             </div>
           `,
         });
-        console.log(`[Form Submission] Resend email sent successfully for ${fullname}`);
+
+        if (emailError) {
+          console.error("[Form Submission] Resend returned an error:", JSON.stringify(emailError));
+          emailStatus = { sent: false, error: (emailError as { message?: string })?.message || String(emailError) };
+        } else {
+          console.log(`[Form Submission] Resend email sent (id: ${emailData?.id}) for ${fullname}`);
+          emailStatus = { sent: true, id: emailData?.id };
+        }
       } catch (emailErr) {
-        console.error("[Form Submission] Resend failed to send email:", emailErr);
+        console.error("[Form Submission] Resend threw an exception:", emailErr);
+        emailStatus = { sent: false, error: emailErr instanceof Error ? emailErr.message : String(emailErr) };
       }
     } else {
       console.warn("[Form Submission] Resend API Key is not configured. Email notification skipped (lead was logged to local file).");
+      emailStatus = { sent: false, error: "RESEND_API_KEY not configured" };
     }
 
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true, email: emailStatus });
   } catch (error) {
     console.error("Error processing form:", error);
     return NextResponse.json(
