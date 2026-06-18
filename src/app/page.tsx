@@ -233,7 +233,7 @@ export default function Home() {
               Stress-Free Commercial Kitchen Safety
             </h1>
             <p className="text-white/80 text-sm lg:text-lg max-w-xl mb-0 leading-relaxed">
-              Ensure full NFPA 96 compliance and protect your kitchen with our certified exhaust cleaning. Available 24/7 in MD, DC, and VA.
+              Protect your kitchen. Stay NFPA 96 compliant. Certified exhaust cleaning available 24/7 in MD, DC & VA.
             </p>
           </div>
 
@@ -345,7 +345,7 @@ export default function Home() {
           <span className="text-sm uppercase tracking-wider font-extrabold text-accent block mb-6">(WHO WE ARE)</span>
           
           <h2 className="text-3xl md:text-[48px] font-extrabold tracking-tight text-primary-text mb-12 leading-[1.15] max-w-4xl">
-            NFPA 96 certified, background-checked pros delivering clean, code-compliant exhaust cleaning across MD, DC & VA, with honest pricing—no surprises.
+            Certified pros. Reliable results. Stay compliant with NFPA 96 exhaust cleaning you can trust — serving MD, DC & VA.
           </h2>
           
           <p className="text-body-text text-base md:text-lg leading-relaxed max-w-3xl">
@@ -527,7 +527,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <h3 className="text-lg font-bold text-primary-text mb-2">Pay and relax, guaranteed</h3>
+              <h3 className="text-lg font-bold text-primary-text mb-2">Your peace of mind starts here. Guaranteed.</h3>
               <p className="text-body-text text-sm leading-relaxed mb-6">
                 Compliance certification sticker placed, digital receipt, and simple online payment.
               </p>
