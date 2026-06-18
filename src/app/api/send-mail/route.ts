@@ -23,21 +23,27 @@ export async function POST(request: Request) {
       return NextResponse.json({ success: false, errors }, { status: 400 });
     }
 
-    // Save submission to log file as secondary storage (similar to PHP behavior)
-    const submissionsDir = path.join(process.cwd(), "submissions");
-    if (!fs.existsSync(submissionsDir)) {
-      fs.mkdirSync(submissionsDir, { recursive: true });
+    // Save submission to a log file as best-effort secondary storage.
+    // Serverless hosts (e.g. Vercel) have a read-only filesystem, so this must
+    // never block the request — email is the primary delivery path below.
+    try {
+      const submissionsDir = path.join(process.cwd(), "submissions");
+      if (!fs.existsSync(submissionsDir)) {
+        fs.mkdirSync(submissionsDir, { recursive: true });
+      }
+
+      const logPath = path.join(submissionsDir, "log.txt");
+      const now = new Date();
+      const pad = (n: number) => n.toString().padStart(2, '0');
+      const dateStr = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+
+      const logEntry = `[${dateStr}] Source: ${source} | Name: ${fullname} | Email: ${email} | Phone: ${phone} | Service: ${serviceType} | Message: ${message || ""}\n`;
+
+      fs.appendFileSync(logPath, logEntry, "utf8");
+      console.log(`[Form Submission] Logged to ${logPath}: ${fullname} (${email})`);
+    } catch (logErr) {
+      console.warn("[Form Submission] Skipped local file logging (read-only filesystem?):", logErr);
     }
-    
-    const logPath = path.join(submissionsDir, "log.txt");
-    const now = new Date();
-    const pad = (n: number) => n.toString().padStart(2, '0');
-    const dateStr = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
-    
-    const logEntry = `[${dateStr}] Source: ${source} | Name: ${fullname} | Email: ${email} | Phone: ${phone} | Service: ${serviceType} | Message: ${message || ""}\n`;
-    
-    fs.appendFileSync(logPath, logEntry, "utf8");
-    console.log(`[Form Submission] Logged to ${logPath}: ${fullname} (${email})`);
 
     // Send styled HTML email via Resend if API key is configured
     const apiKey = process.env.RESEND_API_KEY;
