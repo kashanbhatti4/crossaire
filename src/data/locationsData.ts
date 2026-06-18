@@ -1019,6 +1019,198 @@ const locationsData: Record<string, LocationData> = {
     ],
     faqCityContext: "Westminster, MD",
   },
+  salisbury: {
+    city: "Salisbury",
+    state: "Maryland",
+    stateAbbr: "MD",
+    county: "Wicomico County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Salisbury, MD. NFPA 96 compliant services for restaurants and commercial kitchens on the Eastern Shore.",
+    metaKeywords:
+      "kitchen hood cleaning Salisbury MD, commercial exhaust cleaning Salisbury, restaurant hood cleaning Wicomico County, NFPA 96 compliance Salisbury MD",
+    heroDescription:
+      "Salisbury's growing downtown dining scene and Eastern Shore restaurants deserve certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout Wicomico County.",
+    aboutParagraph1:
+      "Salisbury, MD is the largest city on Maryland's Eastern Shore and the commercial hub of the Delmarva Peninsula, home to Salisbury University and a revitalized downtown restaurant scene. Commercial kitchens here must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve downtown Salisbury restaurants, Salisbury University dining, Route 13 commercial kitchens, and food service operations throughout Wicomico County. Our certified technicians provide complete exhaust cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Eastern Shore service hubs covering Salisbury and Wicomico County.",
+    coverageContext: "We provide certified services across all Salisbury neighborhoods, the university district, and Eastern Shore commercial corridors.",
+    industriesExtra: "Salisbury University & Poultry Industry Dining",
+    neighborhoods: [
+      { name: "Downtown Salisbury", zip: "21801", desc: "Historic riverfront dining district", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Salisbury University Area", zip: "21801", desc: "Campus & student dining", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "North Salisbury", zip: "21804", desc: "Route 13 commercial strip", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Fruitland", zip: "21826", desc: "Suburban community dining", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Delmar", zip: "21875", desc: "Border-town restaurants", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Hebron", zip: "21830", desc: "Rural community dining", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Parsonsburg", zip: "21849", desc: "Local eateries & diners", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Pittsville", zip: "21850", desc: "Small-town food facilities", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Willards", zip: "21874", desc: "Rural dining services", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Mardela Springs", zip: "21837", desc: "Western Wicomico dining", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Salisbury, MD",
+  },
+  cumberland: {
+    city: "Cumberland",
+    state: "Maryland",
+    stateAbbr: "MD",
+    county: "Allegany County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Cumberland, MD. NFPA 96 compliant services for restaurants and commercial kitchens in Western Maryland.",
+    metaKeywords:
+      "kitchen hood cleaning Cumberland MD, commercial exhaust cleaning Cumberland, restaurant hood cleaning Allegany County, NFPA 96 compliance Cumberland MD",
+    heroDescription:
+      "Cumberland's historic downtown restaurants and Western Maryland dining deserve certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout Allegany County.",
+    aboutParagraph1:
+      "Cumberland, MD is the commercial center of Western Maryland along the I-68 corridor, with a historic downtown dining district and nearby Frostburg State University. Commercial kitchens here must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve downtown Cumberland restaurants, LaVale retail dining, Frostburg college-town kitchens, and food service operations throughout Allegany County. Our certified technicians provide complete exhaust cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Western Maryland service hubs covering Cumberland and Allegany County.",
+    coverageContext: "We provide certified services across all Cumberland neighborhoods, the historic district, and Western Maryland commercial corridors.",
+    industriesExtra: "Frostburg State University & Mountain Tourism Dining",
+    neighborhoods: [
+      { name: "Downtown Cumberland", zip: "21502", desc: "Historic Washington Street dining", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "LaVale", zip: "21502", desc: "Retail corridor restaurants", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Frostburg", zip: "21532", desc: "College-town dining & cafes", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Cresaptown", zip: "21502", desc: "Suburban community dining", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Mount Savage", zip: "21545", desc: "Rural community eateries", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Bowling Green", zip: "21502", desc: "Residential dining spots", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Potomac Park", zip: "21502", desc: "Local food facilities", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Rose Hill", zip: "21502", desc: "Community restaurants", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Narrows Park Area", zip: "21502", desc: "Gateway dining & venues", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Bel Air", zip: "21502", desc: "Neighborhood eateries", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Cumberland, MD",
+  },
+  wheaton: {
+    city: "Wheaton",
+    state: "Maryland",
+    stateAbbr: "MD",
+    county: "Montgomery County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Wheaton, MD. NFPA 96 compliant services for the international restaurant district in Montgomery County.",
+    metaKeywords:
+      "kitchen hood cleaning Wheaton MD, commercial exhaust cleaning Wheaton, restaurant hood cleaning Montgomery County, NFPA 96 compliance Wheaton MD",
+    heroDescription:
+      "Wheaton's diverse international restaurant district deserves certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout the area in Montgomery County.",
+    aboutParagraph1:
+      "Wheaton, MD is one of Montgomery County's most diverse dining destinations, with a dense concentration of international restaurants around the Wheaton Triangle and Metro station. These high-volume kitchens require strict NFPA 96 certified exhaust cleaning.",
+    aboutParagraph2:
+      "We serve downtown Wheaton restaurants, the University Boulevard and Georgia Avenue corridors, and commercial kitchens throughout the Kensington and Glenmont areas. Our certified technicians provide complete cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Montgomery County service centers covering the Wheaton corridor.",
+    coverageContext: "We provide certified services across all Wheaton neighborhoods, the international dining district, and surrounding Montgomery County corridors.",
+    industriesExtra: "International & Ethnic Restaurant District",
+    neighborhoods: [
+      { name: "Downtown Wheaton", zip: "20902", desc: "International restaurant hub", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Wheaton Triangle", zip: "20902", desc: "Dense dining corridor", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Glenmont", zip: "20906", desc: "Metro-area community dining", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Kensington", zip: "20895", desc: "Antique row & local eateries", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Aspen Hill", zip: "20906", desc: "Suburban dining & food courts", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Forest Glen", zip: "20910", desc: "Community restaurants", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Layhill", zip: "20906", desc: "Residential dining spots", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Georgia Avenue Corridor", zip: "20902", desc: "Commercial food strip", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "University Boulevard", zip: "20902", desc: "Ethnic dining row", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Wheaton Regional Park Area", zip: "20902", desc: "Venue & community dining", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Wheaton, MD",
+  },
+  germantown: {
+    city: "Germantown",
+    state: "Maryland",
+    stateAbbr: "MD",
+    county: "Montgomery County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Germantown, MD. NFPA 96 compliant services for restaurants and commercial kitchens in Montgomery County.",
+    metaKeywords:
+      "kitchen hood cleaning Germantown MD, commercial exhaust cleaning Germantown, restaurant hood cleaning Montgomery County, NFPA 96 compliance Germantown MD",
+    heroDescription:
+      "Germantown's fast-growing Town Center and biotech-corridor dining deserve certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout Montgomery County.",
+    aboutParagraph1:
+      "Germantown, MD is one of Montgomery County's largest and fastest-growing communities, with a busy Town Center, the I-270 biotech corridor, and a diverse mix of restaurants and food courts. Commercial kitchens here must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve Germantown Town Center restaurants, Milestone shopping center dining, and commercial kitchens across the Churchill and Kingsview communities. Our certified technicians provide complete cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Montgomery County depots covering the Germantown and I-270 corridors.",
+    coverageContext: "We provide certified services across all Germantown communities, Town Center, and surrounding Montgomery County corridors.",
+    industriesExtra: "Biotech Corridor & Town Center Dining",
+    neighborhoods: [
+      { name: "Germantown Town Center", zip: "20874", desc: "Main commercial dining hub", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Milestone", zip: "20876", desc: "Shopping center food courts", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Churchill", zip: "20874", desc: "Community restaurants", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Kingsview", zip: "20874", desc: "Suburban dining spots", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Clopper Mill", zip: "20874", desc: "Local eateries & cafes", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Middlebrook", zip: "20874", desc: "Residential food services", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Cloverleaf", zip: "20876", desc: "Commercial corridor dining", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Gunners Lake", zip: "20874", desc: "Community dining spots", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Fox Chapel", zip: "20874", desc: "Neighborhood restaurants", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Manchester Farm", zip: "20876", desc: "Suburban commercial kitchens", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Germantown, MD",
+  },
+  essex: {
+    city: "Essex",
+    state: "Maryland",
+    stateAbbr: "MD",
+    county: "Baltimore County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Essex, MD. NFPA 96 compliant services for waterfront restaurants and commercial kitchens in Baltimore County.",
+    metaKeywords:
+      "kitchen hood cleaning Essex MD, commercial exhaust cleaning Essex, restaurant hood cleaning Baltimore County, NFPA 96 compliance Essex MD",
+    heroDescription:
+      "Essex's waterfront restaurants and Baltimore County dining deserve certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout the Middle River area.",
+    aboutParagraph1:
+      "Essex, MD is a waterfront community in southeastern Baltimore County along the Middle River, known for its marinas, seafood restaurants, and local diners. These commercial kitchens must maintain NFPA 96 compliance to prevent grease fires and pass health inspections.",
+    aboutParagraph2:
+      "We serve Main Street diners, Middle River seafood venues, and commercial kitchens throughout the Rosedale and Middleborough areas. Our certified technicians provide complete exhaust system cleaning with compliance documentation.",
+    dispatchContext: "Technicians dispatch from Baltimore County southeast service depots for fast local Essex response.",
+    coverageContext: "We provide certified services across all Essex neighborhoods, waterfront marinas, and commercial corridors.",
+    industriesExtra: "Waterfront & Marina Dining",
+    neighborhoods: [
+      { name: "Downtown Essex", zip: "21221", desc: "Main Street dining district", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Middle River", zip: "21220", desc: "Waterfront restaurants & seafood", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Rosedale", zip: "21237", desc: "Commercial corridor dining", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Chase", zip: "21027", desc: "Rural community dining", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Middleborough", zip: "21221", desc: "Waterfront community eateries", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Hawthorne", zip: "21221", desc: "Residential dining spots", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Mars Estates", zip: "21221", desc: "Neighborhood restaurants", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Riverside", zip: "21221", desc: "Community food services", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Aero Acres", zip: "21220", desc: "Local eateries & diners", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Bowleys Quarters", zip: "21220", desc: "Marina & waterfront dining", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Essex, MD",
+  },
+  "la-plata": {
+    city: "La Plata",
+    state: "Maryland",
+    stateAbbr: "MD",
+    county: "Charles County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in La Plata, MD. NFPA 96 compliant services for restaurants and commercial kitchens in Charles County.",
+    metaKeywords:
+      "kitchen hood cleaning La Plata MD, commercial exhaust cleaning La Plata, restaurant hood cleaning Charles County, NFPA 96 compliance La Plata MD",
+    heroDescription:
+      "La Plata's county-seat dining scene and Southern Maryland restaurants deserve certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout Charles County.",
+    aboutParagraph1:
+      "La Plata, MD is the seat of Charles County, a growing Southern Maryland community along the Route 301 corridor with a walkable downtown and county government dining. Commercial kitchens here must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve downtown La Plata restaurants, White Plains shopping center dining, and commercial kitchens throughout the Waldorf-border and Hughesville areas. Our certified technicians provide complete cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Charles County service hubs covering La Plata and the Route 301 corridor.",
+    coverageContext: "We provide certified services across all La Plata neighborhoods and surrounding Charles County communities.",
+    industriesExtra: "County Seat & Government Dining",
+    neighborhoods: [
+      { name: "Downtown La Plata", zip: "20646", desc: "County seat dining hub", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Port Tobacco", zip: "20677", desc: "Historic village dining", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Bel Alton", zip: "20611", desc: "Route 301 corridor dining", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Pomfret", zip: "20675", desc: "Rural community eateries", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "White Plains", zip: "20695", desc: "Suburban dining & food courts", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Hughesville", zip: "20637", desc: "Commercial crossroads dining", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Bryantown", zip: "20617", desc: "Rural dining services", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Rison", zip: "20646", desc: "Local community kitchens", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "St. Charles Border", zip: "20602", desc: "Planned community dining", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Charles County Center", zip: "20646", desc: "Civic & institutional dining", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "La Plata, MD",
+  },
 
   // ─────────────────── VIRGINIA ───────────────────
   arlington: {
@@ -1500,6 +1692,454 @@ const locationsData: Record<string, LocationData> = {
       { name: "Scott's Run", zip: "22102", desc: "Mixed-use dining development", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
     ],
     faqCityContext: "McLean, VA",
+  },
+  "manassas-park": {
+    city: "Manassas Park",
+    state: "Virginia",
+    stateAbbr: "VA",
+    county: "Manassas Park City",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Manassas Park, VA. NFPA 96 compliant services for restaurants and commercial kitchens.",
+    metaKeywords:
+      "kitchen hood cleaning Manassas Park VA, commercial exhaust cleaning Manassas Park, restaurant hood cleaning Manassas Park City, NFPA 96 compliance Manassas Park VA",
+    heroDescription:
+      "Manassas Park's town-center dining and commuter-rail restaurants deserve certified NFPA 96 exhaust maintenance. We serve all food establishments throughout the city.",
+    aboutParagraph1:
+      "Manassas Park, VA is a compact independent city in the heart of Prince William County, with a growing town center and VRE commuter-rail dining. Commercial kitchens here must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve Manassas Park City Center restaurants, commuter-station eateries, and commercial kitchens throughout the Signal Hill and Blooms Crossing communities. Our certified technicians provide complete cleaning with compliance documentation.",
+    dispatchContext: "Technicians dispatch from Northern Virginia service hubs covering Manassas Park City.",
+    coverageContext: "We provide certified services across all Manassas Park neighborhoods and commuter corridors.",
+    industriesExtra: "Commuter Rail & Town Center Dining",
+    neighborhoods: [
+      { name: "City Center", zip: "20111", desc: "Town center dining hub", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Manassas Park Station", zip: "20111", desc: "Commuter rail area eateries", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Signal Hill", zip: "20111", desc: "Community restaurants", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Blooms Crossing", zip: "20111", desc: "Residential dining spots", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Conner Drive Area", zip: "20111", desc: "Local food services", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Manassas Drive Corridor", zip: "20111", desc: "Commercial strip dining", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Euclid Avenue", zip: "20111", desc: "Neighborhood eateries", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Park Center", zip: "20111", desc: "Retail food courts", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Cougar District", zip: "20111", desc: "Community dining spots", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Costello Park Area", zip: "20111", desc: "Venue & park dining", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Manassas Park, VA",
+  },
+  sterling: {
+    city: "Sterling",
+    state: "Virginia",
+    stateAbbr: "VA",
+    county: "Loudoun County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Sterling, VA. NFPA 96 compliant services for restaurants and commercial kitchens in Loudoun County.",
+    metaKeywords:
+      "kitchen hood cleaning Sterling VA, commercial exhaust cleaning Sterling, restaurant hood cleaning Loudoun County, NFPA 96 compliance Sterling VA",
+    heroDescription:
+      "Sterling's busy Route 7 dining scene and Dulles-corridor restaurants deserve certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout eastern Loudoun County.",
+    aboutParagraph1:
+      "Sterling, VA is a dense commercial community in eastern Loudoun County near Washington Dulles International Airport, with the Cascades and CountrySide town centers and a diverse restaurant scene. Commercial kitchens here must maintain NFPA 96 compliance.",
+    aboutParagraph2:
+      "We serve Sterling Park restaurants, Cascades and CountrySide dining, Dulles Town Center food courts, and commercial kitchens throughout eastern Loudoun. Our certified technicians provide complete cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Northern Virginia service hubs covering Sterling and eastern Loudoun County.",
+    coverageContext: "We provide certified services across all Sterling neighborhoods, town centers, and Dulles-corridor commercial districts.",
+    industriesExtra: "Dulles Airport Corridor & Tech Campus Dining",
+    neighborhoods: [
+      { name: "Sterling", zip: "20164", desc: "Main commercial dining", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Cascades", zip: "20165", desc: "Town center restaurants", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "CountrySide", zip: "20165", desc: "Community dining spots", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Sugarland Run", zip: "20164", desc: "Residential eateries", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Sterling Park", zip: "20164", desc: "Suburban food strip", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Dulles Town Center", zip: "20166", desc: "Mall food courts & dining", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Potomac Falls", zip: "20165", desc: "Upscale community dining", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Lowes Island", zip: "20165", desc: "Riverfront dining", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Loudoun Station", zip: "20166", desc: "Metro-area dining", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Route 7 Corridor", zip: "20164", desc: "Commercial restaurant strip", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Sterling, VA",
+  },
+  gainesville: {
+    city: "Gainesville",
+    state: "Virginia",
+    stateAbbr: "VA",
+    county: "Prince William County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Gainesville, VA. NFPA 96 compliant services for restaurants and commercial kitchens in Prince William County.",
+    metaKeywords:
+      "kitchen hood cleaning Gainesville VA, commercial exhaust cleaning Gainesville, restaurant hood cleaning Prince William County, NFPA 96 compliance Gainesville VA",
+    heroDescription:
+      "Gainesville's fast-growing town center and I-66 corridor restaurants deserve certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout western Prince William County.",
+    aboutParagraph1:
+      "Gainesville, VA is one of Prince William County's fastest-growing communities along the I-66 and Route 29 corridors, with the Atlas Walk and Virginia Gateway shopping districts. Commercial kitchens here must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve Gainesville Town Center restaurants, Atlas Walk dining, Lake Manassas venues, and commercial kitchens throughout the Linton Hall corridor. Our certified technicians provide complete cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Northern Virginia service hubs covering Gainesville and western Prince William County.",
+    coverageContext: "We provide certified services across all Gainesville communities, shopping districts, and I-66 corridor dining.",
+    industriesExtra: "Town Center & Wine Country Gateway Dining",
+    neighborhoods: [
+      { name: "Gainesville Town Center", zip: "20155", desc: "Main dining hub", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Heathcote", zip: "20155", desc: "Suburban community dining", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Virginia Oaks", zip: "20155", desc: "Golf community dining", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Piedmont", zip: "20155", desc: "Planned community eateries", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Lake Manassas", zip: "20155", desc: "Lakeside dining venues", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Somerset Crossing", zip: "20155", desc: "Residential food services", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Wentworth Green", zip: "20155", desc: "Community restaurants", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Glenkirk", zip: "20155", desc: "Local eateries & cafes", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Linton Hall Corridor", zip: "20155", desc: "Commercial strip dining", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Atlas Walk", zip: "20155", desc: "Town center food courts", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Gainesville, VA",
+  },
+  centreville: {
+    city: "Centreville",
+    state: "Virginia",
+    stateAbbr: "VA",
+    county: "Fairfax County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Centreville, VA. NFPA 96 compliant services for restaurants and commercial kitchens in Fairfax County.",
+    metaKeywords:
+      "kitchen hood cleaning Centreville VA, commercial exhaust cleaning Centreville, restaurant hood cleaning Fairfax County, NFPA 96 compliance Centreville VA",
+    heroDescription:
+      "Centreville's historic village and suburban dining deserve certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout western Fairfax County.",
+    aboutParagraph1:
+      "Centreville, VA is a large suburban community in western Fairfax County near the historic Civil War crossroads, with diverse dining along Route 29 and Route 28. Commercial kitchens here must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve Old Centreville restaurants, Sully Station and Virginia Run dining, and commercial kitchens throughout the Little Rocky Run area. Our certified technicians provide complete cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Northern Virginia service hubs covering Centreville and western Fairfax County.",
+    coverageContext: "We provide certified services across all Centreville neighborhoods and western Fairfax County corridors.",
+    industriesExtra: "Historic Village & Suburban Dining",
+    neighborhoods: [
+      { name: "Old Centreville", zip: "20120", desc: "Historic village dining", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Sully Station", zip: "20120", desc: "Community restaurants", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Virginia Run", zip: "20120", desc: "Suburban dining spots", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Little Rocky Run", zip: "20121", desc: "Residential eateries", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Singleton's Grove", zip: "20120", desc: "Neighborhood dining", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Centre Ridge", zip: "20121", desc: "Community food services", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Compton Village", zip: "20120", desc: "Local restaurants", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Bull Run", zip: "20121", desc: "Park-area dining", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Stone Road Corridor", zip: "20121", desc: "Commercial strip dining", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Centreville Square", zip: "20120", desc: "Shopping center food courts", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Centreville, VA",
+  },
+  burke: {
+    city: "Burke",
+    state: "Virginia",
+    stateAbbr: "VA",
+    county: "Fairfax County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Burke, VA. NFPA 96 compliant services for restaurants and commercial kitchens in Fairfax County.",
+    metaKeywords:
+      "kitchen hood cleaning Burke VA, commercial exhaust cleaning Burke, restaurant hood cleaning Fairfax County, NFPA 96 compliance Burke VA",
+    heroDescription:
+      "Burke's lake-community dining and suburban restaurants deserve certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout central Fairfax County.",
+    aboutParagraph1:
+      "Burke, VA is an established suburban community in central Fairfax County centered on Burke Centre and Burke Lake, with neighborhood restaurants and shopping-center dining. Commercial kitchens here must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve Burke Centre restaurants, Lake Braddock dining, and commercial kitchens throughout the Kings Park and Fairfax Station areas. Our certified technicians provide complete cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Northern Virginia service hubs covering Burke and central Fairfax County.",
+    coverageContext: "We provide certified services across all Burke neighborhoods and central Fairfax County corridors.",
+    industriesExtra: "Lake Community & Suburban Dining",
+    neighborhoods: [
+      { name: "Burke Centre", zip: "22015", desc: "Town center dining", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Lake Braddock", zip: "22015", desc: "Community restaurants", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Cherry Run", zip: "22015", desc: "Suburban eateries", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Signal Hill", zip: "22015", desc: "Residential dining spots", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Burke Station", zip: "22015", desc: "Commuter-area dining", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Kings Park", zip: "22015", desc: "Neighborhood restaurants", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Long Branch", zip: "22015", desc: "Community food services", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Fairfax Station", zip: "22039", desc: "Estate-area dining", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Old Keene Mill Corridor", zip: "22015", desc: "Commercial strip dining", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Burke Lake Area", zip: "22015", desc: "Park & venue dining", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Burke, VA",
+  },
+  lorton: {
+    city: "Lorton",
+    state: "Virginia",
+    stateAbbr: "VA",
+    county: "Fairfax County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Lorton, VA. NFPA 96 compliant services for restaurants and commercial kitchens in Fairfax County.",
+    metaKeywords:
+      "kitchen hood cleaning Lorton VA, commercial exhaust cleaning Lorton, restaurant hood cleaning Fairfax County, NFPA 96 compliance Lorton VA",
+    heroDescription:
+      "Lorton's growing town center and waterfront-area dining deserve certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout southern Fairfax County.",
+    aboutParagraph1:
+      "Lorton, VA is a growing community in southern Fairfax County near the Occoquan River and Workhouse Arts Center, with new town-center dining and Route 1 corridor restaurants. Commercial kitchens here must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve Lorton Station restaurants, Workhouse Arts area venues, and commercial kitchens throughout the Laurel Hill and South County communities. Our certified technicians provide complete cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Northern Virginia service hubs covering Lorton and southern Fairfax County.",
+    coverageContext: "We provide certified services across all Lorton neighborhoods, the Route 1 corridor, and waterfront dining districts.",
+    industriesExtra: "Workhouse Arts & Waterfront Dining",
+    neighborhoods: [
+      { name: "Lorton Station", zip: "22079", desc: "Town center dining", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Laurel Hill", zip: "22079", desc: "Community restaurants", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Gunston", zip: "22079", desc: "Waterfront-area dining", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Mason Neck", zip: "22079", desc: "Peninsula community dining", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "South County", zip: "22079", desc: "Suburban eateries", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Workhouse Arts Area", zip: "22079", desc: "Arts district dining", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Pohick", zip: "22079", desc: "Local food services", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Lorton Town Center", zip: "22079", desc: "Retail food courts", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Route 1 Corridor", zip: "22079", desc: "Commercial strip dining", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Occoquan Border", zip: "22079", desc: "Historic waterfront dining", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Lorton, VA",
+  },
+  annandale: {
+    city: "Annandale",
+    state: "Virginia",
+    stateAbbr: "VA",
+    county: "Fairfax County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Annandale, VA. NFPA 96 compliant services for the Koreatown international dining district in Fairfax County.",
+    metaKeywords:
+      "kitchen hood cleaning Annandale VA, commercial exhaust cleaning Annandale, restaurant hood cleaning Fairfax County, NFPA 96 compliance Annandale VA",
+    heroDescription:
+      "Annandale's renowned Koreatown and international restaurant district deserves certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout the area in Fairfax County.",
+    aboutParagraph1:
+      "Annandale, VA is home to one of the East Coast's largest Koreatowns and a dense international dining district along Little River Turnpike. These high-volume kitchens require strict NFPA 96 certified exhaust cleaning for fire safety.",
+    aboutParagraph2:
+      "We serve Annandale's Koreatown restaurants, Columbia Pike dining, and commercial kitchens throughout the Wakefield and Ravensworth communities. Our certified technicians provide complete cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Northern Virginia service hubs covering Annandale and central Fairfax County.",
+    coverageContext: "We provide certified services across all Annandale neighborhoods and the international dining district.",
+    industriesExtra: "Koreatown & International Dining",
+    neighborhoods: [
+      { name: "Koreatown / Little Korea", zip: "22003", desc: "International dining hub", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Little River Turnpike Corridor", zip: "22003", desc: "Main restaurant row", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Columbia Pike Area", zip: "22003", desc: "Diverse dining strip", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Wakefield", zip: "22003", desc: "Community restaurants", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Ravensworth", zip: "22003", desc: "Suburban dining spots", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Broyhill", zip: "22003", desc: "Residential eateries", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Hillbrook", zip: "22003", desc: "Neighborhood dining", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Camelot", zip: "22003", desc: "Local food services", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Sleepy Hollow", zip: "22003", desc: "Community kitchens", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Heritage Mall Area", zip: "22003", desc: "Retail food courts", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Annandale, VA",
+  },
+  dumfries: {
+    city: "Dumfries",
+    state: "Virginia",
+    stateAbbr: "VA",
+    county: "Prince William County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Dumfries, VA. NFPA 96 compliant services for restaurants and commercial kitchens in Prince William County.",
+    metaKeywords:
+      "kitchen hood cleaning Dumfries VA, commercial exhaust cleaning Dumfries, restaurant hood cleaning Prince William County, NFPA 96 compliance Dumfries VA",
+    heroDescription:
+      "Dumfries' historic Route 1 corridor and Quantico-area restaurants deserve certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout eastern Prince William County.",
+    aboutParagraph1:
+      "Dumfries, VA is Virginia's oldest continuously chartered town, located along the Route 1 corridor near Quantico and the Montclair community. Commercial kitchens here must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve historic Dumfries restaurants, Triangle and Quantico-area dining, and commercial kitchens throughout the Montclair and Southbridge communities. Our certified technicians provide complete cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Northern Virginia service hubs covering Dumfries and eastern Prince William County.",
+    coverageContext: "We provide certified services across all Dumfries neighborhoods and the Route 1 corridor.",
+    industriesExtra: "Quantico & Route 1 Corridor Dining",
+    neighborhoods: [
+      { name: "Historic Dumfries", zip: "22026", desc: "Oldest-town dining district", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Triangle", zip: "22172", desc: "Quantico gateway dining", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Quantico Area", zip: "22134", desc: "Military community dining", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Montclair", zip: "22025", desc: "Lake community restaurants", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Southbridge", zip: "22026", desc: "Suburban dining spots", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Graham Park", zip: "22026", desc: "Residential eateries", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Possum Point", zip: "22026", desc: "Waterfront dining", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Cherry Hill", zip: "22026", desc: "Community food services", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Route 1 Corridor", zip: "22026", desc: "Commercial strip dining", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Powells Creek Area", zip: "22026", desc: "Local eateries", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Dumfries, VA",
+  },
+  oakton: {
+    city: "Oakton",
+    state: "Virginia",
+    stateAbbr: "VA",
+    county: "Fairfax County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Oakton, VA. NFPA 96 compliant services for restaurants and commercial kitchens in Fairfax County.",
+    metaKeywords:
+      "kitchen hood cleaning Oakton VA, commercial exhaust cleaning Oakton, restaurant hood cleaning Fairfax County, NFPA 96 compliance Oakton VA",
+    heroDescription:
+      "Oakton's suburban and country-estate dining deserves certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout central Fairfax County.",
+    aboutParagraph1:
+      "Oakton, VA is an affluent suburban community in central Fairfax County between Vienna and Fairfax City, with neighborhood restaurants and shopping-center dining along Chain Bridge Road. Commercial kitchens here must maintain NFPA 96 compliance.",
+    aboutParagraph2:
+      "We serve Oakton restaurants, Oak Hill dining, and commercial kitchens throughout the Hunter Mill and Waples Mill areas. Our certified technicians provide complete cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Northern Virginia service hubs covering Oakton and central Fairfax County.",
+    coverageContext: "We provide certified services across all Oakton neighborhoods and central Fairfax County corridors.",
+    industriesExtra: "Suburban & Country Estate Dining",
+    neighborhoods: [
+      { name: "Oakton", zip: "22124", desc: "Main community dining", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Oak Hill", zip: "22124", desc: "Suburban restaurants", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Hunter Mill", zip: "22124", desc: "Estate-area dining", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Difficult Run", zip: "22124", desc: "Residential eateries", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Waples Mill", zip: "22124", desc: "Community dining spots", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Flint Hill", zip: "22124", desc: "Neighborhood food services", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Fox Mill", zip: "22124", desc: "Local restaurants", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Blake Lane Corridor", zip: "22124", desc: "Commercial strip dining", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Chain Bridge Road Area", zip: "22124", desc: "Retail food courts", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Vienna Border", zip: "22180", desc: "Town-edge dining", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Oakton, VA",
+  },
+  "great-falls": {
+    city: "Great Falls",
+    state: "Virginia",
+    stateAbbr: "VA",
+    county: "Fairfax County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Great Falls, VA. NFPA 96 compliant services for upscale restaurants and commercial kitchens in Fairfax County.",
+    metaKeywords:
+      "kitchen hood cleaning Great Falls VA, commercial exhaust cleaning Great Falls, restaurant hood cleaning Fairfax County, NFPA 96 compliance Great Falls VA",
+    heroDescription:
+      "Great Falls' upscale village dining and country-club kitchens deserve certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout northern Fairfax County.",
+    aboutParagraph1:
+      "Great Falls, VA is an affluent community in northern Fairfax County near the Potomac River and Great Falls Park, with an upscale village center and country-club dining. Commercial kitchens here must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve Great Falls Village restaurants, country-club and event venues, and commercial kitchens throughout the Seneca and Forestville areas. Our certified technicians provide complete cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Northern Virginia service hubs covering Great Falls and northern Fairfax County.",
+    coverageContext: "We provide certified services across all Great Falls neighborhoods and northern Fairfax County corridors.",
+    industriesExtra: "Upscale Village & Country Club Dining",
+    neighborhoods: [
+      { name: "Great Falls Village", zip: "22066", desc: "Upscale village dining", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Seneca", zip: "22066", desc: "Country estate dining", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Forestville", zip: "22066", desc: "Community restaurants", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Colvin Run", zip: "22066", desc: "Historic mill-area dining", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Riverbend", zip: "22066", desc: "Riverfront dining", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Difficult Run", zip: "22066", desc: "Suburban eateries", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Brooks Farm", zip: "22066", desc: "Residential dining", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Walker Road Corridor", zip: "22066", desc: "Local food services", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Georgetown Pike Corridor", zip: "22066", desc: "Commercial strip dining", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Great Falls Park Area", zip: "22066", desc: "Park & venue dining", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Great Falls, VA",
+  },
+  purcellville: {
+    city: "Purcellville",
+    state: "Virginia",
+    stateAbbr: "VA",
+    county: "Loudoun County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Purcellville, VA. NFPA 96 compliant services for wine-country restaurants and commercial kitchens in Loudoun County.",
+    metaKeywords:
+      "kitchen hood cleaning Purcellville VA, commercial exhaust cleaning Purcellville, restaurant hood cleaning Loudoun County, NFPA 96 compliance Purcellville VA",
+    heroDescription:
+      "Purcellville's Main Street dining and wine-country kitchens deserve certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout western Loudoun County.",
+    aboutParagraph1:
+      "Purcellville, VA is the commercial hub of western Loudoun County's wine country, with a walkable Main Street, breweries, and farm-to-table venues. Commercial kitchens here must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve downtown Purcellville restaurants, wine-country and brewery kitchens, and commercial dining throughout the Hamilton and Lincoln areas. Our certified technicians provide complete cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Northern Virginia service hubs covering Purcellville and western Loudoun County.",
+    coverageContext: "We provide certified services across all Purcellville neighborhoods and western Loudoun wine-country venues.",
+    industriesExtra: "Wine Country & Brewery Dining",
+    neighborhoods: [
+      { name: "Downtown Purcellville", zip: "20132", desc: "Main Street dining district", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Hirst Farm", zip: "20132", desc: "Suburban community dining", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Mayfair", zip: "20132", desc: "Residential eateries", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Locust Grove", zip: "20132", desc: "Community restaurants", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Hamilton", zip: "20158", desc: "Historic town dining", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Lincoln", zip: "20132", desc: "Rural community eateries", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Catoctin Corner", zip: "20132", desc: "Retail food courts", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Loudoun Valley", zip: "20132", desc: "Wine country dining", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Main Street Corridor", zip: "20132", desc: "Commercial dining strip", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Western Loudoun", zip: "20132", desc: "Farm-to-table venues", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Purcellville, VA",
+  },
+  "round-hill": {
+    city: "Round Hill",
+    state: "Virginia",
+    stateAbbr: "VA",
+    county: "Loudoun County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Round Hill, VA. NFPA 96 compliant services for restaurants and commercial kitchens in western Loudoun County.",
+    metaKeywords:
+      "kitchen hood cleaning Round Hill VA, commercial exhaust cleaning Round Hill, restaurant hood cleaning Loudoun County, NFPA 96 compliance Round Hill VA",
+    heroDescription:
+      "Round Hill's small-town dining and wine-country venues deserve certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout western Loudoun County.",
+    aboutParagraph1:
+      "Round Hill, VA is a small town at the foot of the Blue Ridge in western Loudoun County, near Sleeter Lake and the wine-country trail. Commercial kitchens here must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve Round Hill Main Street restaurants, Sleeter Lake community dining, and commercial kitchens throughout the Bluemont and Hamilton-border areas. Our certified technicians provide complete cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Northern Virginia service hubs covering Round Hill and western Loudoun County.",
+    coverageContext: "We provide certified services across all Round Hill neighborhoods and western Loudoun wine-country venues.",
+    industriesExtra: "Western Loudoun Wine Country Dining",
+    neighborhoods: [
+      { name: "Round Hill Town", zip: "20141", desc: "Main Street dining", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Sleeter Lake", zip: "20141", desc: "Lakeside community dining", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Round Hill Crossing", zip: "20141", desc: "Retail food courts", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Villages at Round Hill", zip: "20141", desc: "Residential eateries", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Lake Ridge Estates", zip: "20141", desc: "Community restaurants", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Bluemont", zip: "20135", desc: "Mountain-area dining", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Hamilton Border", zip: "20158", desc: "Local eateries", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Route 7 Corridor", zip: "20141", desc: "Commercial strip dining", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Western Loudoun", zip: "20141", desc: "Wine country venues", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Loudoun Heights Area", zip: "20141", desc: "Gateway dining", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Round Hill, VA",
+  },
+  clifton: {
+    city: "Clifton",
+    state: "Virginia",
+    stateAbbr: "VA",
+    county: "Fairfax County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Clifton, VA. NFPA 96 compliant services for restaurants and commercial kitchens in Fairfax County.",
+    metaKeywords:
+      "kitchen hood cleaning Clifton VA, commercial exhaust cleaning Clifton, restaurant hood cleaning Fairfax County, NFPA 96 compliance Clifton VA",
+    heroDescription:
+      "Clifton's historic town dining and equestrian-country venues deserve certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout western Fairfax County.",
+    aboutParagraph1:
+      "Clifton, VA is a small historic town in western Fairfax County known for its quaint Main Street, fine dining, and surrounding equestrian estates. Commercial kitchens here must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve historic Clifton restaurants, Little Rocky Run dining, and commercial kitchens throughout the Union Mill and Newgate communities. Our certified technicians provide complete cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Northern Virginia service hubs covering Clifton and western Fairfax County.",
+    coverageContext: "We provide certified services across all Clifton neighborhoods and western Fairfax County corridors.",
+    industriesExtra: "Historic Town & Equestrian Dining",
+    neighborhoods: [
+      { name: "Historic Clifton", zip: "20124", desc: "Main Street village dining", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Little Rocky Run", zip: "20124", desc: "Community restaurants", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Union Mill", zip: "20124", desc: "Suburban dining spots", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Balmoral", zip: "20124", desc: "Residential eateries", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Newgate", zip: "20124", desc: "Neighborhood dining", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Yates Ford", zip: "20124", desc: "Rural community dining", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Clifton Town", zip: "20124", desc: "Local food services", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "Centreville Border", zip: "20121", desc: "Commercial corridor dining", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Fairfax Station Border", zip: "22039", desc: "Estate-area dining", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Main Street Corridor", zip: "20124", desc: "Historic dining strip", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Clifton, VA",
+  },
+  dulles: {
+    city: "Dulles",
+    state: "Virginia",
+    stateAbbr: "VA",
+    county: "Loudoun County",
+    metaDescription:
+      "Certified commercial kitchen hood cleaning & exhaust system degreasing in Dulles, VA. NFPA 96 compliant services for airport-corridor restaurants and commercial kitchens in Loudoun County.",
+    metaKeywords:
+      "kitchen hood cleaning Dulles VA, commercial exhaust cleaning Dulles, restaurant hood cleaning Loudoun County, NFPA 96 compliance Dulles VA",
+    heroDescription:
+      "The Dulles corridor's airport-area dining and data-center campus kitchens deserve certified NFPA 96 exhaust maintenance. We serve all commercial kitchens throughout eastern Loudoun County.",
+    aboutParagraph1:
+      "Dulles, VA is the airport and technology corridor of eastern Loudoun County, anchored by Washington Dulles International Airport, Dulles Town Center, and Data Center Alley. Commercial kitchens here must maintain NFPA 96 fire safety compliance.",
+    aboutParagraph2:
+      "We serve Dulles Town Center restaurants, airport-corridor hospitality kitchens, and corporate campus dining throughout the Moorefield Station and Arcola areas. Our certified technicians provide complete cleaning with compliance stickers and photo documentation.",
+    dispatchContext: "Technicians dispatch from Northern Virginia service hubs covering the Dulles corridor and eastern Loudoun County.",
+    coverageContext: "We provide certified services across all Dulles-corridor communities, the airport area, and data-center campuses.",
+    industriesExtra: "Dulles Airport & Data Center Campus Dining",
+    neighborhoods: [
+      { name: "Dulles Town Center", zip: "20166", desc: "Mall food courts & dining", services: ["Hood Cleaning", "Fan Repairs", "Grease Removal"] },
+      { name: "Moorefield Station", zip: "20166", desc: "Metro-area dining", services: ["Exhaust System Cleaning", "NFPA Audits", "Compliance Stickers"] },
+      { name: "Loudoun Gateway", zip: "20166", desc: "Airport corridor dining", services: ["Hood Cleaning", "Filter Exchange", "Duct Cleaning"] },
+      { name: "Airport Area", zip: "20166", desc: "Travel & hospitality dining", services: ["Fan Installs", "Grease Trap Pumping", "Compliance"] },
+      { name: "Arcola", zip: "20166", desc: "Suburban community dining", services: ["Hood Cleaning", "PCS Maintenance", "Steam Cleaning"] },
+      { name: "Stone Ridge", zip: "20105", desc: "Planned community restaurants", services: ["Canopy Degreasing", "Belt Replacement", "Fan Repairs"] },
+      { name: "Brambleton Border", zip: "20148", desc: "Town center dining", services: ["Duct Cleaning", "Grease Removal", "Compliance Stickers"] },
+      { name: "South Riding Border", zip: "20152", desc: "Community eateries", services: ["Hood Cleaning", "PCS Maintenance", "NFPA Compliance"] },
+      { name: "Route 28 Corridor", zip: "20166", desc: "Commercial tech strip", services: ["Exhaust Fan Repairs", "Grease Trap Pumping", "Hood Cleaning"] },
+      { name: "Data Center Alley", zip: "20166", desc: "Corporate campus dining", services: ["Duct Cleaning", "Fan Installs", "NFPA 96 Compliance"] },
+    ],
+    faqCityContext: "Dulles, VA",
   },
 
   // ─────────────────── WASHINGTON DC ───────────────────

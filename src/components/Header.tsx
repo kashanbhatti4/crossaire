@@ -41,32 +41,38 @@ const regionsList: Region[] = [
       "College Park",
       "Columbia",
       "Crofton",
+      "Cumberland",
       "Dundalk",
       "Eldersburg",
       "Ellicott City",
+      "Essex",
       "Frederick",
       "Gaithersburg",
+      "Germantown",
       "Glen Burnie",
       "Greenbelt",
       "Hagerstown",
       "Havre de Grace",
       "Hyattsville",
+      "La Plata",
       "Laurel",
       "Odenton",
       "Owings Mills",
       "Pasadena",
       "Rockville",
+      "Salisbury",
       "Severn",
       "Severna Park",
       "Silver Spring",
       "Towson",
       "Waldorf",
-      "Westminster"
+      "Westminster",
+      "Wheaton"
     ]
   },
   {
     name: "Virginia (VA)",
-    cities: ["Arlington", "Alexandria", "Fairfax", "Falls Church", "Vienna", "Reston", "Herndon", "Chantilly", "Leesburg", "Ashburn", "Manassas", "Woodbridge", "Springfield", "Tysons", "McLean"]
+    cities: ["Alexandria", "Annandale", "Arlington", "Ashburn", "Burke", "Centreville", "Chantilly", "Clifton", "Dulles", "Dumfries", "Fairfax", "Falls Church", "Gainesville", "Great Falls", "Herndon", "Leesburg", "Lorton", "Manassas", "Manassas Park", "McLean", "Oakton", "Purcellville", "Reston", "Round Hill", "Springfield", "Sterling", "Tysons", "Vienna", "Woodbridge"]
   },
   {
     name: "Washington DC",
