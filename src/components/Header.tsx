@@ -120,7 +120,7 @@ export default function Header() {
             alt="Crossaire Logo" 
             width={240}
             height={46}
-            className="h-10 w-auto object-contain transition-opacity duration-300" 
+            className="h-8 w-auto object-contain transition-opacity duration-300"
           />
         </a>
 
