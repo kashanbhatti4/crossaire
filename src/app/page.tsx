@@ -104,7 +104,8 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <link rel="preload" href="/media/images/hero.webp" as="image" fetchPriority="high" />
+      <link rel="preload" href="/media/images/hero-mobile.webp" as="image" fetchPriority="high" media="(max-width: 1023px)" />
+      <link rel="preload" href="/media/images/hero.webp" as="image" fetchPriority="high" media="(min-width: 1024px)" />
       <ScrollReveal />
       
       {/* Structured Schema Data */}
@@ -325,13 +326,13 @@ export default function Home() {
             </span>
             <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
               <div className="relative group">
-                <img src="/media/images/emblem1.webp" alt="NFPA 96 Certified Commercial Exhaust Cleaning Compliance Logo" width={160} height={176} className="h-24 md:h-36 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img loading="lazy" decoding="async" src="/media/images/emblem1.webp" alt="NFPA 96 Certified Commercial Exhaust Cleaning Compliance Logo" width={160} height={176} className="h-24 md:h-36 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="relative group">
-                <img src="/media/images/emblem2.webp" alt="OSHA Compliant Commercial Kitchen Safety Standard Certification" width={160} height={185} className="h-24 md:h-36 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img loading="lazy" decoding="async" src="/media/images/emblem2.webp" alt="OSHA Compliant Commercial Kitchen Safety Standard Certification" width={160} height={185} className="h-24 md:h-36 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="relative group">
-                <img src="/media/images/emblem3.webp" alt="IKECA Equivalent Equivalent Exhaust System Cleaning Standard Logo" width={160} height={186} className="h-24 md:h-36 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img loading="lazy" decoding="async" src="/media/images/emblem3.webp" alt="IKECA Equivalent Equivalent Exhaust System Cleaning Standard Logo" width={160} height={186} className="h-24 md:h-36 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
             </div>
           </div>
@@ -361,34 +362,34 @@ export default function Home() {
           </span>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 md:gap-12 items-center justify-items-center">
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/amazon.webp" alt="Amazon Commercial Facility Kitchen Service Client" width={240} height={73} className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img loading="lazy" decoding="async" src="/media/images/partners/amazon.webp" alt="Amazon Commercial Facility Kitchen Service Client" width={240} height={73} className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/burger-king.webp" alt="Burger King Restaurant Exhaust Service Client" width={160} height={166} className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img loading="lazy" decoding="async" src="/media/images/partners/burger-king.webp" alt="Burger King Restaurant Exhaust Service Client" width={160} height={166} className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/hilton.webp" alt="Hilton Hotel Kitchen Hood Service Client" width={160} height={82} className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img loading="lazy" decoding="async" src="/media/images/partners/hilton.webp" alt="Hilton Hotel Kitchen Hood Service Client" width={160} height={82} className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/ihg-hotels.webp" alt="IHG Hotels Ventilation Cleaning Client" width={160} height={57} className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img loading="lazy" decoding="async" src="/media/images/partners/ihg-hotels.webp" alt="IHG Hotels Ventilation Cleaning Client" width={160} height={57} className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/subway.webp" alt="Subway Restaurant Grease Trap Cleaning Client" width={240} height={69} className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img loading="lazy" decoding="async" src="/media/images/partners/subway.webp" alt="Subway Restaurant Grease Trap Cleaning Client" width={240} height={69} className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/wing-stop.webp" alt="Wing Stop Hood Filter Cleaning Client" width={240} height={82} className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img loading="lazy" decoding="async" src="/media/images/partners/wing-stop.webp" alt="Wing Stop Hood Filter Cleaning Client" width={240} height={82} className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/ruth-chris.webp" alt="Ruth's Chris Steak House Exhaust Service Client" width={240} height={129} className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img loading="lazy" decoding="async" src="/media/images/partners/ruth-chris.webp" alt="Ruth's Chris Steak House Exhaust Service Client" width={240} height={129} className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/the-halal-guys.webp" alt="The Halal Guys Commercial Kitchen Service Client" width={150} height={150} className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img loading="lazy" decoding="async" src="/media/images/partners/the-halal-guys.webp" alt="The Halal Guys Commercial Kitchen Service Client" width={150} height={150} className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/omni.webp" alt="Omni Hotels & Resorts Kitchen Exhaust Client" width={160} height={26} className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img loading="lazy" decoding="async" src="/media/images/partners/omni.webp" alt="Omni Hotels & Resorts Kitchen Exhaust Client" width={160} height={26} className="h-8 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/media/images/partners/bowie.webp" alt="Bowie State University Dining Facility Service Client" width={160} height={137} className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img loading="lazy" decoding="async" src="/media/images/partners/bowie.webp" alt="Bowie State University Dining Facility Service Client" width={160} height={137} className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
           </div>
         </div>
@@ -608,7 +609,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             {/* Left Column: Image Card */}
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5] border border-border-stroke shadow-md bg-white">
-              <img src="/media/images/why-people-trust.webp" alt="Certified Commercial Exhaust Safety Technician performing deep degreasing" width={1537} height={1023} className="absolute inset-0 w-full h-full object-cover" />
+              <img loading="lazy" decoding="async" src="/media/images/why-people-trust.webp" alt="Certified Commercial Exhaust Safety Technician performing deep degreasing" width={1537} height={1023} className="absolute inset-0 w-full h-full object-cover" />
             </div>
 
             {/* Right Column: Features List */}
