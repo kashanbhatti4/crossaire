@@ -325,13 +325,13 @@ export default function Home() {
             </span>
             <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
               <div className="relative group">
-                <img src="/media/images/emblem1.webp" alt="NFPA 96 Certified Commercial Exhaust Cleaning Compliance Logo" width={160} height={176} className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/emblem1.webp" alt="NFPA 96 Certified Commercial Exhaust Cleaning Compliance Logo" width={160} height={176} className="h-24 md:h-36 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="relative group">
-                <img src="/media/images/emblem2.webp" alt="OSHA Compliant Commercial Kitchen Safety Standard Certification" width={160} height={185} className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/emblem2.webp" alt="OSHA Compliant Commercial Kitchen Safety Standard Certification" width={160} height={185} className="h-24 md:h-36 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
               <div className="relative group">
-                <img src="/media/images/emblem3.webp" alt="IKECA Equivalent Equivalent Exhaust System Cleaning Standard Logo" width={160} height={186} className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/media/images/emblem3.webp" alt="IKECA Equivalent Equivalent Exhaust System Cleaning Standard Logo" width={160} height={186} className="h-24 md:h-36 w-auto object-contain transition-transform duration-300 hover:scale-105" />
               </div>
             </div>
           </div>

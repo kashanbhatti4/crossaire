@@ -140,9 +140,9 @@ export default async function LocationPage({ params }: PageProps) {
           <div className="flex flex-col items-center justify-center text-center pb-12 border-b border-border-stroke/60">
             <span className="text-[11px] uppercase tracking-widest font-extrabold text-body-text/60 mb-6 block">(Our Industry Certifications & Affiliations)</span>
             <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
-              <img src="/media/images/emblem1.webp" alt="NFPA 96 Certified Commercial Exhaust Cleaning Compliance Logo" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
-              <img src="/media/images/emblem2.webp" alt="OSHA Compliant Commercial Kitchen Safety Standard Certification" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
-              <img src="/media/images/emblem3.webp" alt="IKECA Equivalent Exhaust System Cleaning Standard Logo" className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img src="/media/images/emblem1.webp" alt="NFPA 96 Certified Commercial Exhaust Cleaning Compliance Logo" className="h-24 md:h-36 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img src="/media/images/emblem2.webp" alt="OSHA Compliant Commercial Kitchen Safety Standard Certification" className="h-24 md:h-36 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+              <img src="/media/images/emblem3.webp" alt="IKECA Equivalent Exhaust System Cleaning Standard Logo" className="h-24 md:h-36 w-auto object-contain transition-transform duration-300 hover:scale-105" />
             </div>
           </div>
           <div className="pt-12 text-center">
