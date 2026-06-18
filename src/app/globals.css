@@ -517,7 +517,7 @@ header.nav-scrolled .nav-phone-link:hover {
   flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
-  padding-top: 520px !important; /* Increased padding-top on mobile (+140px) */
+  padding-top: 180px !important; /* Mobile: pulls hero text + booking form higher up */
 }
 
 .hero-section::before {
@@ -526,7 +526,7 @@ header.nav-scrolled .nav-phone-link:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 700px; /* Adjusted height to cover increased padding + text (+140px) */
+  height: 360px; /* Mobile: gradient band height kept in step with reduced padding-top */
   background-image: linear-gradient(180deg, rgba(28, 108, 207, 0.1) 0%, rgba(28, 108, 207, 0.7) 70%, var(--accent) 100%), url('/media/images/hero.webp');
   background-repeat: no-repeat;
   background-position: center center; /* centered on mobile */
