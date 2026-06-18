@@ -89,7 +89,7 @@ export default function Testimonials() {
               (TESTIMONIALS)
             </span>
             <h2 className="text-4xl md:text-[56px] font-extrabold tracking-tight leading-tight text-primary-text">
-              What our neighbours <br className="hidden sm:inline" />
+              What our customers <br className="hidden sm:inline" />
               say about us
             </h2>
           </div>
