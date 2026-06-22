@@ -118,16 +118,25 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white border-b border-border-stroke shadow-[0_4px_20px_rgba(12,26,43,0.01)] transition-all duration-300">
+      {/* Mobile-only always-visible phone banner */}
+      <a
+        href="tel:5717231406"
+        className="md:hidden flex items-center justify-center gap-2 bg-accent text-white text-xs font-semibold py-2.5 px-4"
+      >
+        <i className="fa-solid fa-phone text-[10px]"></i>
+        <span>Call Us — 571-723-1406</span>
+      </a>
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Brand Logo */}
-        <a href="/" className="flex items-center group logo-link" onClick={handleMobileLinkClick}>
-          <img 
-            src="/media/images/logo.webp" 
-            alt="Crossaire Logo" 
+        <a href="/" className="flex flex-col items-center group logo-link" onClick={handleMobileLinkClick}>
+          <img
+            src="/media/images/logo.webp"
+            alt="Crossaire Logo"
             width={240}
             height={46}
             className="h-8 w-auto object-contain transition-opacity duration-300"
           />
+          <span className="block text-[8px] md:text-[9px] font-semibold uppercase tracking-[0.25em] text-primary-text text-center mt-0.5 ml-[0.25em] leading-none">Kitchen Hood Experts</span>
         </a>
 
         {/* Desktop Menu Links */}

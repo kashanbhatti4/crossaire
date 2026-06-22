@@ -7,6 +7,7 @@ interface GalleryItem {
   image: string;
   title: string;
   desc: string;
+  link: string;
   width: number;
   height: number;
 }
@@ -17,38 +18,43 @@ const galleryItems: GalleryItem[] = [
     image: "/media/images/gallery/kitchen-hood-cleaning-1.webp",
     title: "Kitchen Hoods",
     desc: "NFPA 96 compliance deep steam cleaning",
+    link: "/services/kitchen-hood-cleaning",
     width: 800,
     height: 600,
   },
   {
     id: 2,
-    image: "/media/images/gallery/kitchen-exhaust-fan-repairs-1.webp",
+    image: "/media/images/gallery/kitchen-exhaust-fan-installation-2.webp",
     title: "Exhaust Fans",
     desc: "Belt checks, motor audits & bearing lubes",
-    width: 600,
-    height: 800,
+    link: "/services/kitchen-exhaust-fan-repairs",
+    width: 1200,
+    height: 900,
   },
   {
     id: 3,
-    image: "/media/images/gallery/kitchen-exhaust-duct-repair-&-access-panel-installation-1.webp",
+    image: "/media/images/gallery/kitchen-exhaust-fan-installation-1.webp",
     title: "Ductwork Systems",
     desc: "Horizontal & vertical access grease removal",
-    width: 800,
-    height: 600,
+    link: "/services/kitchen-exhaust-duct-repair-access-panel-installation",
+    width: 1600,
+    height: 1200,
   },
   {
     id: 4,
-    image: "/media/images/gallery/pollution-control-systems-maintenance-1.webp",
+    image: "/media/images/gallery/pollution-control-systems-maintenance-2.webp",
     title: "Pollution Control Units",
     desc: "Advanced PCU diagnostics & filter cleaning",
-    width: 600,
-    height: 800,
+    link: "/services/pollution-control-systems-maintenance",
+    width: 1200,
+    height: 1600,
   },
   {
     id: 5,
     image: "/media/images/gallery/grease-trap-cleaning-1.webp",
     title: "Grease Traps",
     desc: "Liquid waste pumping and interceptor scraping",
+    link: "/services/grease-trap-cleaning",
     width: 600,
     height: 800,
   },
@@ -79,18 +85,20 @@ export default function Gallery() {
         <div className="text-center flex flex-col items-center mb-16">
           <span className="subtitle-badge">(Visual Showcase)</span>
           <h2 className="text-3xl md:text-[40px] lg:text-[44px] font-extrabold tracking-tight text-primary-text leading-[1.2] mb-4">
-            What we service daily & excel
+            Your One-Stop Solution for Commercial Kitchen Hood Services
           </h2>
-          <p className="text-body-text text-base md:text-lg max-w-xl mx-auto">
-            Ducts, hoods, fans, grease traps, and more —certified cleaning and compliance for commercial kitchens.
+          <p className="text-body-text text-base md:text-lg max-w-3xl mx-auto">
+            We specialize in cleaning, repairing, and maintaining commercial kitchen exhaust hoods, exhaust fans, make-up air units (MAUs), and pollution control units (PCUs). Our experienced technicians are trained to support all major brands, including Accurex®, Gaylord®, CaptiveAire®, Halton®, SmogHog®, EconAir®, Ventilation Direct®, Aqua-Matic®, Giles®, Wells®, NAKs®, Larkin®, and Trion®, helping keep kitchen hood systems safe, efficient, and code-compliant.
           </p>
         </div>
 
         {/* Desktop Gallery: 5 expanding panels */}
         <div className="hidden lg:flex gap-4 h-[480px] w-full">
           {galleryItems.map((item) => (
-            <div 
+            <a
               key={item.id}
+              href={item.link}
+              aria-label={item.title}
               className="flex-1 min-w-0 transition-all duration-500 ease-in-out hover:flex-[3] relative rounded-2xl overflow-hidden group cursor-pointer border border-border-stroke shadow-sm bg-white"
             >
               <img 
@@ -104,7 +112,7 @@ export default function Gallery() {
                 <h3 className="text-2xl font-bold mb-2 text-white translate-y-4 group-hover:translate-y-0 transition-transform duration-300">{item.title}</h3>
                 <p className="text-sm text-white opacity-80 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">{item.desc}</p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
@@ -116,24 +124,26 @@ export default function Gallery() {
             className="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-none pb-6"
           >
             {galleryItems.map((item) => (
-              <div 
-                key={item.id} 
-                className="snap-start shrink-0 w-[85%] sm:w-[60%] border border-border-stroke rounded-2xl overflow-hidden shadow-sm bg-white"
+              <a
+                key={item.id}
+                href={item.link}
+                aria-label={item.title}
+                className="block snap-start shrink-0 w-[85%] sm:w-[60%] border border-border-stroke rounded-2xl overflow-hidden shadow-sm bg-white"
               >
                 <div className="aspect-[4/3] w-full overflow-hidden bg-gray-100">
-                  <img 
-                    src={item.image} 
-                    alt={item.title} 
+                  <img
+                    src={item.image}
+                    alt={item.title}
                     width={item.width}
                     height={item.height}
-                    className="w-full h-full object-cover" 
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-bold text-primary-text mb-1">{item.title}</h3>
                   <p className="text-xs text-body-text">{item.desc}</p>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
 
