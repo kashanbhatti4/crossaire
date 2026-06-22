@@ -1,6 +1,6 @@
 import React from "react";
 import LocalFAQItem from "@/components/LocalFAQItem";
-import CoverageMap from "@/components/CoverageMap";
+// import CoverageMap from "@/components/CoverageMap"; // hidden per request
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
@@ -394,8 +394,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 7. SERVICE AREAS */}
-      <CoverageMap />
+      {/* 7. SERVICE AREAS — hidden per request */}
+      {/* <CoverageMap /> */}
 
       {/* 8. FREQUENTLY ASKED QUESTIONS (FAQs) */}
       <section id="faqs" className="py-24 px-6 bg-[#F4F6F8] border-b border-border-stroke animate-on-scroll">

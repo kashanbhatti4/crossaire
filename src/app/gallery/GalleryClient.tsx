@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import CoverageMap from "@/components/CoverageMap";
+// import CoverageMap from "@/components/CoverageMap"; // hidden per request
 import ScrollReveal from "@/components/ScrollReveal";
 
 interface GalleryItem {
@@ -610,8 +610,8 @@ export default function GalleryClient() {
         </div>
       )}
 
-      {/* 4. COVERAGE AREA */}
-      <CoverageMap />
+      {/* 4. COVERAGE AREA — hidden per request */}
+      {/* <CoverageMap /> */}
 
       {/* 5. CALL TO ACTION (CTA) */}
       <section className="py-24 px-6 bg-[#0C1A2B] text-white relative overflow-hidden">

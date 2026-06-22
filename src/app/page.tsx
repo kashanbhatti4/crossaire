@@ -2,8 +2,8 @@
 import React from "react";
 import BookingForm from "@/components/BookingForm";
 import Gallery from "@/components/Gallery";
-import CoverageMap from "@/components/CoverageMap";
-import Testimonials from "@/components/Testimonials";
+// import CoverageMap from "@/components/CoverageMap"; // hidden per request
+// import Testimonials from "@/components/Testimonials"; // hidden per request
 import Faq from "@/components/Faq";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -230,7 +230,7 @@ export default function Home() {
           {/* Left Info Block */}
           <div className="lg:col-span-7 text-white flex flex-col justify-end">
             <h1 className="display-title text-white mb-1 lg:mb-3 max-w-2xl">
-              Stress-Free Commercial Kitchen Safety
+              Certified Restaurant Hood Cleaning and Repairs
             </h1>
             <p className="text-white/80 text-sm lg:text-lg max-w-xl mb-0 leading-relaxed">
               Protect your kitchen. Stay NFPA 96 compliant. Certified exhaust cleaning available 24/7 in MD, DC & VA.
@@ -593,8 +593,8 @@ export default function Home() {
       {/* SECTION 7: Gallery Section */}
       <Gallery />
 
-      {/* SECTION 8: Coverage Map Section */}
-      <CoverageMap />
+      {/* SECTION 8: Coverage Map Section — hidden per request */}
+      {/* <CoverageMap /> */}
 
       {/* SECTION 9: Why Choose Us */}
       <section id="why-choose-us" className="py-24 px-6 bg-white border-b border-border-stroke">
@@ -657,8 +657,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 10: Testimonials */}
-      <Testimonials />
+      {/* SECTION 10: Testimonials — hidden per request */}
+      {/* <Testimonials /> */}
 
       {/* SECTION 10.5: Frequently Asked Questions */}
       <Faq />

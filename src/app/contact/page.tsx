@@ -1,6 +1,6 @@
 import React from "react";
 import BookingForm from "@/components/BookingForm";
-import CoverageMap from "@/components/CoverageMap";
+// import CoverageMap from "@/components/CoverageMap"; // hidden per request
 import ScrollReveal from "@/components/ScrollReveal";
 import LocalFAQItem from "@/components/LocalFAQItem";
 
@@ -26,7 +26,7 @@ export default function ContactPage() {
               "@type": "LocalBusiness",
               "name": "Crossaire",
               "telephone": "571-723-1406",
-              "email": "info@crossaire.com",
+              "email": "services@crossaire.com",
               "image": "https://crossaire.vercel.app/media/images/logo.webp",
               "address": {
                 "@type": "PostalAddress",
@@ -182,8 +182,8 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-base font-bold text-white mb-1">Email Address</h3>
                     <p className="text-white/60 text-xs mb-3 leading-relaxed">Send project details, compliance audit papers, or RFP documents.</p>
-                    <a href="mailto:info@crossaire.com" className="text-accent font-extrabold text-lg hover:underline inline-flex items-center gap-1.5 transition-all">
-                      info@crossaire.com
+                    <a href="mailto:services@crossaire.com" className="text-accent font-extrabold text-lg hover:underline inline-flex items-center gap-1.5 transition-all">
+                      services@crossaire.com
                       <i className="fa-solid fa-arrow-right-long text-xs"></i>
                     </a>
                   </div>
@@ -199,9 +199,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-base font-bold text-white mb-1">Operational Hours</h3>
                     <p className="text-white/60 text-xs leading-relaxed">
-                      <strong className="text-white">Scheduled Cleanings:</strong> 24/7/365 (Closed-hours)<br />
-                      <strong className="text-white">Office Hours:</strong> Mon - Fri: 8:00 AM - 6:00 PM<br />
-                      <strong className="text-white">Emergency Dispatch:</strong> Available 24/7
+                      <strong className="text-white">24/7</strong>
                     </p>
                   </div>
                 </div>
@@ -224,8 +222,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* 3. COVERAGE MAP SECTION */}
-      <CoverageMap />
+      {/* 3. COVERAGE MAP SECTION — hidden per request */}
+      {/* <CoverageMap /> */}
 
       {/* 4. FREQUENTLY ASKED QUESTIONS (FAQs) */}
       <section id="faqs" className="py-24 px-6 bg-[#F4F6F8] border-t border-b border-border-stroke animate-on-scroll">
