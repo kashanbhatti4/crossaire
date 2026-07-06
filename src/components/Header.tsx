@@ -333,7 +333,7 @@ export default function Header() {
           </button>
           
           <div className={`overflow-hidden transition-all duration-300 flex flex-col gap-3 pl-6 border-l border-gray-100 mt-3 ml-2 ${
-            mobileLocationsOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+            mobileLocationsOpen ? "max-h-[4000px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
           }`}>
             {regionsList.map((reg) => {
               const isExpanded = mobileRegionExpanded === reg.name;
@@ -356,7 +356,7 @@ export default function Header() {
 
                   {/* Cities List */}
                   <div className={`overflow-hidden transition-all duration-300 flex flex-col gap-2 pl-6 border-l border-gray-100 mt-2 ml-4 ${
-                    isExpanded ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+                    isExpanded ? "max-h-[2500px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
                   }`}>
                     {reg.cities.map((city) => (
                       <a 
