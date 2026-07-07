@@ -4,6 +4,7 @@ import LocalFAQItem from "@/components/LocalFAQItem";
 import ScrollReveal from "@/components/ScrollReveal";
 import locationsData from "@/data/locationsData";
 import { notFound } from "next/navigation";
+import { SITE_URL } from "@/lib/site";
 
 interface PageProps {
   params: Promise<{ city: string }>;
@@ -55,7 +56,7 @@ export default async function LocationPage({ params }: PageProps) {
     "provider": {
       "@type": "LocalBusiness",
       "name": "Crossaire",
-      "image": "https://crossaire.vercel.app/media/images/logo.webp",
+      "image": `${SITE_URL}/media/images/logo.webp`,
       "telephone": "571-723-1406",
       "address": {
         "@type": "PostalAddress",

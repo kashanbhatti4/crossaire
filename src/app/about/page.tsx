@@ -2,6 +2,7 @@ import React from "react";
 import LocalFAQItem from "@/components/LocalFAQItem";
 // import CoverageMap from "@/components/CoverageMap"; // hidden per request
 import ScrollReveal from "@/components/ScrollReveal";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata = {
   title: "About Crossaire | Commercial Kitchen Exhaust & Safety Experts",
@@ -26,7 +27,7 @@ export default function AboutPage() {
               "@type": "LocalBusiness",
               "name": "Crossaire",
               "telephone": "571-723-1406",
-              "image": "https://crossaire.vercel.app/media/images/logo.webp",
+              "image": `${SITE_URL}/media/images/logo.webp`,
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Glen Burnie",

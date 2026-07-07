@@ -3,6 +3,7 @@ import BookingForm from "@/components/BookingForm";
 // import CoverageMap from "@/components/CoverageMap"; // hidden per request
 import ScrollReveal from "@/components/ScrollReveal";
 import LocalFAQItem from "@/components/LocalFAQItem";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata = {
   title: "Contact Crossaire | Commercial Kitchen Exhaust & Safety",
@@ -21,13 +22,13 @@ export default function ContactPage() {
             "@type": "ContactPage",
             "name": "Contact Crossaire",
             "description": "Get in touch with Crossaire for professional NFPA 96 certified kitchen hood and exhaust cleaning, grease trap extraction, and fan repairs across MD, DC, and VA.",
-            "url": "https://crossaire.vercel.app/contact",
+            "url": `${SITE_URL}/contact`,
             "mainEntity": {
               "@type": "LocalBusiness",
               "name": "Crossaire",
               "telephone": "571-723-1406",
               "email": "services@crossaire.com",
-              "image": "https://crossaire.vercel.app/media/images/logo.webp",
+              "image": `${SITE_URL}/media/images/logo.webp`,
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Glen Burnie",

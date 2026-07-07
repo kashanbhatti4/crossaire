@@ -1,5 +1,6 @@
 import React from "react";
 import GalleryClient from "./GalleryClient";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata = {
   title: "Commercial Kitchen Hood Cleaning Gallery | Crossaire",
@@ -23,7 +24,7 @@ export default function GalleryPage() {
               "@type": "LocalBusiness",
               "name": "Crossaire",
               "telephone": "571-723-1406",
-              "image": "https://crossaire.vercel.app/media/images/logo.webp"
+              "image": `${SITE_URL}/media/images/logo.webp`
             }
           })
         }}

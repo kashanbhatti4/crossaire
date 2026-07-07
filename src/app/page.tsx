@@ -6,6 +6,7 @@ import Gallery from "@/components/Gallery";
 // import Testimonials from "@/components/Testimonials"; // hidden per request
 import Faq from "@/components/Faq";
 import ScrollReveal from "@/components/ScrollReveal";
+import { SITE_URL } from "@/lib/site";
 
 interface HomeServiceItem {
   title: string;
@@ -116,9 +117,9 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "Crossaire",
-            "image": "https://crossaire.vercel.app/media/images/logo.webp",
-            "@id": "https://crossaire.vercel.app/#localbusiness",
-            "url": "https://crossaire.vercel.app",
+            "image": `${SITE_URL}/media/images/logo.webp`,
+            "@id": `${SITE_URL}/#localbusiness`,
+            "url": SITE_URL,
             "telephone": "571-723-1406",
             "priceRange": "$$",
             "address": {

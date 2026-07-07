@@ -4,6 +4,7 @@ import React from "react";
 import BookingForm from "@/components/BookingForm";
 import LocalFAQItem from "@/components/LocalFAQItem";
 import ScrollReveal from "@/components/ScrollReveal";
+import { SITE_URL } from "@/lib/site";
 
 export default function ServicePage() {
   return (
@@ -21,7 +22,7 @@ export default function ServicePage() {
             "provider": {
               "@type": "LocalBusiness",
               "name": "Crossaire",
-              "image": "https://crossaire.vercel.app/media/images/logo.webp",
+              "image": `${SITE_URL}/media/images/logo.webp`,
               "telephone": "571-723-1406",
               "address": {
                 "@type": "PostalAddress",
